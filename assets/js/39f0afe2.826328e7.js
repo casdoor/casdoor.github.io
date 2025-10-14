@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[6479],{82209:e=>{e.exports=JSON.parse('{"title":"Certificates","slug":"/category/certificates","permalink":"/docs/category/certificates","navigation":{"previous":{"title":"WeCom","permalink":"/docs/syncer/WeCom"},"next":{"title":"Overview","permalink":"/docs/cert/overview"}}}')}}]);

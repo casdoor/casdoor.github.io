@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[9515],{22067:e=>{e.exports=JSON.parse('{"title":"Jetons","slug":"/category/tokens","permalink":"/fr/docs/category/tokens","navigation":{"previous":{"title":"WeCom","permalink":"/fr/docs/syncer/WeCom"},"next":{"title":"Aper\xe7u","permalink":"/fr/docs/token/overview"}}}')}}]);

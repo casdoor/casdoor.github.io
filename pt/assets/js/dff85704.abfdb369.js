@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[8575],{89847:e=>{e.exports=JSON.parse('{"title":"MFA","slug":"/category/mfa","permalink":"/pt/docs/category/mfa","navigation":{"previous":{"title":"Jumio","permalink":"/pt/docs/provider/idv/jumio"},"next":{"title":"Push Notification","permalink":"/pt/docs/provider/mfa/push"}}}')}}]);

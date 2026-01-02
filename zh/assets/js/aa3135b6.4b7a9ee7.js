@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[7479],{71099:e=>{e.exports=JSON.parse('{"title":"\u7528\u6237","slug":"/category/users","permalink":"/zh/docs/category/users","navigation":{"previous":{"title":"RADIUS","permalink":"/zh/docs/provider/mfa/radius"},"next":{"title":"\u6982\u8ff0","permalink":"/zh/docs/user/overview"}}}')}}]);

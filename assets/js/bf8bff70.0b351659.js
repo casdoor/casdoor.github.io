@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[529],{29836:e=>{e.exports=JSON.parse('{"title":"Resources","slug":"/category/resources","permalink":"/docs/category/resources","navigation":{"previous":{"title":"RADIUS","permalink":"/docs/provider/mfa/radius"},"next":{"title":"Overview","permalink":"/docs/resources/overview"}}}')}}]);

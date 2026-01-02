@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[4148],{22339:e=>{e.exports=JSON.parse('{"title":"Sessions","slug":"/category/sessions","permalink":"/fr/docs/category/sessions","navigation":{"previous":{"title":"Aper\xe7u","permalink":"/fr/docs/token/overview"},"next":{"title":"Overview","permalink":"/fr/docs/session/overview"}}}')}}]);

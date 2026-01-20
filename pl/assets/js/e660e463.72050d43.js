@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[7073],{16567:e=>{e.exports=JSON.parse('{"title":"Integrations","slug":"/category/integrations","permalink":"/pl/docs/category/integrations","navigation":{"previous":{"title":"Overview","permalink":"/pl/docs/scim/overview"},"next":{"title":"C++","permalink":"/pl/docs/category/cpp"}}}')}}]);

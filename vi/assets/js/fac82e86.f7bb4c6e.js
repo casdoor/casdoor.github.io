@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[872],{44737:e=>{e.exports=JSON.parse('{"title":"PHP","slug":"/category/php","permalink":"/vi/docs/category/php","navigation":{"previous":{"title":"APISIX","permalink":"/vi/docs/integration/lua/apisix"},"next":{"title":"Zabbix","permalink":"/vi/docs/integration/php/Zabbix"}}}')}}]);

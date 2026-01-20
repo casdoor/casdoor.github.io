@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[811],{26746:e=>{e.exports=JSON.parse('{"title":"RADIUS","slug":"/category/radius","permalink":"/pl/docs/category/radius","navigation":{"previous":{"title":"LDAP Server","permalink":"/pl/docs/ldap/ldapserver"},"next":{"title":"Overview","permalink":"/pl/docs/radius/overview"}}}')}}]);

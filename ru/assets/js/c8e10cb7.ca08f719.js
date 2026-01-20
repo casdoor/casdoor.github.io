@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[1442],{95402:e=>{e.exports=JSON.parse('{"permalink":"/ru/blog/tags/\u043c\u0430\u0448\u0438\u043d\u043d\u043e\u0435-\u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

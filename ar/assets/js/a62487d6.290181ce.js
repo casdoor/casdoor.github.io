@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[4693],{43508:e=>{e.exports=JSON.parse('{"permalink":"/ar/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"\u0645\u062f\u0648\u0646\u0629","blogTitle":"\u0645\u062f\u0648\u0646\u0629"}')}}]);

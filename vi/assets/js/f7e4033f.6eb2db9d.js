@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[3744],{88789:e=>{e.exports=JSON.parse('{"title":"Ruby","slug":"/category/ruby","permalink":"/vi/docs/category/ruby","navigation":{"previous":{"title":"Moodle","permalink":"/vi/docs/integration/php/Moodle"},"next":{"title":"GitLab","permalink":"/vi/docs/integration/ruby/gitlab"}}}')}}]);

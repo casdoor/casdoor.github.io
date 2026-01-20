@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[2535],{45641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Enhancing App Security and User Experience with Casdoor Face Authentication SSO","permalink":"/vi/blog/face-authentication-casdoor-sso"},{"title":"Welcome","permalink":"/vi/blog/welcome"}]}')}}]);

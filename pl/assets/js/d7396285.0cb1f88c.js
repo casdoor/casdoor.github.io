@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[5968],{32637:e=>{e.exports=JSON.parse('{"label":"Face Recogniztion","permalink":"/pl/blog/tags/face-recogniztion","allTagsPath":"/pl/blog/tags","count":1}')}}]);

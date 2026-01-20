@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[734],{4318:e=>{e.exports=JSON.parse('{"title":"Web3","slug":"/category/web3","permalink":"/ru/docs/category/web3","navigation":{"previous":{"title":"Geetest","permalink":"/ru/docs/provider/captcha/geetest"},"next":{"title":"MetaMask","permalink":"/ru/docs/provider/web3/metamask"}}}')}}]);

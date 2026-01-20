@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[9052],{56081:e=>{e.exports=JSON.parse('{"title":"Email","slug":"/category/email","permalink":"/vi/docs/category/email","navigation":{"previous":{"title":"Lark","permalink":"/vi/docs/provider/oauth/lark"},"next":{"title":"Overview","permalink":"/vi/docs/provider/email/overview"}}}')}}]);

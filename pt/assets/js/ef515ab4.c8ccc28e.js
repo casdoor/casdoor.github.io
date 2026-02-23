@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[7197],{36210:e=>{e.exports=JSON.parse('{"title":"Os Fundamentos","slug":"/category/the-basics","permalink":"/pt/docs/category/the-basics","navigation":{"next":{"title":"Vis\xe3o Geral","permalink":"/pt/docs/overview"}}}')}}]);

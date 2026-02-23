@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[3333],{10727:e=>{e.exports=JSON.parse('{"title":"SCIM","slug":"/category/scim","permalink":"/de/docs/category/scim","navigation":{"previous":{"title":"\xdcbersicht","permalink":"/de/docs/radius/overview"},"next":{"title":"\xdcbersicht","permalink":"/de/docs/scim/overview"}}}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[5459],{60330:e=>{e.exports=JSON.parse('{"title":"Token","slug":"/category/tokens","permalink":"/de/docs/category/tokens","navigation":{"previous":{"title":"Overview","permalink":"/de/docs/cert/overview"},"next":{"title":"\xdcbersicht","permalink":"/de/docs/token/overview"}}}')}}]);

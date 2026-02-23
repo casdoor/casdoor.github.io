@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[3995],{31489:e=>{e.exports=JSON.parse('{"label":"Face","permalink":"/es/blog/tags/face","allTagsPath":"/es/blog/tags","count":1}')}}]);

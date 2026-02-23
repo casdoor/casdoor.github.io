@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[5759],{26930:e=>{e.exports=JSON.parse('{"title":"Die Grundlagen","slug":"/category/the-basics","permalink":"/de/docs/category/the-basics","navigation":{"next":{"title":"\xdcbersicht","permalink":"/de/docs/overview"}}}')}}]);

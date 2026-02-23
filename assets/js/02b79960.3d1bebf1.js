@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([[6695],{75308:e=>{e.exports=JSON.parse('{"title":"Invitations","slug":"/category/invitations","permalink":"/docs/category/invitations","navigation":{"previous":{"title":"Forms","permalink":"/docs/user/forms"},"next":{"title":"Overview","permalink":"/docs/invitation/overview"}}}')}}]);

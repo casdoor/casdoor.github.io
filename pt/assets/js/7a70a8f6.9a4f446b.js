@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcasdoor_website=globalThis.webpackChunkcasdoor_website||[]).push([[6401],{50709(e){e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"The basics","slug":"/category/the-basics","permalink":"/pt/docs/category/the-basics","sidebar":"tutorialSidebar","navigation":{"next":{"title":"Vis\xe3o Geral","permalink":"/pt/docs/overview"}}}}')}}]);

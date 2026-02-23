@@ -4,35 +4,102 @@
         <title>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</title>
         <link>https://casdoor.github.io/fr/blog</link>
         <description>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</description>
-        <lastBuildDate>Tue, 12 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
         <item>
-            <title><![CDATA[Amélioration de la sécurité des applications et de l'expérience utilisateur avec l'authentification faciale SSO de Casdoor]]></title>
+            <title><![CDATA[Casdoor Joins CNCF Cloud Native Landscape]]></title>
+            <link>https://casdoor.github.io/fr/blog/casdoor-joins-cncf-landscape</link>
+            <guid>https://casdoor.github.io/fr/blog/casdoor-joins-cncf-landscape</guid>
+            <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[On February 22, 2026, Casdoor joined the CNCF Cloud Native Landscape, under the Security & Compliance category in Provisioning. The Landscape brings together widely used cloud-native projects and products; inclusion helps users and enterprises discover and evaluate solutions for building cloud-native systems.]]></description>
+            <content:encoded><![CDATA[<p>On February 22, 2026, <strong>Casdoor</strong> joined the <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Cloud Native Landscape</a>, under the <strong>Security &amp; Compliance</strong> category in Provisioning. The Landscape brings together widely used cloud-native projects and products; inclusion helps users and enterprises discover and evaluate solutions for building cloud-native systems.</p>
+<p><a href="https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor</a></p>
+<img src="https://casdoor.github.io/img/blog/cncf-landscape-casdoor.png" alt="Casdoor on CNCF Landscape - Security and Compliance section" style="max-width:100%;height:auto;border:1px solid #eee;border-radius:8px">
+<p><em>Casdoor on the CNCF Cloud Native Landscape (Security &amp; Compliance)</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-casdoor">About Casdoor<a href="https://casdoor.github.io/fr/blog/casdoor-joins-cncf-landscape#about-casdoor" class="hash-link" aria-label="Lien direct vers About Casdoor" title="Lien direct vers About Casdoor" translate="no">​</a></h2>
+<div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://cdn.casbin.org/img/casdoor-logo_1185x256.png" alt="Casdoor" style="height:80px;width:auto"></div>
+<p>Casdoor is an open-source, UI-first Identity and Access Management (IAM) / Single Sign-On (SSO) platform with a web UI. It supports OAuth 2.0, OIDC, SAML, and CAS, as well as many social logins (Google, GitHub, WeChat, etc.), and helps you build user management and SSO in a few steps. Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> in Golang and React. It uses a front-end/back-end separation architecture, supports high concurrency, and is actively maintained by the community. The project has received over 13k GitHub stars.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-cncf-and-the-cloud-native-landscape">About CNCF and the Cloud Native Landscape<a href="https://casdoor.github.io/fr/blog/casdoor-joins-cncf-landscape#about-cncf-and-the-cloud-native-landscape" class="hash-link" aria-label="Lien direct vers About CNCF and the Cloud Native Landscape" title="Lien direct vers About CNCF and the Cloud Native Landscape" translate="no">​</a></h2>
+<div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg" alt="CNCF - Cloud Native Computing Foundation" style="height:80px;width:auto"><img src="https://landscape.cncf.io/images/logo_header.svg" alt="CNCF Cloud Native Landscape" style="height:80px;width:auto"></div>
+<p>The <strong>Cloud Native Computing Foundation (CNCF)</strong> is a Linux Foundation project that promotes cloud-native technologies. Its vision is to make cloud native ubiquitous. CNCF maintains the <strong>Cloud Native Landscape</strong> (<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>), which classifies and tracks projects and products in the cloud-native ecosystem and serves as a reference map for developers and enterprises.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looking-ahead">Looking ahead<a href="https://casdoor.github.io/fr/blog/casdoor-joins-cncf-landscape#looking-ahead" class="hash-link" aria-label="Lien direct vers Looking ahead" title="Lien direct vers Looking ahead" translate="no">​</a></h2>
+<p>Joining the CNCF Landscape reflects progress in Casdoor’s maturity and community. We will keep improving Casdoor and its integration with cloud-native workflows, and we welcome more users and contributors to join the community.</p>
+<p>Related links:</p>
+<ul>
+<li class=""><a href="https://casdoor.org/" target="_blank" rel="noopener noreferrer" class="">Casdoor</a> · <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">GitHub</a> · <a href="https://casdoor.org/docs" target="_blank" rel="noopener noreferrer" class="">Documentation</a> · <a href="https://landscape.cncf.io/?selected=casdoor" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape – Casdoor</a></li>
+</ul>]]></content:encoded>
+            <category>Casdoor</category>
+            <category>CNCF</category>
+            <category>Cloud Native</category>
+            <category>Landscape</category>
+            <category>IAM</category>
+            <category>SSO</category>
+            <category>Security</category>
+        </item>
+        <item>
+            <title><![CDATA[Enhancing App Security and User Experience with Casdoor Face Authentication SSO]]></title>
             <link>https://casdoor.github.io/fr/blog/face-authentication-casdoor-sso</link>
             <guid>https://casdoor.github.io/fr/blog/face-authentication-casdoor-sso</guid>
             <pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[À une époque où la gestion de l'identité numérique est cruciale, les solutions de Single Sign-On (SSO) comme Casdoor révolutionnent la manière dont les utilisateurs interagissent avec plusieurs applications. Le SSO de Casdoor simplifie le processus de connexion en permettant aux utilisateurs de s'authentifier une seule fois pour accéder à plusieurs services. Cela améliore non seulement la commodité pour l'utilisateur, mais augmente également l'engagement et la satisfaction.]]></description>
-            <content:encoded><![CDATA[<p>À une époque où la gestion de l'identité numérique est cruciale, les solutions de Single Sign-On (SSO) comme Casdoor révolutionnent la manière dont les utilisateurs interagissent avec plusieurs applications. Le SSO de Casdoor simplifie le processus de connexion en permettant aux utilisateurs de s'authentifier une seule fois pour accéder à plusieurs services. Cela améliore non seulement la commodité pour l'utilisateur, mais augmente également l'engagement et la satisfaction.</p><p>Pour les entreprises, le SSO de Casdoor rationalise la gestion des identifiants des utilisateurs, améliorant la sécurité et simplifiant l'intégration de nouveaux utilisateurs. Il contre le risque associé aux mots de passe faibles ou recyclés en centralisant la gestion des utilisateurs.</p><p>Cependant, face à la croissance des menaces en ligne, intégrer des mesures de sécurité robustes dans les systèmes SSO comme Casdoor est vital. C'est là que la technologie d'authentification faciale entre en jeu, ajoutant une couche supplémentaire de protection tout en maintenant des interactions conviviales avec l'utilisateur.</p><p>L'authentification faciale utilise des caractéristiques faciales uniques pour confirmer les identités des utilisateurs. Elle compare les images en direct avec des modèles faciaux stockés, offrant un moyen sécurisé mais simple d'authentifier les utilisateurs. Cette méthode présente une grande précision, même dans des conditions variées, et est largement adoptée dans les appareils grand public modernes.</p><p>L'intégration de l'authentification faciale dans le système SSO de Casdoor promet une expérience utilisateur sécurisée, efficace et fluide. Pour garantir des performances optimales, il est crucial de se concentrer sur :</p><ol><li><p><em>Mesures anti-spoofing</em> : La mise en œuvre de la détection de vivacité, comme le suivi des mouvements des yeux ou des gestes aléatoires, est essentielle pour contrer les tentatives de spoofing et maintenir l'intégrité du système.</p></li><li><p><em>Mises à jour régulières pour une précision améliorée</em> : Garder la technologie d'authentification faciale à jour avec les dernières avancées en IA et en biométrie assure la précision et améliore l'expérience utilisateur. Il est vital d'utiliser des ensembles de données diversifiés pour la formation des algorithmes afin de prévenir les biais.</p></li><li><p><em>Équilibrer la sécurité et la commodité</em> : Les meilleurs systèmes trouvent un équilibre parfait entre des mesures de sécurité strictes et la commodité pour l'utilisateur. Cette approche encourage l'adoption par les utilisateurs en garantissant un processus d'authentification simple sans compromettre la sécurité.</p></li></ol><p>En conclusion, en intégrant l'authentification faciale avec le SSO de Casdoor, les entreprises peuvent offrir une expérience de connexion sécurisée, efficace et conviviale. Cela non seulement renforce la sécurité, mais s'aligne également avec les attentes des utilisateurs modernes dans le monde numérique.</p>]]></content:encoded>
+            <description><![CDATA[In an era where digital identity management is crucial, Single Sign-On (SSO) solutions like Casdoor are revolutionizing the way users interact with multiple applications. Casdoor's SSO simplifies the login process by allowing users to authenticate just once to access multiple services. This not only enhances user convenience but also boosts engagement and satisfaction.]]></description>
+            <content:encoded><![CDATA[<p>In an era where digital identity management is crucial, Single Sign-On (SSO) solutions like Casdoor are revolutionizing the way users interact with multiple applications. Casdoor's SSO simplifies the login process by allowing users to authenticate just once to access multiple services. This not only enhances user convenience but also boosts engagement and satisfaction.</p>
+<p>For businesses, Casdoor's SSO streamlines user credential management, enhancing security and simplifying new user onboarding. It counters the risk associated with weak or recycled passwords by centralizing user management.</p>
+<p>However, in the face of growing online threats, integrating robust security measures in SSO systems like Casdoor is vital. This is where face authentication technology comes into play, adding an extra layer of protection while maintaining user-friendly interactions.</p>
+<p>Face authentication employs unique facial characteristics to confirm user identities. It compares live images with stored facial templates, offering a secure yet straightforward way to authenticate users. This method boasts high accuracy, even under varied conditions, and is widely adopted in modern consumer devices.</p>
+<p>Integrating face authentication into Casdoor's SSO system promises a secure, efficient, and seamless user experience. To ensure optimal performance, it is crucial to focus on:</p>
+<ol>
+<li class="">
+<p><em>Anti-Spoofing Measures</em>: Implementing liveness detection, like tracking eye movements or random gestures, is essential to counteract spoofing attempts and maintain system integrity.</p>
+</li>
+<li class="">
+<p><em>Regular Updates for Improved Accuracy</em>: Keeping the face authentication technology updated with the latest AI and biometric advancements ensures accuracy and enhances user experience. It's vital to use diverse datasets for algorithm training to prevent biases.</p>
+</li>
+<li class="">
+<p><em>Balancing Security and Convenience</em>: The best systems strike a perfect balance between stringent security measures and user convenience. This approach encourages user adoption by ensuring a straightforward authentication process without compromising security.</p>
+</li>
+</ol>
+<p>In conclusion, by integrating face authentication with Casdoor's SSO, businesses can offer a secure, efficient, and user-friendly login experience. This not only fortifies security but also aligns with modern user expectations in the digital world.</p>]]></content:encoded>
             <category>Casdoor</category>
             <category>SSO</category>
             <category>Single-Sign-On</category>
             <category>Face Recogniztion</category>
             <category>FaceID</category>
             <category>Face</category>
-            <category>Apprentissage automatique</category>
+            <category>Machine Learning</category>
         </item>
         <item>
-            <title><![CDATA[Bienvenue]]></title>
-            <link>https://casdoor.github.io/fr/blog/bienvenue</link>
-            <guid>https://casdoor.github.io/fr/blog/bienvenue</guid>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://casdoor.github.io/fr/blog/welcome</link>
+            <guid>https://casdoor.github.io/fr/blog/welcome</guid>
             <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Bienvenue sur le site officiel de Casdoor !👋]]></description>
-            <content:encoded><![CDATA[<p>Bienvenue sur le site officiel de Casdoor !👋</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="quest-ce-que-casdoor-">Qu'est-ce que Casdoor ?<a href="#quest-ce-que-casdoor-" class="hash-link" aria-label="Lien direct vers Qu'est-ce que Casdoor ?" title="Lien direct vers Qu'est-ce que Casdoor ?">​</a></h2><p>Casdoor est une plateforme d'<a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer">Identity Access Management (IAM)</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer">Single-Sign-On (SSO)</a> orientée UI basée sur OAuth 2.0, OIDC, SAML et CAS.</p><p>Casdoor est développé par <a href="https://casbin.org" target="_blank" rel="noopener noreferrer">Casbin</a> en utilisant Golang et React.</p><p>Casdoor vise à fournir une plateforme d'authentification puissante pour gérer la gestion des utilisateurs.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="pourquoi-utiliser-casdoor-">Pourquoi utiliser Casdoor ?<a href="#pourquoi-utiliser-casdoor-" class="hash-link" aria-label="Lien direct vers Pourquoi utiliser Casdoor ?" title="Lien direct vers Pourquoi utiliser Casdoor ?">​</a></h2><ul><li><p>⚡️ Fonctionnalité puissante et configuration simple. Avec le support pour <img loading="lazy" src="https://cdn.casbin.org/img/social_google.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_github.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_facebook.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_twitter.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_linkedin.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_weibo.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_wechat.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_qq.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_dingtalk.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_gitee.png" width="30" class="img_ev3q"> <img loading="lazy" src="https://cdn.casbin.org/img/social_wecom.png" width="30" class="img_ev3q"><img loading="lazy" src="https://cdn.casbin.org/img/social_gitlab.png" width="30" class="img_ev3q"> pour se connecter et la connexion traditionnelle avec nom d'utilisateur/mot de passe, Casdoor vous aide à mettre en place votre système de gestion des utilisateurs en quelques étapes.</p></li><li><p>💥 Architecture de séparation front-end back-end. Casdoor fournit une interface utilisateur web manœuvrable et supporte une haute concurrence.</p></li><li><p>🥂 Communauté open source active. Casdoor est open source et activement maintenu.</p></li><li><p>🌐 Support multilingue. Casdoor prend en charge plusieurs langues, y compris le chinois, l'anglais, le français et bien d'autres.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="comment-utiliser-casdoor-">Comment utiliser Casdoor ?<a href="#comment-utiliser-casdoor-" class="hash-link" aria-label="Lien direct vers Comment utiliser Casdoor ?" title="Lien direct vers Comment utiliser Casdoor ?">​</a></h2><p>Vous pouvez suivre le document détaillé pour en savoir plus sur <a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer">l'API Casdoor</a> et <a href="/fr/docs/basic/server-installation">installer votre propre Casdoor</a>. Ou utilisez les <a href="/fr/docs/how-to-connect/sdk">SDKs Casdoor</a> pour implémenter votre propre application.</p>]]></content:encoded>
+            <description><![CDATA[Welcome to Casdoor official website!👋]]></description>
+            <content:encoded><![CDATA[<p>Welcome to Casdoor official website!👋</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-casdoor">What is Casdoor?<a href="https://casdoor.github.io/fr/blog/welcome#what-is-casdoor" class="hash-link" aria-label="Lien direct vers What is Casdoor?" title="Lien direct vers What is Casdoor?" translate="no">​</a></h2>
+<p>Casdoor is a UI-first <a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer" class="">Identity Access Management (IAM)</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer" class="">Single-Sign-On (SSO)</a> platform based on OAuth 2.0, OIDC, SAML and CAS.</p>
+<p>Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> using Golang and React.</p>
+<p>Casdoor aims at providing a powerful authentication platform to handle the user management.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-use-casdoor">Why use Casdoor?<a href="https://casdoor.github.io/fr/blog/welcome#why-use-casdoor" class="hash-link" aria-label="Lien direct vers Why use Casdoor?" title="Lien direct vers Why use Casdoor?" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p>⚡️ Powerful feature and simple config. With support for  <img src="https://cdn.casbin.org/img/social_google.png" width="30"> <img src="https://cdn.casbin.org/img/social_github.png" width="30"> <img src="https://cdn.casbin.org/img/social_facebook.png" width="30"> <img src="https://cdn.casbin.org/img/social_twitter.png" width="30"> <img src="https://cdn.casbin.org/img/social_linkedin.png" width="30"> <img src="https://cdn.casbin.org/img/social_weibo.png" width="30"> <img src="https://cdn.casbin.org/img/social_wechat.png" width="30"> <img src="https://cdn.casbin.org/img/social_qq.png" width="30"> <img src="https://cdn.casbin.org/img/social_dingtalk.png" width="30">   <img src="https://cdn.casbin.org/img/social_gitee.png" width="30">  <img src="https://cdn.casbin.org/img/social_wecom.png" width="30"><img src="https://cdn.casbin.org/img/social_gitlab.png" width="30"> sign in and traditional username/password sign in, Casdoor helps you implement your users management system just in a few steps.</p>
+</li>
+<li class="">
+<p>💥 Front-end back-end separation architecture. Casdoor provides maneuverable web UI and supporting high concurrency.</p>
+</li>
+<li class="">
+<p>🥂 Active open source community. Casdoor is open source and actively maintained.</p>
+</li>
+<li class="">
+<p>🌐 Multi-language support. Casdoor supports multiple languages, including Chinese, English, French, and many more.</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-use-casdoor">How to use Casdoor?<a href="https://casdoor.github.io/fr/blog/welcome#how-to-use-casdoor" class="hash-link" aria-label="Lien direct vers How to use Casdoor?" title="Lien direct vers How to use Casdoor?" translate="no">​</a></h2>
+<p>You can follow the detailed document to learn about <a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a> and <a class="" href="https://casdoor.github.io/fr/docs/basic/server-installation">setup your own Casdoor</a>. Or use the <a class="" href="https://casdoor.github.io/fr/docs/how-to-connect/sdk">Casdoor SDKs</a> to implement your own application.</p>]]></content:encoded>
             <category>Casdoor</category>
             <category>SSO</category>
-            <category>Authentification</category>
+            <category>Authentication</category>
             <category>OAuth2.0</category>
             <category>Casbin</category>
         </item>

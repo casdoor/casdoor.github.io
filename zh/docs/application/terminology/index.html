@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.5a091a05.css">
-<script src="/zh/assets/js/runtime~main.d3f762ab.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.34d5199e.js" defer="defer"></script>
 <script src="/zh/assets/js/main.f543d456.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -96,6 +96,8 @@
 <ul>
 <li class=""><strong>Providers</strong> — OAuth, email, SMS, storage, and other providers attached to this application. Controls which sign-in methods and integrations are available.</li>
 </ul>
+<p>Each OAuth / Web3 / SAML provider entry in the provider table has additional per-provider settings:</p>
+<table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td><strong>Can sign up</strong></td><td>Allow new users to register via this provider.</td></tr><tr><td><strong>Can sign in</strong></td><td>Allow existing users to sign in via this provider.</td></tr><tr><td><strong>Can unlink</strong></td><td>Allow users to unlink this provider from their account.</td></tr><tr><td><strong>Binding rule</strong></td><td>Fields used to match an OAuth identity to an existing Casdoor user. Available fields: <code>Email</code>, <code>Phone</code>, <code>Name</code>. Checked in order — the first match links the accounts. Default is <code>Email</code>, <code>Phone</code>, <code>Name</code>. Only applies to OAuth, Web3, and SAML providers.</td></tr><tr><td><strong>Country codes</strong></td><td>Restrict phone-based providers to specific country calling codes.</td></tr><tr><td><strong>Prompted</strong></td><td>Show a prompt asking users to bind this provider after sign-up if they haven&#x27;t already.</td></tr><tr><td><strong>Signup group</strong></td><td>Override the application&#x27;s Default group for users who sign up via this provider.</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ui-customization">UI Customization<a href="#ui-customization" class="hash-link" aria-label="直接链接到 UI Customization" title="直接链接到 UI Customization" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Org choice mode</strong> — How users select their organization at sign-in: <code>None</code>, <code>Select</code> (dropdown), or <code>Input</code> (text field).</li>
@@ -118,7 +120,7 @@
 <ul>
 <li class=""><strong>Token cert</strong> — Certificate used to sign tokens issued by this application.</li>
 <li class=""><strong>Client cert</strong> — Certificate used to verify client identity. For mutual TLS it authenticates the client connection; for the JWT Bearer grant (RFC 7523), the public key in this certificate is used to verify the client&#x27;s JWT assertion signature.</li>
-<li class=""><strong>Failed signin limit</strong> — Number of consecutive failed sign-in attempts before the account is locked.</li>
+<li class=""><strong>Failed signin limit</strong> — Number of consecutive failed sign-in attempts before the account is locked. This limit also applies to the <code>/api/verify-code</code> OTP endpoint: too many wrong verification codes will temporarily block that user+destination combination using the same counter and freeze time.</li>
 <li class=""><strong>Failed signin frozen time</strong> — Lock duration in minutes after hitting the failed sign-in limit.</li>
 <li class=""><strong>Code resend timeout</strong> — Seconds a user must wait before requesting another verification code (default: 60; set to 0 for the global default).</li>
 <li class=""><strong>IP whitelist</strong> — Comma-separated list of allowed IP addresses or CIDR ranges. Overrides the organization-level whitelist. See <a class="" href="/zh/docs/ip-whitelist/ip-whitelist">IP allowlist</a>.</li>

@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/fr/assets/css/styles.fd29df08.css">
-<script src="/fr/assets/js/runtime~main.d48d4892.js" defer="defer"></script>
-<script src="/fr/assets/js/main.653e2b58.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.734af349.js" defer="defer"></script>
+<script src="/fr/assets/js/main.cc8a0c47.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -40,8 +40,8 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="choosing-an-image">Choosing an image<a href="#choosing-an-image" class="hash-link" aria-label="Lien direct vers Choosing an image" title="Lien direct vers Choosing an image" translate="no">​</a></h2>
 <p>Two images are available on Docker Hub:</p>
-<table><thead><tr><th>Image</th><th>Contents</th><th>Use case</th></tr></thead><tbody><tr><td><a href="https://hub.docker.com/r/casbin/casdoor-all-in-one" target="_blank" rel="noopener noreferrer" class="">casdoor-all-in-one</a></td><td>Casdoor + embedded MySQL</td><td>Quick try-out only; <strong>not for production</strong></td></tr><tr><td><a href="https://hub.docker.com/r/casbin/casdoor" target="_blank" rel="noopener noreferrer" class="">casdoor</a></td><td>Casdoor only</td><td>Connect to your own database; suitable for production</td></tr></tbody></table>
-<p><strong>casdoor-all-in-one</strong> includes the Casdoor binary, a MySQL database, and default config so Casdoor can be run with one or two commands. Use it only for testing.</p>
+<table><thead><tr><th>Image</th><th>Contents</th><th>Use case</th></tr></thead><tbody><tr><td><a href="https://hub.docker.com/r/casbin/casdoor-all-in-one" target="_blank" rel="noopener noreferrer" class="">casdoor-all-in-one</a></td><td>Casdoor + embedded SQLite</td><td>Quick try-out only; <strong>not for production</strong></td></tr><tr><td><a href="https://hub.docker.com/r/casbin/casdoor" target="_blank" rel="noopener noreferrer" class="">casdoor</a></td><td>Casdoor only</td><td>Connect to your own database; suitable for production</td></tr></tbody></table>
+<p><strong>casdoor-all-in-one</strong> includes the Casdoor binary and a file-based SQLite database with default config, so Casdoor can be run with a single command and no external dependencies. Use it only for testing.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="option-1-all-in-one-toy-database">Option 1: All-in-one (toy database)<a href="#option-1-all-in-one-toy-database" class="hash-link" aria-label="Lien direct vers Option 1: All-in-one (toy database)" title="Lien direct vers Option 1: All-in-one (toy database)" translate="no">​</a></h3>
 <p>Expose port <code>8000</code> and run the all-in-one image. It will be pulled automatically if missing.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">docker run -p 8000:8000 casbin/casdoor-all-in-one</span><br></span></code></pre></div></div>

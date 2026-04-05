@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/fr/assets/css/styles.fd29df08.css">
-<script src="/fr/assets/js/runtime~main.d48d4892.js" defer="defer"></script>
-<script src="/fr/assets/js/main.653e2b58.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.734af349.js" defer="defer"></script>
+<script src="/fr/assets/js/main.cc8a0c47.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -42,8 +42,7 @@
 <li class=""><strong>Product References</strong>: One or more products included in the order</li>
 <li class=""><strong>Product Info Snapshots</strong>: Stored details (name, display name, image, price) of products at purchase time</li>
 <li class=""><strong>User &amp; Payment</strong>: References to the buyer and associated payment</li>
-<li class=""><strong>State Management</strong>: Current state and optional status message</li>
-<li class=""><strong>Duration</strong>: Optional start and end times for time-limited purchases (e.g., 1-year cloud instance)</li>
+<li class=""><strong>State Management</strong>: Current state, optional status message, and an <strong>Update time</strong> recording when the state last changed</li>
 </ul>
 <p>Orders can include multiple products, making it possible to purchase several items in a single transaction. When the order is created, the system captures a snapshot of each product&#x27;s current information—including its display name, image, detail, and price. This snapshot preserves what was purchased even if product details change later.</p>
 <p>The total order price automatically sums up all individual product prices. For products priced in different currencies, all items in a single order must use the same currency to ensure accurate total calculation.</p>
@@ -59,7 +58,7 @@
 <li class=""><strong>Completed</strong>: Order fully fulfilled</li>
 <li class=""><strong>Expired</strong>: Order expired (for time-limited products)</li>
 </ul>
-<p>When payment providers notify Casdoor about transaction results, the system updates order states automatically. This synchronization ensures that orders always reflect the current payment status, whether the payment succeeded, failed, was cancelled, or timed out.</p>
+<p>When payment providers notify Casdoor about transaction results, the system updates order states automatically and records the transition time in <strong>Update time</strong>. This field is shown on the order detail page with a label that reflects the final state—for example, &quot;Payment time&quot; for a paid order or &quot;Cancel time&quot; for a cancelled one. This synchronization ensures that orders always reflect the current payment status, whether the payment succeeded, failed, was cancelled, or timed out.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="viewing-orders">Viewing Orders<a href="#viewing-orders" class="hash-link" aria-label="Lien direct vers Viewing Orders" title="Lien direct vers Viewing Orders" translate="no">​</a></h2>
 <p>Open the <strong>Orders</strong> page to view purchases. Regular users see only their own orders; administrators see all orders in their organization or, when the default organization is selected, across all organizations.</p>
 <p>The order list includes a <strong>Products</strong> column showing all items in each order. For orders with multiple products, each product appears as a separate line with a link to its details. The <strong>Payment</strong> column links directly to the associated payment record for tracking transaction status.</p>

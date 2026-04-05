@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/de/assets/css/styles.04c01144.css">
-<script src="/de/assets/js/runtime~main.117e3556.js" defer="defer"></script>
+<script src="/de/assets/js/runtime~main.2196818e.js" defer="defer"></script>
 <script src="/de/assets/js/main.3ce08eae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -49,7 +49,7 @@
 <li class=""><strong>Default group</strong> — Group automatically assigned to new users signing up through this application, including both direct sign-up and OAuth-based registration. Providers and invitations can override this per-signup: the effective group follows the priority <strong>invitation SignupGroup &gt; provider SignupGroup &gt; application Default group</strong>.</li>
 <li class=""><strong>Enable signup</strong> — Allow self sign-up. When off, only admins can create accounts.</li>
 <li class=""><strong>Disable signin</strong> — Disable all sign-in for this application.</li>
-<li class=""><strong>Enable guest signin</strong> — Allow unauthenticated guest access (not available for the <code>built-in</code> organization).</li>
+<li class=""><strong>Enable guest signin</strong> — Allow unauthenticated guest access by presenting <code>code=guest-user</code> to the token endpoint. Requires <strong>Enable signup</strong> to be on as well. Not available for the <code>built-in</code> organization. See <a class="" href="/de/docs/how-to-connect/guest-auth">Guest authentication</a>.</li>
 <li class=""><strong>Enable exclusive signin</strong> — Enforce one active session per user.</li>
 <li class=""><strong>Signin session</strong> — Enable persistent sign-in session across browser restarts.</li>
 <li class=""><strong>Auto signin</strong> — Automatically sign the user back in on revisit. Requires <strong>Signin session</strong> to be enabled first.</li>
@@ -63,7 +63,7 @@
 <ul>
 <li class=""><strong>Client ID</strong> — OAuth 2.0 client identifier.</li>
 <li class=""><strong>Client secret</strong> — OAuth 2.0 client secret.</li>
-<li class=""><strong>Redirect URLs</strong> — Allowed post-login redirect URIs.</li>
+<li class=""><strong>Redirect URLs</strong> — Allowed post-login redirect URIs. Matching is URL-based: scheme, port, and path must match exactly, and the host may be the configured host or any subdomain of it (e.g. configuring <code>https://example.com/callback</code> also allows <code>https://api.example.com/callback</code>). Entries that are not valid URLs are matched as anchored regular expressions.</li>
 <li class=""><strong>Forced redirect origin</strong> — When set, Casdoor forces all redirects to this origin.</li>
 <li class=""><strong>Grant types</strong> — Enabled OAuth grant types: Authorization Code, Password, Client Credentials, Token, ID Token, Refresh Token, Device Code, JWT Bearer.</li>
 <li class=""><strong>Scopes</strong> — Custom scopes for Agent-category apps (name, display name, description); exposed in OIDC discovery.</li>

@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/ja/assets/css/styles.e7eb516a.css">
-<script src="/ja/assets/js/runtime~main.a35a2829.js" defer="defer"></script>
+<script src="/ja/assets/js/runtime~main.c68d951f.js" defer="defer"></script>
 <script src="/ja/assets/js/main.57f216f6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -78,6 +78,7 @@
 <li class=""><code>LastSigninIp</code>: The IP address from the user&#x27;s last sign-in</li>
 <li class=""><code>Roles</code>: An array of the user&#x27;s roles (extended field, read-only via User API)</li>
 <li class=""><code>Permissions</code>: An array of the user&#x27;s permissions (extended field, read-only via User API)</li>
+<li class=""><code>OriginalRefreshToken</code>: The refresh token returned by the OAuth provider during the last social login. Stored for use cases that require calling the provider&#x27;s API on behalf of the user. This field is masked as <code>***</code> in all API responses for security.</li>
 </ul>
 <p>ソーシャルプラットフォームログインのための一意のID：</p>
 <ul>
@@ -146,7 +147,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="roles-and-permissions-extended-fields">Roles and permissions (extended fields)<a href="#roles-and-permissions-extended-fields" class="hash-link" aria-label="Roles and permissions (extended fields)への直接リンク" title="Roles and permissions (extended fields)への直接リンク" translate="no">​</a></h2>
 <p>The <code>Roles</code> and <code>Permissions</code> fields on the User object are <strong>extended</strong>: they are filled when user data is fetched, not stored on the User table. They are built from the Roles and Permissions resources via <code>ExtendUserWithRolesAndPermissions()</code>.</p>
 <p><strong>Important:</strong> You cannot change roles or permissions with <code>/api/update-user</code> (including via the <code>columns</code> parameter). Use the <a class="" href="/ja/docs/user/roles#managing-roles">Roles</a> and <a class="" href="/ja/docs/user/permissions#managing-permissions">Permissions</a> APIs and their management pages (e.g. <strong>Roles</strong> and <strong>Permissions</strong> in the sidebar) to assign and manage them.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-the-properties-field">Using the Properties field<a href="#using-the-properties-field" class="hash-link" aria-label="Using the Properties field への直接リンク" title="Using the Properties fieldへの直接リンク" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-the-properties-field">Using the Properties field<a href="#using-the-properties-field" class="hash-link" aria-label="Using the Properties fieldへの直接リンク" title="Using the Properties fieldへの直接リンク" translate="no">​</a></h2>
 <p>The <code>Properties</code> field is a key-value map (<code>map[string]string</code>) for custom user attributes not covered by the built-in schema. Use it to:</p>
 <ul>
 <li class="">Store organization-specific user attributes</li>

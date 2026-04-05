@@ -71,16 +71,16 @@
         </item>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://casdoor.github.io/zh/blog/welcome</link>
-            <guid>https://casdoor.github.io/zh/blog/welcome</guid>
+            <link>https://casdoor.github.io/zh/blog/欢迎</link>
+            <guid>https://casdoor.github.io/zh/blog/欢迎</guid>
             <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to Casdoor official website!👋]]></description>
             <content:encoded><![CDATA[<p>Welcome to Casdoor official website!👋</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-casdoor">What is Casdoor?<a href="https://casdoor.github.io/zh/blog/welcome#what-is-casdoor" class="hash-link" aria-label="直接链接到 What is Casdoor?" title="直接链接到 What is Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-casdoor">What is Casdoor?<a href="https://casdoor.github.io/zh/blog/%E6%AC%A2%E8%BF%8E#what-is-casdoor" class="hash-link" aria-label="直接链接到 What is Casdoor?" title="直接链接到 What is Casdoor?" translate="no">​</a></h2>
 <p>Casdoor is a UI-first <a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer" class="">Identity Access Management (IAM)</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer" class="">Single-Sign-On (SSO)</a> platform based on OAuth 2.0, OIDC, SAML and CAS.</p>
 <p>Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> using Golang and React.</p>
 <p>Casdoor aims at providing a powerful authentication platform to handle the user management.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-use-casdoor">Why use Casdoor?<a href="https://casdoor.github.io/zh/blog/welcome#why-use-casdoor" class="hash-link" aria-label="直接链接到 Why use Casdoor?" title="直接链接到 Why use Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-use-casdoor">Why use Casdoor?<a href="https://casdoor.github.io/zh/blog/%E6%AC%A2%E8%BF%8E#why-use-casdoor" class="hash-link" aria-label="直接链接到 Why use Casdoor?" title="直接链接到 Why use Casdoor?" translate="no">​</a></h2>
 <ul>
 <li class="">
 <p>⚡️ Powerful feature and simple config. With support for  <img src="https://cdn.casbin.org/img/social_google.png" width="30"> <img src="https://cdn.casbin.org/img/social_github.png" width="30"> <img src="https://cdn.casbin.org/img/social_facebook.png" width="30"> <img src="https://cdn.casbin.org/img/social_twitter.png" width="30"> <img src="https://cdn.casbin.org/img/social_linkedin.png" width="30"> <img src="https://cdn.casbin.org/img/social_weibo.png" width="30"> <img src="https://cdn.casbin.org/img/social_wechat.png" width="30"> <img src="https://cdn.casbin.org/img/social_qq.png" width="30"> <img src="https://cdn.casbin.org/img/social_dingtalk.png" width="30">   <img src="https://cdn.casbin.org/img/social_gitee.png" width="30">  <img src="https://cdn.casbin.org/img/social_wecom.png" width="30"><img src="https://cdn.casbin.org/img/social_gitlab.png" width="30"> sign in and traditional username/password sign in, Casdoor helps you implement your users management system just in a few steps.</p>
@@ -95,11 +95,11 @@
 <p>🌐 Multi-language support. Casdoor supports multiple languages, including Chinese, English, French, and many more.</p>
 </li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-use-casdoor">How to use Casdoor?<a href="https://casdoor.github.io/zh/blog/welcome#how-to-use-casdoor" class="hash-link" aria-label="直接链接到 How to use Casdoor?" title="直接链接到 How to use Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-use-casdoor">How to use Casdoor?<a href="https://casdoor.github.io/zh/blog/%E6%AC%A2%E8%BF%8E#how-to-use-casdoor" class="hash-link" aria-label="直接链接到 How to use Casdoor?" title="直接链接到 How to use Casdoor?" translate="no">​</a></h2>
 <p>You can follow the detailed document to learn about <a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a> and <a class="" href="https://casdoor.github.io/zh/docs/basic/server-installation">setup your own Casdoor</a>. Or use the <a class="" href="https://casdoor.github.io/zh/docs/how-to-connect/sdk">Casdoor SDKs</a> to implement your own application.</p>]]></content:encoded>
             <category>Casdoor</category>
             <category>SSO</category>
-            <category>Authentication</category>
+            <category>身份验证</category>
             <category>OAuth2.0</category>
             <category>Casbin</category>
         </item>

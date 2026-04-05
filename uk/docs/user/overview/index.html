@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/uk/assets/css/styles.2fc7b1b8.css">
-<script src="/uk/assets/js/runtime~main.8b56795e.js" defer="defer"></script>
+<script src="/uk/assets/js/runtime~main.86381b0a.js" defer="defer"></script>
 <script src="/uk/assets/js/main.1afab83c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -78,6 +78,7 @@
 <li class=""><code>LastSigninIp</code>: The IP address from the user&#x27;s last sign-in</li>
 <li class=""><code>Roles</code>: An array of the user&#x27;s roles (extended field, read-only via User API)</li>
 <li class=""><code>Permissions</code>: An array of the user&#x27;s permissions (extended field, read-only via User API)</li>
+<li class=""><code>OriginalRefreshToken</code>: The refresh token returned by the OAuth provider during the last social login. Stored for use cases that require calling the provider&#x27;s API on behalf of the user. This field is masked as <code>***</code> in all API responses for security.</li>
 </ul>
 <p>Унікальні ідентифікатори для входу через соціальні платформи:</p>
 <ul>
@@ -143,7 +144,7 @@
 <li class="">User login and authentication</li>
 <li class="">Email duplicate checking</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="roles-and-permissions-extended-fields">Roles and permissions (extended fields)<a href="#roles-and-permissions-extended-fields" class="hash-link" aria-label="Пряме посилання на Roles and permissions (extended fields)" title="Пряме посилання на Roles and permissions (extended fields)" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="roles-and-permissions-extended-fields">Roles and permissions (extended fields)<a href="#roles-and-permissions-extended-fields" class="hash-link" aria-label="Пряме посилання на Roles and permissions (extended fields)" title="Пряме посила ння на Roles and permissions (extended fields)" translate="no">​</a></h2>
 <p>The <code>Roles</code> and <code>Permissions</code> fields on the User object are <strong>extended</strong>: they are filled when user data is fetched, not stored on the User table. They are built from the Roles and Permissions resources via <code>ExtendUserWithRolesAndPermissions()</code>.</p>
 <p><strong>Important:</strong> You cannot change roles or permissions with <code>/api/update-user</code> (including via the <code>columns</code> parameter). Use the <a class="" href="/uk/docs/user/roles#managing-roles">Roles</a> and <a class="" href="/uk/docs/user/permissions#managing-permissions">Permissions</a> APIs and their management pages (e.g. <strong>Roles</strong> and <strong>Permissions</strong> in the sidebar) to assign and manage them.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-the-properties-field">Using the Properties field<a href="#using-the-properties-field" class="hash-link" aria-label="Пряме посилання на Using the Properties field" title="Пряме посилання на Using the Properties field" translate="no">​</a></h2>

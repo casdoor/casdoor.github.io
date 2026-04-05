@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.5a091a05.css">
-<script src="/zh/assets/js/runtime~main.f59c7280.js" defer="defer"></script>
-<script src="/zh/assets/js/main.f363583b.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.63f2f13e.js" defer="defer"></script>
+<script src="/zh/assets/js/main.2e8c547e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -78,8 +78,9 @@
 <li class=""><code>LastSigninIp</code>: The IP address from the user&#x27;s last sign-in</li>
 <li class=""><code>Roles</code>: An array of the user&#x27;s roles (extended field, read-only via User API)</li>
 <li class=""><code>Permissions</code>: An array of the user&#x27;s permissions (extended field, read-only via User API)</li>
+<li class=""><code>OriginalRefreshToken</code>: The refresh token returned by the OAuth provider during the last social login. Stored for use cases that require calling the provider&#x27;s API on behalf of the user. This field is masked as <code>***</code> in all API responses for security.</li>
 </ul>
-<p>社交平台登录的 唯一ID：</p>
+<p>社交平台登录的唯一ID：</p>
 <ul>
 <li class=""><code>Github</code>: User&#x27;s unique identifier from GitHub OAuth login</li>
 <li class=""><code>Google</code>: User&#x27;s unique identifier from Google OAuth login</li>
@@ -153,7 +154,7 @@
 <li class="">Add custom metadata that doesn&#x27;t fit into standard fields</li>
 <li class="">Extend user profiles without modifying the core schema</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="importing-users-from-xlsx">Importing users from XLSX<a href="#importing-users-from-xlsx" class="hash-link" aria-label="直接链接到 Importing users from XLSX" title="直接链接到 Importing users from XLSX" translate="no"> ​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="importing-users-from-xlsx">Importing users from XLSX<a href="#importing-users-from-xlsx" class="hash-link" aria-label="直接链接到 Importing users from XLSX" title="直接链接到 Importing users from XLSX" translate="no">​</a></h2>
 <p>Add or update users by uploading an XLSX file.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting started<a href="#getting-started" class="hash-link" aria-label="直接链接到 Getting started" title="直接链接到 Getting started" translate="no">​</a></h3>
 <p>On the <strong>Users</strong> page in the admin console you’ll see:</p>

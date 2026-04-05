@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/fr/assets/css/styles.fd29df08.css">
-<script src="/fr/assets/js/runtime~main.18167189.js" defer="defer"></script>
+<script src="/fr/assets/js/runtime~main.f3913102.js" defer="defer"></script>
 <script src="/fr/assets/js/main.a2e0148d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -78,6 +78,7 @@
 <li class=""><code>LastSigninIp</code>: The IP address from the user&#x27;s last sign-in</li>
 <li class=""><code>Roles</code>: An array of the user&#x27;s roles (extended field, read-only via User API)</li>
 <li class=""><code>Permissions</code>: An array of the user&#x27;s permissions (extended field, read-only via User API)</li>
+<li class=""><code>OriginalRefreshToken</code>: The refresh token returned by the OAuth provider during the last social login. Stored for use cases that require calling the provider&#x27;s API on behalf of the user. This field is masked as <code>***</code> in all API responses for security.</li>
 </ul>
 <p>Identifiants uniques pour les connexions aux plateformes sociales :</p>
 <ul>
@@ -135,7 +136,7 @@
 <li class="">A verification badge appears on the user&#x27;s profile</li>
 </ul>
 <p>This feature is useful for applications that require KYC (Know Your Customer) compliance or need to ensure user identity authenticity. See <a class="" href="/fr/docs/provider/idv/overview">ID Verification Providers</a> for more information on configuring identity verification.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-normalization">Email normalization<a href="#email-normalization" class="hash-link" aria-label="Lien direct vers Email normalization" title="Lien direct vers Email normalization" translate="no">  ​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-normalization">Email normalization<a href="#email-normalization" class="hash-link" aria-label="Lien direct vers Email normalization" title="Lien direct vers Email normalization" translate="no">​</a></h2>
 <p>Casdoor normalizes all email addresses to lowercase for uniqueness and to avoid duplicate accounts. This means that <code>user@example.com</code>, <code>User@Example.com</code>, and <code>USER@EXAMPLE.COM</code> are treated as the same email address, complying with RFC 5321 standards.</p>
 <p>This normalization happens automatically during:</p>
 <ul>

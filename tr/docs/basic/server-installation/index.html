@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/tr/assets/css/styles.a332d643.css">
-<script src="/tr/assets/js/runtime~main.637dee46.js" defer="defer"></script>
+<script src="/tr/assets/js/runtime~main.47ec7bcf.js" defer="defer"></script>
 <script src="/tr/assets/js/main.c981e429.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -93,6 +93,9 @@
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">go build</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">./casdoor</span><br></span></code></pre></div></div>
 <p>For Windows:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">go build</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">casdoor.exe</span><br></span></code></pre></div></div>
+<p>To load a config file from a non-default path, pass the <code>--config</code> flag:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">./casdoor --config /etc/casdoor/app.conf</span><br></span></code></pre></div></div>
+<p>The <code>--config</code> flag accepts an absolute or relative path and fully replaces the default <code>conf/app.conf</code> lookup.</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="frontend">Frontend<a href="#frontend" class="hash-link" aria-label="Frontend doğrudan bağlantı" title="Frontend doğrudan bağlantı" translate="no">​</a></h4>
 <p>Build static assets:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">cd web</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">yarn install</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">yarn build</span><br></span></code></pre></div></div>

@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.5a091a05.css">
-<script src="/zh/assets/js/runtime~main.c856147a.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.82badcb1.js" defer="defer"></script>
 <script src="/zh/assets/js/main.bff8fc8c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -78,7 +78,8 @@
 <li class=""><code>LastSigninIp</code>: The IP address from the user&#x27;s last sign-in</li>
 <li class=""><code>Roles</code>: An array of the user&#x27;s roles (extended field, read-only via User API)</li>
 <li class=""><code>Permissions</code>: An array of the user&#x27;s permissions (extended field, read-only via User API)</li>
-<li class=""><code>OriginalRefreshToken</code>: The refresh token returned by the OAuth provider during the last social login. Stored for use cases that require calling the provider&#x27;s API on behalf of the user. This field is masked as <code>***</code> in all API responses for security.</li>
+<li class=""><code>OriginalRefreshToken</code>: The refresh token from the most recent social login (legacy single-provider field, kept for backward compatibility). Masked as <code>***</code> in API responses.</li>
+<li class=""><code>Properties[&quot;oauth_&lt;ProviderType&gt;_accessToken&quot;]</code> / <code>Properties[&quot;oauth_&lt;ProviderType&gt;_refreshToken&quot;]</code>: Per-provider OAuth tokens stored in the <code>Properties</code> map. When a user signs in via multiple OAuth providers, each provider&#x27;s tokens are stored independently under its own key (e.g. <code>oauth_GitHub_accessToken</code>). Both fields are masked as <code>***</code> in API responses.</li>
 <li class=""><code>Addresses</code>: A list of structured address entries. Each address has a <strong>Tag</strong> (Home, Work, Other), <strong>Line 1</strong>, <strong>Line 2</strong>, <strong>City</strong>, <strong>State</strong>, <strong>Zip code</strong>, and <strong>Region</strong>. Users can manage their addresses from the account profile page.</li>
 </ul>
 <p>社交平台登录的唯一ID：</p>

@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/tr/assets/css/styles.a332d643.css">
-<script src="/tr/assets/js/runtime~main.83dca17a.js" defer="defer"></script>
+<script src="/tr/assets/js/runtime~main.019884bc.js" defer="defer"></script>
 <script src="/tr/assets/js/main.c6971ed7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,7 +29,8 @@
 <p>A single payment can include multiple products. The payment record lists each product by name and stores a combined display name. On the payment detail page, the <strong>Products</strong> column shows each product as a line item with links to product details. Use <strong>View Order</strong> to open the related order; after payment you can go to the order or back to the order list.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="payment-states-and-notifications">Payment States and Notifications<a href="#payment-states-and-notifications" class="hash-link" aria-label="Payment States and Notifications doğrudan bağlantı" title="Payment States and Notifications doğrudan bağlantı" translate="no">​</a></h2>
 <p>Payments progress through several states during processing. When payment providers send notifications about completed transactions, Casdoor updates both the payment and its related order atomically to keep them synchronized.</p>
-<p>The system prevents duplicate processing by checking whether a payment has already reached a terminal state (Paid, Error, Canceled, or Timeout) before applying updates. This ensures that even if a payment provider sends multiple notifications, your data remains accurate.</p>
+<p>The system prevents duplicate processing by checking whether a payment has already reached a terminal state (Paid, Error, Canceled, or Timeout) before applying updates. If a provider sends the same notification more than once with no state change, the update is skipped entirely—no duplicate webhook events are emitted and the database record is not touched again. This ensures that even if a payment provider sends multiple notifications, your data and downstream integrations remain consistent.</p>
+<p>The <code>notify-payment</code> webhook event includes the full payment response data from the provider callback, so your webhook handler has access to the payment status at the time of notification.</p>
 <p>For transactions with external payment providers, Casdoor creates transaction records only after receiving successful payment notifications. This approach guarantees that transactions reflect actual payments rather than just payment attempts. Balance-based payments work differently—they create transactions immediately since the balance check confirms payment success upfront.</p>
 <p>Transaction records are automatically linked to the user&#x27;s signup application, providing clear audit trails across your organization.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="invoice">Invoice<a href="#invoice" class="hash-link" aria-label="Invoice doğrudan bağlantı" title="Invoice doğrudan bağlantı" translate="no">​</a></h2>

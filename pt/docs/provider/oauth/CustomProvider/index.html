@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/pt/assets/css/styles.37dffe9e.css">
-<script src="/pt/assets/js/runtime~main.c74b005c.js" defer="defer"></script>
+<script src="/pt/assets/js/runtime~main.236eb6b9.js" defer="defer"></script>
 <script src="/pt/assets/js/main.34cfdfca.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -44,7 +44,7 @@
 <p><strong>Scope</strong> — Scope string sent to the Auth URL (per your IdP’s docs).</p>
 </li>
 <li class="">
-<p><strong>Enable PKCE</strong> — When on, Casdoor sends <code>code_challenge</code>/<code>code_challenge_method=S256</code> in the auth request and <code>code_verifier</code> in the token request. Enable if your IdP requires or supports PKCE.</p>
+<p><strong>Enable PKCE</strong> — When on, Casdoor generates a fresh cryptographically random code verifier for each login attempt, computes the S256 challenge from it, and appends <code>code_challenge</code>/<code>code_challenge_method=S256</code> to the auth request. The verifier is stored in <code>localStorage</code> keyed by the OAuth state and automatically cleared after use. The <code>code_verifier</code> is included in the token exchange request, as required by <a href="https://datatracker.ietf.org/doc/html/rfc7636" target="_blank" rel="noopener noreferrer" class="">RFC 7636</a>. Enable this if your IdP requires or supports PKCE.</p>
 </li>
 <li class="">
 <p><strong>Token URL</strong> — Token endpoint. Casdoor calls it with the code to get an access token. Example:</p>

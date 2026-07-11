@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/pl/assets/css/styles.9a2631c3.css">
-<script src="/pl/assets/js/runtime~main.1afd909f.js" defer="defer"></script>
+<script src="/pl/assets/js/runtime~main.621a43ea.js" defer="defer"></script>
 <script src="/pl/assets/js/main.9ea0880d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -85,7 +85,7 @@
 
 
 <table><thead><tr><th>Column</th><th>Values</th><th>Description</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>—</td><td>Name of the signup item.</td></tr><tr><td><strong>Visible</strong></td><td><code>True</code> / <code>False</code></td><td>Show or hide on the registration page.</td></tr><tr><td><strong>Required</strong></td><td><code>True</code> / <code>False</code></td><td>Whether the field is mandatory.</td></tr><tr><td><strong>Prompted</strong></td><td><code>True</code> / <code>False</code></td><td>Whether to prompt the user if they leave it empty.</td></tr><tr><td><strong>Regex</strong></td><td>—</td><td>Optional regex for client-side validation.</td></tr><tr><td><strong>Label</strong></td><td>—</td><td>For items starting with <code>Text</code>, use HTML for the field; otherwise replaces the item label.</td></tr><tr><td><strong>Custom CSS</strong></td><td>—</td><td>CSS for this signup item.</td></tr><tr><td><strong>Rule</strong></td><td>Rule items</td><td>Rule that customizes this item (see table below).</td></tr><tr><td><strong>Action</strong></td><td>—</td><td>Move up, move down, or delete.</td></tr></tbody></table>
-<p>Items that support <strong>rules</strong>: ID, Display name, Email, Agreement.</p>
+<p>Items that support <strong>rules</strong>: ID, Display name, Email, Agreement, Languages.</p>
 
 
 
@@ -116,7 +116,12 @@
 
 
 
-<table><thead><tr><th>Item</th><th>Rules</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td><code>Random</code> / <code>Incremental</code></td><td>User ID generation: random or incremental.</td></tr><tr><td><strong>Display name</strong></td><td><code>None</code> / <code>Real name</code> / <code>First, last</code></td><td>How to show the display name; <code>First, last</code> shows first and last name separately.</td></tr><tr><td><strong>Email</strong></td><td><code>Normal</code> / <code>No verification</code></td><td><code>Normal</code> = require email verification; <code>No verification</code> = skip verification.</td></tr><tr><td><strong>Agreement</strong></td><td><code>None</code> / <code>Signin</code> / <code>Signin (Default True)</code></td><td>Terms of use: none, require confirmation, or default to confirmed.</td></tr></tbody></table>
+
+
+
+
+
+<table><thead><tr><th>Item</th><th>Rules</th><th>Description</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td><code>Random</code> / <code>Incremental</code></td><td>User ID generation: random or incremental.</td></tr><tr><td><strong>Display name</strong></td><td><code>None</code> / <code>Real name</code> / <code>First, last</code></td><td>How to show the display name; <code>First, last</code> shows first and last name separately.</td></tr><tr><td><strong>Email</strong></td><td><code>Normal</code> / <code>No verification</code></td><td><code>Normal</code> = require email verification; <code>No verification</code> = skip verification.</td></tr><tr><td><strong>Agreement</strong></td><td><code>None</code> / <code>Signin</code> / <code>Signin (Default True)</code></td><td>Terms of use: none, require confirmation, or default to confirmed.</td></tr><tr><td><strong>Languages</strong></td><td><code>None</code> / <code>Label</code></td><td>Adds a language selector to the sign-up page. <code>None</code> = show the selector on its own; <code>Label</code> = show it with a text label.</td></tr></tbody></table>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>notatka</div><div class="admonitionContent_BuS1"><p>Example: to show an email field without verification, add the Email signup item and set its rule to <strong>No verification</strong>.</p></div></div>
 <p><img decoding="async" loading="lazy" alt="Signup Items Table" src="/pl/assets/images/signup-items-table-demo-config-4a4462562df2108e9ac2f27bd550a445.png" width="3670" height="444" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" alt="Signup Items Table" src="/pl/assets/images/signup-items-table-demo-page-05e988d4aa24f370255fc5efc0cccdb9.png" width="1490" height="1023" class="img_ev3q"></p>

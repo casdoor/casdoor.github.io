@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.75222a58.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.1b040053.js" defer="defer"></script>
 <script src="/zh/assets/js/main.9257783a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -87,7 +87,7 @@
 
 
 <table><thead><tr><th>列</th><th>值</th><th>描述</th></tr></thead><tbody><tr><td><strong>名称</strong></td><td>—</td><td>注册项的名称。</td></tr><tr><td><strong>可见</strong></td><td><code>True</code> / <code>False</code></td><td>在注册页面上显示或隐藏。</td></tr><tr><td><strong>必填</strong></td><td><code>True</code> / <code>False</code></td><td>该字段是否为必填。</td></tr><tr><td><strong>提示</strong></td><td><code>True</code> / <code>False</code></td><td>如果用户将其留空，是否提示用户。</td></tr><tr><td><strong>正则表达式</strong></td><td>—</td><td>用于客户端验证的可选正则表达式。</td></tr><tr><td><strong>标签</strong></td><td>—</td><td>对于以<code>文本</code>开头的项目，对该字段使用 HTML；否则替换项目标签。</td></tr><tr><td><strong>自定义 CSS</strong></td><td>—</td><td>此注册项的CSS。</td></tr><tr><td><strong>规则</strong></td><td>规则项目</td><td>自定义此项目的规则（请参阅下表）。</td></tr><tr><td><strong>操作</strong></td><td>—</td><td>向上移动、向下移动或删除。</td></tr></tbody></table>
-<p>支持<strong>规则</strong>的项目：ID、显示名称、电子邮件、协议。</p>
+<p>Items that support <strong>rules</strong>: ID, Display name, Email, Agreement, Languages.</p>
 
 
 
@@ -118,7 +118,12 @@
 
 
 
-<table><thead><tr><th>项目</th><th>规则</th><th>描述</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td><code>Random</code> / <code>Incremental</code></td><td>用户ID生成：随机或递增。</td></tr><tr><td><strong>显示名称</strong></td><td><code>无</code> / <code>真实姓名</code> / <code>名，姓</code></td><td>如何显示显示名称；<code>名、姓</code>分别显示名和姓。</td></tr><tr><td><strong>电子邮件</strong></td><td><code>正常</code> / <code>无需验证</code></td><td><code>正常</code>= 需要邮箱验证；<code>无需验证</code>= 跳过验证。</td></tr><tr><td><strong>协议</strong></td><td><code>无</code> / <code>登录</code> / <code>登录（默认为真）</code></td><td>使用条款：无、需确认或默认已确认。</td></tr></tbody></table>
+
+
+
+
+
+<table><thead><tr><th>项目</th><th>规则</th><th>描述</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td><code>Random</code> / <code>Incremental</code></td><td>用户ID生成：随机或递增。</td></tr><tr><td><strong>显示名称</strong></td><td><code>无</code> / <code>真实姓名</code> / <code>名，姓</code></td><td>如何显示显示名称；<code>名、姓</code>分别显示名和姓。</td></tr><tr><td><strong>电子邮件</strong></td><td><code>正常</code> / <code>无需验证</code></td><td><code>正常</code>= 需要邮箱验证；<code>无需验证</code>= 跳过验证。</td></tr><tr><td><strong>协  议</strong></td><td><code>无</code> / <code>登录</code> / <code>登录（默认为真）</code></td><td>使用条款：无、需确认或默认已确认。</td></tr><tr><td><strong>Languages</strong></td><td><code>None</code> / <code>Label</code></td><td>Adds a language selector to the sign-up page. <code>None</code> = show the selector on its own; <code>Label</code> = show it with a text label.</td></tr></tbody></table>
 <p>:::注意
 示例：要显示一个无需验证的电子邮件字段，请添加“电子邮件注册”项目，并将其规则设置为<strong>无验证</strong>。
 :::</p>

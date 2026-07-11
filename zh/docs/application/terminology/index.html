@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.1b040053.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.01fba7fd.js" defer="defer"></script>
 <script src="/zh/assets/js/main.9257783a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -47,6 +47,7 @@
 <ul>
 <li class=""><strong>Cookie 过期</strong>— 会话 Cookie 的有效期，单位为小时（默认：720）。 不含 &quot;Remember me&quot;, 该会话是 capped 在 24 h regardless。</li>
 <li class=""><strong>默认组</strong>— 自动分配给通过此应用程序注册的新用户的组，包括直接注册和基于OAuth的注册。 提供商和邀请可覆盖此每注册设置：生效的组遵循优先级<strong>邀请 SignupGroup&gt;提供商 SignupGroup&gt;应用默认组</strong>。</li>
+<li class=""><strong>Default tag</strong> — Tag automatically assigned to new users who sign up through this application.</li>
 <li class=""><strong>启用注册</strong> — 允许 self 注册。 当关闭, 仅 admins 可创建 accounts。</li>
 <li class=""><strong>禁用登录</strong> — 禁用 all 符号-在用于此应用程序。</li>
 <li class=""><strong>启用 guest 登录</strong> — 允许 unauthenticated guest access 按呈现 <code>代码=guest-用户</code> 以该令牌端点。 需要 <strong>启用注册</strong> 以被开启作为 well。 不适用于<code>内置</code>组织。 请参阅<a class="" href="/zh/docs/how-to-connect/guest-auth">访客身份验证</a>。</li>
@@ -63,7 +64,7 @@
 <ul>
 <li class=""><strong>客户端 ID</strong> — OAuth 2.0 客户端 identifier。</li>
 <li class=""><strong>客户端密钥</strong> — OAuth 2.0 客户端密钥。</li>
-<li class=""><strong>Redirect URLs</strong> — 已允许 post-登录 redirect URIs。 匹配基于 URL：方案、端口和路径必须完全匹配，主机可以是配置的主机，也可以是该主机的任何子域名（例如，配置<code>https://example.com/callback</code>也允许<code>https://api.example.com/callback</code>)。 无效的 URL 条目将作为锚定正则表达 式进行匹配。</li>
+<li class=""><strong>Redirect URLs</strong> — 已允许 post-登录 redirect URIs。 匹配基于 URL：方案、端口和路径必须完全匹配，主机可以是配置的主机，也可以是该主机的任何子域名（例如，配置<code>https://example.com/callback</code>也允许<code>https://api.example.com/callback</code>)。 无效的 URL 条目将作为锚定正则表达式进行匹配。</li>
 <li class=""><strong>强制重定向来源</strong>— 设置后，Casdoor会强制所有重定向至该来源。</li>
 <li class=""><strong>Grant types</strong> — Enabled OAuth grant types: Authorization Code, Password, Client Credentials, Token, ID Token, Refresh Token, Device Code, Token Exchange, JWT Bearer.</li>
 <li class=""><strong>作用域</strong>— 适用于代理类别应用的自定义作用域（名称、显示名称、描述）；在OIDC发现中公开。</li>
@@ -95,7 +96,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="提供商">提供商<a href="#提供商" class="hash-link" aria-label="直接链接到 提供商" title="直接链接到 提供商" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>提供商</strong>— 适用于此应用的 OAuth、电子邮件、短信、存储及其他提供商。 控制可 用的登录方式和集成。</li>
+<li class=""><strong>提供商</strong>— 适用于此应用的 OAuth、电子邮件、短信、存储及其他提供商。 控制可用的登录方式和集成。</li>
 </ul>
 <p>提供商表中的每个 OAuth / Web3 / SAML 提供商条目都具有额外的特定于提供商的设置：</p>
 
@@ -158,7 +159,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="安全">安全<a href="#安全" class="hash-link" aria-label="直接链接到 安全" title="直接链接到 安全" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>令牌证书</strong>— 用于签署此应用程序颁发的令牌的证书。</li>
-<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT断言的签名。</li>
+<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证  书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT断言的签名。</li>
 <li class=""><strong>登录失败次数限制</strong>— 账户被锁定前连续登录失败的次数。 此限制同样适用于/api/verify-codeOTP端点：过多的错误验证码将暂时阻止使用相同计数器和冻结时间的用户+目的地组合。</li>
 <li class=""><strong>失败登录冻结时间</strong>— 达到失败登录次数限制后的锁定时长，单位：分钟。</li>
 <li class=""><strong>代码重发超时</strong>— 用户在请求另一张验证码前必须等待的秒数（默认：60；设为0以采用全局默认值）。</li>

@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.1b040053.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.01fba7fd.js" defer="defer"></script>
 <script src="/zh/assets/js/main.9257783a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -82,6 +82,7 @@
 <p><img decoding="async" loading="lazy" alt="LDAP_field" src="/zh/assets/images/ldap_field-8aa1db64d07df1ebff4671a15b4fc6bf.gif" width="2100" height="1080" class="img_ev3q"></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="syncing-users">Syncing users<a href="#syncing-users" class="hash-link" aria-label="直接链接到 Syncing users" title="直接链接到 Syncing users" translate="no">​</a></h2>
 <p>The sync table lists users under the configured base DN. Already-synced users are shown with the checkbox disabled. Select users and sync to import them into the organization.</p>
+<p>Syncing is not restricted to global admins: an administrator of the organization can also list and sync that organization&#x27;s LDAP users. Editing the LDAP server settings above still requires a global admin.</p>
 <p><img decoding="async" loading="lazy" alt="ldap_sync" src="/zh/assets/images/ldap_sync-1e63b8aedf505ce5a3cbb2b0e24f8c4f.png" width="1783" height="727" class="img_ev3q"></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="group-and-ou-sync">Group and OU sync<a href="#group-and-ou-sync" class="hash-link" aria-label="直接链接到 Group and OU sync" title="直接链接到 Group and OU sync" translate="no">​</a></h2>
 <p>When <strong>Enable groups</strong> is turned on, Casdoor queries the LDAP directory for group objects before syncing users. It searches the base DN for entries with any of the following object classes: <code>groupOfNames</code>, <code>groupOfUniqueNames</code>, <code>posixGroup</code>, and (for Active Directory) <code>group</code>. Each matching entry is created as a Casdoor group. Users are then assigned to the groups their <code>memberOf</code> attribute lists.</p>

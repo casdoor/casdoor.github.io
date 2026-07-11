@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/assets/css/styles.c115ec2a.css">
-<script src="/assets/js/runtime~main.1338bc4f.js" defer="defer"></script>
-<script src="/assets/js/main.22b0f006.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8f1f416d.js" defer="defer"></script>
+<script src="/assets/js/main.da7ce2ff.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -87,6 +87,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="group-and-ou-sync">Group and OU sync<a href="#group-and-ou-sync" class="hash-link" aria-label="Direct link to Group and OU sync" title="Direct link to Group and OU sync" translate="no">​</a></h2>
 <p>When <strong>Enable groups</strong> is turned on, Casdoor queries the LDAP directory for group objects before syncing users. It searches the base DN for entries with any of the following object classes: <code>groupOfNames</code>, <code>groupOfUniqueNames</code>, <code>posixGroup</code>, and (for Active Directory) <code>group</code>. Each matching entry is created as a Casdoor group. Users are then assigned to the groups their <code>memberOf</code> attribute lists.</p>
 <p>Group sync runs before user sync in each auto-sync cycle so that groups exist before user membership is evaluated. If a group lookup fails, the error is logged and the rest of the sync continues.</p>
+<p>Syncing a user adds them to their LDAP groups without removing groups they already belong to that are not managed by LDAP, so manually assigned groups are preserved.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ldap-server-attribute-filtering">LDAP server attribute filtering<a href="#ldap-server-attribute-filtering" class="hash-link" aria-label="Direct link to LDAP server attribute filtering" title="Direct link to LDAP server attribute filtering" translate="no">​</a></h2>
 <p>By default, Casdoor&#x27;s built-in LDAP server exposes all standard attributes for each user entry. You can restrict which attributes are returned by setting <strong>LDAP attributes</strong> on the organization edit page.</p>
 <p>When the list is non-empty, only the selected attributes are included in search result entries. The available attributes are:</p>

@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/pt/assets/css/styles.3bc3203e.css">
-<script src="/pt/assets/js/runtime~main.d564062c.js" defer="defer"></script>
+<script src="/pt/assets/js/runtime~main.15678def.js" defer="defer"></script>
 <script src="/pt/assets/js/main.5f3bd051.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -60,7 +60,13 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-model">Security Model<a href="#security-model" class="hash-link" aria-label="Link direto para Security Model" title="Link direto para Security Model" translate="no">​</a></h2>
 <p>The registration endpoint itself requires no authentication—this is by design for public clients like mobile apps and desktop tools that can&#x27;t securely store credentials before registration. To keep that unauthenticated surface from being exposed by accident, DCR is <strong>disabled by default</strong> and must be turned on per organization (see <a href="#controlling-dcr-per-organization" class="">Controlling DCR Per Organization</a>).</p>
 <p>Applications created through DCR belong to the organization&#x27;s admin account and appear in your application list with a <code>dcr</code> tag. This tag is not just a label: DCR-registered applications run under a restricted <code>app-dcr</code> role and can only reach the OAuth/OIDC endpoints they need for the login flow (<code>/api/login/oauth/*</code>, <code>/api/get-oauth-token</code>, <code>/api/userinfo</code>, <code>/api/get-application</code>). They cannot use the client credentials to call other management APIs, which limits the blast radius of a self-registered client.</p>
-<p>So that end users can actually sign in to a self-registered app, DCR-registered applications have password sign-in enabled and inherit the OAuth/OIDC providers and sign-in methods of the organization&#x27;s default application.</p>
+<p>So that end users can actually sign in to a self-registered app, DCR-registered applications have password sign-in enabled and inherit a set of fields from the organization&#x27;s default application:</p>
+<ul>
+<li class=""><strong>Providers and sign-in methods</strong> — so there is at least one working sign-in method out of the box.</li>
+<li class=""><strong>Branding</strong> — the logo (only when the request omits <code>logo_uri</code>), theme, footer HTML, and form CSS, so the login page matches the rest of the organization.</li>
+<li class=""><strong>Sign-in items</strong> — the same sign-in form layout as the default application.</li>
+<li class=""><strong><code>EnableSigninSession</code> and <code>EnableWebAuthn</code></strong> — the default application&#x27;s session and WebAuthn settings.</li>
+</ul>
 <p>Client secrets never expire by default, but you can revoke any application through the admin interface at any time. For production deployments, consider whether your organization actually needs unauthenticated registration. Many scenarios work fine with manual app creation, and leaving DCR disabled removes a potential abuse vector.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="complete-example-mcp-client">Complete Example: MCP Client<a href="#complete-example-mcp-client" class="hash-link" aria-label="Link direto para Complete Example: MCP Client" title="Link direto para Complete Example: MCP Client" translate="no">​</a></h2>
 <p>Here&#x27;s how an MCP client might implement DCR from scratch:</p>

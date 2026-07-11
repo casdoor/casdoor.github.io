@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.01fba7fd.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.7229882c.js" defer="defer"></script>
 <script src="/zh/assets/js/main.9257783a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -60,7 +60,13 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="安全模型">安全模型<a href="#安全模型" class="hash-link" aria-label="直接链接到 安全模型" title="直接链接到 安全模型" translate="no">​</a></h2>
 <p>The registration endpoint itself requires no authentication—this is by design for public clients like mobile apps and desktop tools that can&#x27;t securely store credentials before registration. To keep that unauthenticated surface from being exposed by accident, DCR is <strong>disabled by default</strong> and must be turned on per organization (see <a href="#controlling-dcr-per-organization" class="">Controlling DCR Per Organization</a>).</p>
 <p>通过DCR创建的应用程序属于组织的管理员账户，并会在您的应用程序列表中显示带有<code>dcr</code>标签。 This tag is not just a label: DCR-registered applications run under a restricted <code>app-dcr</code> role and can only reach the OAuth/OIDC endpoints they need for the login flow (<code>/api/login/oauth/*</code>, <code>/api/get-oauth-token</code>, <code>/api/userinfo</code>, <code>/api/get-application</code>). They cannot use the client credentials to call other management APIs, which limits the blast radius of a self-registered client.</p>
-<p>So that end users can actually sign in to a self-registered app, DCR-registered applications have password sign-in enabled and inherit the OAuth/OIDC providers and sign-in methods of the organization&#x27;s default application.</p>
+<p>So that end users can actually sign in to a self-registered app, DCR-registered applications have password sign-in enabled and inherit a set of fields from the organization&#x27;s default application:</p>
+<ul>
+<li class=""><strong>Providers and sign-in methods</strong> — so there is at least one working sign-in method out of the box.</li>
+<li class=""><strong>Branding</strong> — the logo (only when the request omits <code>logo_uri</code>), theme, footer HTML, and form CSS, so the login page matches the rest of the organization.</li>
+<li class=""><strong>Sign-in items</strong> — the same sign-in form layout as the default application.</li>
+<li class=""><strong><code>EnableSigninSession</code> and <code>EnableWebAuthn</code></strong> — the default application&#x27;s session and WebAuthn settings.</li>
+</ul>
 <p>默认情况下，客户端密钥不会过期，但您可随时通过管理界面撤销任何应用程序。 对于生产部署，考虑一下您的组织是否真的需要未经过身份验证的注册。 Many scenarios work fine with manual app creation, and leaving DCR disabled removes a potential abuse vector.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="完整示例mcp-客户端">完整示例：MCP 客户端<a href="#完整示例mcp-客户端" class="hash-link" aria-label="直接链接到 完整示例：MCP 客户端" title="直接链接到 完整示例：MCP 客户端" translate="no">​</a></h2>
 <p>以下是 MCP 客户端从零开始实现 DCR 的方法：</p>

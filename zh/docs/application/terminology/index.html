@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.28e43048.js" defer="defer"></script>
-<script src="/zh/assets/js/main.5c10d449.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.58139d1c.js" defer="defer"></script>
+<script src="/zh/assets/js/main.3dd9982a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -142,6 +142,7 @@
 <li class=""><strong>登录方式</strong>— 登录页面上显示的登录方式有序列表（例如：密码、验证码、WebAuthn）。</li>
 <li class=""><strong>注册HTML</strong>— 注入到注册页面的自定义HTML。</li>
 <li class=""><strong>登录HTML</strong>— 注入到  登录页面的自定义HTML。</li>
+<li class=""><strong>Page HTML</strong> — Custom HTML injected into the page <code>&lt;head&gt;</code> (e.g. meta tags, analytics snippets, or custom styles/scripts) for all of the application&#x27;s pages.</li>
 <li class=""><strong>登录项</strong>— 配置登录表单上显示哪些字段和控件。</li>
 <li class="">注册项— 配置注册表单字段（仅在启用“注册”时可见）。</li>
 <li class=""><strong>背景 URL</strong>— 桌面登录页面背景图片（URL + 预览）。</li>
@@ -157,8 +158,8 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="安全">安全<a href="#安全" class="hash-link" aria-label="直接链接到 安全" title="直接链接到 安全" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>令牌证书</strong>— 用于签署此应用程序颁发的令牌的证书。</li>
-<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT断言的签名。</li>
-<li class=""><strong>登录失败次数限制</strong>— 账户被锁定前连续登录失败的次数。 此限制同样适用于/api/verify-codeOTP端点：过多的错误验证码将暂  时阻止使用相同计数器和冻结时间的用户+目的地组合。</li>
+<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT 断言的签名。</li>
+<li class=""><strong>登录失败次数限制</strong>— 账户被锁定前连续登录失败的次数。 此限制同样适用于/api/verify-codeOTP端点：过多的错误验证码将暂时阻止使用相同计数器和冻结时间的用户+目的地组合。</li>
 <li class=""><strong>失败登录冻结时间</strong>— 达到失败登录次数限制后的锁定时长，单位：分钟。</li>
 <li class=""><strong>代码重发超时</strong>— 用户在请求另一张验证码前必须等待的秒数（默认：60；设为0以采用全局默认值）。</li>
 <li class=""><strong>IP 白名单</strong>— 以逗号分隔的允许的 IP 地址或 CIDR 范围列表。 覆盖组织级允许列表。 查看<a class="" href="/zh/docs/ip-whitelist/ip-whitelist">IP允许列表</a>。</li>

@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.1ec583b8.css">
-<script src="/zh/assets/js/runtime~main.58139d1c.js" defer="defer"></script>
-<script src="/zh/assets/js/main.3dd9982a.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.972273ee.js" defer="defer"></script>
+<script src="/zh/assets/js/main.5c10d449.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -65,7 +65,7 @@
 <li class=""><strong>客户端密钥</strong> — OAuth 2.0 客户端密钥。</li>
 <li class=""><strong>Redirect URLs</strong> — 已允许 post-登录 redirect URIs。 匹配基于 URL：方案、端口和路径必须完全匹配，主机可以是配置的主机，也可以是该主机的任何子域名（例如，配置<code>https://example.com/callback</code>也允许<code>https://api.example.com/callback</code>)。 无效的 URL 条目将作为锚定正则表达 式进行匹配。</li>
 <li class=""><strong>强制重定向来源</strong>— 设置后，Casdoor会强制所有重定向至该来源。</li>
-<li class=""><strong>授权类型</strong>— 启用的 OAuth 授权类型：授权码、密码、客户端凭证、令牌、ID 令牌、刷新令牌、设备码、JWT 持有者。</li>
+<li class=""><strong>Grant types</strong> — Enabled OAuth grant types: Authorization Code, Password, Client Credentials, Token, ID Token, Refresh Token, Device Code, Token Exchange, JWT Bearer.</li>
 <li class=""><strong>作用域</strong>— 适用于代理类别应用的自定义作用域（名称、显示名称、描述）；在OIDC发现中公开。</li>
 <li class=""><strong>令牌格式</strong> — <code>JWT</code>, <code>JWT-Empty</code>, <code>JWT-自定义</code>或<code>JWT-标准</code>。 请参阅<a class="" href="/zh/docs/token/overview">令牌概览</a>。</li>
 <li class=""><strong>令牌签名方法</strong>— 签名算法：RS256、RS512、ES256、ES384 或 ES512。</li>
@@ -95,7 +95,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="提供商">提供商<a href="#提供商" class="hash-link" aria-label="直接链接到 提供商" title="直接链接到 提供商" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>提供商</strong>— 适用于此应用的 OAuth、电子邮件、短信、存储及其他提供商。 控制可用的登录方 式和集成。</li>
+<li class=""><strong>提供商</strong>— 适用于此应用的 OAuth、电子邮件、短信、存储及其他提供商。 控制可 用的登录方式和集成。</li>
 </ul>
 <p>提供商表中的每个 OAuth / Web3 / SAML 提供商条目都具有额外的特定于提供商的设置：</p>
 
@@ -141,7 +141,7 @@
 <li class=""><strong>组织选择模式</strong>— 用户在登录时如何选择其组织：<code>无</code>, <code>选择</code>（下拉菜单），或<code>输入</code>（文本字段）。</li>
 <li class=""><strong>登录方式</strong>— 登录页面上显示的登录方式有序列表（例如：密码、验证码、WebAuthn）。</li>
 <li class=""><strong>注册HTML</strong>— 注入到注册页面的自定义HTML。</li>
-<li class=""><strong>登录HTML</strong>— 注入到  登录页面的自定义HTML。</li>
+<li class=""><strong>登录HTML</strong>— 注入到登录页面的自定义HTML。</li>
 <li class=""><strong>Page HTML</strong> — Custom HTML injected into the page <code>&lt;head&gt;</code> (e.g. meta tags, analytics snippets, or custom styles/scripts) for all of the application&#x27;s pages.</li>
 <li class=""><strong>登录项</strong>— 配置登录表单上显示哪些字段和控件。</li>
 <li class="">注册项— 配置注册表单字段（仅在启用“注册”时可见）。</li>
@@ -158,7 +158,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="安全">安全<a href="#安全" class="hash-link" aria-label="直接链接到 安全" title="直接链接到 安全" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>令牌证书</strong>— 用于签署此应用程序颁发的令牌的证书。</li>
-<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT 断言的签名。</li>
+<li class=""><strong>客户端证书</strong>— 用于验证客户端身份的证书。 对于双向TLS，它会验证客户端连接；对于JWT持有者授权（RFC 7523），此证书中的公钥用于验证客户端JWT断言的签名。</li>
 <li class=""><strong>登录失败次数限制</strong>— 账户被锁定前连续登录失败的次数。 此限制同样适用于/api/verify-codeOTP端点：过多的错误验证码将暂时阻止使用相同计数器和冻结时间的用户+目的地组合。</li>
 <li class=""><strong>失败登录冻结时间</strong>— 达到失败登录次数限制后的锁定时长，单位：分钟。</li>
 <li class=""><strong>代码重发超时</strong>— 用户在请求另一张验证码前必须等待的秒数（默认：60；设为0以采用全局默认值）。</li>

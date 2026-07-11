@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/pl/assets/css/styles.9a2631c3.css">
-<script src="/pl/assets/js/runtime~main.54c0083a.js" defer="defer"></script>
+<script src="/pl/assets/js/runtime~main.4b26c516.js" defer="defer"></script>
 <script src="/pl/assets/js/main.219a301a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -40,6 +40,8 @@
 <li class=""><code>signup</code>, <code>login</code>, <code>logout</code> - User authentication flows</li>
 <li class=""><code>sso-logout</code>, <code>unlink</code> - Single sign-on and account unlinking</li>
 <li class=""><code>new-user</code> - Custom event for new user creation</li>
+<li class=""><code>new-user-ldap</code> - Custom event fired when a new user is created through an LDAP sync</li>
+<li class=""><code>new-user-syncer</code> - Custom event fired when a new user is created through a database syncer</li>
 </ul>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-management-events">Resource Management Events<a href="#resource-management-events" class="hash-link" aria-label="Bezpośredni link do Resource Management Events" title="Bezpośredni link do Resource Management Events" translate="no">​</a></h4>
 <p>Standard CRUD operations (<code>add-*</code>, <code>update-*</code>, <code>delete-*</code>) are available for all core resources including organizations, groups, users, applications, providers, and certificates. Additional resources like roles, permissions, models, adapters, enforcers, sessions, tokens, products, payments, and pricing also support these operations. Webhooks can track changes to syncers, forms, invitations, LDAP configurations, orders, tickets, and transactions as well.</p>

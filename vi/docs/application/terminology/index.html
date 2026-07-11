@@ -18,7 +18,7 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/vi/assets/css/styles.a4c4c3c0.css">
-<script src="/vi/assets/js/runtime~main.43cc217a.js" defer="defer"></script>
+<script src="/vi/assets/js/runtime~main.d1dbb17f.js" defer="defer"></script>
 <script src="/vi/assets/js/main.733bfeec.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -141,8 +141,8 @@
 <ul>
 <li class=""><strong>Org choice mode</strong> — How users select their organization at sign-in: <code>None</code>, <code>Select</code> (dropdown), or <code>Input</code> (text field).</li>
 <li class=""><strong>Signin methods</strong> — Ordered list of sign-in methods shown on the login page (e.g. Password, Verification code, WebAuthn).</li>
-<li class=""><strong>Signup HTML</strong> — Custom HTML injected into the sign-up page.</li>
-<li class=""><strong>Signin HTML</strong> — Custom HTML injected into the sign-in page.</li>
+<li class=""><strong>Signup HTML</strong> — Custom HTML injected into the sign-up page. Embedded <code>&lt;script&gt;</code> tags are executed, so only use trusted content.</li>
+<li class=""><strong>Signin HTML</strong> — Custom HTML injected into the sign-in page. Embedded <code>&lt;script&gt;</code> tags are executed, so only use trusted content.</li>
 <li class=""><strong>Page HTML</strong> — Custom HTML injected into the page <code>&lt;head&gt;</code> (e.g. meta tags, analytics snippets, or custom styles/scripts) for all of the application&#x27;s pages.</li>
 <li class=""><strong>Signin items</strong> — Configure which fields and controls appear on the sign-in form.</li>
 <li class=""><strong>Signup items</strong> — Configure the registration form fields (visible only when <strong>Enable signup</strong> is on).</li>
@@ -160,7 +160,7 @@
 <ul>
 <li class=""><strong>Token cert</strong> — Certificate used to sign tokens issued by this application.</li>
 <li class=""><strong>Client cert</strong> — Certificate used to verify client identity. For mutual TLS it authenticates the client connection; for the JWT Bearer grant (RFC 7523), the public key in this certificate is used to verify the client&#x27;s JWT assertion signature.</li>
-<li class=""><strong>Failed signin limit</strong>  — Number of consecutive failed sign-in attempts before the account is locked. This limit also applies to the <code>/api/verify-code</code> OTP endpoint: too many wrong verification codes will temporarily block that user+destination combination using the same counter and freeze time.</li>
+<li class=""><strong>Failed signin limit</strong> — Number of consecutive failed sign-in attempts before the account is locked. This limit also applies to the <code>/api/verify-code</code> OTP endpoint: too many wrong verification codes will temporarily block that user+destination combination using the same counter and freeze time.</li>
 <li class=""><strong>Failed signin frozen time</strong> — Lock duration in minutes after hitting the failed sign-in limit.</li>
 <li class=""><strong>Code resend timeout</strong> — Seconds a user must wait before requesting another verification code (default: 60; set to 0 for the global default).</li>
 <li class=""><strong>IP whitelist</strong> — Comma-separated list of allowed IP addresses or CIDR ranges. Overrides the organization-level whitelist. See <a class="" href="/vi/docs/ip-whitelist/ip-whitelist">IP allowlist</a>.</li>

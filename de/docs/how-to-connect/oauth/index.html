@@ -18,8 +18,8 @@
 <script>!function(t,h,e,j,s,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:1689986,hjsv:6},s=h.getElementsByTagName("head")[0],(n=h.createElement("script")).async=1,n.src="https://static.hotjar.com/c/hotjar-"+t._hjSettings.hjid+".js?sv="+t._hjSettings.hjsv,s.appendChild(n)}(window,document)</script>
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/de/assets/css/styles.794bfef0.css">
-<script src="/de/assets/js/runtime~main.0caf12a6.js" defer="defer"></script>
-<script src="/de/assets/js/main.b44d3d21.js" defer="defer"></script>
+<script src="/de/assets/js/runtime~main.e9be40fa.js" defer="defer"></script>
+<script src="/de/assets/js/main.aef6938f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -150,6 +150,7 @@
 <p>For devices with limited input or no browser, use <strong>Device Grant</strong>. Enable it on the application, request <code>device_authorization_endpoint</code> from OIDC discovery, then show <code>verification_uri</code> (e.g. via QR or text) so the user can complete login.</p>
 <p>Casdoor provides a built-in device login page at the <code>verification_uri</code> where the user enters the user code and signs in — no custom UI is required. Device login can also be enabled as a sign-in method on the application&#x27;s <strong>Signin methods</strong> table.</p>
 <p>Second, you should request <code>token endpoint</code> to get Access Token with parameter define in <a href="https://datatracker.ietf.org/doc/html/rfc8628#section-3.4" target="_blank" rel="noopener noreferrer" class="">rfc8628</a>.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Multi-replica deployments</div><div class="admonitionContent_BuS1"><p>The pending device-authorization requests (the mapping between the device code and the user code) are held in an in-memory store by default. In a multi-replica / horizontally-scaled deployment, the polling request from the device and the browser confirmation may land on different replicas, so an in-memory store causes the device flow to fail intermittently.</p><p>To make the device flow work across replicas, configure <code>redisEndpoint</code> in <code>conf/app.conf</code>. When it is set, Casdoor automatically backs the device-authorization store with Redis so all replicas share the same state. No extra configuration key is needed — the same <code>redisEndpoint</code> value used for shared sessions is reused (format: <code>host:port[,db[,password]]</code>). If Redis cannot be reached at startup, Casdoor logs a warning and falls back to the in-memory store. See <a class="" href="/de/docs/basic/configuration">Configuration</a>.</p></div></div>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-owner-password-credentials-grant">Resource Owner Password Credentials Grant<a href="#resource-owner-password-credentials-grant" class="hash-link" aria-label="Direkter Link zu Resource Owner Password Credentials Grant" title="Direkter Link zu Resource Owner Password Credentials Grant" translate="no">​</a></h3>
 <p>Wenn Ihre Anwendung kein Frontend hat, das Benutzer zu Casdoor umleitet, dann benötigen Sie dies möglicherweise.</p>
 <p>Enable <strong>Password Credentials Grant</strong> on the application, then send a POST request to:</p>

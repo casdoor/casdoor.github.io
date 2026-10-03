@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</title>
-        <link>https://casdoor.ai/zh/blog</link>
+        <link>https://casdoor.ai/zh/blog/</link>
         <description>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</description>
         <lastBuildDate>Sun, 22 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,21 +10,21 @@
         <language>zh</language>
         <item>
             <title><![CDATA[Casdoor 加入 CNCF 云原生生态系统]]></title>
-            <link>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape</link>
-            <guid>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape</guid>
+            <link>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/</link>
+            <guid>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/</guid>
             <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[2026年2月22日，Casdoor 加入了CNCF Cloud Native Landscape，位于配置中的安全与合规类别下。 该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。]]></description>
             <content:encoded><![CDATA[<p>2026年2月22日，<strong>Casdoor</strong> 加入了<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Cloud Native Landscape</a>，位于配置中的安全与合规类别下。 该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。</p>
 <p><a href="https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor</a></p>
 <img src="https://casdoor.ai/img/blog/cncf-landscape-casdoor.png" alt="Casdoor on CNCF Landscape - Security and Compliance section" style="max-width:100%;height:auto;border:1px solid #eee;border-radius:8px">
 <p><em>Casdoor 在 CNCF 云原生全景图（安全与合规）中</em></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于casdoor">关于Casdoor<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape#%E5%85%B3%E4%BA%8Ecasdoor" class="hash-link" aria-label="直接链接到 关于Casdoor" title="直接链接到 关于Casdoor" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于casdoor">关于Casdoor<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#%E5%85%B3%E4%BA%8Ecasdoor" class="hash-link" aria-label="直接链接到 关于Casdoor" title="直接链接到 关于Casdoor" translate="no">​</a></h2>
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://cdn.casbin.org/img/casdoor-logo_1185x256.png" alt="Casdoor" style="height:80px;width:auto"></div>
 <p>Casdoor 是一个开源的、以用户界面为先的身份和访问管理（IAM）/单点登录（SSO）平台，配有网页用户界面。 它支持OAuth 2.0、OIDC、SAML和CAS，以及多种社交登录方式（Google、GitHub、微信等），助您轻松几步即可构建用户管理和单点登录功能。 Casdoor由<a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a>用Golang和React开发。 它采用前后端分离架构，支持高并发，并由社区积极维护。 该项目在GitHub上已经获得超过13k stars。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于cncf与云原生生态">关于CNCF与云原生生态<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape#%E5%85%B3%E4%BA%8Ecncf%E4%B8%8E%E4%BA%91%E5%8E%9F%E7%94%9F%E7%94%9F%E6%80%81" class="hash-link" aria-label="直接链接到 关于CNCF与云原生生态" title="直接链接到 关于CNCF与云原生生态" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于cncf与云原生生态">关于CNCF与云原生生态<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#%E5%85%B3%E4%BA%8Ecncf%E4%B8%8E%E4%BA%91%E5%8E%9F%E7%94%9F%E7%94%9F%E6%80%81" class="hash-link" aria-label="直接链接到 关于CNCF与云原生生态" title="直接链接到 关于CNCF与云原生生态" translate="no">​</a></h2>
 <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg" alt="CNCF - Cloud Native Computing Foundation" style="height:80px;width:auto"><img src="https://landscape.cncf.io/images/logo_header.svg" alt="CNCF Cloud Native Landscape" style="height:80px;width:auto"></div>
 <p>云原生计算基金会（CNCF）是Linux基金会的一个项目，旨在推广云原生技术。 其愿景是让云原生无处不在。 CNCF 维护着《云原生全景图》（<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>），该图对云原生生态系统中的项目和产品进行分类与追踪，是开发者和企业的参考指南。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="展望未来">展望未来<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape#%E5%B1%95%E6%9C%9B%E6%9C%AA%E6%9D%A5" class="hash-link" aria-label="直接链接到 展望未来" title="直接链接到 展望未来" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="展望未来">展望未来<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#%E5%B1%95%E6%9C%9B%E6%9C%AA%E6%9D%A5" class="hash-link" aria-label="直接链接到 展望未来" title="直接链接到 展望未来" translate="no">​</a></h2>
 <p>加入CNCF全景图标志着Casdoor在成熟度和社区建设方面取得了进展。 我们将持续改进Casdoor及其与云原生工作流的集成，并欢迎更多用户和贡献者加入社区。</p>
 <p>相关链接：</p>
 <ul>
@@ -40,8 +40,8 @@
         </item>
         <item>
             <title><![CDATA[利用Casdoor人脸认证单点登录提升应用安全性和用户体验]]></title>
-            <link>https://casdoor.ai/zh/blog/face-authentication-casdoor-sso</link>
-            <guid>https://casdoor.ai/zh/blog/face-authentication-casdoor-sso</guid>
+            <link>https://casdoor.ai/zh/blog/face-authentication-casdoor-sso/</link>
+            <guid>https://casdoor.ai/zh/blog/face-authentication-casdoor-sso/</guid>
             <pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[在数字身份管理至关重要的时代，像Casdoor这样的单点登录（SSO）解决方案正在彻底改变用户与多个应用程序交互的方式。 Casdoor的单点登录通过让用户只需进行一次身份验证即可访问多个服务，简化了登录流程。 这不仅提升了用户便利性，还增强了用户的参与度和满意度。]]></description>
             <content:encoded><![CDATA[<p>在数字身份管理至关重要的时代，像Casdoor这样的单点登录（SSO）解决方案正在彻底改变用户与多个应用程序交互的方式。 Casdoor的单点登录通过让用户只需进行一次身份验证即可访问多个服务，简化了登录流程。 这不仅提升了用户便利性，还增强了用户的参与度和满意度。</p>
@@ -71,16 +71,16 @@
         </item>
         <item>
             <title><![CDATA[欢迎]]></title>
-            <link>https://casdoor.ai/zh/blog/欢迎</link>
-            <guid>https://casdoor.ai/zh/blog/欢迎</guid>
+            <link>https://casdoor.ai/zh/blog/欢迎/</link>
+            <guid>https://casdoor.ai/zh/blog/欢迎/</guid>
             <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[欢迎访问Casdoor官方网站！👋]]></description>
             <content:encoded><![CDATA[<p>欢迎访问Casdoor官方网站！👋</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="什么是casdoor">什么是Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E#%E4%BB%80%E4%B9%88%E6%98%AFcasdoor" class="hash-link" aria-label="直接链接到 什么是Casdoor？" title="直接链接到 什么是Casdoor？" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="什么是casdoor">什么是Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E/#%E4%BB%80%E4%B9%88%E6%98%AFcasdoor" class="hash-link" aria-label="直接链接到 什么是Casdoor？" title="直接链接到 什么是Casdoor？" translate="no">​</a></h2>
 <p>Casdoor 是一个以用户界面为先的<a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer" class="">身份访问管理（IAM）</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer" class="">单点登录（SSO）</a> 平台，基于 OAuth 2.0、OIDC、SAML 和 CAS。</p>
 <p>Casdoor由<a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a>使用Golang和React开发。</p>
 <p>Casdoor旨在提供一个功能强大的身份验证平台，以处理用户管理。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="为什么使用casdoor">为什么使用Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8casdoor" class="hash-link" aria-label="直接链接到 为什么使用Casdoor？" title="直接链接到 为什么使用Casdoor？" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="为什么使用casdoor">为什么使用Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E/#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8casdoor" class="hash-link" aria-label="直接链接到 为什么使用Casdoor？" title="直接链接到 为什么使用Casdoor？" translate="no">​</a></h2>
 <ul>
 <li class="">
 <p>⚡️ 功能强大，配置简单。 支持<img src="https://cdn.casbin.org/img/social_google.png" width="30"> <img src="https://cdn.casbin.org/img/social_github.png" width="30"> <img src="https://cdn.casbin.org/img/social_facebook.png" width="30"> <img src="https://cdn.casbin.org/img/social_twitter.png" width="30"> <img src="https://cdn.casbin.org/img/social_linkedin.png" width="30"> <img src="https://cdn.casbin.org/img/social_weibo.png" width="30"> <img src="https://cdn.casbin.org/img/social_wechat.png" width="30"> <img src="https://cdn.casbin.org/img/social_qq.png" width="30"> <img src="https://cdn.casbin.org/img/social_dingtalk.png" width="30">   <img src="https://cdn.casbin.org/img/social_gitee.png" width="30">  <img src="https://cdn.casbin.org/img/social_wecom.png" width="30"><img src="https://cdn.casbin.org/img/social_gitlab.png" width="30">登录方式包括社交账号登录和传统用户名/密码登录，Casdoor助您轻松几步即可实现用户管理系统。</p>
@@ -95,8 +95,8 @@
 <p>多语言支持。 Casdoor支持多种语言，包括中文、英语、法语以及更多其他语言。</p>
 </li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="如何使用casdoor">如何使用Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8casdoor" class="hash-link" aria-label="直接链接到 如何使用Casdoor？" title="直接链接到 如何使用Casdoor？" translate="no">​</a></h2>
-<p>您可以参考详细文档，了解<a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a>以及<a class="" href="https://casdoor.ai/zh/docs/basic/server-installation">搭建您自己的Casdoor</a>。 或使用<a class="" href="https://casdoor.ai/zh/docs/how-to-connect/sdk">Casdoor SDKs</a>来实现您自己的应用程序。</p>]]></content:encoded>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="如何使用casdoor">如何使用Casdoor？<a href="https://casdoor.ai/zh/blog/%E6%AC%A2%E8%BF%8E/#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8casdoor" class="hash-link" aria-label="直接链接到 如何使用Casdoor？" title="直接链接到 如何使用Casdoor？" translate="no">​</a></h2>
+<p>您可以参考详细文档，了解<a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a>以及<a class="" href="https://casdoor.ai/zh/docs/basic/server-installation/">搭建您自己的Casdoor</a>。 或使用<a class="" href="https://casdoor.ai/zh/docs/how-to-connect/sdk/">Casdoor SDKs</a>来实现您自己的应用程序。</p>]]></content:encoded>
             <category>Casdoor</category>
             <category>单点登录</category>
             <category>身份验证</category>

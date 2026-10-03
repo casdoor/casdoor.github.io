@@ -371,6 +371,7 @@
 - [Moodle](https://casdoor.ai/pt/docs/integration/php/Moodle/): Configure Moodle to use Casdoor as an OAuth identity provider for single sign-on.
 - [GitLab](https://casdoor.ai/pt/docs/integration/ruby/gitlab/): Configure self-managed GitLab to use Casdoor as its OpenID Connect provider for single sign-on.
 - [Hasura](https://casdoor.ai/pt/docs/integration/Haskell/Hasura/): Secure Hasura GraphQL Engine with JWTs issued by Casdoor - configure the Casdoor application, Hasura JWT secret and claims mapping.
+- [FastAPI](https://casdoor.ai/pt/docs/integration/python/FastAPI/): Add Casdoor sign-in and Casdoor permission checks to a FastAPI app with the community casbin-fastapi-decorator library.
 - [JumpServer](https://casdoor.ai/pt/docs/integration/python/JumpServer/): Connect the JumpServer bastion host to Casdoor over CAS so users sign in with Casdoor single sign-on.
 
 ## Agents

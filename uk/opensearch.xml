@@ -4,8 +4,8 @@
   <ShortName>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server</ShortName>
   <Description>Search Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://casdoor.github.io/uk/https://casdoor.org/img/casdoor.png</Image>
-  <Url type="text/html" method="get" template="https://casdoor.github.io/uk/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://casdoor.github.io/uk/opensearch.xml" />
-  <moz:SearchForm>https://casdoor.github.io/uk/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://casdoor.ai/uk/img/casdoor.png</Image>
+  <Url type="text/html" method="get" template="https://casdoor.ai/uk/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://casdoor.ai/uk/opensearch.xml" />
+  <moz:SearchForm>https://casdoor.ai/uk/</moz:SearchForm>
 </OpenSearchDescription>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server</ShortName>
-  <Description>Search Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server</Description>
+  <ShortName>Casdoor</ShortName>
+  <Description>Search Casdoor</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://casdoor.ai/tr/img/casdoor.png</Image>
   <Url type="text/html" method="get" template="https://casdoor.ai/tr/search?q={searchTerms}"/>

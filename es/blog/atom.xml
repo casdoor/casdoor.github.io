@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://casdoor.ai/es/blog/</id>
-    <title>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</title>
+    <title>Casdoor Blog</title>
     <updated>2026-02-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://casdoor.ai/es/blog/"/>
-    <subtitle>Casdoor · AI-Native Identity and Access Management (IAM) / SSO Platform with MCP Server Blog</subtitle>
+    <subtitle>Casdoor Blog</subtitle>
     <icon>https://casdoor.ai/es/img/casdoor.png</icon>
     <entry>
         <title type="html"><![CDATA[Casdoor Joins CNCF Cloud Native Landscape]]></title>

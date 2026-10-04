@@ -52,7 +52,7 @@
 - [Qt desktop app](https://casdoor.ai/vi/docs/how-to-connect/desktop-sdks/qt-app/): Integrate Casdoor in a Qt (C++) desktop app with WebEngine.
 - [React Native app](https://casdoor.ai/vi/docs/how-to-connect/mobile-sdks/react-native-app/): Integrate Casdoor in a React Native app with the official SDK.
 - [Casdoor CLI](https://casdoor.ai/vi/docs/how-to-connect/cli/): Using Casdoor's official command-line interface for managing users, groups, and permissions
-- [Plugins and middlewares](https://casdoor.ai/vi/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, and Chrome.
+- [Plugins and middlewares](https://casdoor.ai/vi/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, and Chrome.
 - [Chrome extension](https://casdoor.ai/vi/docs/how-to-connect/chrome-extension/): Integrate Casdoor OAuth in a Chrome extension.
 - [Next.js](https://casdoor.ai/vi/docs/how-to-connect/nextjs/): Integrate Casdoor in a Next.js app with middleware and the JS SDK.
 - [Nuxt](https://casdoor.ai/vi/docs/how-to-connect/nuxt/): Integrate Casdoor in a Nuxt app with middleware and the JS SDK.
@@ -335,7 +335,7 @@
 - [OpenShift](https://casdoor.ai/vi/docs/integration/go/openshift/): Configure Casdoor as an OpenID Connect identity provider for OpenShift so users sign in to the console and CLI with their Casdoor accounts.
 - [BookStack](https://casdoor.ai/vi/docs/integration/go/bookstack/): Set up Casdoor as the OAuth sign-in provider for BookStack, the open-source wiki and documentation platform.
 - [Bytebase](https://casdoor.ai/vi/docs/integration/go/Bytebase/): Use Casdoor as the OAuth2/OIDC provider for Bytebase SSO.
-- [ELK](https://casdoor.ai/vi/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with casdoor-forward-auth, without X-Pack's paid SSO features.
+- [ELK](https://casdoor.ai/vi/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with elk-auth-casdoor or casdoor-forward-auth, without X-Pack's paid SSO features.
 - [Gitea](https://casdoor.ai/vi/docs/integration/go/gitea/): Use Casdoor as the OAuth/OIDC provider for Gitea sign-in.
 - [Grafana](https://casdoor.ai/vi/docs/integration/go/grafana/): Use Casdoor as the OAuth provider for Grafana sign-in.
 - [MinIO](https://casdoor.ai/vi/docs/integration/go/minio/): Configuring Casdoor as an identity provider to support MinIO

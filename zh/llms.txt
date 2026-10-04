@@ -4,7 +4,7 @@
 
 ## The basics
 
-- [概述](https://casdoor.ai/zh/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
+- [概述](https://casdoor.ai/zh/docs/overview/): Casdoor 是一个用 Go 编写、以界面配置为主的开源 IAM 和 SSO 平台，支持 OAuth 2.0、OIDC、SAML、CAS、LDAP、SCIM、WebAuthn、MFA 和 RADIUS。看看它是如何工作的。
 - [核心概念](https://casdoor.ai/zh/docs/basic/core-concepts/): 组织、用户、应用和提供商——Casdoor 的主要构成模块。
 - [服务器安装](https://casdoor.ai/zh/docs/basic/server-installation/): 从源代码或预构建二进制文件安装并配置Casdoor服务器。
 - [配置](https://casdoor.ai/zh/docs/basic/configuration/): 通过app.conf和Conf.js配置Casdoor后端和前端。
@@ -23,8 +23,8 @@
 
 ## LLM
 
-- [OpenClaw](https://casdoor.ai/zh/docs/llm/openclaw/): Collect LLM agent traces, metrics, and logs in Casdoor using the OpenClaw observability agent.
-- [MCP security](https://casdoor.ai/zh/docs/llm/mcp-security/): How Casdoor secures MCP deployments — OAuth 2.1 for access control and OpenTelemetry for audit and observability.
+- [OpenClaw](https://casdoor.ai/zh/docs/llm/openclaw/): 用 OpenClaw 可观测性代理在 Casdoor 中收集 LLM 智能体的追踪、指标和日志。
+- [MCP 安全](https://casdoor.ai/zh/docs/llm/mcp-security/): Casdoor 如何保护 MCP 部署：用 OAuth 2.1 做访问控制，用 OpenTelemetry 做审计和可观测性。
 
 ## Deployment
 
@@ -52,7 +52,7 @@
 - [Qt desktop app](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/qt-app/): 在使用WebEngine的Qt（C++）桌面应用中集成Casdoor。
 - [React Native 应用](https://casdoor.ai/zh/docs/how-to-connect/mobile-sdks/react-native-app/): 使用官方 SDK 将 Casdoor 集成到 React Native 应用中。
 - [Casdoor CLI](https://casdoor.ai/zh/docs/how-to-connect/cli/): 使用 Casdoor 的官方命令行界面管理用户、组和权限
-- [插件和中间件](https://casdoor.ai/zh/docs/how-to-connect/plugin/): 适用于Spring Boot、WordPress、Odoo、Django和Chrome的Casdoor官方插件。
+- [插件和中间件](https://casdoor.ai/zh/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, and Chrome.
 - [Chrome扩展](https://casdoor.ai/zh/docs/how-to-connect/chrome-extension/): 在Chrome扩展程序中集成Casdoor OAuth。
 - [Next.js](https://casdoor.ai/zh/docs/how-to-connect/nextjs/): 在 Next.js 应用中通过中间件和 JS SDK 集成 Casdoor。
 - [Nuxt](https://casdoor.ai/zh/docs/how-to-connect/nuxt/): 在Nuxt应用中集成Casdoor，并使用中间件和JS SDK。
@@ -86,13 +86,13 @@
 
 ## 组织
 
-- [概述](https://casdoor.ai/zh/docs/organization/overview/): Organizations are the core unit in Casdoor for managing users and applications.
-- [Organization tree](https://casdoor.ai/zh/docs/organization/organization-tree/): User groups and group hierarchy within an organization.
-- [Password complexity](https://casdoor.ai/zh/docs/organization/passwordComplexity/): Configure password strength rules per organization.
-- [密码混淆器](https://casdoor.ai/zh/docs/organization/passwordObfuscator/): Encrypt password parameters in login and set-password APIs.
-- [Account customization](https://casdoor.ai/zh/docs/organization/accountCustomization/): Control visibility and edit permissions for each user account field.
-- [定制主题](https://casdoor.ai/zh/docs/organization/customize-theme/): Set primary color and border radius at global, organization, or application level.
-- [MFA设置项](https://casdoor.ai/zh/docs/organization/mfa-items/): Configure which MFA methods are available and whether they are optional or required.
+- [概述](https://casdoor.ai/zh/docs/organization/overview/): 组织是 Casdoor 中管理用户和应用的核心单元。
+- [组织树](https://casdoor.ai/zh/docs/organization/organization-tree/): 组织内的用户群组和群组层级。
+- [密码复杂度](https://casdoor.ai/zh/docs/organization/passwordComplexity/): 按组织配置密码强度规则。
+- [密码混淆器](https://casdoor.ai/zh/docs/organization/passwordObfuscator/): 在登录和设置密码接口中加密密码参数。
+- [账号定制](https://casdoor.ai/zh/docs/organization/accountCustomization/): 控制每个用户账号字段的可见性和编辑权限。
+- [定制主题](https://casdoor.ai/zh/docs/organization/customize-theme/): 在全局、组织或应用层级设置主题色和圆角。
+- [MFA设置项](https://casdoor.ai/zh/docs/organization/mfa-items/): 配置可用的 MFA 方式，以及它们是可选还是必选。
 
 ## 应用
 
@@ -115,17 +115,17 @@
 
 ## MCP authorization
 
-- [Casdoor as MCP Auth Provider](https://casdoor.ai/zh/docs/mcp-auth/overview/): Use Casdoor as an external OAuth 2.1 authorization server for third-party MCP servers
-- [MCP auth setup](https://casdoor.ai/zh/docs/mcp-auth/setup/): Configure Casdoor as the OAuth server for your MCP server.
-- [Third-party MCP server integration](https://casdoor.ai/zh/docs/mcp-auth/third-party-integration/): Runnable code examples for MCP servers using Casdoor OAuth (Python, Node.js, Go).
-- [Public MCP Server Registry](https://casdoor.ai/zh/docs/mcp-auth/mcp-registry/): A curated registry of publicly available MCP servers, with a web UI and machine-readable JSON API.
+- [把 Casdoor 用作 MCP 认证提供商](https://casdoor.ai/zh/docs/mcp-auth/overview/): 把 Casdoor 用作第三方 MCP 服务器的外部 OAuth 2.1 授权服务器
+- [MCP 认证配置](https://casdoor.ai/zh/docs/mcp-auth/setup/): 把 Casdoor 配置为 MCP 服务器的 OAuth 服务器。
+- [第三方 MCP 服务器集成](https://casdoor.ai/zh/docs/mcp-auth/third-party-integration/): 使用 Casdoor OAuth 的 MCP 服务器可运行代码示例（Python、Node.js、Go）。
+- [公共 MCP 服务器目录](https://casdoor.ai/zh/docs/mcp-auth/mcp-registry/): 精选的公开 MCP 服务器目录，提供网页界面和机器可读的 JSON API。
 
 ## 权限
 
-- [概述](https://casdoor.ai/zh/docs/permission/overview/): Use Casbin to manage fine-grained access control for users and resources in your organization.
-- [Permission configuration](https://casdoor.ai/zh/docs/permission/permission-configuration/): Configure Casbin permission policies and each field on the Edit Permission page.
-- [开放的 Casbin API](https://casdoor.ai/zh/docs/permission/exposed-casbin-apis/): Call Casbin from your backend to enforce and manage permissions.
-- [适配器](https://casdoor.ai/zh/docs/permission/adapter/): Connect Casbin policy storage (database) and manage policies in the UI.
+- [概述](https://casdoor.ai/zh/docs/permission/overview/): 用 Casbin 对组织中的用户和资源进行细粒度访问控制。
+- [权限配置](https://casdoor.ai/zh/docs/permission/permission-configuration/): 配置 Casbin 权限策略，以及 Edit Permission 页面上的各个字段。
+- [开放的 Casbin API](https://casdoor.ai/zh/docs/permission/exposed-casbin-apis/): 从后端调用 Casbin，执行和管理权限。
+- [适配器](https://casdoor.ai/zh/docs/permission/adapter/): 连接 Casbin 策略存储（数据库），并在界面中管理策略。
 
 ## 提供商
 
@@ -209,7 +209,7 @@
 - [AirWallex](https://casdoor.ai/zh/docs/provider/payment/AirWallex/): 将AirWallex用作支付提供商。
 - [Captcha provider overview](https://casdoor.ai/zh/docs/provider/captcha/overview/): Add captcha to sign-in, sign-up, and password reset.
 - [Default captcha](https://casdoor.ai/zh/docs/provider/captcha/default/): Use Casdoor’s built-in image captcha (digit sequence).
-- [Cloudflare Turnstile](https://casdoor.ai/zh/docs/provider/captcha/cloudflareTurnstile/): Add Cloudflare Turnstile captcha to your application.
+- [Cloudflare Turnstile](https://casdoor.ai/zh/docs/provider/captcha/cloudflareTurnstile/): 为应用加上 Cloudflare Turnstile 人机验证。
 - [reCAPTCHA](https://casdoor.ai/zh/docs/provider/captcha/recaptcha/): Add Google reCAPTCHA v2 Checkbox to your application.
 - [hCaptcha](https://casdoor.ai/zh/docs/provider/captcha/hcaptcha/): Add hCaptcha to your application as a captcha provider.
 - [阿里云 Captcha](https://casdoor.ai/zh/docs/provider/captcha/aliyunCaptcha/): 将阿里云 Captcha 添加到您的应用程序
@@ -232,21 +232,21 @@
 
 ## 密钥
 
-- [密钥](https://casdoor.ai/zh/docs/key/overview/): Manage API access keys (AccessKey/AccessSecret pairs) scoped to an organization, application, or user.
+- [密钥](https://casdoor.ai/zh/docs/key/overview/): 管理限定在组织、应用或用户范围内的 API 访问密钥（AccessKey/AccessSecret 对）。
 
 ## SaaS management
 
-- [概述](https://casdoor.ai/zh/docs/pricing/overview/): Use Casdoor for subscription and pricing: plans, payments, and subscriptions.
-- [产品](https://casdoor.ai/zh/docs/products/product/): Define products (or services) to sell and attach payment providers.
-- [Product store](https://casdoor.ai/zh/docs/products/product-store/): Publish products to a storefront where users can browse and purchase
-- [Shopping cart](https://casdoor.ai/zh/docs/products/cart/): The Casdoor shopping cart collects several products so users can buy them together in one order and one payment.
-- [支付](https://casdoor.ai/zh/docs/products/payment/): View payment records, states, and issue invoices.
-- [排序](https://casdoor.ai/zh/docs/products/order/): Casdoor orders record each product purchase and track it through its lifecycle, separately from the payments made for it.
-- [计划](https://casdoor.ai/zh/docs/pricing/plan/): Define a plan’s features and price; plans are tied to roles and products.
-- [定价](https://casdoor.ai/zh/docs/pricing/): Group one or more plans so users can sign up at different price points.
-- [订阅](https://casdoor.ai/zh/docs/pricing/subscription/): Manage a user’s selected plan and application access.
-- [Transaction](https://casdoor.ai/zh/docs/pricing/transaction/): Track payments and balance changes for users and organizations.
-- [Coupon](https://casdoor.ai/zh/docs/pricing/coupon/): Create discount coupons and apply them to orders at checkout.
+- [概述](https://casdoor.ai/zh/docs/pricing/overview/): 把 Casdoor 用于订阅和定价：计划、支付和订阅。
+- [产品](https://casdoor.ai/zh/docs/products/product/): 定义要出售的商品（或服务），并关联支付提供商。
+- [商品商店](https://casdoor.ai/zh/docs/products/product-store/): 把商品发布到商店，用户可以浏览和购买
+- [购物车](https://casdoor.ai/zh/docs/products/cart/): Casdoor 购物车可以收集多件商品，让用户在一个订单中一次付款全部买下。
+- [支付](https://casdoor.ai/zh/docs/products/payment/): 查看支付记录、状态，并开具发票。
+- [排序](https://casdoor.ai/zh/docs/products/order/): Casdoor 订单记录每一次商品购买，并跟踪其生命周期，与为它付款的支付记录分开。
+- [计划](https://casdoor.ai/zh/docs/pricing/plan/): 定义计划的功能和价格；计划与角色和商品关联。
+- [定价](https://casdoor.ai/zh/docs/pricing/): 把一个或多个计划组合在一起，用户注册时可以选择不同的价位。
+- [订阅](https://casdoor.ai/zh/docs/pricing/subscription/): 管理用户选择的计划和应用访问权限。
+- [交易](https://casdoor.ai/zh/docs/pricing/transaction/): 跟踪用户和组织的付款与余额变动。
+- [优惠券](https://casdoor.ai/zh/docs/pricing/coupon/): 创建折扣优惠券，在结账时用于订单。
 
 ## 多因素认证
 
@@ -265,11 +265,11 @@
 
 ## 邀请码
 
-- [概述](https://casdoor.ai/zh/docs/invitation/overview/): Restrict sign-up to users who have a valid invitation code.
+- [概述](https://casdoor.ai/zh/docs/invitation/overview/): 只允许持有有效邀请码的用户注册。
 
 ## IP allowlist
 
-- [IP allowlist](https://casdoor.ai/zh/docs/ip-whitelist/): Restrict access to login, sign-up, and forgot-password pages by client IP.
+- [IP 白名单](https://casdoor.ai/zh/docs/ip-whitelist/): 按客户端 IP 限制对登录、注册和忘记密码页面的访问。
 
 ## 站点
 
@@ -313,9 +313,9 @@
 
 ## LDAP
 
-- [概述](https://casdoor.ai/zh/docs/ldap/overview/): Sync users from an LDAP server into Casdoor and authenticate them against LDAP.
-- [LDAP configuration and sync](https://casdoor.ai/zh/docs/ldap/config/): Configure LDAP per organization and sync users into Casdoor.
-- [LDAP服务器](https://casdoor.ai/zh/docs/ldap/ldapserver/): Use Casdoor as an LDAP server for bind and search.
+- [概述](https://casdoor.ai/zh/docs/ldap/overview/): 把用户从 LDAP 服务器同步到 Casdoor，并用 LDAP 认证他们。
+- [LDAP 配置与同步](https://casdoor.ai/zh/docs/ldap/config/): 按组织配置 LDAP，并把用户同步到 Casdoor。
+- [LDAP服务器](https://casdoor.ai/zh/docs/ldap/ldapserver/): 把 Casdoor 用作 LDAP 服务器，支持 bind 和 search。
 
 ## RADIUS
 
@@ -335,7 +335,7 @@
 - [OpenShift](https://casdoor.ai/zh/docs/integration/go/openshift/): 把 Casdoor 配置为 OpenShift 的 OpenID Connect 身份提供商，用户就能用 Casdoor 账号登录控制台和 CLI。
 - [BookStack](https://casdoor.ai/zh/docs/integration/go/bookstack/): 把 Casdoor 设置为开源 wiki 和文档平台 BookStack 的 OAuth 登录提供商。
 - [Bytebase](https://casdoor.ai/zh/docs/integration/go/Bytebase/): 把 Casdoor 用作 Bytebase SSO 的 OAuth2/OIDC 提供商。
-- [ELK](https://casdoor.ai/zh/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with casdoor-forward-auth, without X-Pack's paid SSO features.
+- [ELK](https://casdoor.ai/zh/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with elk-auth-casdoor or casdoor-forward-auth, without X-Pack's paid SSO features.
 - [Gitea](https://casdoor.ai/zh/docs/integration/go/gitea/): 把 Casdoor 用作 Gitea 登录的 OAuth/OIDC 提供商。
 - [Grafana](https://casdoor.ai/zh/docs/integration/go/grafana/): 把 Casdoor 用作 Grafana 登录的 OAuth 提供商。
 - [MinIO](https://casdoor.ai/zh/docs/integration/go/minio/): 将Casdoor配置为身份提供商以支持MinIO
@@ -363,16 +363,16 @@
 - [Firebase](https://casdoor.ai/zh/docs/integration/javascript/firebase/): 在 Firebase Authentication 中把 Casdoor 用作 OpenID Connect 提供商，Firebase 网页应用的用户就能用 Casdoor 登录。
 - [微信小程序](https://casdoor.ai/zh/docs/integration/javascript/wechat_miniprogram/): 在微信小程序中集成 Casdoor 登录（不走 OAuth 跳转）。
 - [APISIX](https://casdoor.ai/zh/docs/integration/lua/apisix/): 用 authz-casdoor 插件或 openid-connect 插件，以 Casdoor 保护 Apache APISIX 后面的 API。
-- [Zabbix](https://casdoor.ai/zh/docs/integration/php/Zabbix/): Use Casdoor as the SAML IdP for Zabbix SSO.
-- [WordPress (CAS SSO)](https://casdoor.ai/zh/docs/integration/php/WordPress/): Use Casdoor as CAS IdP for WordPress with the wp-cassify plugin.
-- [禅道](https://casdoor.ai/zh/docs/integration/php/zentao/): Add Casdoor single sign-on to the ZenTao project management tool with the zentao-oidc module.
-- [在ShowDoc中使用Casdoor作为OAuth2服务器](https://casdoor.ai/zh/docs/integration/php/showdoc/): Use Casdoor as the OAuth 2.0 server for ShowDoc sign-in, the API and technical documentation platform.
+- [Zabbix](https://casdoor.ai/zh/docs/integration/php/Zabbix/): 把 Casdoor 用作 Zabbix SSO 的 SAML IdP。
+- [WordPress（CAS SSO）](https://casdoor.ai/zh/docs/integration/php/WordPress/): 通过 wp-cassify 插件，把 Casdoor 用作 WordPress 的 CAS IdP。
+- [禅道](https://casdoor.ai/zh/docs/integration/php/zentao/): 用 zentao-oidc 模块为禅道项目管理工具加上 Casdoor 单点登录。
+- [在ShowDoc中使用Casdoor作为OAuth2服务器](https://casdoor.ai/zh/docs/integration/php/showdoc/): 把 Casdoor 用作 API 和技术文档平台 ShowDoc 登录的 OAuth 2.0 服务器。
 - [Flarum](https://casdoor.ai/zh/docs/integration/php/Flarum/): 用 FoF Passport 扩展为 Flarum 论坛加上 Casdoor OAuth 2.0 登录。
 - [Moodle](https://casdoor.ai/zh/docs/integration/php/Moodle/): 把 Moodle 配置为以 Casdoor 作为 OAuth 身份提供商，实现单点登录。
-- [GitLab](https://casdoor.ai/zh/docs/integration/ruby/gitlab/): Configure self-managed GitLab to use Casdoor as its OpenID Connect provider for single sign-on.
+- [GitLab](https://casdoor.ai/zh/docs/integration/ruby/gitlab/): 把自托管的 GitLab 配置为以 Casdoor 作为 OpenID Connect 提供商，实现单点登录。
 - [Hasura](https://casdoor.ai/zh/docs/integration/Haskell/Hasura/): 用 Casdoor 签发的 JWT 保护 Hasura GraphQL Engine：配置 Casdoor 应用、Hasura 的 JWT 密钥和声明映射。
-- [FastAPI](https://casdoor.ai/zh/docs/integration/python/FastAPI/): Add Casdoor sign-in and Casdoor permission checks to a FastAPI app with the community casbin-fastapi-decorator library.
-- [JumpServer](https://casdoor.ai/zh/docs/integration/python/JumpServer/): Connect the JumpServer bastion host to Casdoor over CAS so users sign in with Casdoor single sign-on.
+- [FastAPI](https://casdoor.ai/zh/docs/integration/python/FastAPI/): 用社区库 casbin-fastapi-decorator 为 FastAPI 应用加上 Casdoor 登录和 Casdoor 权限检查。
+- [JumpServer](https://casdoor.ai/zh/docs/integration/python/JumpServer/): 通过 CAS 把 JumpServer 堡垒机接入 Casdoor，用户就能用 Casdoor 单点登录。
 
 ## Agents
 
@@ -384,8 +384,8 @@
 
 ## 监控
 
-- [Web UI monitoring](https://casdoor.ai/zh/docs/monitoring/Web-UI/): View Casdoor runtime metrics in the web UI.
-- [Prometheus](https://casdoor.ai/zh/docs/monitoring/Prometheus/): Scrape Casdoor metrics with Prometheus.
+- [网页界面监控](https://casdoor.ai/zh/docs/monitoring/Web-UI/): 在网页界面中查看 Casdoor 的运行时指标。
+- [Prometheus](https://casdoor.ai/zh/docs/monitoring/Prometheus/): 用 Prometheus 抓取 Casdoor 指标。
 
 ## More
 

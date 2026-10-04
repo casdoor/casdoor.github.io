@@ -4,7 +4,7 @@
 
 ## The basics
 
-- [Overview](https://casdoor.ai/zh/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
+- [概述](https://casdoor.ai/zh/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
 - [核心概念](https://casdoor.ai/zh/docs/basic/core-concepts/): 组织、用户、应用和提供商——Casdoor 的主要构成模块。
 - [Server installation](https://casdoor.ai/zh/docs/basic/server-installation/): Install and configure the Casdoor server from source or pre-built binaries.
 - [配置](https://casdoor.ai/zh/docs/basic/configuration/): 通过app.conf和Conf.js配置Casdoor后端和前端。

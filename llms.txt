@@ -335,11 +335,11 @@
 - [OpenShift](https://casdoor.ai/docs/integration/go/openshift/): Configure Casdoor as an OpenID Connect identity provider for OpenShift so users sign in to the console and CLI with their Casdoor accounts.
 - [BookStack](https://casdoor.ai/docs/integration/go/bookstack/): Set up Casdoor as the OAuth sign-in provider for BookStack, the open-source wiki and documentation platform.
 - [Bytebase](https://casdoor.ai/docs/integration/go/Bytebase/): Use Casdoor as the OAuth2/OIDC provider for Bytebase SSO.
-- [ELK](https://casdoor.ai/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with elk-auth-casdoor, a reverse proxy that adds authentication to the ELK stack without X-Pack.
+- [ELK](https://casdoor.ai/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with casdoor-forward-auth, without X-Pack's paid SSO features.
 - [Gitea](https://casdoor.ai/docs/integration/go/gitea/): Use Casdoor as the OAuth/OIDC provider for Gitea sign-in.
 - [Grafana](https://casdoor.ai/docs/integration/go/grafana/): Use Casdoor as the OAuth provider for Grafana sign-in.
 - [MinIO](https://casdoor.ai/docs/integration/go/minio/): Configuring Casdoor as an identity provider to support MinIO
-- [Traefik](https://casdoor.ai/docs/integration/go/traefik/): Protect services behind Traefik with Casdoor auth (SSO).
+- [Traefik](https://casdoor.ai/docs/integration/go/traefik/): Protect services behind Traefik with Casdoor SSO using casdoor-forward-auth and Traefik's forwardAuth middleware.
 - [Portainer](https://casdoor.ai/docs/integration/go/portainer/): Configure Portainer OAuth sign-in with Casdoor as the identity provider, so users log in to Portainer with their Casdoor accounts.
 - [Spring Boot](https://casdoor.ai/docs/integration/java/spring-boot/): Add Casdoor sign-in to a Spring Boot application with casdoor-spring-boot-starter - configuration, login redirect, callback and user info.
 - [Spring Cloud](https://casdoor.ai/docs/integration/java/spring-cloud/): Add Casdoor authentication to Spring Cloud microservices, at the gateway or in individual services with casdoor-spring-boot-starter.

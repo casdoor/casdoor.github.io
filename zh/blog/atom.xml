@@ -12,8 +12,8 @@
         <id>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/</id>
         <link href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/"/>
         <updated>2026-02-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2026年2月22日，Casdoor 加入了CNCF Cloud Native Landscape，位于配置中的安全与合规类别下。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。]]></summary>
-        <content type="html"><![CDATA[<p>2026年2月22日，<strong>Casdoor</strong> 加入了<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Cloud Native Landscape</a>，位于配置中的安全与合规类别下。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。</p>
+        <summary type="html"><![CDATA[2026 年 2 月 22 日，Casdoor 加入了 CNCF 云原生全景图，位于 Provisioning 下的 Security & Compliance（安全与合规）类别。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。]]></summary>
+        <content type="html"><![CDATA[<p>2026 年 2 月 22 日，<strong>Casdoor</strong> 加入了 <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF 云原生全景图</a>，位于 Provisioning 下的 <strong>Security &amp; Compliance</strong>（安全与合规）类别。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。</p>
 <p><a href="https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor</a></p>
 <img src="https://casdoor.ai/img/blog/cncf-landscape-casdoor.png" alt="Casdoor on CNCF Landscape - Security and Compliance section" style="max-width:100%;height:auto;border:1px solid #eee;border-radius:8px">
 <p><em>Casdoor 在 CNCF 云原生全景图（安全与合规）中</em></p>
@@ -22,7 +22,7 @@
 <p>Casdoor 是一个开源的、以用户界面为先的身份和访问管理（IAM）/单点登录（SSO）平台，配有网页用户界面。它支持OAuth 2.0、OIDC、SAML和CAS，以及多种社交登录方式（Google、GitHub、微信等），助您轻松几步即可构建用户管理和单点登录功能。 Casdoor由<a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a>用Golang和React开发。它采用前后端分离架构，支持高并发，并由社区积极维护。该项目在GitHub上已经获得超过13k stars。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于cncf与云原生生态">关于CNCF与云原生生态<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#%E5%85%B3%E4%BA%8Ecncf%E4%B8%8E%E4%BA%91%E5%8E%9F%E7%94%9F%E7%94%9F%E6%80%81" class="hash-link" aria-label="直接链接到 关于CNCF与云原生生态" title="直接链接到 关于CNCF与云原生生态" translate="no">​</a></h2>
 <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg" alt="CNCF - Cloud Native Computing Foundation" style="height:80px;width:auto"><img src="https://landscape.cncf.io/images/logo_header.svg" alt="CNCF Cloud Native Landscape" style="height:80px;width:auto"></div>
-<p>云原生计算基金会（CNCF）是Linux基金会的一个项目，旨在推广云原生技术。其愿景是让云原生无处不在。 CNCF 维护着《云原生全景图》（<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>），该图对云原生生态系统中的项目和产品进行分类与追踪，是开发者和企业的参考指南。</p>
+<p><strong>云原生计算基金会（CNCF）</strong> 是 Linux 基金会旗下推广云原生技术的项目。其愿景是让云原生无处不在。 CNCF 维护着 <strong>云原生全景图</strong>（<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>），对云原生生态中的项目和产品进行分类与跟踪，是开发者和企业的参考地图。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="展望未来">展望未来<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#%E5%B1%95%E6%9C%9B%E6%9C%AA%E6%9D%A5" class="hash-link" aria-label="直接链接到 展望未来" title="直接链接到 展望未来" translate="no">​</a></h2>
 <p>加入CNCF全景图标志着Casdoor在成熟度和社区建设方面取得了进展。我们将持续改进Casdoor及其与云原生工作流的集成，并欢迎更多用户和贡献者加入社区。</p>
 <p>相关链接：</p>

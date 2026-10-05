@@ -396,4 +396,4 @@
 
 - [Source code](https://github.com/casdoor/casdoor): Casdoor server and web UI (Apache-2.0)
 - [Online demo](https://door.casdoor.com): Public demo instance, sign in with admin / 123
-- [Casdoor Cloud](https://www.casdoor.com): Hosted Casdoor and commercial support
+- [Casdoor Cloud](https://www.casdoor.com/pricing): Hosted Casdoor and commercial support

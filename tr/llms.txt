@@ -32,6 +32,7 @@
 - [Deploying behind Nginx](https://casdoor.ai/tr/docs/deployment/nginx/): Put Nginx in front of the Casdoor backend to serve and proxy traffic.
 - [Deploying to Kubernetes](https://casdoor.ai/tr/docs/deployment/k8s/): Deploy Casdoor in a Kubernetes cluster using the example manifests.
 - [Data initialization](https://casdoor.ai/tr/docs/deployment/data-initialization/): Initialize or migrate Casdoor data using JSON config files.
+- [Terraform](https://casdoor.ai/tr/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions and groups as code with the official Terraform provider.
 - [Hosting static files in a CDN](https://casdoor.ai/tr/docs/deployment/deploy-cdn/): Deploy Casdoor frontend static assets to a CDN using a storage provider.
 - [Hosting static files on an intranet](https://casdoor.ai/tr/docs/deployment/deploy-intranet/): Serve Casdoor static assets from an intranet-accessible URL.
 - [Database migration](https://casdoor.ai/tr/docs/deployment/db-migration/): How Casdoor handles database schema and data migrations.
@@ -52,7 +53,7 @@
 - [Qt desktop app](https://casdoor.ai/tr/docs/how-to-connect/desktop-sdks/qt-app/): Integrate Casdoor in a Qt (C++) desktop app with WebEngine.
 - [React Native app](https://casdoor.ai/tr/docs/how-to-connect/mobile-sdks/react-native-app/): Integrate Casdoor in a React Native app with the official SDK.
 - [Casdoor CLI](https://casdoor.ai/tr/docs/how-to-connect/cli/): Using Casdoor's official command-line interface for managing users, groups, and permissions
-- [Plugins and middlewares](https://casdoor.ai/tr/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, and Chrome.
+- [Plugins and middlewares](https://casdoor.ai/tr/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
 - [Chrome extension](https://casdoor.ai/tr/docs/how-to-connect/chrome-extension/): Integrate Casdoor OAuth in a Chrome extension.
 - [Next.js](https://casdoor.ai/tr/docs/how-to-connect/nextjs/): Integrate Casdoor in a Next.js app with middleware and the JS SDK.
 - [Nuxt](https://casdoor.ai/tr/docs/how-to-connect/nuxt/): Integrate Casdoor in a Nuxt app with middleware and the JS SDK.

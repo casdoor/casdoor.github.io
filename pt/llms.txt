@@ -32,7 +32,7 @@
 - [Deploying with Docker](https://casdoor.ai/pt/docs/deployment/docker/): Run Casdoor with Docker or Docker Compose and optional reverse proxies.
 - [Deploying behind Nginx](https://casdoor.ai/pt/docs/deployment/nginx/): Put Nginx in front of the Casdoor backend to serve and proxy traffic.
 - [Implantando no Kubernetes](https://casdoor.ai/pt/docs/deployment/k8s/): Deploy Casdoor in a Kubernetes cluster using the example manifests.
-- [Data initialization](https://casdoor.ai/pt/docs/deployment/data-initialization/): Initialize or migrate Casdoor data using JSON config files.
+- [Data initialization](https://casdoor.ai/pt/docs/deployment/data-initialization/): Initialize, migrate or declaratively manage Casdoor data with a JSON or YAML file.
 - [Terraform](https://casdoor.ai/pt/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions and groups as code with the official Terraform provider.
 - [Hosting static files in a CDN](https://casdoor.ai/pt/docs/deployment/deploy-cdn/): Deploy Casdoor frontend static assets to a CDN using a storage provider.
 - [Hosting static files on an intranet](https://casdoor.ai/pt/docs/deployment/deploy-intranet/): Serve Casdoor static assets from an intranet-accessible URL.

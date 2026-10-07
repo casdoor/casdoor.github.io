@@ -19,8 +19,8 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/ja/assets/css/styles.59b4d16c.css">
-<script src="/ja/assets/js/runtime~main.04bae42d.js" defer="defer"></script>
-<script src="/ja/assets/js/main.65e56861.js" defer="defer"></script>
+<script src="/ja/assets/js/runtime~main.55a1123c.js" defer="defer"></script>
+<script src="/ja/assets/js/main.32ae01d1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -286,7 +286,14 @@
 
 
 
-<table><thead><tr><th></th><th>Casdoor</th><th>Keycloak</th><th>ZITADEL</th><th>authentik</th></tr></thead><tbody><tr><td>Kubernetes</td><td><a class="" href="/ja/docs/basic/try-with-helm/">Helm chart</a></td><td>Operator</td><td>Helm chart</td><td>Helm chart</td></tr><tr><td>Horizontal scaling</td><td>Multiple replicas, with Redis for sessions</td><td>Clustering with Infinispan, multi-site</td><td>Stateless replicas</td><td>Multiple server and worker replicas</td></tr><tr><td>Infrastructure as code</td><td><a class="" href="/ja/docs/deployment/terraform/">Terraform provider</a></td><td>Terraform provider</td><td>Terraform provider</td><td>Terraform provider</td></tr><tr><td>Audit log</td><td>Records of every API call, with retention settings and <a class="" href="/ja/docs/webhooks/overview/">webhooks</a></td><td>Login and admin events</td><td>Event-sourced: every change is stored as an event</td><td>Events, with notification rules</td></tr></tbody></table>
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Casdoor</th><th>Keycloak</th><th>ZITADEL</th><th>authentik</th></tr></thead><tbody><tr><td>Kubernetes</td><td><a class="" href="/ja/docs/basic/try-with-helm/">Helm chart</a></td><td>Operator</td><td>Helm chart</td><td>Helm chart</td></tr><tr><td>Horizontal scaling</td><td>Multiple replicas, with Redis for sessions</td><td>Clustering with Infinispan, multi-site</td><td>Stateless replicas</td><td>Multiple server and worker replicas</td></tr><tr><td>Infrastructure as code</td><td><a class="" href="/ja/docs/deployment/terraform/">Terraform provider</a></td><td>Terraform provider</td><td>Terraform provider</td><td>Terraform provider</td></tr><tr><td>Declarative config file</td><td><a class="" href="/ja/docs/deployment/data-initialization/#configuration-as-code">Init data</a> (JSON or YAML, also as Helm values), applied again when it changes</td><td>Realm import (JSON) at startup</td><td>Setup steps for the first instance only</td><td>Blueprints (YAML), applied again when they change</td></tr><tr><td>Audit log</td><td>Records of every API call, with retention settings and <a class="" href="/ja/docs/webhooks/overview/">webhooks</a></td><td>Login and admin events</td><td>Event-sourced: every change is stored as an event</td><td>Events, with notification rules</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sources">Sources<a href="#sources" class="hash-link" aria-label="Sourcesへの直接リンク" title="Sourcesへの直接リンク" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Keycloak:</strong> <a href="https://www.keycloak.org/docs/latest/server_admin/" target="_blank" rel="noopener noreferrer" class="">Server administration guide</a>, <a href="https://www.keycloak.org/docs/latest/server_admin/#_managing_organizations" target="_blank" rel="noopener noreferrer" class="">Organizations</a>, <a href="https://www.keycloak.org/2026/02/scim-support-survey-feedback" target="_blank" rel="noopener noreferrer" class="">SCIM support</a>, <a href="https://www.keycloak.org/operator/installation" target="_blank" rel="noopener noreferrer" class="">Keycloak Operator</a>, <a href="https://github.com/jacekkow/keycloak-protocol-cas" target="_blank" rel="noopener noreferrer" class="">keycloak-protocol-cas</a>, <a href="https://github.com/vzakharchenko/keycloak-radius-plugin" target="_blank" rel="noopener noreferrer" class="">keycloak-radius-plugin</a>, <a href="https://www.keycloak.org/2024/12/terraform-provider-adoption" target="_blank" rel="noopener noreferrer" class="">Terraform provider</a></li>

@@ -32,7 +32,7 @@
 - [使用Docker部署](https://casdoor.ai/zh/docs/deployment/docker/): 使用Docker或Docker Compose以及可选的反向代理运行Casdoor。
 - [在Nginx后端部署](https://casdoor.ai/zh/docs/deployment/nginx/): 将Nginx置于Casdoor后端之前，以提供并代理流量。
 - [部署到 Kubernetes](https://casdoor.ai/zh/docs/deployment/k8s/): 使用示例清单在 Kubernetes 集群中部署 Casdoor。
-- [数据初始化](https://casdoor.ai/zh/docs/deployment/data-initialization/): 使用JSON配置文件初始化或迁移Casdoor数据。
+- [数据初始化](https://casdoor.ai/zh/docs/deployment/data-initialization/): Initialize, migrate or declaratively manage Casdoor data with a JSON or YAML file.
 - [Terraform](https://casdoor.ai/zh/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions and groups as code with the official Terraform provider.
 - [在CDN中托管静态文件](https://casdoor.ai/zh/docs/deployment/deploy-cdn/): 使用存储提供商将Casdoor前端静态资源部署到CDN。
 - [在内网托管静态文件](https://casdoor.ai/zh/docs/deployment/deploy-intranet/): 从内网可访问的URL提供Casdoor静态资产。

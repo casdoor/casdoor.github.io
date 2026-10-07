@@ -36,6 +36,7 @@
 - [Hosting static files in a CDN](https://casdoor.ai/de/docs/deployment/deploy-cdn/): Deploy Casdoor frontend static assets to a CDN using a storage provider.
 - [Hosting static files on an intranet](https://casdoor.ai/de/docs/deployment/deploy-intranet/): Serve Casdoor static assets from an intranet-accessible URL.
 - [Database migration](https://casdoor.ai/de/docs/deployment/db-migration/): How Casdoor handles database schema and data migrations.
+- [Upgrading from v3 to v4](https://casdoor.ai/de/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to pick, and what to check after the upgrade.
 - [Version information](https://casdoor.ai/de/docs/deployment/version-info/): How Casdoor reports its version for binaries, Docker, and git builds.
 
 ## Connecting to Casdoor

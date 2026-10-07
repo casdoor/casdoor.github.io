@@ -36,6 +36,7 @@
 - [在CDN中托管静态文件](https://casdoor.ai/zh/docs/deployment/deploy-cdn/): 使用存储提供商将Casdoor前端静态资源部署到CDN。
 - [在内网托管静态文件](https://casdoor.ai/zh/docs/deployment/deploy-intranet/): 从内网可访问的URL提供Casdoor静态资产。
 - [数据库迁移](https://casdoor.ai/zh/docs/deployment/db-migration/): Casdoor如何处理数据库模式和数据迁移。
+- [Upgrading from v3 to v4](https://casdoor.ai/zh/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to pick, and what to check after the upgrade.
 - [版本信息](https://casdoor.ai/zh/docs/deployment/version-info/): Casdoor 如何报告二进制文件、Docker 和 git 构建的版本。
 
 ## 接入 Casdoor

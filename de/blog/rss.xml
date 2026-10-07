@@ -102,12 +102,12 @@
             <category>Landscape</category>
             <category>IAM</category>
             <category>SSO</category>
-            <category>Sicherheit</category>
+            <category>Security</category>
         </item>
         <item>
             <title><![CDATA[Verbesserung der App-Sicherheit und Benutzererfahrung mit Casdoor Face Authentifizierung SSO]]></title>
-            <link>https://casdoor.ai/de/blog/Gesichtsauthentifizierung-casdoor-sso/</link>
-            <guid>https://casdoor.ai/de/blog/Gesichtsauthentifizierung-casdoor-sso/</guid>
+            <link>https://casdoor.ai/de/blog/face-authentication-casdoor-sso/</link>
+            <guid>https://casdoor.ai/de/blog/face-authentication-casdoor-sso/</guid>
             <pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[In einer Zeit, in der digitales Identitätsmanagement von entscheidender Bedeutung ist, revolutionieren Single Sign-On (SSO) Lösungen wie Casdoor die Interaktion zwischen Nutzern und verschiedenen Anwendungen. Das SSO von Casdoor vereinfacht den Login-Prozess, indem es Benutzern ermöglicht, sich nur einmal zu authentifizieren, um auf mehrere Dienste zuzugreifen. Dies erhöht nicht nur die Benutzerfreundlichkeit, sondern erhöht auch das Engagement und die Zufriedenheit.]]></description>
             <content:encoded><![CDATA[<p>In einer Zeit, in der digitales Identitätsmanagement von entscheidender Bedeutung ist, revolutionieren Single Sign-On (SSO) Lösungen wie Casdoor die Interaktion zwischen Nutzern und verschiedenen Anwendungen. Das SSO von Casdoor vereinfacht den Login-Prozess, indem es Benutzern ermöglicht, sich nur einmal zu authentifizieren, um auf mehrere Dienste zuzugreifen. Dies erhöht nicht nur die Benutzerfreundlichkeit, sondern erhöht auch das Engagement und die Zufriedenheit.</p>
@@ -133,20 +133,20 @@
             <category>Face Recogniztion</category>
             <category>FaceID</category>
             <category>Face</category>
-            <category>Maschinelles Lernen</category>
+            <category>Machine Learning</category>
         </item>
         <item>
             <title><![CDATA[Willkommen]]></title>
-            <link>https://casdoor.ai/de/blog/Willkommen/</link>
-            <guid>https://casdoor.ai/de/blog/Willkommen/</guid>
+            <link>https://casdoor.ai/de/blog/welcome/</link>
+            <guid>https://casdoor.ai/de/blog/welcome/</guid>
             <pubDate>Tue, 24 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Willkommen auf der offiziellen Casdoor Webseite!👋]]></description>
             <content:encoded><![CDATA[<p>Willkommen auf der offiziellen Casdoor Webseite!👋</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="was-ist-casdoor">Was ist Casdoor?<a href="https://casdoor.ai/de/blog/Willkommen/#was-ist-casdoor" class="hash-link" aria-label="Direkter Link zu Was ist Casdoor?" title="Direkter Link zu Was ist Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="was-ist-casdoor">Was ist Casdoor?<a href="https://casdoor.ai/de/blog/welcome/#was-ist-casdoor" class="hash-link" aria-label="Direkter Link zu Was ist Casdoor?" title="Direkter Link zu Was ist Casdoor?" translate="no">​</a></h2>
 <p>Casdoor is a UI-first <a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer" class="">Identity Access Management (IAM)</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer" class="">Single-Sign-On (SSO)</a> platform based on OAuth 2.0, OIDC, SAML and CAS.</p>
 <p>Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> using Golang and React.</p>
 <p>Ziel von Casdoor ist es, eine leistungsstarke Authentifizierungsplattform für die Benutzerverwaltung bereitzustellen.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="warum-casdoor">Warum Casdoor?<a href="https://casdoor.ai/de/blog/Willkommen/#warum-casdoor" class="hash-link" aria-label="Direkter Link zu Warum Casdoor?" title="Direkter Link zu Warum Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="warum-casdoor">Warum Casdoor?<a href="https://casdoor.ai/de/blog/welcome/#warum-casdoor" class="hash-link" aria-label="Direkter Link zu Warum Casdoor?" title="Direkter Link zu Warum Casdoor?" translate="no">​</a></h2>
 <ul>
 <li class="">
 <p>⚡ Leistungsstarke Funktion und einfache Konfiguration. With support for  <img src="https://cdn.casbin.org/img/social_google.png" width="30"> <img src="https://cdn.casbin.org/img/social_github.png" width="30"> <img src="https://cdn.casbin.org/img/social_facebook.png" width="30"> <img src="https://cdn.casbin.org/img/social_twitter.png" width="30"> <img src="https://cdn.casbin.org/img/social_linkedin.png" width="30"> <img src="https://cdn.casbin.org/img/social_weibo.png" width="30"> <img src="https://cdn.casbin.org/img/social_wechat.png" width="30"> <img src="https://cdn.casbin.org/img/social_qq.png" width="30"> <img src="https://cdn.casbin.org/img/social_dingtalk.png" width="30">   <img src="https://cdn.casbin.org/img/social_gitee.png" width="30">  <img src="https://cdn.casbin.org/img/social_wecom.png" width="30"><img src="https://cdn.casbin.org/img/social_gitlab.png" width="30"> sign in and traditional username/password sign in, Casdoor helps you implement your users management system just in a few steps.</p>
@@ -161,11 +161,11 @@
 <p>🌐 Mehrsprachige Unterstützung. Casdoor unterstützt mehrere Sprachen, darunter Deutsch, Chinesisch, Englisch, Französisch und viele mehr.</p>
 </li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wie-benutze-ich-casdoor">Wie benutze ich Casdoor?<a href="https://casdoor.ai/de/blog/Willkommen/#wie-benutze-ich-casdoor" class="hash-link" aria-label="Direkter Link zu Wie benutze ich Casdoor?" title="Direkter Link zu Wie benutze ich Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="wie-benutze-ich-casdoor">Wie benutze ich Casdoor?<a href="https://casdoor.ai/de/blog/welcome/#wie-benutze-ich-casdoor" class="hash-link" aria-label="Direkter Link zu Wie benutze ich Casdoor?" title="Direkter Link zu Wie benutze ich Casdoor?" translate="no">​</a></h2>
 <p>You can follow the detailed document to learn about <a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a> and <a class="" href="https://casdoor.ai/de/docs/basic/server-installation/">setup your own Casdoor</a>. Or use the <a class="" href="https://casdoor.ai/de/docs/how-to-connect/sdk/">Casdoor SDKs</a> to implement your own application.</p>]]></content:encoded>
             <category>Casdoor</category>
             <category>SSO</category>
-            <category>Authentifizierung</category>
+            <category>Authentication</category>
             <category>OAuth2.0</category>
             <category>Casbin</category>
         </item>

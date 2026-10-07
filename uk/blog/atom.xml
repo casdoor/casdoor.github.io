@@ -103,13 +103,13 @@
             <name>Yang Luo</name>
             <uri>https://github.com/hsluoyz</uri>
         </author>
-        <category label="Касдор" term="Касдор"/>
+        <category label="Casdoor" term="Casdoor"/>
         <category label="CNCF" term="CNCF"/>
         <category label="Cloud Native" term="Cloud Native"/>
         <category label="Landscape" term="Landscape"/>
         <category label="IAM" term="IAM"/>
         <category label="SSO" term="SSO"/>
-        <category label="Безпека" term="Безпека"/>
+        <category label="Security" term="Security"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Підвищення безпеки додатків та користувацького досвіду за допомогою Casdoor Face Authentication SSO]]></title>
@@ -138,26 +138,26 @@
             <name>Джеймс Лоусон</name>
             <uri>https://casdoor.org</uri>
         </author>
-        <category label="Касдор" term="Касдор"/>
+        <category label="Casdoor" term="Casdoor"/>
         <category label="SSO" term="SSO"/>
         <category label="Single-Sign-On" term="Single-Sign-On"/>
         <category label="Face Recogniztion" term="Face Recogniztion"/>
         <category label="FaceID" term="FaceID"/>
         <category label="Face" term="Face"/>
-        <category label="Машинне навчання" term="Машинне навчання"/>
+        <category label="Machine Learning" term="Machine Learning"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Ласкаво просимо]]></title>
-        <id>https://casdoor.ai/uk/blog/ласкаво просимо/</id>
-        <link href="https://casdoor.ai/uk/blog/ласкаво просимо/"/>
+        <id>https://casdoor.ai/uk/blog/welcome/</id>
+        <link href="https://casdoor.ai/uk/blog/welcome/"/>
         <updated>2021-08-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Ласкаво просимо на офіційний сайт Casdoor!👋]]></summary>
         <content type="html"><![CDATA[<p>Ласкаво просимо на офіційний сайт Casdoor!👋</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="що-таке-casdoor">Що таке Casdoor?<a href="https://casdoor.ai/uk/blog/%D0%BB%D0%B0%D1%81%D0%BA%D0%B0%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D0%BC%D0%BE/#%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-casdoor" class="hash-link" aria-label="Пряме посилання на Що таке Casdoor?" title="Пряме посилання на Що таке Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="що-таке-casdoor">Що таке Casdoor?<a href="https://casdoor.ai/uk/blog/welcome/#%D1%89%D0%BE-%D1%82%D0%B0%D0%BA%D0%B5-casdoor" class="hash-link" aria-label="Пряме посилання на Що таке Casdoor?" title="Пряме посилання на Що таке Casdoor?" translate="no">​</a></h2>
 <p>Casdoor is a UI-first <a href="https://en.wikipedia.org/wiki/Identity_management" target="_blank" rel="noopener noreferrer" class="">Identity Access Management (IAM)</a> / <a href="https://en.wikipedia.org/wiki/Single_sign-on" target="_blank" rel="noopener noreferrer" class="">Single-Sign-On (SSO)</a> platform based on OAuth 2.0, OIDC, SAML and CAS.</p>
 <p>Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> using Golang and React.</p>
 <p>Casdoor прагне надати потужну платформу аутентифікації для управління користувачами.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="чому-варто-використовувати-casdoor">Чому варто використовувати Casdoor?<a href="https://casdoor.ai/uk/blog/%D0%BB%D0%B0%D1%81%D0%BA%D0%B0%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D0%BC%D0%BE/#%D1%87%D0%BE%D0%BC%D1%83-%D0%B2%D0%B0%D1%80%D1%82%D0%BE-%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D1%83%D0%B2%D0%B0%D1%82%D0%B8-casdoor" class="hash-link" aria-label="Пряме посилання на Чому варто використовувати Casdoor?" title="Пряме посилання на Чому варто використовувати Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="чому-варто-використовувати-casdoor">Чому варто використовувати Casdoor?<a href="https://casdoor.ai/uk/blog/welcome/#%D1%87%D0%BE%D0%BC%D1%83-%D0%B2%D0%B0%D1%80%D1%82%D0%BE-%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D1%83%D0%B2%D0%B0%D1%82%D0%B8-casdoor" class="hash-link" aria-label="Пряме посилання на Чому варто використовувати Casdoor?" title="Пряме посилання на Чому варто використовувати Casdoor?" translate="no">​</a></h2>
 <ul>
 <li class="">
 <p>⚡️ Потужні функції та проста конфігурація. With support for  <img src="https://cdn.casbin.org/img/social_google.png" width="30"> <img src="https://cdn.casbin.org/img/social_github.png" width="30"> <img src="https://cdn.casbin.org/img/social_facebook.png" width="30"> <img src="https://cdn.casbin.org/img/social_twitter.png" width="30"> <img src="https://cdn.casbin.org/img/social_linkedin.png" width="30"> <img src="https://cdn.casbin.org/img/social_weibo.png" width="30"> <img src="https://cdn.casbin.org/img/social_wechat.png" width="30"> <img src="https://cdn.casbin.org/img/social_qq.png" width="30"> <img src="https://cdn.casbin.org/img/social_dingtalk.png" width="30">   <img src="https://cdn.casbin.org/img/social_gitee.png" width="30">  <img src="https://cdn.casbin.org/img/social_wecom.png" width="30"><img src="https://cdn.casbin.org/img/social_gitlab.png" width="30"> sign in and traditional username/password sign in, Casdoor helps you implement your users management system just in a few steps.</p>
@@ -172,15 +172,15 @@
 <p>🌐 Підтримка багатьох мов. Casdoor підтримує кілька мов, включаючи китайську, англійську, французьку та багато інших.</p>
 </li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="як-користуватися-casdoor">Як користуватися Casdoor?<a href="https://casdoor.ai/uk/blog/%D0%BB%D0%B0%D1%81%D0%BA%D0%B0%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D0%BC%D0%BE/#%D1%8F%D0%BA-%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8%D1%81%D1%8F-casdoor" class="hash-link" aria-label="Пряме посилання на Як користуватися Casdoor?" title="Пряме посилання на Як користуватися Casdoor?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="як-користуватися-casdoor">Як користуватися Casdoor?<a href="https://casdoor.ai/uk/blog/welcome/#%D1%8F%D0%BA-%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8%D1%81%D1%8F-casdoor" class="hash-link" aria-label="Пряме посилання на Як користуватися Casdoor?" title="Пряме посилання на Як користуватися Casdoor?" translate="no">​</a></h2>
 <p>You can follow the detailed document to learn about <a href="https://door.casdoor.com/swagger/" target="_blank" rel="noopener noreferrer" class="">Casdoor API</a> and <a class="" href="https://casdoor.ai/uk/docs/basic/server-installation/">setup your own Casdoor</a>. Or use the <a class="" href="https://casdoor.ai/uk/docs/how-to-connect/sdk/">Casdoor SDKs</a> to implement your own application.</p>]]></content>
         <author>
             <name>ErikQQY</name>
             <uri>https://github.com/ErikQQY</uri>
         </author>
-        <category label="Касдор" term="Касдор"/>
+        <category label="Casdoor" term="Casdoor"/>
         <category label="SSO" term="SSO"/>
-        <category label="Автентифікація" term="Автентифікація"/>
+        <category label="Authentication" term="Authentication"/>
         <category label="OAuth2.0" term="OAuth2.0"/>
         <category label="Casbin" term="Casbin"/>
     </entry>

@@ -19,7 +19,7 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/tr/assets/css/styles.5f185f36.css">
-<script src="/tr/assets/js/runtime~main.bbd8a3ac.js" defer="defer"></script>
+<script src="/tr/assets/js/runtime~main.1c0e947f.js" defer="defer"></script>
 <script src="/tr/assets/js/main.0292e5b3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -49,7 +49,8 @@
 <li class=""><strong>Cookie expire</strong> — Session cookie lifetime in hours (default: 720). Without &quot;Remember me&quot;, the session is capped at 24 h regardless.</li>
 <li class=""><strong>Default group</strong> — Group automatically assigned to new users signing up through this application, including both direct sign-up and OAuth-based registration. Providers and invitations can override this per-signup: the effective group follows the priority <strong>invitation SignupGroup &gt; provider SignupGroup &gt; application Default group</strong>.</li>
 <li class=""><strong>Default tag</strong> — Tag automatically assigned to new users who sign up through this application.</li>
-<li class=""><strong>Enable signup</strong> — Allow self sign-up. When off, only admins can create accounts.</li>
+<li class=""><strong>Enable signup</strong> — Allow new accounts: on the signup page, by magic link or verification code, and on the first sign-in with one of the application&#x27;s providers (whose <strong>Can signup</strong> is on). When off, only admins can create accounts.</li>
+<li class=""><strong>Disable self signup</strong> — Shown when <strong>Enable signup</strong> is on. Users can no longer sign themselves up on the signup page, by magic link or by verification code, and the login page hides the signup link. The signup page still works with an <a class="" href="/tr/docs/invitation/overview/">invitation code</a> from an admin, and the first sign-in with a provider still creates the account. Use it to close public signup while keeping just-in-time accounts for SSO, e.g. new employees signing in with Lark or DingTalk for the first time.</li>
 <li class=""><strong>Disable signin</strong> — Disable all sign-in for this application.</li>
 <li class=""><strong>Enable guest signin</strong> — Allow unauthenticated guest access by presenting <code>code=guest-user</code> to the token endpoint. Requires <strong>Enable signup</strong> to be on as well. Not available for the <code>built-in</code> organization. See <a class="" href="/tr/docs/how-to-connect/guest-auth/">Guest authentication</a>.</li>
 <li class=""><strong>Enable exclusive signin</strong> — Enforce one active session per user.</li>
@@ -63,7 +64,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oidcoauth">OIDC/OAuth<a href="#oidcoauth" class="hash-link" aria-label="OIDC/OAuth doğrudan bağlantı" title="OIDC/OAuth doğrudan bağlantı" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>Client ID</strong>   — OAuth 2.0 client identifier.</li>
+<li class=""><strong>Client ID</strong> — OAuth 2.0 client identifier.</li>
 <li class=""><strong>Client secret</strong> — OAuth 2.0 client secret.</li>
 <li class=""><strong>Redirect URLs</strong> — Allowed post-login redirect URIs. Matching is URL-based: scheme, port, and path must match exactly, and the host may be the configured host or any subdomain of it (e.g. configuring <code>https://example.com/callback</code> also allows <code>https://api.example.com/callback</code>). Entries that are not valid URLs are matched as anchored regular expressions.</li>
 <li class=""><strong>Forced redirect origin</strong> — When set, Casdoor forces all redirects to this origin.</li>

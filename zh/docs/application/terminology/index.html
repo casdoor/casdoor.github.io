@@ -19,8 +19,8 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.eb83ccb2.css">
-<script src="/zh/assets/js/runtime~main.c150c490.js" defer="defer"></script>
-<script src="/zh/assets/js/main.c7b43016.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.2f744b17.js" defer="defer"></script>
+<script src="/zh/assets/js/main.14e85d2e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -49,7 +49,8 @@
 <li class=""><strong>Cookie 过期</strong>— 会话 Cookie 的有效期，单位为小时（默认：720）。不含 &quot;Remember me&quot;, 该会话是 capped 在 24 h regardless。</li>
 <li class=""><strong>默认组</strong>— 自动分配给通过此应用程序注册的新用户的组，包括直接注册和基于OAuth的注册。提供商和邀请可覆盖此每注册设置：生效的组遵循优先级<strong>邀请 SignupGroup&gt;提供商 SignupGroup&gt;应用默认组</strong>。</li>
 <li class=""><strong>Default tag</strong>：通过这个应用注册的新用户自动获得的标签。</li>
-<li class=""><strong>启用注册</strong> — 允许 self 注册。当关闭, 仅 admins 可创建 accounts。</li>
+<li class=""><strong>Enable signup</strong> — Allow new accounts: on the signup page, by magic link or verification code, and on the first sign-in with one of the application&#x27;s providers (whose <strong>Can signup</strong> is on). 当关闭, 仅 admins 可创建 accounts。</li>
+<li class=""><strong>Disable self signup</strong> — Shown when <strong>Enable signup</strong> is on. Users can no longer sign themselves up on the signup page, by magic link or by verification code, and the login page hides the signup link. The signup page still works with an <a class="" href="/zh/docs/invitation/overview/">invitation code</a> from an admin, and the first sign-in with a provider still creates the account. Use it to close public signup while keeping just-in-time accounts for SSO, e.g. new employees signing in with Lark or DingTalk for the first time.</li>
 <li class=""><strong>禁用登录</strong> — 禁用 all 符号-在用于此应用程序。</li>
 <li class=""><strong>启用 guest 登录</strong> — 允许 unauthenticated guest access 按呈现 <code>代码=guest-用户</code> 以该令牌端点。需要 <strong>启用注册</strong> 以被开启作为 well。不适用于<code>内置</code>组织。请参阅<a class="" href="/zh/docs/how-to-connect/guest-auth/">访客身份验证</a>。</li>
 <li class=""><strong>启用 exclusive 登录</strong> — Enforce one 激活会话 per 用户。</li>

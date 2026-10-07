@@ -19,7 +19,7 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/vi/assets/css/styles.a8cd4075.css">
-<script src="/vi/assets/js/runtime~main.28509e83.js" defer="defer"></script>
+<script src="/vi/assets/js/runtime~main.1ecc4df4.js" defer="defer"></script>
 <script src="/vi/assets/js/main.2a61ba30.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -49,7 +49,8 @@
 <li class=""><strong>Cookie expire</strong> — Session cookie lifetime in hours (default: 720). Without &quot;Remember me&quot;, the session is capped at 24 h regardless.</li>
 <li class=""><strong>Default group</strong> — Group automatically assigned to new users signing up through this application, including both direct sign-up and OAuth-based registration. Providers and invitations can override this per-signup: the effective group follows the priority <strong>invitation SignupGroup &gt; provider SignupGroup &gt; application Default group</strong>.</li>
 <li class=""><strong>Default tag</strong> — Tag automatically assigned to new users who sign up through this application.</li>
-<li class=""><strong>Enable signup</strong> — Allow self sign-up. When off, only admins can create accounts.</li>
+<li class=""><strong>Enable signup</strong> — Allow new accounts: on the signup page, by magic link or verification code, and on the first sign-in with one of the application&#x27;s providers (whose <strong>Can signup</strong> is on). When off, only admins can create accounts.</li>
+<li class=""><strong>Disable self signup</strong> — Shown when <strong>Enable signup</strong> is on. Users can no longer sign themselves up on the signup page, by magic link or by verification code, and the login page hides the signup link. The signup page still works with an <a class="" href="/vi/docs/invitation/overview/">invitation code</a> from an admin, and the first sign-in with a provider still creates the account. Use it to close public signup while keeping just-in-time accounts for SSO, e.g. new employees signing in with Lark or DingTalk for the first time.</li>
 <li class=""><strong>Disable signin</strong> — Disable all sign-in for this application.</li>
 <li class=""><strong>Enable guest signin</strong> — Allow unauthenticated guest access by presenting <code>code=guest-user</code> to the token endpoint. Requires <strong>Enable signup</strong> to be on as well. Not available for the <code>built-in</code> organization. See <a class="" href="/vi/docs/how-to-connect/guest-auth/">Guest authentication</a>.</li>
 <li class=""><strong>Enable exclusive signin</strong> — Enforce one active session per user.</li>

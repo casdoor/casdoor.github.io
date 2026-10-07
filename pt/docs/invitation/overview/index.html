@@ -19,8 +19,8 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/pt/assets/css/styles.ce297437.css">
-<script src="/pt/assets/js/runtime~main.d8f97183.js" defer="defer"></script>
-<script src="/pt/assets/js/main.751a354b.js" defer="defer"></script>
+<script src="/pt/assets/js/runtime~main.1f234a9c.js" defer="defer"></script>
+<script src="/pt/assets/js/main.3390335c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -42,6 +42,7 @@
 <li class=""><strong>Used count</strong> — Current use count</li>
 <li class=""><strong>Application</strong> — Applications that can use this code; <code>ALL</code> = all apps in the organization. <a class="" href="/pt/docs/application/shared-application/">Shared applications</a> get organization-specific handling</li>
 <li class=""><strong>Username / Email / Phone</strong> — Optional fixed values required when registering with this invitation</li>
+<li class=""><strong>Expire time</strong> — Optional time after which the code is rejected, in RFC 3339 format (e.g. <code>2026-12-31T23:59:59+08:00</code>). Empty means the invitation never expires</li>
 <li class=""><strong>State</strong> — Invitation status (e.g. active, suspended)</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="default-invitation">Default invitation<a href="#default-invitation" class="hash-link" aria-label="Link direto para Default invitation" title="Link direto para Default invitation" translate="no">​</a></h2>
@@ -50,6 +51,7 @@
 <p>To tie an invitation to a specific user, set <strong>Username</strong>, <strong>Email</strong>, or <strong>Phone</strong>. If those fields are empty or not shown on the sign-up form, Casdoor does not enforce them.</p>
 <p><img decoding="async" loading="lazy" alt="Configure as informações do usuário correspondentes ao código de convite" src="/pt/assets/images/invitation-with-user-information-c6c16b8723bc87c5a5d6901d6b7b5f89.png" width="2708" height="292" class="img_ev3q"></p>
 <p>To allow reuse, set <strong>Quota</strong> higher (e.g. 10). To stop new sign-ups with this code, set the invitation <strong>State</strong> to <strong>Suspended</strong>.</p>
+<p>To make an invitation valid only for a limited time, set <strong>Expire time</strong>. After that time, signing up with the code fails with &quot;Invitation code expired&quot;, without changing the <strong>State</strong>. Through the API, set <code>expireTime</code> in <code>/api/add-invitation</code> or <code>/api/update-invitation</code>.</p>
 <p><img decoding="async" loading="lazy" alt="Cota de convite e estado" src="/pt/assets/images/invitation-quota-state-e16c1c4819ea179a3f8141da552a6b9e.png" width="2718" height="718" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>cuidado</div><div class="admonitionContent_BuS1"><p>If an invitation has <strong>Username</strong>, <strong>Email</strong>, or <strong>Phone</strong> set, keep <strong>Quota</strong> at 1. Those fields must be unique per user, so only one registration per invitation is allowed.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="regex-based-invitations">Regex-based invitations<a href="#regex-based-invitations" class="hash-link" aria-label="Link direto para Regex-based invitations" title="Link direto para Regex-based invitations" translate="no">​</a></h2>

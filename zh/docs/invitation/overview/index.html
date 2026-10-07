@@ -19,8 +19,8 @@
 
 
 <script src="/js/isMainland.js" async></script><link rel="stylesheet" href="/zh/assets/css/styles.eb83ccb2.css">
-<script src="/zh/assets/js/runtime~main.c150c490.js" defer="defer"></script>
-<script src="/zh/assets/js/main.c7b43016.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.2f744b17.js" defer="defer"></script>
+<script src="/zh/assets/js/main.14e85d2e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -42,7 +42,8 @@
 <li class=""><strong>Used count</strong>：当前已使用次数</li>
 <li class=""><strong>Application</strong>：可以使用这个邀请码的应用；<code>ALL</code> 表示组织内的所有应用。<a class="" href="/zh/docs/application/shared-application/">共享应用</a> 会按组织单独处理</li>
 <li class=""><strong>Username / Email / Phone</strong>：可选；用这个邀请注册时必须填写的固定值</li>
-<li class=""><strong>State</strong>：邀请状态（例如 active、suspended  ）</li>
+<li class=""><strong>Expire time</strong> — Optional time after which the code is rejected, in RFC 3339 format (e.g. <code>2026-12-31T23:59:59+08:00</code>). Empty means the invitation never expires</li>
+<li class=""><strong>State</strong>：邀请状态（例如 active、suspended）</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="默认邀请">默认邀请<a href="#默认邀请" class="hash-link" aria-label="直接链接到 默认邀请" title="直接链接到 默认邀请" translate="no">​</a></h2>
 <p>默认情况下，邀请码是随机的字母数字串，<strong>Quota</strong> 为 1（只能用一次）。 <strong>Application</strong> 为 <code>ALL</code>（组织内的所有应用）。</p>
@@ -50,12 +51,13 @@
 <p>要把邀请绑定到特定用户，设置 <strong>Username</strong>、<strong>Email</strong> 或 <strong>Phone</strong>。如果这些字段为空，或者注册表单上没有显示，Casdoor 不会强制校验。</p>
 <p><img decoding="async" loading="lazy" alt="配置对应邀请码的用户信息" src="/zh/assets/images/invitation-with-user-information-c6c16b8723bc87c5a5d6901d6b7b5f89.png" width="2708" height="292" class="img_ev3q"></p>
 <p>要允许多次使用，把 <strong>Quota</strong> 调大（例如 10）。要停止用这个邀请码注册新用户，把邀请的 <strong>State</strong> 设为 <strong>Suspended</strong>。</p>
+<p>To make an invitation valid only for a limited time, set <strong>Expire time</strong>. After that time, signing up with the code fails with &quot;Invitation code expired&quot;, without changing the <strong>State</strong>. Through the API, set <code>expireTime</code> in <code>/api/add-invitation</code> or <code>/api/update-invitation</code>.</p>
 <p><img decoding="async" loading="lazy" alt="邀请配额和状态" src="/zh/assets/images/invitation-quota-state-e16c1c4819ea179a3f8141da552a6b9e.png" width="2718" height="718" class="img_ev3q"></p>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>注意事项</div><div class="admonitionContent_BuS1"><p>如果邀请设置了 <strong>Username</strong>、<strong>Email</strong> 或 <strong>Phone</strong>，<strong>Quota</strong> 保持为 1。这些字段每个用户必须唯一，所以每个邀请只能注册一次。</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="基于正则表达式的邀请">基于正则表达式的邀请<a href="#基于正则表达式的邀请" class="hash-link" aria-label="直接链接到 基于正则表达式的邀请" title="直接链接到 基于正则表达式的邀请" translate="no">​</a></h2>
 <p>需要大量邀请码又不想逐个创建时，可以在 <strong>Code</strong> 中使用 <strong>正则表达式</strong>。例如把 <code>Code</code> 设为 <code>[a-z]2333</code>，任何匹配这个模式的邀请码（例如 <code>a2333</code>、<code>b2333</code>）都会被接受。</p>
 <p><img decoding="async" loading="lazy" alt="正则匹配邀请" src="/zh/assets/images/regular-match-invitation-77cf97d60379d4815a1e461809d8ab1e.png" width="2720" height="400" class="img_ev3q"></p>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>备注</div><div class="admonitionContent_BuS1"><p>使用正则邀请码时，每个不同的匹配码只能用一次。 <strong>Quota</strong> 限制总使用次数。例如 <code>Code</code> = <code>[a-z]2333</code>、<strong>Quota</strong> = 2，表示用任意匹配码  最多只能成功注册两次。</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>备注</div><div class="admonitionContent_BuS1"><p>使用正则邀请码时，每个不同的匹配码只能用一次。 <strong>Quota</strong> 限制总使用次数。例如 <code>Code</code> = <code>[a-z]2333</code>、<strong>Quota</strong> = 2，表示用任意匹配码最多只能成功注册两次。</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="邀请链接">邀请链接<a href="#邀请链接" class="hash-link" aria-label="直接链接到 邀请链接" title="直接链接到 邀请链接" translate="no">​</a></h2>
 <p>可以复制某个邀请的邀请链接。链接中的邀请码来自 <strong>Default code</strong>；基于正则的邀请，要把 <strong>Default code</strong> 设为一个能匹配该正则的值。用户打开链接时，注册表单可以根据邀请预先填好。</p>
 <p>对于 <a class="" href="/zh/docs/application/shared-application/">共享应用</a>，生成的邀请链接会带上正确的 <code>-org-{orgName}</code> 后缀，确保注册在正确的组织中完成。</p>

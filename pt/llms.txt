@@ -7,7 +7,7 @@
 - [Visão Geral](https://casdoor.ai/pt/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
 - [Core concepts](https://casdoor.ai/pt/docs/basic/core-concepts/): Organizations, users, applications, and providers—the main building blocks of Casdoor.
 - [Server installation](https://casdoor.ai/pt/docs/basic/server-installation/): Install and configure the Casdoor server from source or pre-built binaries.
-- [Configuração](https://casdoor.ai/pt/docs/basic/configuration/): Configure the Casdoor backend and frontend via app.conf and Conf.js.
+- [Configuração](https://casdoor.ai/pt/docs/basic/configuration/): Configure the Casdoor backend and web console via app.conf and environment variables.
 - [Try with Docker](https://casdoor.ai/pt/docs/basic/try-with-docker/): Run Casdoor using Docker or Docker Compose for quick testing or production.
 - [Try with Helm](https://casdoor.ai/pt/docs/basic/try-with-helm/): Deploy Casdoor on Kubernetes using Helm for manageable, scalable deployments.
 - [Public API](https://casdoor.ai/pt/docs/basic/public-api/): Authenticate and call the Casdoor REST API from your apps and scripts.
@@ -16,6 +16,7 @@
 ## Comparisons
 
 - [Casdoor vs. alternatives](https://casdoor.ai/pt/docs/comparison/overview/): How Casdoor compares with Keycloak, Authentik, Auth0, and Logto on language, license, protocols, AI agent and MCP support, and operations.
+- [Feature comparison](https://casdoor.ai/pt/docs/comparison/feature-comparison/): Casdoor, Keycloak, ZITADEL, and authentik compared feature by feature - SAML IdP, LDAP server, multi-tenancy, SCIM, forward auth, RADIUS, CAS, Kubernetes, and scaling.
 - [Casdoor vs. Keycloak](https://casdoor.ai/pt/docs/comparison/casdoor-vs-keycloak/): A practical comparison of Casdoor and Keycloak - architecture, protocols, customization, AI agent and MCP support, operations, and how to migrate users from Keycloak.
 - [Casdoor vs. Authentik](https://casdoor.ai/pt/docs/comparison/casdoor-vs-authentik/): Casdoor and Authentik compared for self-hosted SSO - architecture, flows and UI customization, protocols, reverse-proxy authentication, licensing, and AI agent support.
 - [Casdoor vs. Auth0](https://casdoor.ai/pt/docs/comparison/casdoor-vs-auth0/): Casdoor compared with Auth0 - open source and self-hosting versus a managed service, pricing model, data residency, customization, and AI agent and MCP support.
@@ -342,6 +343,8 @@
 - [Grafana](https://casdoor.ai/pt/docs/integration/go/grafana/): Use Casdoor as the OAuth provider for Grafana sign-in.
 - [MinIO](https://casdoor.ai/pt/docs/integration/go/minio/): Configurando o Casdoor como um provedor de identidade para suportar o MinIO
 - [Traefik](https://casdoor.ai/pt/docs/integration/go/traefik/): Protect services behind Traefik with Casdoor SSO using casdoor-forward-auth and Traefik's forwardAuth middleware.
+- [Caddy](https://casdoor.ai/pt/docs/integration/go/caddy/): Protect services behind Caddy with Casdoor SSO using casdoor-forward-auth and Caddy's forward_auth directive.
+- [OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
 - [Portainer](https://casdoor.ai/pt/docs/integration/go/portainer/): Configure Portainer OAuth sign-in with Casdoor as the identity provider, so users log in to Portainer with their Casdoor accounts.
 - [Spring Boot](https://casdoor.ai/pt/docs/integration/java/spring-boot/): Add Casdoor sign-in to a Spring Boot application with casdoor-spring-boot-starter - configuration, login redirect, callback and user info.
 - [Spring Cloud](https://casdoor.ai/pt/docs/integration/java/spring-cloud/): Add Casdoor authentication to Spring Cloud microservices, at the gateway or in individual services with casdoor-spring-boot-starter.

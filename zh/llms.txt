@@ -7,7 +7,7 @@
 - [概述](https://casdoor.ai/zh/docs/overview/): Casdoor 是一个用 Go 编写、以界面配置为主的开源 IAM 和 SSO 平台，支持 OAuth 2.0、OIDC、SAML、CAS、LDAP、SCIM、WebAuthn、MFA 和 RADIUS。看看它是如何工作的。
 - [核心概念](https://casdoor.ai/zh/docs/basic/core-concepts/): 组织、用户、应用和提供商——Casdoor 的主要构成模块。
 - [服务器安装](https://casdoor.ai/zh/docs/basic/server-installation/): 从源代码或预构建二进制文件安装并配置Casdoor服务器。
-- [配置](https://casdoor.ai/zh/docs/basic/configuration/): 通过app.conf和Conf.js配置Casdoor后端和前端。
+- [配置](https://casdoor.ai/zh/docs/basic/configuration/): Configure the Casdoor backend and web console via app.conf and environment variables.
 - [使用Docker尝试](https://casdoor.ai/zh/docs/basic/try-with-docker/): 使用Docker或Docker Compose运行Casdoor，以进行快速测试或生产。
 - [使用Helm尝试](https://casdoor.ai/zh/docs/basic/try-with-helm/): 使用Helm在Kubernetes上部署Casdoor，实现可管理、可扩展的部署。
 - [公共API](https://casdoor.ai/zh/docs/basic/public-api/): 从您的应用和脚本中对Casdoor REST API进行身份验证并调用。
@@ -16,6 +16,7 @@
 ## 对比
 
 - [Casdoor 与其他方案对比](https://casdoor.ai/zh/docs/comparison/overview/): Casdoor 与 Keycloak、Authentik、Auth0、Logto 在开发语言、许可证、协议、AI 智能体与 MCP 支持以及运维方面的对比。
+- [Feature comparison](https://casdoor.ai/zh/docs/comparison/feature-comparison/): Casdoor, Keycloak, ZITADEL, and authentik compared feature by feature - SAML IdP, LDAP server, multi-tenancy, SCIM, forward auth, RADIUS, CAS, Kubernetes, and scaling.
 - [Casdoor 与 Keycloak 对比](https://casdoor.ai/zh/docs/comparison/casdoor-vs-keycloak/): Casdoor 与 Keycloak 的实用对比：架构、协议、定制、AI 智能体和 MCP 支持、运维，以及如何从 Keycloak 迁移用户。
 - [Casdoor 与 Authentik 对比](https://casdoor.ai/zh/docs/comparison/casdoor-vs-authentik/): 从自托管 SSO 的角度对比 Casdoor 和 Authentik：架构、流程与界面定制、协议、反向代理认证、许可证，以及对 AI 智能体的支持。
 - [Casdoor 与 Auth0 对比](https://casdoor.ai/zh/docs/comparison/casdoor-vs-auth0/): Casdoor 与 Auth0 对比：开源自托管与托管服务、定价方式、数据存放位置、可定制性，以及对 AI 智能体和 MCP 的支持。
@@ -342,6 +343,8 @@
 - [Grafana](https://casdoor.ai/zh/docs/integration/go/grafana/): 把 Casdoor 用作 Grafana 登录的 OAuth 提供商。
 - [MinIO](https://casdoor.ai/zh/docs/integration/go/minio/): 将Casdoor配置为身份提供商以支持MinIO
 - [Traefik](https://casdoor.ai/zh/docs/integration/go/traefik/): 用 casdoor-forward-auth 和 Traefik 的 forwardAuth 中间件，以 Casdoor SSO 保护 Traefik 后面的服务。
+- [Caddy](https://casdoor.ai/zh/docs/integration/go/caddy/): Protect services behind Caddy with Casdoor SSO using casdoor-forward-auth and Caddy's forward_auth directive.
+- [OAuth2 Proxy](https://casdoor.ai/zh/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
 - [Portainer](https://casdoor.ai/zh/docs/integration/go/portainer/): 以 Casdoor 作为身份提供商配置 Portainer 的 OAuth 登录，用户就能用 Casdoor 账号登录 Portainer。
 - [Spring Boot](https://casdoor.ai/zh/docs/integration/java/spring-boot/): 用 casdoor-spring-boot-starter 为 Spring Boot 应用加上 Casdoor 登录：配置、登录跳转、回调和用户信息。
 - [Spring Cloud](https://casdoor.ai/zh/docs/integration/java/spring-cloud/): 在网关处或在各个服务中用 casdoor-spring-boot-starter，为 Spring Cloud 微服务加上 Casdoor 认证。

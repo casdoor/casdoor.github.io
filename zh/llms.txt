@@ -55,7 +55,7 @@
 - [Qt desktop app](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/qt-app/): 在使用WebEngine的Qt（C++）桌面应用中集成Casdoor。
 - [React Native 应用](https://casdoor.ai/zh/docs/how-to-connect/mobile-sdks/react-native-app/): 使用官方 SDK 将 Casdoor 集成到 React Native 应用中。
 - [Casdoor CLI](https://casdoor.ai/zh/docs/how-to-connect/cli/): 使用 Casdoor 的官方命令行界面管理用户、组和权限
-- [插件和中间件](https://casdoor.ai/zh/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
+- [插件和中间件](https://casdoor.ai/zh/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
 - [Chrome扩展](https://casdoor.ai/zh/docs/how-to-connect/chrome-extension/): 在Chrome扩展程序中集成Casdoor OAuth。
 - [Next.js](https://casdoor.ai/zh/docs/how-to-connect/nextjs/): 在 Next.js 应用中通过中间件和 JS SDK 集成 Casdoor。
 - [Nuxt](https://casdoor.ai/zh/docs/how-to-connect/nuxt/): 在Nuxt应用中集成Casdoor，并使用中间件和JS SDK。
@@ -349,6 +349,7 @@
 - [Spring Boot](https://casdoor.ai/zh/docs/integration/java/spring-boot/): 用 casdoor-spring-boot-starter 为 Spring Boot 应用加上 Casdoor 登录：配置、登录跳转、回调和用户信息。
 - [Spring Cloud](https://casdoor.ai/zh/docs/integration/java/spring-cloud/): 在网关处或在各个服务中用 casdoor-spring-boot-starter，为 Spring Cloud 微服务加上 Casdoor 认证。
 - [Spring Cloud Gateway](https://casdoor.ai/zh/docs/integration/java/spring-cloud-gateway/): 在 Spring Cloud Gateway 中使用 casdoor-spring-boot-starter，用 Casdoor 认证请求。
+- [Quarkus](https://casdoor.ai/zh/docs/integration/java/quarkus/): Sign in to Quarkus applications with Casdoor and authorize requests with Casdoor roles and permissions using the Quarkus Casdoor Auth extension.
 - [Spring Security OAuth](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-oauth/): 用 spring-boot-starter-oauth2-client 把 Casdoor 作为 Spring Security 应用的 OpenID Connect 提供商。
 - [Spring Security 过滤器（OIDC）](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-filter/): 用 OIDC 把 Casdoor 集成到 Spring Security。
 - [Jenkins 插件](https://casdoor.ai/zh/docs/integration/java/jenkins-plugin/): 安装并配置 Jenkins 的 Casdoor 插件，用户就能通过 Casdoor 单点登录进入 Jenkins。

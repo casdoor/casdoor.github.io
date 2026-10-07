@@ -55,7 +55,7 @@
 - [Qt desktop app](https://casdoor.ai/tr/docs/how-to-connect/desktop-sdks/qt-app/): Integrate Casdoor in a Qt (C++) desktop app with WebEngine.
 - [React Native app](https://casdoor.ai/tr/docs/how-to-connect/mobile-sdks/react-native-app/): Integrate Casdoor in a React Native app with the official SDK.
 - [Casdoor CLI](https://casdoor.ai/tr/docs/how-to-connect/cli/): Using Casdoor's official command-line interface for managing users, groups, and permissions
-- [Plugins and middlewares](https://casdoor.ai/tr/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
+- [Plugins and middlewares](https://casdoor.ai/tr/docs/how-to-connect/plugin/): Official Casdoor plugins for Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
 - [Chrome extension](https://casdoor.ai/tr/docs/how-to-connect/chrome-extension/): Integrate Casdoor OAuth in a Chrome extension.
 - [Next.js](https://casdoor.ai/tr/docs/how-to-connect/nextjs/): Integrate Casdoor in a Next.js app with middleware and the JS SDK.
 - [Nuxt](https://casdoor.ai/tr/docs/how-to-connect/nuxt/): Integrate Casdoor in a Nuxt app with middleware and the JS SDK.
@@ -349,6 +349,7 @@
 - [Spring Boot](https://casdoor.ai/tr/docs/integration/java/spring-boot/): Add Casdoor sign-in to a Spring Boot application with casdoor-spring-boot-starter - configuration, login redirect, callback and user info.
 - [Spring Cloud](https://casdoor.ai/tr/docs/integration/java/spring-cloud/): Add Casdoor authentication to Spring Cloud microservices, at the gateway or in individual services with casdoor-spring-boot-starter.
 - [Spring Cloud Gateway](https://casdoor.ai/tr/docs/integration/java/spring-cloud-gateway/): Authenticate requests at a Spring Cloud Gateway with Casdoor, using casdoor-spring-boot-starter in the gateway service.
+- [Quarkus](https://casdoor.ai/tr/docs/integration/java/quarkus/): Sign in to Quarkus applications with Casdoor and authorize requests with Casdoor roles and permissions using the Quarkus Casdoor Auth extension.
 - [Spring Security OAuth](https://casdoor.ai/tr/docs/integration/java/spring-security/spring-security-oauth/): Use Casdoor as the OpenID Connect provider for a Spring Security application with spring-boot-starter-oauth2-client.
 - [Spring Security filter (OIDC)](https://casdoor.ai/tr/docs/integration/java/spring-security/spring-security-filter/): Integrate Casdoor with Spring Security using OIDC.
 - [Jenkins plugin](https://casdoor.ai/tr/docs/integration/java/jenkins-plugin/): Install and configure the Casdoor plugin for Jenkins so users sign in to Jenkins with Casdoor single sign-on.

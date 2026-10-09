@@ -346,6 +346,7 @@
 - [Caddy](https://casdoor.ai/tr/docs/integration/go/caddy/): Protect services behind Caddy with Casdoor SSO using casdoor-forward-auth and Caddy's forward_auth directive.
 - [OAuth2 Proxy](https://casdoor.ai/tr/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
 - [Portainer](https://casdoor.ai/tr/docs/integration/go/portainer/): Configure Portainer OAuth sign-in with Casdoor as the identity provider, so users log in to Portainer with their Casdoor accounts.
+- [Argo CD](https://casdoor.ai/tr/docs/integration/go/argocd/): Sign in to the Argo CD UI and CLI with Casdoor over OpenID Connect, and grant Argo CD roles to Casdoor groups.
 - [Spring Boot](https://casdoor.ai/tr/docs/integration/java/spring-boot/): Add Casdoor sign-in to a Spring Boot application with casdoor-spring-boot-starter - configuration, login redirect, callback and user info.
 - [Spring Cloud](https://casdoor.ai/tr/docs/integration/java/spring-cloud/): Add Casdoor authentication to Spring Cloud microservices, at the gateway or in individual services with casdoor-spring-boot-starter.
 - [Spring Cloud Gateway](https://casdoor.ai/tr/docs/integration/java/spring-cloud-gateway/): Authenticate requests at a Spring Cloud Gateway with Casdoor, using casdoor-spring-boot-starter in the gateway service.
@@ -368,6 +369,7 @@
 - [Thingsboard](https://casdoor.ai/tr/docs/integration/java/Thingsboard/): Use Casdoor as the OAuth 2.0 / OIDC identity provider for the ThingsBoard IoT platform, with Casdoor and ThingsBoard settings.
 - [Firebase](https://casdoor.ai/tr/docs/integration/javascript/firebase/): Use Casdoor as an OpenID Connect provider in Firebase Authentication, so users of a Firebase web app sign in with Casdoor.
 - [WeChat mini program](https://casdoor.ai/tr/docs/integration/javascript/wechat_miniprogram/): Integrate Casdoor sign-in in a WeChat Mini Program (no OAuth redirect).
+- [Immich](https://casdoor.ai/tr/docs/integration/javascript/immich/): Sign in to Immich, in the browser and in the mobile apps, with Casdoor over OAuth and OpenID Connect.
 - [APISIX](https://casdoor.ai/tr/docs/integration/lua/apisix/): Protect APIs behind Apache APISIX with Casdoor, using either the authz-casdoor plugin or the openid-connect plugin.
 - [Zabbix](https://casdoor.ai/tr/docs/integration/php/Zabbix/): Use Casdoor as the SAML IdP for Zabbix SSO.
 - [WordPress (CAS SSO)](https://casdoor.ai/tr/docs/integration/php/WordPress/): Use Casdoor as CAS IdP for WordPress with the wp-cassify plugin.
@@ -375,10 +377,14 @@
 - [Using Casdoor as an OAuth2 server in ShowDoc](https://casdoor.ai/tr/docs/integration/php/showdoc/): Use Casdoor as the OAuth 2.0 server for ShowDoc sign-in, the API and technical documentation platform.
 - [Flarum](https://casdoor.ai/tr/docs/integration/php/Flarum/): Add Casdoor OAuth 2.0 sign-in to a Flarum forum with the FoF Passport extension.
 - [Moodle](https://casdoor.ai/tr/docs/integration/php/Moodle/): Configure Moodle to use Casdoor as an OAuth identity provider for single sign-on.
+- [Nextcloud](https://casdoor.ai/tr/docs/integration/php/nextcloud/): Sign in to Nextcloud with Casdoor through the OpenID Connect user backend app, with Casdoor usernames as Nextcloud user IDs and Casdoor groups as Nextcloud groups.
+- [Proxmox VE](https://casdoor.ai/tr/docs/integration/perl/proxmox/): Add Casdoor to Proxmox VE as an OpenID Connect realm, so administrators sign in to the web interface with their Casdoor account and get permissions from Casdoor groups.
 - [GitLab](https://casdoor.ai/tr/docs/integration/ruby/gitlab/): Configure self-managed GitLab to use Casdoor as its OpenID Connect provider for single sign-on.
+- [Vaultwarden](https://casdoor.ai/tr/docs/integration/rust/vaultwarden/): Sign in to Vaultwarden with Casdoor over OpenID Connect, using the SSO support built into Vaultwarden 1.35.0 and later.
 - [Hasura](https://casdoor.ai/tr/docs/integration/Haskell/Hasura/): Secure Hasura GraphQL Engine with JWTs issued by Casdoor - configure the Casdoor application, Hasura JWT secret and claims mapping.
 - [FastAPI](https://casdoor.ai/tr/docs/integration/python/FastAPI/): Add Casdoor sign-in and Casdoor permission checks to a FastAPI app with the community casbin-fastapi-decorator library.
 - [JumpServer](https://casdoor.ai/tr/docs/integration/python/JumpServer/): Connect the JumpServer bastion host to Casdoor over CAS so users sign in with Casdoor single sign-on.
+- [Open WebUI](https://casdoor.ai/tr/docs/integration/python/open-webui/): Sign in to Open WebUI with Casdoor over OpenID Connect, and sync Open WebUI groups from Casdoor groups.
 
 ## Agents
 

@@ -346,6 +346,7 @@
 - [Caddy](https://casdoor.ai/zh/docs/integration/go/caddy/): Protect services behind Caddy with Casdoor SSO using casdoor-forward-auth and Caddy's forward_auth directive.
 - [OAuth2 Proxy](https://casdoor.ai/zh/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
 - [Portainer](https://casdoor.ai/zh/docs/integration/go/portainer/): 以 Casdoor 作为身份提供商配置 Portainer 的 OAuth 登录，用户就能用 Casdoor 账号登录 Portainer。
+- [Argo CD](https://casdoor.ai/zh/docs/integration/go/argocd/): Sign in to the Argo CD UI and CLI with Casdoor over OpenID Connect, and grant Argo CD roles to Casdoor groups.
 - [Spring Boot](https://casdoor.ai/zh/docs/integration/java/spring-boot/): 用 casdoor-spring-boot-starter 为 Spring Boot 应用加上 Casdoor 登录：配置、登录跳转、回调和用户信息。
 - [Spring Cloud](https://casdoor.ai/zh/docs/integration/java/spring-cloud/): 在网关处或在各个服务中用 casdoor-spring-boot-starter，为 Spring Cloud 微服务加上 Casdoor 认证。
 - [Spring Cloud Gateway](https://casdoor.ai/zh/docs/integration/java/spring-cloud-gateway/): 在 Spring Cloud Gateway 中使用 casdoor-spring-boot-starter，用 Casdoor 认证请求。
@@ -368,6 +369,7 @@
 - [Thingsboard](https://casdoor.ai/zh/docs/integration/java/Thingsboard/): 把 Casdoor 用作物联网平台 ThingsBoard 的 OAuth 2.0 / OIDC 身份提供商，附 Casdoor 和 ThingsBoard 的设置。
 - [Firebase](https://casdoor.ai/zh/docs/integration/javascript/firebase/): 在 Firebase Authentication 中把 Casdoor 用作 OpenID Connect 提供商，Firebase 网页应用的用户就能用 Casdoor 登录。
 - [微信小程序](https://casdoor.ai/zh/docs/integration/javascript/wechat_miniprogram/): 在微信小程序中集成 Casdoor 登录（不走 OAuth 跳转）。
+- [Immich](https://casdoor.ai/zh/docs/integration/javascript/immich/): Sign in to Immich, in the browser and in the mobile apps, with Casdoor over OAuth and OpenID Connect.
 - [APISIX](https://casdoor.ai/zh/docs/integration/lua/apisix/): 用 authz-casdoor 插件或 openid-connect 插件，以 Casdoor 保护 Apache APISIX 后面的 API。
 - [Zabbix](https://casdoor.ai/zh/docs/integration/php/Zabbix/): 把 Casdoor 用作 Zabbix SSO 的 SAML IdP。
 - [WordPress（CAS SSO）](https://casdoor.ai/zh/docs/integration/php/WordPress/): 通过 wp-cassify 插件，把 Casdoor 用作 WordPress 的 CAS IdP。
@@ -375,10 +377,14 @@
 - [在ShowDoc中使用Casdoor作为OAuth2服务器](https://casdoor.ai/zh/docs/integration/php/showdoc/): 把 Casdoor 用作 API 和技术文档平台 ShowDoc 登录的 OAuth 2.0 服务器。
 - [Flarum](https://casdoor.ai/zh/docs/integration/php/Flarum/): 用 FoF Passport 扩展为 Flarum 论坛加上 Casdoor OAuth 2.0 登录。
 - [Moodle](https://casdoor.ai/zh/docs/integration/php/Moodle/): 把 Moodle 配置为以 Casdoor 作为 OAuth 身份提供商，实现单点登录。
+- [Nextcloud](https://casdoor.ai/zh/docs/integration/php/nextcloud/): Sign in to Nextcloud with Casdoor through the OpenID Connect user backend app, with Casdoor usernames as Nextcloud user IDs and Casdoor groups as Nextcloud groups.
+- [Proxmox VE](https://casdoor.ai/zh/docs/integration/perl/proxmox/): Add Casdoor to Proxmox VE as an OpenID Connect realm, so administrators sign in to the web interface with their Casdoor account and get permissions from Casdoor groups.
 - [GitLab](https://casdoor.ai/zh/docs/integration/ruby/gitlab/): 把自托管的 GitLab 配置为以 Casdoor 作为 OpenID Connect 提供商，实现单点登录。
+- [Vaultwarden](https://casdoor.ai/zh/docs/integration/rust/vaultwarden/): Sign in to Vaultwarden with Casdoor over OpenID Connect, using the SSO support built into Vaultwarden 1.35.0 and later.
 - [Hasura](https://casdoor.ai/zh/docs/integration/Haskell/Hasura/): 用 Casdoor 签发的 JWT 保护 Hasura GraphQL Engine：配置 Casdoor 应用、Hasura 的 JWT 密钥和声明映射。
 - [FastAPI](https://casdoor.ai/zh/docs/integration/python/FastAPI/): 用社区库 casbin-fastapi-decorator 为 FastAPI 应用加上 Casdoor 登录和 Casdoor 权限检查。
 - [JumpServer](https://casdoor.ai/zh/docs/integration/python/JumpServer/): 通过 CAS 把 JumpServer 堡垒机接入 Casdoor，用户就能用 Casdoor 单点登录。
+- [Open WebUI](https://casdoor.ai/zh/docs/integration/python/open-webui/): Sign in to Open WebUI with Casdoor over OpenID Connect, and sync Open WebUI groups from Casdoor groups.
 
 ## Agents
 

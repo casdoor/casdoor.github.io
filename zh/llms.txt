@@ -277,6 +277,7 @@
 ## 站点
 
 - [站点](https://casdoor.ai/zh/docs/site/overview/): 配置带有SSL、健康检查和流量规则的反向代理站点。
+- [Add login to an app without OIDC](https://casdoor.ai/zh/docs/site/protect-app/): Put Casdoor in front of an app that has no login or no OIDC support, and pass the signed-in user to it.
 
 ## 规则
 

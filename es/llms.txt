@@ -277,6 +277,7 @@
 ## Sitios
 
 - [Sitios](https://casdoor.ai/es/docs/site/overview/): Configure reverse-proxy sites with SSL, health checks, and traffic rules.
+- [Add login to an app without OIDC](https://casdoor.ai/es/docs/site/protect-app/): Put Casdoor in front of an app that has no login or no OIDC support, and pass the signed-in user to it.
 
 ## Reglas
 

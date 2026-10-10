@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkcasdoor_website=globalThis.webpackChunkcasdoor_website||[]).push([[225],{225(e,s,c){c.d(s,{createArchitectureServices:()=>a.S});var a=c(77713);c(808)}}]);

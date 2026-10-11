@@ -117,6 +117,10 @@
 - [Require an invitation code at sign-up](https://casdoor.ai/pt/docs/application/invitation-code/): Allow only invited users to sign up to an application by requiring a valid invitation code on the sign-up page.
 - [Share an application between organizations](https://casdoor.ai/pt/docs/application/shared-application/): Let the users of every organization sign in to one application, with a client ID per organization.
 
+## Marketplace
+
+- [Marketplace](https://casdoor.ai/pt/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
+
 ## MCP authorization
 
 - [Use Casdoor as the authorization server of an MCP server](https://casdoor.ai/pt/docs/mcp-auth/overview/): Casdoor can be the OAuth 2.1 authorization server of your own MCP server, with dynamic client registration, PKCE, resource indicators, consent, and token validation through JWKS.

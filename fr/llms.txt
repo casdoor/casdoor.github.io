@@ -32,6 +32,7 @@
 - [Deploy Casdoor with Docker](https://casdoor.ai/fr/docs/deployment/docker/): Run Casdoor in production with Docker or Docker Compose, behind Traefik, Nginx, or Caddy with HTTPS.
 - [Deploy Casdoor behind Nginx](https://casdoor.ai/fr/docs/deployment/nginx/): Put Nginx in front of the Casdoor backend as a reverse proxy for your domain.
 - [Deploy Casdoor on Kubernetes](https://casdoor.ai/fr/docs/deployment/k8s/): Deploy Casdoor on a Kubernetes cluster with the example manifest, expose it with Ingress, and protect other applications with oauth2-proxy.
+- [Run Casdoor with the Kubernetes Operator](https://casdoor.ai/fr/docs/deployment/kubernetes-operator/): Install the Casdoor Kubernetes operator, run Casdoor instances from a Casdoor resource, and declare organizations and applications as Kubernetes resources whose client credentials land in Secrets.
 - [Initialize and manage data with a file](https://casdoor.ai/fr/docs/deployment/data-initialization/): Load organizations, applications, users, and other objects into Casdoor from a JSON or YAML file, keep them in sync with the file, and export them.
 - [Manage Casdoor with Terraform](https://casdoor.ai/fr/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions, and groups as code with the official Terraform provider.
 - [Host the frontend files on a CDN](https://casdoor.ai/fr/docs/deployment/deploy-cdn/): Upload the built Casdoor frontend to a CDN through a storage provider, so that browsers load JavaScript and CSS from the CDN.

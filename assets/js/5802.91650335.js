@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([["5802"],{225(e,s,c){c.d(s,{createArchitectureServices:()=>r.S});var r=c(77713);c(90047)}}]);

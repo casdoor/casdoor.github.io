@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([["8753"],{56214(e){e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"The basics","slug":"/category/the-basics","permalink":"/es/docs/category/the-basics","sidebar":"tutorialSidebar","navigation":{"next":{"title":"Visi\xf3n general","permalink":"/es/docs/overview"}}}}')}}]);

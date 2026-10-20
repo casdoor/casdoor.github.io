@@ -39,6 +39,7 @@
 - [Host the frontend files on a CDN](https://casdoor.ai/docs/deployment/deploy-cdn/): Upload the built Casdoor frontend to a CDN through a storage provider, so that browsers load JavaScript and CSS from the CDN.
 - [Host static files on an intranet](https://casdoor.ai/docs/deployment/deploy-intranet/): Serve the images and logos that Casdoor loads from a public CDN from a server inside your own network.
 - [Database migration](https://casdoor.ai/docs/deployment/db-migration/): How Casdoor changes its database schema between versions, and when a manual migration is needed.
+- [Upgrade Casdoor](https://casdoor.ai/docs/deployment/upgrade/): Check for a new Casdoor release in the admin console, upgrade a release binary in one click, and upgrade Docker, Helm, and source deployments.
 - [Upgrade from v3 to v4](https://casdoor.ai/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to use, how to upgrade, and what to check afterward.
 - [Version information](https://casdoor.ai/docs/deployment/version-info/): How Casdoor determines its version in source builds, release binaries, and Docker images, and how to read it.
 
@@ -62,6 +63,7 @@
 - [Sign users in to a Next.js application](https://casdoor.ai/docs/how-to-connect/nextjs/): Add Casdoor sign-in to a Next.js application with casdoor-js-sdk, and protect routes with Next.js middleware.
 - [Sign users in to a Nuxt application](https://casdoor.ai/docs/how-to-connect/nuxt/): Add Casdoor sign-in to a Nuxt application with casdoor-js-sdk, and protect routes with Nuxt middleware.
 - [OAuth 2.0](https://casdoor.ai/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
+- [Sign in with the phone number of the device (one-click login)](https://casdoor.ai/docs/how-to-connect/mobile-one-click/): Let a native app sign users in, or up, with the phone number of the device through the one-click login of Alibaba Cloud PNVS, without an SMS code.
 - [Sign users in as guests](https://casdoor.ai/docs/how-to-connect/guest-auth/): Create temporary users without a username or password, and turn them into regular users later.
 - [Set up Kerberos sign-in](https://casdoor.ai/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), so that users on domain-joined machines sign in to Casdoor without entering credentials.
 - [Connect a CAS client](https://casdoor.ai/docs/how-to-connect/cas/): Use Casdoor as a Central Authentication Service (CAS) server for CAS 1.0, 2.0, and 3.0 clients.

@@ -39,6 +39,7 @@
 - [Host the frontend files on a CDN](https://casdoor.ai/uk/docs/deployment/deploy-cdn/): Upload the built Casdoor frontend to a CDN through a storage provider, so that browsers load JavaScript and CSS from the CDN.
 - [Host static files on an intranet](https://casdoor.ai/uk/docs/deployment/deploy-intranet/): Serve the images and logos that Casdoor loads from a public CDN from a server inside your own network.
 - [Database migration](https://casdoor.ai/uk/docs/deployment/db-migration/): How Casdoor changes its database schema between versions, and when a manual migration is needed.
+- [Upgrade Casdoor](https://casdoor.ai/uk/docs/deployment/upgrade/): Check for a new Casdoor release in the admin console, upgrade a release binary in one click, and upgrade Docker, Helm, and source deployments.
 - [Upgrade from v3 to v4](https://casdoor.ai/uk/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to use, how to upgrade, and what to check afterward.
 - [Version information](https://casdoor.ai/uk/docs/deployment/version-info/): How Casdoor determines its version in source builds, release binaries, and Docker images, and how to read it.
 
@@ -62,6 +63,7 @@
 - [Sign users in to a Next.js application](https://casdoor.ai/uk/docs/how-to-connect/nextjs/): Add Casdoor sign-in to a Next.js application with casdoor-js-sdk, and protect routes with Next.js middleware.
 - [Sign users in to a Nuxt application](https://casdoor.ai/uk/docs/how-to-connect/nuxt/): Add Casdoor sign-in to a Nuxt application with casdoor-js-sdk, and protect routes with Nuxt middleware.
 - [OAuth 2.0](https://casdoor.ai/uk/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
+- [Sign in with the phone number of the device (one-click login)](https://casdoor.ai/uk/docs/how-to-connect/mobile-one-click/): Let a native app sign users in, or up, with the phone number of the device through the one-click login of Alibaba Cloud PNVS, without an SMS code.
 - [Sign users in as guests](https://casdoor.ai/uk/docs/how-to-connect/guest-auth/): Create temporary users without a username or password, and turn them into regular users later.
 - [Set up Kerberos sign-in](https://casdoor.ai/uk/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), so that users on domain-joined machines sign in to Casdoor without entering credentials.
 - [Connect a CAS client](https://casdoor.ai/uk/docs/how-to-connect/cas/): Use Casdoor as a Central Authentication Service (CAS) server for CAS 1.0, 2.0, and 3.0 clients.
@@ -92,13 +94,13 @@
 ## Організації
 
 - [Організації](https://casdoor.ai/uk/docs/organization/overview/): An organization holds users and applications. This page describes the settings of an organization - password storage, avatars, usernames, soft deletion, and the navigation that members see.
-- [Groups](https://casdoor.ai/uk/docs/organization/organization-tree/): Groups collect the users of an organization and form a tree. This page describes the properties of a group and where you manage groups.
+- [Групи – підказка](https://casdoor.ai/uk/docs/organization/organization-tree/): Groups collect the users of an organization and form a tree. This page describes the properties of a group and where you manage groups.
 - [Set password complexity rules](https://casdoor.ai/uk/docs/organization/passwordComplexity/): Require a minimum length, mixed character classes, special characters, or no repeated characters for the passwords of an organization.
 - [Encrypt passwords in transit](https://casdoor.ai/uk/docs/organization/passwordObfuscator/): Make the Casdoor frontend encrypt passwords with AES or DES before it sends them to the sign-in and set-password APIs.
 - [Customize the account page](https://casdoor.ai/uk/docs/organization/accountCustomization/): Choose which fields the account page of an organization shows, who can view and edit each field, and how the fields are grouped into tabs.
 - [Customize the theme](https://casdoor.ai/uk/docs/organization/customize-theme/): Set the primary color and the border radius of the Casdoor pages for an organization or for a single application.
 - [Require multi-factor authentication](https://casdoor.ai/uk/docs/organization/mfa-items/): Choose which multi-factor authentication methods an organization offers, and whether each one is optional, prompted, or required.
-- [Records](https://casdoor.ai/uk/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
+- [Записи](https://casdoor.ai/uk/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
 
 ## Додатки
 
@@ -119,9 +121,9 @@
 - [Require an invitation code at sign-up](https://casdoor.ai/uk/docs/application/invitation-code/): Allow only invited users to sign up to an application by requiring a valid invitation code on the sign-up page.
 - [Share an application between organizations](https://casdoor.ai/uk/docs/application/shared-application/): Let the users of every organization sign in to one application, with a client ID per organization.
 
-## Marketplace
+## Маркетплейс
 
-- [Marketplace](https://casdoor.ai/uk/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
+- [Маркетплейс](https://casdoor.ai/uk/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
 
 ## MCP authorization
 
@@ -135,12 +137,12 @@
 - [Дозволи](https://casdoor.ai/uk/docs/permission/overview/): Casdoor permissions are built on Casbin. This page explains models, policies, and adapters, and how your application checks permissions through the Casdoor API.
 - [Configure a permission](https://casdoor.ai/uk/docs/permission/permission-configuration/): Reference for the fields of the permission edit page - the model, the adapter, the subjects, the resources and actions, and the effect.
 - [Casbin APIs](https://casdoor.ai/uk/docs/permission/exposed-casbin-apis/): Reference for the Casbin APIs of Casdoor - enforce, batch enforce, and the lists of objects, actions, and roles of a user - which your backend calls to check permissions.
-- [Adapters](https://casdoor.ai/uk/docs/permission/adapter/): Connect Casdoor to a database table that holds Casbin policies, and view and edit the policies in the admin console.
+- [Адаптери](https://casdoor.ai/uk/docs/permission/adapter/): Connect Casdoor to a database table that holds Casbin policies, and view and edit the policies in the admin console.
 
 ## Провайдери
 
 - [Провайдери](https://casdoor.ai/uk/docs/provider/overview/): Providers connect Casdoor to external services for sign-in, email, SMS, storage, payment, captcha, and more. This page lists the categories and explains who can use a provider.
-- [OAuth providers](https://casdoor.ai/uk/docs/provider/oauth/overview/): Let users sign in to Casdoor with an account at an external identity provider, such as Google or GitHub, and learn how Casdoor links and maps these accounts.
+- [Постачальники OAuth](https://casdoor.ai/uk/docs/provider/oauth/overview/): Let users sign in to Casdoor with an account at an external identity provider, such as Google or GitHub, and learn how Casdoor links and maps these accounts.
 - [Map OAuth claims to user fields](https://casdoor.ai/uk/docs/provider/oauth/user-mapping/): Fill in Casdoor user fields, such as the phone number or the job title, from the claims that an OAuth provider returns.
 - [Add Google as an OAuth provider](https://casdoor.ai/uk/docs/provider/oauth/google/): Let users sign in to Casdoor with their Google account.
 - [Turn on Google One Tap](https://casdoor.ai/uk/docs/provider/oauth/googleonetap/): Let users sign in on the Casdoor sign-in page with Google One Tap by setting the rule of the Google provider to One Tap.
@@ -323,7 +325,7 @@
 
 - [Вебхуки](https://casdoor.ai/uk/docs/webhooks/overview/): Send Casdoor events to your application via HTTP webhooks for real-time integration.
 
-## LDAP
+## LDAP-каталог
 
 - [Огляд](https://casdoor.ai/uk/docs/ldap/overview/): Sync users from an LDAP server into Casdoor and authenticate them against LDAP.
 - [LDAP configuration and sync](https://casdoor.ai/uk/docs/ldap/config/): Configure LDAP per organization and sync users into Casdoor.

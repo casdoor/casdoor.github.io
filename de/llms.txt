@@ -5,23 +5,23 @@
 ## The basics
 
 - [What is Casdoor](https://casdoor.ai/de/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
-- [Core concepts](https://casdoor.ai/de/docs/basic/core-concepts/): Organizations, users, applications, and providers are the four objects that every Casdoor setup is built from.
-- [Install the Casdoor server](https://casdoor.ai/de/docs/basic/server-installation/): Install Casdoor from a pre-built binary or from source, connect it to a database, and sign in to the admin console.
-- [Configuration reference](https://casdoor.ai/de/docs/basic/configuration/): Every option in the Casdoor configuration file app.conf, and how to override options with environment variables.
-- [Run Casdoor with Docker](https://casdoor.ai/de/docs/basic/try-with-docker/): Run Casdoor in a Docker container, either with the all-in-one image for a quick trial or with the standard image and your own database.
-- [Run Casdoor on Kubernetes with Helm](https://casdoor.ai/de/docs/basic/try-with-helm/): Install the Casdoor Helm chart on a Kubernetes cluster, expose it with Ingress or the Gateway API, and manage the release.
-- [Admin console](https://casdoor.ai/de/docs/basic/admin-console/): Find objects with the command palette, and choose columns and delete several rows at once on the list pages of the Casdoor admin console.
-- [Call the Casdoor API](https://casdoor.ai/de/docs/basic/public-api/): Authenticate to the Casdoor REST API with an access token, client credentials, an access key, or a username and password, and call it from your applications and scripts.
-- [Tutorials from the community](https://casdoor.ai/de/docs/basic/tutorials/): Documentation of other products and articles by the community that show how to use Casdoor for single sign-on.
+- [Kernkonzepte](https://casdoor.ai/de/docs/basic/core-concepts/): Organisationen, Benutzer, Anwendungen und Anbieter sind die vier Objekte, aus denen jede Casdoor-Installation aufgebaut ist.
+- [Den Casdoor Server installieren](https://casdoor.ai/de/docs/basic/server-installation/): Installieren Sie Casdoor aus einer vorab erstellten Binary oder aus dem Quellcode, verbinden Sie es mit einer Datenbank und melden Sie sich bei der Admin Console an.
+- [Configuration reference](https://casdoor.ai/de/docs/basic/configuration/): Alle Optionen in der Casdoor-Konfigurationsdatei app.conf und wie Optionen über Umgebungsvariablen überschrieben werden.
+- [Casdoor mit Docker ausführen](https://casdoor.ai/de/docs/basic/try-with-docker/): Führen Sie Casdoor in einem Docker-Container aus, entweder mit dem All-in-One-Image für eine schnelle Testversion oder mit dem Standard-Image und Ihrer eigenen Datenbank.
+- [Casdoor auf Kubernetes mit Helm ausführen](https://casdoor.ai/de/docs/basic/try-with-helm/): Installieren Sie das Casdoor-Helm-Chart auf einem Kubernetes-Cluster, stellen Sie es über Ingress oder die Gateway API bereit und verwalten Sie die Release.
+- [Admin console](https://casdoor.ai/de/docs/basic/admin-console/): Finden Sie Objekte über die Befehlspalette und wählen Sie Spalten aus oder löschen Sie mehrere Zeilen gleichzeitig auf den Listen-Seiten der Casdoor-Admin-Konsole.
+- [Casdoor-API aufrufen](https://casdoor.ai/de/docs/basic/public-api/): Authentifizieren Sie sich bei der Casdoor REST API mit einem Zugriffstoken, Client-Anmeldedaten, einem Zugriffsschlüssel oder einem Benutzernamen und Passwort, und rufen Sie sie aus Ihren Anwendungen und Skripten auf.
+- [Tutorials aus der Community](https://casdoor.ai/de/docs/basic/tutorials/): Dokumentationen anderer Produkte und Artikel von der Community, die zeigen, wie Casdoor für Single Sign-On verwendet wird.
 
 ## Comparisons
 
-- [Casdoor vs. alternatives](https://casdoor.ai/de/docs/comparison/overview/): How Casdoor compares with Keycloak, Authentik, Auth0, and Logto on language, license, protocols, AI agent and MCP support, and operations.
-- [Feature comparison](https://casdoor.ai/de/docs/comparison/feature-comparison/): Casdoor, Keycloak, ZITADEL, and authentik compared feature by feature - SAML IdP, LDAP server, multi-tenancy, SCIM, forward auth, RADIUS, CAS, Kubernetes, and scaling.
-- [Casdoor vs. Keycloak](https://casdoor.ai/de/docs/comparison/casdoor-vs-keycloak/): A practical comparison of Casdoor and Keycloak - architecture, protocols, customization, AI agent and MCP support, operations, and how to migrate users from Keycloak.
-- [Casdoor vs. Authentik](https://casdoor.ai/de/docs/comparison/casdoor-vs-authentik/): Casdoor and Authentik compared for self-hosted SSO - architecture, flows and UI customization, protocols, reverse-proxy authentication, licensing, and AI agent support.
-- [Casdoor vs. Auth0](https://casdoor.ai/de/docs/comparison/casdoor-vs-auth0/): Casdoor compared with Auth0 - open source and self-hosting versus a managed service, pricing model, data residency, customization, and AI agent and MCP support.
-- [Casdoor vs. Logto](https://casdoor.ai/de/docs/comparison/casdoor-vs-logto/): Casdoor and Logto compared - language and license, databases, protocols, multi-tenancy, enterprise directory features, and authentication for AI agents and MCP servers.
+- [Casdoor vs. Alternativen](https://casdoor.ai/de/docs/comparison/overview/): Wie Casdoor im Vergleich zu Keycloak, Authentik, Auth0 und Logto abschneidet: Sprache, Lizenz, Protokolle, Unterstützung für AI-Agents und MCP sowie Betrieb.
+- [Funktionsvergleich](https://casdoor.ai/de/docs/comparison/feature-comparison/): Vergleich von Casdoor, Keycloak, ZITADEL und authentik Feature für Feature – SAML IdP, LDAP-Server, Multi-Tenancy, SCIM, Forward Auth, RADIUS, CAS, Kubernetes und Skalierung.
+- [Casdoor vs. Keycloak](https://casdoor.ai/de/docs/comparison/casdoor-vs-keycloak/): Ein praktischer Vergleich von Casdoor und Keycloak – Architektur, Protokolle, Anpassung, Unterstützung für KI-Agenten und MCP, Betrieb sowie Migration von Benutzern von Keycloak.
+- [Casdoor vs. Authentik](https://casdoor.ai/de/docs/comparison/casdoor-vs-authentik/): Vergleich zwischen Casdoor und Authentik für Self-Hosted SSO – Architektur, Flows und UI-Anpassung, Protokolle, Reverse-Proxy-Authentifizierung, Lizenzierung und Unterstützung für KI-Agenten.
+- [Casdoor vs. Auth0](https://casdoor.ai/de/docs/comparison/casdoor-vs-auth0/): Vergleich zwischen Casdoor und Auth0 – Open Source und Self-Hosting im Gegensatz zu einem Managed Service, Preismodell, Datenspeicherung, Anpassung sowie Unterstützung für KI-Agenten und MCP.
+- [Casdoor vs. Logto](https://casdoor.ai/de/docs/comparison/casdoor-vs-logto/): Vergleich von Casdoor und Logto – Sprache und Lizenz, Datenbanken, Protokolle, Mandantenfähigkeit, Enterprise-Directory-Funktionen und Authentifizierung für KI-Agenten und MCP-Server.
 
 ## LLM
 
@@ -30,17 +30,18 @@
 
 ## Bereitstellung
 
-- [Deploy Casdoor with Docker](https://casdoor.ai/de/docs/deployment/docker/): Run Casdoor in production with Docker or Docker Compose, behind Traefik, Nginx, or Caddy with HTTPS.
-- [Deploy Casdoor behind Nginx](https://casdoor.ai/de/docs/deployment/nginx/): Put Nginx in front of the Casdoor backend as a reverse proxy for your domain.
-- [Deploy Casdoor on Kubernetes](https://casdoor.ai/de/docs/deployment/k8s/): Deploy Casdoor on a Kubernetes cluster with the example manifest, expose it with Ingress, and protect other applications with oauth2-proxy.
-- [Run Casdoor with the Kubernetes Operator](https://casdoor.ai/de/docs/deployment/kubernetes-operator/): Install the Casdoor Kubernetes operator, run Casdoor instances from a Casdoor resource, and declare organizations and applications as Kubernetes resources whose client credentials land in Secrets.
-- [Initialize and manage data with a file](https://casdoor.ai/de/docs/deployment/data-initialization/): Load organizations, applications, users, and other objects into Casdoor from a JSON or YAML file, keep them in sync with the file, and export them.
-- [Manage Casdoor with Terraform](https://casdoor.ai/de/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions, and groups as code with the official Terraform provider.
-- [Host the frontend files on a CDN](https://casdoor.ai/de/docs/deployment/deploy-cdn/): Upload the built Casdoor frontend to a CDN through a storage provider, so that browsers load JavaScript and CSS from the CDN.
-- [Host static files on an intranet](https://casdoor.ai/de/docs/deployment/deploy-intranet/): Serve the images and logos that Casdoor loads from a public CDN from a server inside your own network.
-- [Database migration](https://casdoor.ai/de/docs/deployment/db-migration/): How Casdoor changes its database schema between versions, and when a manual migration is needed.
-- [Upgrade from v3 to v4](https://casdoor.ai/de/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to use, how to upgrade, and what to check afterward.
-- [Version information](https://casdoor.ai/de/docs/deployment/version-info/): How Casdoor determines its version in source builds, release binaries, and Docker images, and how to read it.
+- [Casdoor mit Docker bereitstellen](https://casdoor.ai/de/docs/deployment/docker/): Führen Sie Casdoor in der Produktion mit Docker oder Docker Compose aus, hinter Traefik, Nginx oder Caddy mit HTTPS.
+- [Casdoor hinter Nginx bereitstellen](https://casdoor.ai/de/docs/deployment/nginx/): Stellen Sie Nginx vor das Casdoor-Backend als Reverse Proxy für Ihre Domain.
+- [Casdoor auf Kubernetes bereitstellen](https://casdoor.ai/de/docs/deployment/k8s/): Stellen Sie Casdoor auf einem Kubernetes-Cluster mit dem Beispiel-Manifest bereit, veröffentlichen Sie es über Ingress und schützen Sie andere Anwendungen mit oauth2-proxy.
+- [Casdoor mit dem Kubernetes Operator ausführen](https://casdoor.ai/de/docs/deployment/kubernetes-operator/): Installieren Sie den Casdoor Kubernetes Operator, führen Sie Casdoor-Instanzen aus einer Casdoor-Ressource aus und deklarieren Sie Organisationen und Anwendungen als Kubernetes-Ressourcen, deren Client-Anmeldedaten in Secrets landen.
+- [Daten mit einer Datei initialisieren und verwalten](https://casdoor.ai/de/docs/deployment/data-initialization/): Laden Sie Organisationen, Anwendungen, Benutzer und andere Objekte aus einer JSON- oder YAML-Datei in Casdoor, halten Sie sie mit der Datei synchron und exportieren Sie sie.
+- [Verwalten von Casdoor mit Terraform](https://casdoor.ai/de/docs/deployment/terraform/): Verwalten Sie Casdoor-Organisationen, -Anwendungen, -Benutzer, -Provider, -Zertifikate, -Rollen, -Berechtigungen und -Gruppen als Code mit dem offiziellen Terraform-Provider.
+- [Frontend-Dateien auf einem CDN hosten](https://casdoor.ai/de/docs/deployment/deploy-cdn/): Laden Sie das erstellte Casdoor-Frontend über einen Storage-Provider auf ein CDN hoch, damit Browser JavaScript und CSS vom CDN laden.
+- [Statische Dateien in einem Intranet hosten](https://casdoor.ai/de/docs/deployment/deploy-intranet/): Bereitstellung der Bilder und Logos, die Casdoor von einem öffentlichen CDN lädt, über einen Server innerhalb Ihres eigenen Netzwerks.
+- [Datenbankmigration](https://casdoor.ai/de/docs/deployment/db-migration/): Wie Casdoor sein Datenbankschema zwischen Versionen ändert und wann eine manuelle Migration erforderlich ist.
+- [Casdoor aktualisieren](https://casdoor.ai/de/docs/deployment/upgrade/): Check for a new Casdoor release in the admin console, upgrade a release binary in one click, and upgrade Docker, Helm, and source deployments.
+- [Upgrade von v3 auf v4](https://casdoor.ai/de/docs/deployment/upgrade-v3-to-v4/): Was sich zwischen Casdoor v3 und v4 geändert hat, welche v4-Version verwendet werden sollte, wie man upgradet und was danach überprüft werden muss.
+- [Versionsinformationen](https://casdoor.ai/de/docs/deployment/version-info/): Wie Casdoor seine Version in Quellcode-Builds, Release-Binaries und Docker-Images ermittelt und wie man sie liest.
 
 ## Connecting to Casdoor
 
@@ -58,13 +59,14 @@
 - [Sign users in to a React Native app](https://casdoor.ai/de/docs/how-to-connect/mobile-sdks/react-native-app/): Run the Casdoor React Native example on iOS and Android, and add Casdoor sign-in to your own app with casdoor-react-native-sdk.
 - [Manage Casdoor from the command line](https://casdoor.ai/de/docs/how-to-connect/cli/): Install the Casdoor CLI, connect it to your Casdoor instance, and manage users and groups from the terminal.
 - [Plugins and middleware](https://casdoor.ai/de/docs/how-to-connect/plugin/): Official Casdoor plugins and middleware for Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
-- [Sign users in to a Chrome extension](https://casdoor.ai/de/docs/how-to-connect/chrome-extension/): Add Casdoor sign-in to a Chrome extension with the Chrome identity API and the OAuth 2.0 authorization code flow.
+- [Benutzer in eine Chrome-Erweiterung anmelden](https://casdoor.ai/de/docs/how-to-connect/chrome-extension/): Fügen Sie einer Chrome-Erweiterung die Casdoor-Anmeldung hinzu, indem Sie die Chrome Identity API und den OAuth 2.0 Authorization Code Flow nutzen.
 - [Sign users in to a Next.js application](https://casdoor.ai/de/docs/how-to-connect/nextjs/): Add Casdoor sign-in to a Next.js application with casdoor-js-sdk, and protect routes with Next.js middleware.
 - [Sign users in to a Nuxt application](https://casdoor.ai/de/docs/how-to-connect/nuxt/): Add Casdoor sign-in to a Nuxt application with casdoor-js-sdk, and protect routes with Nuxt middleware.
 - [OAuth 2.0](https://casdoor.ai/de/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
+- [Sign in with the phone number of the device (one-click login)](https://casdoor.ai/de/docs/how-to-connect/mobile-one-click/): Let a native app sign users in, or up, with the phone number of the device through the one-click login of Alibaba Cloud PNVS, without an SMS code.
 - [Sign users in as guests](https://casdoor.ai/de/docs/how-to-connect/guest-auth/): Create temporary users without a username or password, and turn them into regular users later.
 - [Set up Kerberos sign-in](https://casdoor.ai/de/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), so that users on domain-joined machines sign in to Casdoor without entering credentials.
-- [Connect a CAS client](https://casdoor.ai/de/docs/how-to-connect/cas/): Use Casdoor as a Central Authentication Service (CAS) server for CAS 1.0, 2.0, and 3.0 clients.
+- [Einen CAS-Client verbinden](https://casdoor.ai/de/docs/how-to-connect/cas/): Verwenden Sie Casdoor als Central Authentication Service (CAS)-Server für CAS 1.0-, 2.0- und 3.0-Clients.
 - [Casdoor as an open-source SAML 2.0 identity provider (IdP)](https://casdoor.ai/de/docs/how-to-connect/saml/overview/): Use Casdoor as a free, open-source SAML 2.0 identity provider and connect any SAML service provider - the metadata URL, the reply URL and entity ID, the response binding, IdP-initiated SSO, single logout, SAML attributes, and assertion signatures.
 - [Connect AWS Client VPN with SAML](https://casdoor.ai/de/docs/how-to-connect/saml/aws/): Use Casdoor as the SAML identity provider of AWS Client VPN, so that users sign in to the VPN with their Casdoor account.
 - [Connect Keycloak with SAML](https://casdoor.ai/de/docs/how-to-connect/saml/keycloak/): Add Casdoor to Keycloak as a SAML 2.0 identity provider, so that users sign in to Keycloak with their Casdoor account.
@@ -86,42 +88,42 @@
 
 ## Developer guide
 
-- [Frontend source code](https://casdoor.ai/de/docs/developer-guide/frontend/): The layout of the Casdoor frontend source code in the web directory, and how to run and build it.
-- [Generate Swagger files](https://casdoor.ai/de/docs/developer-guide/swagger/): Regenerate the Swagger (OpenAPI) files of the Casdoor API with the modified bee tool after you add or change an API.
+- [Frontend-Quellcode](https://casdoor.ai/de/docs/developer-guide/frontend/): Die Struktur des Casdoor-Frontend-Quellcodes im web-Verzeichnis sowie Anweisungen zum Ausführen und Erstellen.
+- [Swagger-Dateien generieren](https://casdoor.ai/de/docs/developer-guide/swagger/): Regenerieren Sie die Swagger-(OpenAPI-)Dateien der Casdoor-API mit dem modifizierten bee-Tool, nachdem Sie eine API hinzugefügt oder geändert haben.
 
 ## Organisationen
 
 - [Organisationen](https://casdoor.ai/de/docs/organization/overview/): An organization holds users and applications. This page describes the settings of an organization - password storage, avatars, usernames, soft deletion, and the navigation that members see.
-- [Groups](https://casdoor.ai/de/docs/organization/organization-tree/): Groups collect the users of an organization and form a tree. This page describes the properties of a group and where you manage groups.
+- [Gruppen](https://casdoor.ai/de/docs/organization/organization-tree/): Groups collect the users of an organization and form a tree. This page describes the properties of a group and where you manage groups.
 - [Set password complexity rules](https://casdoor.ai/de/docs/organization/passwordComplexity/): Require a minimum length, mixed character classes, special characters, or no repeated characters for the passwords of an organization.
 - [Encrypt passwords in transit](https://casdoor.ai/de/docs/organization/passwordObfuscator/): Make the Casdoor frontend encrypt passwords with AES or DES before it sends them to the sign-in and set-password APIs.
 - [Customize the account page](https://casdoor.ai/de/docs/organization/accountCustomization/): Choose which fields the account page of an organization shows, who can view and edit each field, and how the fields are grouped into tabs.
 - [Customize the theme](https://casdoor.ai/de/docs/organization/customize-theme/): Set the primary color and the border radius of the Casdoor pages for an organization or for a single application.
 - [Require multi-factor authentication](https://casdoor.ai/de/docs/organization/mfa-items/): Choose which multi-factor authentication methods an organization offers, and whether each one is optional, prompted, or required.
-- [Records](https://casdoor.ai/de/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
+- [Datensätze](https://casdoor.ai/de/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
 
 ## Anwendungen
 
-- [Anwendungen](https://casdoor.ai/de/docs/application/overview/): An application represents one service that signs users in with Casdoor. This page explains what you configure on an application and how to update one through the API.
-- [Application settings reference](https://casdoor.ai/de/docs/application/terminology/): Reference for every field of the application edit page in the Casdoor admin console, organized by tab.
-- [Create and configure an application](https://casdoor.ai/de/docs/application/config/): Create an application in Casdoor, connect it to an organization, and set the redirect URL so that your service can sign users in.
-- [Register clients dynamically](https://casdoor.ai/de/docs/application/dynamic-client-registration/): Let software register itself as an OAuth 2.0 client of Casdoor with one HTTP request, as defined in RFC 7591, and control where this is allowed.
-- [Application categories](https://casdoor.ai/de/docs/application/categories/): The category of an application - Default for applications that users sign in to, Agent for machine clients - and the types that each category offers.
-- [Define custom scopes](https://casdoor.ai/de/docs/application/scopes/): Define your own OAuth 2.0 scopes on an Agent application, such as an MCP server, so that clients request only the permissions that they need.
-- [Add providers to an application](https://casdoor.ai/de/docs/application/providers/): Add identity, email, SMS, and other providers to an application, and choose for each one in which situations Casdoor uses it.
-- [Choose the sign-in methods](https://casdoor.ai/de/docs/application/signin-methods/): Choose which sign-in methods an application offers on its sign-in page, such as password, verification code, magic link, WebAuthn, and LDAP, and in which order.
-- [Allow one session per user](https://casdoor.ai/de/docs/application/exclusive-signin/): Limit the number of active sessions of each user in an application or in a whole organization, so that a new sign-in ends the sessions on other devices.
-- [Customize the sign-up form](https://casdoor.ai/de/docs/application/signup-items-table/): Choose which fields the sign-up page of an application shows, which are required, how they are validated, and how some of them behave.
-- [Customize the sign-in page](https://casdoor.ai/de/docs/application/signin-items-table/): Choose which elements the sign-in page of an application shows and how the forgot-password link, the language selector, and the captcha behave.
-- [Customize the look of the sign-in page](https://casdoor.ai/de/docs/application/ui-customization/): Change the background, the style, and the position of the sign-in form of an application, add a side panel, and move the design to another Casdoor instance.
-- [Let users choose their organization at sign-in](https://casdoor.ai/de/docs/application/specify-login-organization/): Show an organization picker or an organization field on the sign-in page, so that users of several organizations share one sign-in page.
-- [Restrict sign-in by user tags](https://casdoor.ai/de/docs/application/tags/): Allow only users with a matching tag to sign in to an application.
-- [Require an invitation code at sign-up](https://casdoor.ai/de/docs/application/invitation-code/): Allow only invited users to sign up to an application by requiring a valid invitation code on the sign-up page.
-- [Share an application between organizations](https://casdoor.ai/de/docs/application/shared-application/): Let the users of every organization sign in to one application, with a client ID per organization.
+- [Anwendungen](https://casdoor.ai/de/docs/application/overview/): Eine Anwendung stellt einen Dienst dar, der Benutzer über Casdoor anmeldet. Diese Seite erklärt, was Sie auf einer Anwendung konfigurieren und wie Sie sie über die API aktualisieren.
+- [Referenz der Anwendungseinstellungen](https://casdoor.ai/de/docs/application/terminology/): Referenz für jedes Feld der Anwendungs-Bearbeitungsseite in der Casdoor-Admin-Konsole, organisiert nach Tabs.
+- [Erstellen und konfigurieren einer Anwendung](https://casdoor.ai/de/docs/application/config/): Erstellen Sie eine Anwendung in Casdoor, verbinden Sie sie mit einer Organisation und legen Sie die Weiterleitungs-URL fest, damit Ihr Dienst Benutzer anmelden kann.
+- [Clients dynamisch registrieren](https://casdoor.ai/de/docs/application/dynamic-client-registration/): Ermöglichen Sie Software, sich gemäß RFC 7591 mit einer einzigen HTTP-Anfrage als OAuth 2.0-Client von Casdoor zu registrieren, und steuern Sie, wo dies erlaubt ist.
+- [Anwendungskategorien](https://casdoor.ai/de/docs/application/categories/): Die Kategorie einer Anwendung – Default für Anwendungen, bei denen sich Benutzer anmelden, Agent für Maschinen-Clients – sowie die Typen, die jede Kategorie anbietet.
+- [Benutzerdefinierte Scopes definieren](https://casdoor.ai/de/docs/application/scopes/): Definieren Sie eigene OAuth 2.0-Scopes für eine Agent-Anwendung, wie z. B. einen MCP-Server, damit Clients nur die Berechtigungen anfordern, die sie benötigen.
+- [Provider zu einer Anwendung hinzufügen](https://casdoor.ai/de/docs/application/providers/): Fügen Sie Identitäts-, E-Mail-, SMS- und andere Provider zu einer Anwendung hinzu und wählen Sie für jeden aus, in welchen Situationen Casdoor ihn verwendet.
+- [Anmeldemethoden auswählen](https://casdoor.ai/de/docs/application/signin-methods/): Wählen Sie aus, welche Anmeldemethoden eine Anwendung auf ihrer Anmeldeseite anbietet, wie z. B. Passwort, Bestätigungscode, Magic Link, WebAuthn und LDAP, und in welcher Reihenfolge.
+- [Eine Sitzung pro Benutzer zulassen](https://casdoor.ai/de/docs/application/exclusive-signin/): Begrenzen Sie die Anzahl der aktiven Sitzungen jedes Benutzers in einer Anwendung oder in einer gesamten Organisation, sodass eine neue Anmeldung die Sitzungen auf anderen Geräten beendet.
+- [Das Anmeldeformular anpassen](https://casdoor.ai/de/docs/application/signup-items-table/): Wählen Sie aus, welche Felder die Anmeldeseite einer Anwendung anzeigt, welche erforderlich sind, wie sie validiert werden und wie sich einige von ihnen verhalten.
+- [Anmeldeseite anpassen](https://casdoor.ai/de/docs/application/signin-items-table/): Wählen Sie aus, welche Elemente auf der Anmeldeseite einer Anwendung angezeigt werden und wie der Link zum Zurücksetzen des Passworts, die Sprachauswahl und das Captcha funktionieren.
+- [Das Aussehen der Anmeldeseite anpassen](https://casdoor.ai/de/docs/application/ui-customization/): Ändern Sie den Hintergrund, den Stil und die Position des Anmeldeformulars einer Anwendung, fügen Sie ein Seitenpanel hinzu und übertragen Sie das Design auf eine andere Casdoor-Instanz.
+- [Benutzer können ihre Organisation bei der Anmeldung auswählen](https://casdoor.ai/de/docs/application/specify-login-organization/): Zeigen Sie auf der Anmeldeseite einen Organisations-Auswahlmenü oder ein Organisations-Feld an, damit Benutzer mehrerer Organisationen eine gemeinsame Anmeldeseite nutzen können.
+- [Anmeldung durch Benutzer-Tags einschränken](https://casdoor.ai/de/docs/application/tags/): Nur Benutzer mit einem passenden Tag können sich bei einer Anwendung anmelden.
+- [Einen Einladungscode bei der Registrierung erforderlich machen](https://casdoor.ai/de/docs/application/invitation-code/): Erlauben Sie nur eingeladenen Benutzern die Registrierung bei einer Anwendung, indem einen gültigen Einladungscode auf der Registrierungsseite erforderlich machen.
+- [Eine Anwendung zwischen Organisationen teilen](https://casdoor.ai/de/docs/application/shared-application/): Ermöglichen Sie Benutzern jeder Organisation, sich bei einer einzigen Anwendung anzumelden, mit einer Client-ID pro Organisation.
 
-## Marketplace
+## Marktplatz
 
-- [Marketplace](https://casdoor.ai/de/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
+- [Marktplatz](https://casdoor.ai/de/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
 
 ## MCP authorization
 
@@ -135,12 +137,12 @@
 - [Berechtigungen](https://casdoor.ai/de/docs/permission/overview/): Casdoor permissions are built on Casbin. This page explains models, policies, and adapters, and how your application checks permissions through the Casdoor API.
 - [Configure a permission](https://casdoor.ai/de/docs/permission/permission-configuration/): Reference for the fields of the permission edit page - the model, the adapter, the subjects, the resources and actions, and the effect.
 - [Casbin APIs](https://casdoor.ai/de/docs/permission/exposed-casbin-apis/): Reference for the Casbin APIs of Casdoor - enforce, batch enforce, and the lists of objects, actions, and roles of a user - which your backend calls to check permissions.
-- [Adapters](https://casdoor.ai/de/docs/permission/adapter/): Connect Casdoor to a database table that holds Casbin policies, and view and edit the policies in the admin console.
+- [Adapter](https://casdoor.ai/de/docs/permission/adapter/): Connect Casdoor to a database table that holds Casbin policies, and view and edit the policies in the admin console.
 
 ## Anbieter
 
 - [Anbieter](https://casdoor.ai/de/docs/provider/overview/): Providers connect Casdoor to external services for sign-in, email, SMS, storage, payment, captcha, and more. This page lists the categories and explains who can use a provider.
-- [OAuth providers](https://casdoor.ai/de/docs/provider/oauth/overview/): Let users sign in to Casdoor with an account at an external identity provider, such as Google or GitHub, and learn how Casdoor links and maps these accounts.
+- [OAuth-Provider](https://casdoor.ai/de/docs/provider/oauth/overview/): Let users sign in to Casdoor with an account at an external identity provider, such as Google or GitHub, and learn how Casdoor links and maps these accounts.
 - [Map OAuth claims to user fields](https://casdoor.ai/de/docs/provider/oauth/user-mapping/): Fill in Casdoor user fields, such as the phone number or the job title, from the claims that an OAuth provider returns.
 - [Add Google as an OAuth provider](https://casdoor.ai/de/docs/provider/oauth/google/): Let users sign in to Casdoor with their Google account.
 - [Turn on Google One Tap](https://casdoor.ai/de/docs/provider/oauth/googleonetap/): Let users sign in on the Casdoor sign-in page with Google One Tap by setting the rule of the Google provider to One Tap.
@@ -253,7 +255,7 @@
 - [Shopping cart](https://casdoor.ai/de/docs/products/cart/): The Casdoor shopping cart collects several products so users can buy them together in one order and one payment.
 - [Zahlung](https://casdoor.ai/de/docs/products/payment/): View payment records, states, and issue invoices.
 - [Reihenfolge](https://casdoor.ai/de/docs/products/order/): Casdoor orders record each product purchase and track it through its lifecycle, separately from the payments made for it.
-- [Plan](https://casdoor.ai/de/docs/pricing/plan/): Define a plan’s features and price; plans are tied to roles and products.
+- [Tarif](https://casdoor.ai/de/docs/pricing/plan/): Define a plan’s features and price; plans are tied to roles and products.
 - [Preisgestaltung](https://casdoor.ai/de/docs/pricing/): Group one or more plans so users can sign up at different price points.
 - [Abonnement](https://casdoor.ai/de/docs/pricing/subscription/): Manage a user’s selected plan and application access.
 - [Transaction](https://casdoor.ai/de/docs/pricing/transaction/): Track payments and balance changes for users and organizations.
@@ -308,7 +310,7 @@
 
 ## Certificates
 
-- [Übersicht](https://casdoor.ai/de/docs/cert/overview/): Use certificates in Casdoor for JWT signing, SAML, and payment provider security.
+- [Übersicht](https://casdoor.ai/de/docs/cert/overview/): Verwenden Sie Zertifikate in Casdoor für JWT-Signierung, SAML und die Sicherheit von Zahlungsanbietern.
 
 ## Token
 
@@ -404,11 +406,11 @@
 
 ## Agenten
 
-- [Agenten](https://casdoor.ai/de/docs/agent/overview/): Register and manage AI agents in Casdoor.
+- [Agenten](https://casdoor.ai/de/docs/agent/overview/): Registrieren und verwalten Sie KI-Agenten in Casdoor.
 
 ## Einträge
 
-- [Einträge](https://casdoor.ai/de/docs/entry/overview/): Telemetry records collected from OpenClaw agents, OS log facilities, and Casdoor's own authorization events.
+- [Einträge](https://casdoor.ai/de/docs/entry/overview/): Von OpenClaw-Agenten, OS-Protokollierungsfunktionen und den eigenen Autorisierungsereignissen von Casdoor erfasste Telemetrie-Datensätze.
 
 ## Überwachung
 
@@ -418,7 +420,7 @@
 ## More
 
 - [Internationalisierung](https://casdoor.ai/de/docs/internationalization/): Casdoor’s supported languages and how to contribute translations.
-- [Contributor guide](https://casdoor.ai/de/docs/contributing/): How to contribute to Casdoor: code, documentation, and community.
+- [Leitfaden für Mitwirkende](https://casdoor.ai/de/docs/contributing/): Wie Sie zu Casdoor beitragen können: Code, Dokumentation und Community.
 
 ## Optional
 

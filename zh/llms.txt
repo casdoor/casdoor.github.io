@@ -49,7 +49,7 @@
 - [Sign users in with a Casdoor SDK](https://casdoor.ai/zh/docs/how-to-connect/sdk/): Find the Casdoor SDK for your platform, and use a frontend SDK and a backend SDK together to sign users in, verify the access token, and call the Casdoor API.
 - [Set up single sign-on](https://casdoor.ai/zh/docs/session/single-sign-on/): Let users sign in once and open every application of their organization without signing in again.
 - [Sign users out of all applications](https://casdoor.ai/zh/docs/session/single-sign-out/): Sign a user out of every application of the organization at once with the SSO logout endpoint, and notify your applications so that they end their own sessions.
-- [RP 发起的登出](https://casdoor.ai/zh/docs/session/rp-initiated-logout/): Reference for the OpenID Connect end-session endpoint of Casdoor, which a client application calls to sign the user out of Casdoor.
+- [RP-initiated logout (OIDC end-session endpoint)](https://casdoor.ai/zh/docs/session/rp-initiated-logout/): What OpenID Connect RP-initiated logout is and how to use Casdoor's end-session endpoint - parameters, id_token_hint, post_logout_redirect_uri, what Casdoor revokes, and how it relates to back-channel logout.
 - [Sign users in to a Vue application](https://casdoor.ai/zh/docs/how-to-connect/vue-sdk/): Add Casdoor sign-in to a Vue 2 or Vue 3 application with casdoor-vue-sdk.
 - [Sign users in to an Electron app](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/electron-app/): Run the Casdoor Electron example, which signs users in through the system browser and a custom protocol, and add the same flow to your own app.
 - [Sign users in to a .NET desktop app](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/dotnet-app/): Run the Casdoor .NET desktop example, which signs users in through WebView2, and add the same flow to your own app.
@@ -80,7 +80,7 @@
 - [MCP 故障排除](https://casdoor.ai/zh/docs/how-to-connect/mcp/troubleshooting/): Causes and fixes for common problems with the Casdoor MCP server and with MCP servers that use Casdoor as their OAuth 2.0 provider.
 - [Connect Claude Desktop to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop to the Casdoor MCP server through mcp-remote and OAuth 2.0, so that Claude can manage applications and users in Casdoor.
 - [Connect Cursor to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-cursor/): Connect the Cursor editor to the Casdoor MCP server with OAuth 2.0, so that the AI of Cursor can manage applications and users in Casdoor.
-- [Connect ChatGPT to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-chatgpt/): Connect ChatGPT to an MCP server with OAuth 2.0, using the Casdoor MCP server as the example - developer mode, dynamic client registration, sign-in, and why ChatGPT asks for permission before tool calls.
+- [Connect ChatGPT to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-chatgpt/): Add the Casdoor MCP server to ChatGPT as a custom MCP server with OAuth 2.0 - the steps in ChatGPT Plugins, client ID metadata documents and dynamic client registration, the redirect URI, sign-in, and why ChatGPT asks for permission before tool calls.
 - [Set up Face ID sign-in](https://casdoor.ai/zh/docs/how-to-connect/face-id/): Let users register their face in their Casdoor account and sign in by scanning it on the sign-in page.
 - [Set up WebAuthn sign-in](https://casdoor.ai/zh/docs/how-to-connect/webauthn/): Let users sign in to Casdoor with passkeys, fingerprint or face recognition, Windows Hello, or a security key through WebAuthn.
 
@@ -356,6 +356,9 @@
 - [OAuth2 Proxy](https://casdoor.ai/zh/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
 - [Portainer](https://casdoor.ai/zh/docs/integration/go/portainer/): 以 Casdoor 作为身份提供商配置 Portainer 的 OAuth 登录，用户就能用 Casdoor 账号登录 Portainer。
 - [Argo CD](https://casdoor.ai/zh/docs/integration/go/argocd/): Sign in to the Argo CD UI and CLI with Casdoor over OpenID Connect, and grant Argo CD roles to Casdoor groups.
+- [NetBird](https://casdoor.ai/zh/docs/integration/go/netbird/): Sign in to a self-hosted NetBird server, in the dashboard and in the NetBird client, with Casdoor over OpenID Connect.
+- [OpenList](https://casdoor.ai/zh/docs/integration/go/openlist/): Sign in to OpenList, the file list program forked from AList, with Casdoor through its single sign-on settings, with Casdoor usernames as OpenList usernames.
+- [SafeLine WAF](https://casdoor.ai/zh/docs/integration/go/safeline/): Sign users in to the applications that SafeLine (雷池) protects, and administrators in to the SafeLine console, with Casdoor over OpenID Connect.
 - [Spring Boot](https://casdoor.ai/zh/docs/integration/java/spring-boot/): 用 casdoor-spring-boot-starter 为 Spring Boot 应用加上 Casdoor 登录：配置、登录跳转、回调和用户信息。
 - [Spring Cloud](https://casdoor.ai/zh/docs/integration/java/spring-cloud/): 在网关处或在各个服务中用 casdoor-spring-boot-starter，为 Spring Cloud 微服务加上 Casdoor 认证。
 - [Spring Cloud Gateway](https://casdoor.ai/zh/docs/integration/java/spring-cloud-gateway/): 在 Spring Cloud Gateway 中使用 casdoor-spring-boot-starter，用 Casdoor 认证请求。
@@ -376,9 +379,11 @@
 - [FireZone](https://casdoor.ai/zh/docs/integration/java/firezone/): 把 Firezone 配置为以 Casdoor 作为 OpenID Connect 身份提供商登录。
 - [Cloud Foundry](https://casdoor.ai/zh/docs/integration/java/CloudFoundry/): 把 Casdoor 用作 Cloud Foundry 上应用的 OIDC 身份提供商，附 Casdoor 和 Cloud Foundry 的分步配置。
 - [Thingsboard](https://casdoor.ai/zh/docs/integration/java/Thingsboard/): 把 Casdoor 用作物联网平台 ThingsBoard 的 OAuth 2.0 / OIDC 身份提供商，附 Casdoor 和 ThingsBoard 的设置。
+- [Halo](https://casdoor.ai/zh/docs/integration/java/halo/): Sign in to the Halo blogging platform with Casdoor over OpenID Connect, using the custom SSO provider of the OAuth2 plugin.
 - [Firebase](https://casdoor.ai/zh/docs/integration/javascript/firebase/): 在 Firebase Authentication 中把 Casdoor 用作 OpenID Connect 提供商，Firebase 网页应用的用户就能用 Casdoor 登录。
 - [微信小程序](https://casdoor.ai/zh/docs/integration/javascript/wechat_miniprogram/): 在微信小程序中集成 Casdoor 登录（不走 OAuth 跳转）。
 - [Immich](https://casdoor.ai/zh/docs/integration/javascript/immich/): Sign in to Immich, in the browser and in the mobile apps, with Casdoor over OAuth and OpenID Connect.
+- [Joplin Server](https://casdoor.ai/zh/docs/integration/javascript/joplin/): Sign in to Joplin Server, in the browser and in the Joplin apps, with Casdoor as the SAML 2.0 identity provider.
 - [APISIX](https://casdoor.ai/zh/docs/integration/lua/apisix/): 用 authz-casdoor 插件或 openid-connect 插件，以 Casdoor 保护 Apache APISIX 后面的 API。
 - [Zabbix](https://casdoor.ai/zh/docs/integration/php/Zabbix/): 把 Casdoor 用作 Zabbix SSO 的 SAML IdP。
 - [WordPress（CAS SSO）](https://casdoor.ai/zh/docs/integration/php/WordPress/): 通过 wp-cassify 插件，把 Casdoor 用作 WordPress 的 CAS IdP。
@@ -387,6 +392,7 @@
 - [Flarum](https://casdoor.ai/zh/docs/integration/php/Flarum/): 用 FoF Passport 扩展为 Flarum 论坛加上 Casdoor OAuth 2.0 登录。
 - [Moodle](https://casdoor.ai/zh/docs/integration/php/Moodle/): 把 Moodle 配置为以 Casdoor 作为 OAuth 身份提供商，实现单点登录。
 - [Nextcloud](https://casdoor.ai/zh/docs/integration/php/nextcloud/): Sign in to Nextcloud with Casdoor through the OpenID Connect user backend app, with Casdoor usernames as Nextcloud user IDs and Casdoor groups as Nextcloud groups.
+- [Kanboard](https://casdoor.ai/zh/docs/integration/php/kanboard/): Sign in to Kanboard with Casdoor over OAuth 2.0, using the OAuth2 plugin of Kanboard.
 - [Proxmox VE](https://casdoor.ai/zh/docs/integration/perl/proxmox/): Add Casdoor to Proxmox VE as an OpenID Connect realm, so administrators sign in to the web interface with their Casdoor account and get permissions from Casdoor groups.
 - [GitLab](https://casdoor.ai/zh/docs/integration/ruby/gitlab/): 把自托管的 GitLab 配置为以 Casdoor 作为 OpenID Connect 提供商，实现单点登录。
 - [Vaultwarden](https://casdoor.ai/zh/docs/integration/rust/vaultwarden/): Sign in to Vaultwarden with Casdoor over OpenID Connect, using the SSO support built into Vaultwarden 1.35.0 and later.
@@ -394,6 +400,7 @@
 - [FastAPI](https://casdoor.ai/zh/docs/integration/python/FastAPI/): 用社区库 casbin-fastapi-decorator 为 FastAPI 应用加上 Casdoor 登录和 Casdoor 权限检查。
 - [JumpServer](https://casdoor.ai/zh/docs/integration/python/JumpServer/): 通过 CAS 把 JumpServer 堡垒机接入 Casdoor，用户就能用 Casdoor 单点登录。
 - [Open WebUI](https://casdoor.ai/zh/docs/integration/python/open-webui/): Sign in to Open WebUI with Casdoor over OpenID Connect, and sync Open WebUI groups from Casdoor groups.
+- [Sentry](https://casdoor.ai/zh/docs/integration/python/sentry/): Sign in to a Sentry organization with Casdoor as the SAML 2.0 identity provider, on self-hosted Sentry and on sentry.io.
 
 ## Agents
 

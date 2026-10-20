@@ -80,7 +80,7 @@
 - [MCP troubleshooting](https://casdoor.ai/es/docs/how-to-connect/mcp/troubleshooting/): Causes and fixes for common problems with the Casdoor MCP server and with MCP servers that use Casdoor as their OAuth 2.0 provider.
 - [Connect Claude Desktop to the Casdoor MCP server](https://casdoor.ai/es/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop to the Casdoor MCP server through mcp-remote and OAuth 2.0, so that Claude can manage applications and users in Casdoor.
 - [Connect Cursor to the Casdoor MCP server](https://casdoor.ai/es/docs/how-to-connect/mcp/connect-cursor/): Connect the Cursor editor to the Casdoor MCP server with OAuth 2.0, so that the AI of Cursor can manage applications and users in Casdoor.
-- [Connect ChatGPT to the Casdoor MCP server](https://casdoor.ai/es/docs/how-to-connect/mcp/connect-chatgpt/): Connect ChatGPT to the Casdoor MCP server with OAuth 2.0, so that ChatGPT can manage applications and users in Casdoor.
+- [Connect ChatGPT to the Casdoor MCP server](https://casdoor.ai/es/docs/how-to-connect/mcp/connect-chatgpt/): Connect ChatGPT to an MCP server with OAuth 2.0, using the Casdoor MCP server as the example - developer mode, dynamic client registration, sign-in, and why ChatGPT asks for permission before tool calls.
 - [Set up Face ID sign-in](https://casdoor.ai/es/docs/how-to-connect/face-id/): Let users register their face in their Casdoor account and sign in by scanning it on the sign-in page.
 - [Set up WebAuthn sign-in](https://casdoor.ai/es/docs/how-to-connect/webauthn/): Let users sign in to Casdoor with passkeys, fingerprint or face recognition, Windows Hello, or a security key through WebAuthn.
 
@@ -261,7 +261,7 @@
 
 ## Autenticación multifactor
 
-- [MFA / 2FA](https://casdoor.ai/es/docs/user/multi-factor-authentication/): Protege tu cuenta con MFA / 2FA
+- [Multi-factor authentication (MFA / 2FA)](https://casdoor.ai/es/docs/user/multi-factor-authentication/): Turn on multi-factor authentication (MFA) or two-factor authentication (2FA) in Casdoor with a TOTP authenticator app, SMS codes, email codes or RADIUS, plus recovery codes and per-organization MFA requirements.
 - [Use the Casdoor Authenticator app](https://casdoor.ai/es/docs/how-to-connect/totp-authenticator-app/): Install Casdoor Authenticator, an open-source TOTP app for Android and iOS, connect it to Casdoor, and import accounts from other authenticator apps.
 - [Push notification](https://casdoor.ai/es/docs/provider/mfa/push/): Send MFA verification codes through push notification services such as Duo and Pushover, using Casdoor notification providers.
 - [RADIUS MFA](https://casdoor.ai/es/docs/provider/mfa/radius/): Use an external RADIUS server as an MFA provider.

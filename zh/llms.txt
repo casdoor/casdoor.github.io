@@ -65,7 +65,7 @@
 - [Sign users in as guests](https://casdoor.ai/zh/docs/how-to-connect/guest-auth/): Create temporary users without a username or password, and turn them into regular users later.
 - [Set up Kerberos sign-in](https://casdoor.ai/zh/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), so that users on domain-joined machines sign in to Casdoor without entering credentials.
 - [Connect a CAS client](https://casdoor.ai/zh/docs/how-to-connect/cas/): Use Casdoor as a Central Authentication Service (CAS) server for CAS 1.0, 2.0, and 3.0 clients.
-- [Use Casdoor as a SAML identity provider](https://casdoor.ai/zh/docs/how-to-connect/saml/overview/): Connect a SAML 2.0 service provider to Casdoor - the metadata URL, the reply URL and entity ID, the response binding, IdP-initiated SSO, single logout, SAML attributes, and assertion signatures.
+- [Casdoor as an open-source SAML 2.0 identity provider (IdP)](https://casdoor.ai/zh/docs/how-to-connect/saml/overview/): Use Casdoor as a free, open-source SAML 2.0 identity provider and connect any SAML service provider - the metadata URL, the reply URL and entity ID, the response binding, IdP-initiated SSO, single logout, SAML attributes, and assertion signatures.
 - [Connect AWS Client VPN with SAML](https://casdoor.ai/zh/docs/how-to-connect/saml/aws/): Use Casdoor as the SAML identity provider of AWS Client VPN, so that users sign in to the VPN with their Casdoor account.
 - [Connect Keycloak with SAML](https://casdoor.ai/zh/docs/how-to-connect/saml/keycloak/): Add Casdoor to Keycloak as a SAML 2.0 identity provider, so that users sign in to Keycloak with their Casdoor account.
 - [Connect Google Workspace with SAML](https://casdoor.ai/zh/docs/how-to-connect/saml/google-workspace/): Use Casdoor as the SAML identity provider of Google Workspace, so that users sign in to Google with their Casdoor account.
@@ -340,7 +340,7 @@
 ## 集成
 
 - [Nginx](https://casdoor.ai/zh/docs/integration/C++/Nginx/): 以 Casdoor 作为身份提供商，为 NGINX Plus 代理的应用启用 OpenID Connect 单点登录。
-- [Nginx 社区版](https://casdoor.ai/zh/docs/integration/C++/NginxCommunityVersion/): 用 OAuth2 Proxy 和 auth_request，为开源版 Nginx（不是 NGINX Plus）后面的应用加上 Casdoor 单点登录。
+- [Nginx authentication and single sign-on with OAuth2 Proxy](https://casdoor.ai/zh/docs/integration/C++/NginxCommunityVersion/): Add Casdoor single sign-on to applications behind open-source Nginx (not NGINX Plus) with OAuth2 Proxy and auth_request, and what to use instead of a CAS module.
 - [Envoy](https://casdoor.ai/zh/docs/integration/C++/Envoy/): 使用 Envoy 的 OAuth2 过滤器和一个 Casdoor 应用，为 Envoy 代理后面的服务加上 Casdoor 单点登录保护。
 - [Unity](https://casdoor.ai/zh/docs/integration/CSharp/Unity/): 使用Casdoor-dotnet-sdk进行Unity开发。
 - [Kubernetes](https://casdoor.ai/zh/docs/integration/go/kubernetes/): 以 Casdoor 作为 OIDC 身份提供商，用 OpenID Connect 为 kubectl 访问 Kubernetes API server 的用户做认证。

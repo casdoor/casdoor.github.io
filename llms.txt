@@ -180,6 +180,7 @@
 - [Test email with Mailpit](https://casdoor.ai/docs/provider/email/mailpit/): Catch the emails of Casdoor in Mailpit, a local SMTP server for testing.
 - [SMS providers](https://casdoor.ai/docs/provider/sms/overview/): Configure an SMS provider that sends verification codes to phone numbers, and the SMS services that Casdoor supports.
 - [Send SMS with Twilio](https://casdoor.ai/docs/provider/sms/twilio/): Use Twilio as the SMS provider of Casdoor.
+- [Send SMS with Twilio Verify](https://casdoor.ai/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
 - [Send SMS with Amazon SNS](https://casdoor.ai/docs/provider/sms/amazonSns/): Use Amazon Simple Notification Service (SNS) as the SMS provider of Casdoor.
 - [Send SMS with Azure Communication Services](https://casdoor.ai/docs/provider/sms/acs/): Use Azure Communication Services (ACS) as the SMS provider of Casdoor.
 - [Send SMS with Alibaba Cloud](https://casdoor.ai/docs/provider/sms/alibabaCloud/): Use the SMS service of Alibaba Cloud as the SMS provider of Casdoor.

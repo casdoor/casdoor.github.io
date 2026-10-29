@@ -2,407 +2,408 @@
 
 > Casdoor is an open-source, UI-first Identity and Access Management (IAM) and Single Sign-On (SSO) platform written in Go. It supports OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, RADIUS and Kerberos, includes an MCP server, and acts as an OAuth 2.1 authorization server for MCP servers and AI agents.
 
-## The basics
+## Os fundamentos
 
-- [What is Casdoor](https://casdoor.ai/pt/docs/overview/): Casdoor is an open-source, UI-first IAM and SSO platform written in Go, supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA and RADIUS. See how it works.
-- [Core concepts](https://casdoor.ai/pt/docs/basic/core-concepts/): Organizations, users, applications, and providers are the four objects that every Casdoor setup is built from.
-- [Install the Casdoor server](https://casdoor.ai/pt/docs/basic/server-installation/): Install Casdoor from a pre-built binary or from source, connect it to a database, and sign in to the admin console.
-- [Configuration reference](https://casdoor.ai/pt/docs/basic/configuration/): Every option in the Casdoor configuration file app.conf, and how to override options with environment variables.
-- [Run Casdoor with Docker](https://casdoor.ai/pt/docs/basic/try-with-docker/): Run Casdoor in a Docker container, either with the all-in-one image for a quick trial or with the standard image and your own database.
-- [Run Casdoor on Kubernetes with Helm](https://casdoor.ai/pt/docs/basic/try-with-helm/): Install the Casdoor Helm chart on a Kubernetes cluster, expose it with Ingress or the Gateway API, and manage the release.
-- [Admin console](https://casdoor.ai/pt/docs/basic/admin-console/): Find objects with the command palette, and choose columns and delete several rows at once on the list pages of the Casdoor admin console.
-- [Call the Casdoor API](https://casdoor.ai/pt/docs/basic/public-api/): Authenticate to the Casdoor REST API with an access token, client credentials, an access key, or a username and password, and call it from your applications and scripts.
-- [Tutorials from the community](https://casdoor.ai/pt/docs/basic/tutorials/): Documentation of other products and articles by the community that show how to use Casdoor for single sign-on.
+- [O que é o Casdoor](https://casdoor.ai/pt/docs/overview/): O Casdoor é uma plataforma IAM e SSO open-source, orientada a interface (UI-first), escrita em Go, com suporte a OAuth 2.0, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, MFA e RADIUS. Veja como funciona.
+- [Conceitos principais](https://casdoor.ai/pt/docs/basic/core-concepts/): Organizações, usuários, aplicações e provedores são os quatro objetos sobre os quais toda configuração do Casdoor é construída.
+- [Instalar o servidor Casdoor](https://casdoor.ai/pt/docs/basic/server-installation/): Instale o Casdoor a partir de um binário pré-compilado ou do código-fonte, conecte-o a um banco de dados e faça login no console de administração.
+- [Referência de configuração](https://casdoor.ai/pt/docs/basic/configuration/): Todas as opções no arquivo de configuração do Casdoor app.conf, e como substituir opções com variáveis de ambiente.
+- [Execute o Casdoor com Docker](https://casdoor.ai/pt/docs/basic/try-with-docker/): Execute o Casdoor em um contêiner Docker, seja com a imagem all-in-one para um teste rápido ou com a imagem padrão e seu próprio banco de dados.
+- [Executar o Casdoor no Kubernetes com Helm](https://casdoor.ai/pt/docs/basic/try-with-helm/): Instale o chart do Casdoor em um cluster Kubernetes, exponha-o com Ingress ou a Gateway API e gerencie a release.
+- [Admin console](https://casdoor.ai/pt/docs/basic/admin-console/): Encontre objetos com a paleta de comandos e escolha colunas e exclua várias linhas de uma vez nas páginas de lista do console de administração do Casdoor.
+- [Chame a API do Casdoor](https://casdoor.ai/pt/docs/basic/public-api/): Autentique-se na API REST do Casdoor com um token de acesso, credenciais de cliente, uma chave de acesso ou um nome de usuário e senha, e chame-a a partir de suas aplicações e scripts.
+- [Tutoriais da comunidade](https://casdoor.ai/pt/docs/basic/tutorials/): Documentação de outros produtos e artigos da comunidade que mostram como usar o Casdoor para single sign-on.
 
 ## Comparisons
 
-- [Casdoor vs. alternatives](https://casdoor.ai/pt/docs/comparison/overview/): How Casdoor compares with Keycloak, Authentik, Auth0, and Logto on language, license, protocols, AI agent and MCP support, and operations.
-- [Feature comparison](https://casdoor.ai/pt/docs/comparison/feature-comparison/): Casdoor, Keycloak, ZITADEL, and authentik compared feature by feature - SAML IdP, LDAP server, multi-tenancy, SCIM, forward auth, RADIUS, CAS, Kubernetes, and scaling.
-- [Casdoor vs. Keycloak](https://casdoor.ai/pt/docs/comparison/casdoor-vs-keycloak/): A practical comparison of Casdoor and Keycloak - architecture, protocols, customization, AI agent and MCP support, operations, and how to migrate users from Keycloak.
-- [Casdoor vs. Authentik](https://casdoor.ai/pt/docs/comparison/casdoor-vs-authentik/): Casdoor and Authentik compared for self-hosted SSO - architecture, flows and UI customization, protocols, reverse-proxy authentication, licensing, and AI agent support.
-- [Casdoor vs. Auth0](https://casdoor.ai/pt/docs/comparison/casdoor-vs-auth0/): Casdoor compared with Auth0 - open source and self-hosting versus a managed service, pricing model, data residency, customization, and AI agent and MCP support.
-- [Casdoor vs. Logto](https://casdoor.ai/pt/docs/comparison/casdoor-vs-logto/): Casdoor and Logto compared - language and license, databases, protocols, multi-tenancy, enterprise directory features, and authentication for AI agents and MCP servers.
+- [Casdoor vs. alternativas](https://casdoor.ai/pt/docs/comparison/overview/): Como o Casdoor se compara ao Keycloak, Authentik, Auth0 e Logto em termos de linguagem, licença, protocolos, suporte a agentes de IA e MCP, e operações.
+- [Comparação de funcionalidades](https://casdoor.ai/pt/docs/comparison/feature-comparison/): Comparação funcionalidade por funcionalidade entre Casdoor, Keycloak, ZITADEL e authentik - IdP SAML, servidor LDAP, multi-tenancy, SCIM, forward auth, RADIUS, CAS, Kubernetes e escalabilidade.
+- [Casdoor vs. Keycloak](https://casdoor.ai/pt/docs/comparison/casdoor-vs-keycloak/): Uma comparação prática entre Casdoor e Keycloak - arquitetura, protocolos, personalização, suporte a agentes de IA e MCP, operações e como migrar usuários do Keycloak.
+- [Casdoor vs. Authentik](https://casdoor.ai/pt/docs/comparison/casdoor-vs-authentik/): Comparação entre Casdoor e Authentik para SSO auto-hospedado - arquitetura, fluxos e personalização da UI, protocolos, autenticação via proxy reverso, licenciamento e suporte a agentes de IA.
+- [Casdoor vs. Auth0](https://casdoor.ai/pt/docs/comparison/casdoor-vs-auth0/): Comparação entre Casdoor e Auth0 - código aberto e auto-hospedagem versus serviço gerenciado, modelo de preços, residência de dados, personalização e suporte a agentes de IA e MCP.
+- [Casdoor vs. Logto](https://casdoor.ai/pt/docs/comparison/casdoor-vs-logto/): Comparação entre Casdoor e Logto - linguagem e licença, bancos de dados, protocolos, multi-tenancy, recursos corporativos de diretório e autenticação para agentes de IA e servidores MCP.
 
 ## LLM
 
-- [OpenClaw](https://casdoor.ai/pt/docs/llm/openclaw/): Collect LLM agent traces, metrics, and logs in Casdoor using the OpenClaw observability agent.
-- [MCP security](https://casdoor.ai/pt/docs/llm/mcp-security/): How Casdoor secures MCP deployments — OAuth 2.1 for access control and OpenTelemetry for audit and observability.
+- [OpenClaw](https://casdoor.ai/pt/docs/llm/openclaw/): Colete traces, métricas e logs de agentes LLM no Casdoor usando o agente de observabilidade OpenClaw.
+- [Segurança do MCP](https://casdoor.ai/pt/docs/llm/mcp-security/): Como o Casdoor protege implantações do MCP — OAuth 2.1 para controle de acesso e OpenTelemetry para auditoria e observabilidade.
 
 ## Implantação
 
-- [Deploy Casdoor with Docker](https://casdoor.ai/pt/docs/deployment/docker/): Run Casdoor in production with Docker or Docker Compose, behind Traefik, Nginx, or Caddy with HTTPS.
-- [Deploy Casdoor behind Nginx](https://casdoor.ai/pt/docs/deployment/nginx/): Put Nginx in front of the Casdoor backend as a reverse proxy for your domain.
-- [Deploy Casdoor on Kubernetes](https://casdoor.ai/pt/docs/deployment/k8s/): Deploy Casdoor on a Kubernetes cluster with the example manifest, expose it with Ingress, and protect other applications with oauth2-proxy.
-- [Run Casdoor with the Kubernetes Operator](https://casdoor.ai/pt/docs/deployment/kubernetes-operator/): Install the Casdoor Kubernetes operator, run Casdoor instances from a Casdoor resource, and declare organizations and applications as Kubernetes resources whose client credentials land in Secrets.
-- [Initialize and manage data with a file](https://casdoor.ai/pt/docs/deployment/data-initialization/): Load organizations, applications, users, and other objects into Casdoor from a JSON or YAML file, keep them in sync with the file, and export them.
-- [Manage Casdoor with Terraform](https://casdoor.ai/pt/docs/deployment/terraform/): Manage Casdoor organizations, applications, users, providers, certs, roles, permissions, and groups as code with the official Terraform provider.
+- [Deploy do Casdoor com Docker](https://casdoor.ai/pt/docs/deployment/docker/): Execute o Casdoor em produção com Docker ou Docker Compose, atrás de Traefik, Nginx ou Caddy com HTTPS.
+- [Implantar o Casdoor atrás do Nginx](https://casdoor.ai/pt/docs/deployment/nginx/): Coloque o Nginx na frente do backend do Casdoor como proxy reverso para o seu domínio.
+- [Implantar o Casdoor no Kubernetes](https://casdoor.ai/pt/docs/deployment/k8s/): Implante o Casdoor em um cluster Kubernetes com o manifesto de exemplo, exponha-o com Ingress e proteja outras aplicações com oauth2-proxy.
+- [Execute o Casdoor com o Operador Kubernetes](https://casdoor.ai/pt/docs/deployment/kubernetes-operator/): Instale o operador Kubernetes do Casdoor, execute instâncias do Casdoor a partir de um recurso Casdoor e declare organizações e aplicações como recursos do Kubernetes cujas credenciais de cliente são armazenadas em Secrets.
+- [Inicializar e gerenciar dados com um arquivo](https://casdoor.ai/pt/docs/deployment/data-initialization/): Carregue organizações, aplicações, usuários e outros objetos no Casdoor a partir de um arquivo JSON ou YAML, mantenha-os sincronizados com o arquivo e exporte-os.
+- [Gerenciar o Casdoor com Terraform](https://casdoor.ai/pt/docs/deployment/terraform/): Gerencie organizações, aplicações, usuários, provedores, certificados, funções, permissões e grupos do Casdoor como código com o provedor oficial do Terraform.
 - [Host the frontend files on a CDN](https://casdoor.ai/pt/docs/deployment/deploy-cdn/): Upload the built Casdoor frontend to a CDN through a storage provider, so that browsers load JavaScript and CSS from the CDN.
 - [Host static files on an intranet](https://casdoor.ai/pt/docs/deployment/deploy-intranet/): Serve the images and logos that Casdoor loads from a public CDN from a server inside your own network.
-- [Database migration](https://casdoor.ai/pt/docs/deployment/db-migration/): How Casdoor changes its database schema between versions, and when a manual migration is needed.
-- [Upgrade Casdoor](https://casdoor.ai/pt/docs/deployment/upgrade/): Check for a new Casdoor release in the admin console, upgrade a release binary in one click, and upgrade Docker, Helm, and source deployments.
-- [Upgrade from v3 to v4](https://casdoor.ai/pt/docs/deployment/upgrade-v3-to-v4/): What changed between Casdoor v3 and v4, which v4 release to use, how to upgrade, and what to check afterward.
+- [Migração de banco de dados](https://casdoor.ai/pt/docs/deployment/db-migration/): Como o Casdoor altera seu schema de banco de dados entre versões e quando uma migração manual é necessária.
+- [Atualizar o Casdoor](https://casdoor.ai/pt/docs/deployment/upgrade/): Verifique novas releases do Casdoor no console de administração, atualize um binário de release com um clique e atualize implantações Docker, Helm e de código-fonte.
+- [Atualização da v3 para a v4](https://casdoor.ai/pt/docs/deployment/upgrade-v3-to-v4/): O que mudou entre o Casdoor v3 e v4, qual versão da v4 usar, como atualizar e o que verificar depois.
 - [Version information](https://casdoor.ai/pt/docs/deployment/version-info/): How Casdoor determines its version in source builds, release binaries, and Docker images, and how to read it.
 
-## Connecting to Casdoor
+## Conectando ao Casdoor
 
-- [Connect an application to Casdoor](https://casdoor.ai/pt/docs/how-to-connect/overview/): Choose how your application signs users in with Casdoor - OAuth 2.0 and OpenID Connect, SAML, or CAS - and whether to use an OIDC library, a Casdoor SDK, or a plugin.
-- [Connect a standard OIDC client](https://casdoor.ai/pt/docs/how-to-connect/oidc-client/): Point any OpenID Connect client library at the Casdoor discovery endpoint, and learn what the discovery document and the UserInfo endpoint return.
-- [Sign users in with a Casdoor SDK](https://casdoor.ai/pt/docs/how-to-connect/sdk/): Find the Casdoor SDK for your platform, and use a frontend SDK and a backend SDK together to sign users in, verify the access token, and call the Casdoor API.
+- [Conectar uma aplicação ao Casdoor](https://casdoor.ai/pt/docs/how-to-connect/overview/): Escolha como sua aplicação autentica usuários com o Casdoor - OAuth 2.0 e OpenID Connect, SAML ou CAS - e se deseja usar uma biblioteca OIDC, um SDK do Casdoor ou um plugin.
+- [Conectar um cliente OIDC padrão](https://casdoor.ai/pt/docs/how-to-connect/oidc-client/): Aponte qualquer biblioteca de cliente OpenID Connect para o endpoint de descoberta do Casdoor e aprenda o que o documento de descoberta e o endpoint UserInfo retornam.
+- [Faça login de usuários com um SDK do Casdoor](https://casdoor.ai/pt/docs/how-to-connect/sdk/): Encontre o SDK do Casdoor para sua plataforma e use um SDK de frontend e um SDK de backend juntos para fazer login de usuários, verificar o token de acesso e chamar a API do Casdoor.
 - [Set up single sign-on](https://casdoor.ai/pt/docs/session/single-sign-on/): Let users sign in once and open every application of their organization without signing in again.
-- [Sign users out of all applications](https://casdoor.ai/pt/docs/session/single-sign-out/): Sign a user out of every application of the organization at once with the SSO logout endpoint, and notify your applications so that they end their own sessions.
-- [RP-initiated logout (OIDC end-session endpoint)](https://casdoor.ai/pt/docs/session/rp-initiated-logout/): What OpenID Connect RP-initiated logout is and how to use Casdoor's end-session endpoint - parameters, id_token_hint, post_logout_redirect_uri, what Casdoor revokes, and how it relates to back-channel logout.
-- [Sign users in to a Vue application](https://casdoor.ai/pt/docs/how-to-connect/vue-sdk/): Add Casdoor sign-in to a Vue 2 or Vue 3 application with casdoor-vue-sdk.
+- [Desconectar usuários de todas as aplicações](https://casdoor.ai/pt/docs/session/single-sign-out/): Desconecte um usuário de todas as aplicações da organização de uma só vez com o endpoint de logout SSO e notifique suas aplicações para que elas encerrem suas próprias sessões.
+- [Logout iniciado pelo RP (end-session endpoint OIDC)](https://casdoor.ai/pt/docs/session/rp-initiated-logout/): O que é o logout iniciado pelo RP do OpenID Connect e como usar o end-session endpoint do Casdoor - parâmetros, id_token_hint, post_logout_redirect_uri, o que o Casdoor revoga e como isso se relaciona com o back-channel logout.
+- [Entrar usuários em uma aplicação Vue](https://casdoor.ai/pt/docs/how-to-connect/vue-sdk/): Adicione login do Casdoor a uma aplicação Vue 2 ou Vue 3 com casdoor-vue-sdk.
 - [Sign users in to an Electron app](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/electron-app/): Run the Casdoor Electron example, which signs users in through the system browser and a custom protocol, and add the same flow to your own app.
-- [Sign users in to a .NET desktop app](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/dotnet-app/): Run the Casdoor .NET desktop example, which signs users in through WebView2, and add the same flow to your own app.
-- [Sign users in to a .NET MAUI app](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/maui-app/): Add Casdoor sign-in to a .NET MAUI app on Android and Windows with the Casdoor.MauiOidcClient library.
-- [Sign users in to a Qt desktop app](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/qt-app/): Run the Casdoor Qt example, which signs users in through Qt WebEngine and casdoor-cpp-sdk, and add the same flow to your own C++ app.
-- [Sign users in to a React Native app](https://casdoor.ai/pt/docs/how-to-connect/mobile-sdks/react-native-app/): Run the Casdoor React Native example on iOS and Android, and add Casdoor sign-in to your own app with casdoor-react-native-sdk.
-- [Manage Casdoor from the command line](https://casdoor.ai/pt/docs/how-to-connect/cli/): Install the Casdoor CLI, connect it to your Casdoor instance, and manage users and groups from the terminal.
-- [Plugins and middleware](https://casdoor.ai/pt/docs/how-to-connect/plugin/): Official Casdoor plugins and middleware for Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
-- [Sign users in to a Chrome extension](https://casdoor.ai/pt/docs/how-to-connect/chrome-extension/): Add Casdoor sign-in to a Chrome extension with the Chrome identity API and the OAuth 2.0 authorization code flow.
-- [Sign users in to a Next.js application](https://casdoor.ai/pt/docs/how-to-connect/nextjs/): Add Casdoor sign-in to a Next.js application with casdoor-js-sdk, and protect routes with Next.js middleware.
-- [Sign users in to a Nuxt application](https://casdoor.ai/pt/docs/how-to-connect/nuxt/): Add Casdoor sign-in to a Nuxt application with casdoor-js-sdk, and protect routes with Nuxt middleware.
-- [OAuth 2.0](https://casdoor.ai/pt/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
-- [Sign in with the phone number of the device (one-click login)](https://casdoor.ai/pt/docs/how-to-connect/mobile-one-click/): Let a native app sign users in, or up, with the phone number of the device through the one-click login of Alibaba Cloud PNVS, without an SMS code.
-- [Sign users in as guests](https://casdoor.ai/pt/docs/how-to-connect/guest-auth/): Create temporary users without a username or password, and turn them into regular users later.
-- [Set up Kerberos sign-in](https://casdoor.ai/pt/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), so that users on domain-joined machines sign in to Casdoor without entering credentials.
-- [Connect a CAS client](https://casdoor.ai/pt/docs/how-to-connect/cas/): Use Casdoor as a Central Authentication Service (CAS) server for CAS 1.0, 2.0, and 3.0 clients.
-- [Casdoor as an open-source SAML 2.0 identity provider (IdP)](https://casdoor.ai/pt/docs/how-to-connect/saml/overview/): Use Casdoor as a free, open-source SAML 2.0 identity provider and connect any SAML service provider - the metadata URL, the reply URL and entity ID, the response binding, IdP-initiated SSO, single logout, SAML attributes, and assertion signatures.
-- [Connect AWS Client VPN with SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/aws/): Use Casdoor as the SAML identity provider of AWS Client VPN, so that users sign in to the VPN with their Casdoor account.
-- [Connect Keycloak with SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/keycloak/): Add Casdoor to Keycloak as a SAML 2.0 identity provider, so that users sign in to Keycloak with their Casdoor account.
-- [Connect Google Workspace with SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/google-workspace/): Use Casdoor as the SAML identity provider of Google Workspace, so that users sign in to Google with their Casdoor account.
-- [Connect Appgate SDP with SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/appgate/): Use Casdoor as the SAML identity provider of Appgate SDP, which receives the SAML response by POST.
-- [Connect Tencent Cloud with SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/tencent-cloud/): Use Casdoor as the SAML identity provider of Tencent Cloud Access Management (CAM), so that users sign in to Tencent Cloud in a role.
-- [MCP server overview](https://casdoor.ai/pt/docs/how-to-connect/mcp/overview/): Casdoor exposes its management API as a Model Context Protocol (MCP) server at /api/mcp, and it can register, browse, and scan for external MCP servers.
-- [MCP authentication](https://casdoor.ai/pt/docs/how-to-connect/mcp/authentication/): How MCP clients discover the OAuth 2.0 requirements of the Casdoor MCP server, and the ways to authenticate a request.
-- [MCP tools reference](https://casdoor.ai/pt/docs/how-to-connect/mcp/tools/): The tools of the Casdoor MCP server for managing applications and users, how to list and call them, and the format of the results.
-- [MCP authorization and scopes](https://casdoor.ai/pt/docs/how-to-connect/mcp/authorization/): The OAuth 2.0 scopes that control which tools of the Casdoor MCP server a token can call, how to request them, and how to define scopes for your own MCP server.
-- [Call the MCP server from Python](https://casdoor.ai/pt/docs/how-to-connect/mcp/integration/): A Python example that gets an access token with scopes, initializes a session with the Casdoor MCP server, and calls tools.
-- [MCP error handling](https://casdoor.ai/pt/docs/how-to-connect/mcp/error-handling/): The JSON-RPC error codes of the Casdoor MCP server, with example responses.
-- [MCP troubleshooting](https://casdoor.ai/pt/docs/how-to-connect/mcp/troubleshooting/): Causes and fixes for common problems with the Casdoor MCP server and with MCP servers that use Casdoor as their OAuth 2.0 provider.
-- [Connect Claude Desktop to the Casdoor MCP server](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop to the Casdoor MCP server through mcp-remote and OAuth 2.0, so that Claude can manage applications and users in Casdoor.
-- [Connect Cursor to the Casdoor MCP server](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-cursor/): Connect the Cursor editor to the Casdoor MCP server with OAuth 2.0, so that the AI of Cursor can manage applications and users in Casdoor.
-- [Connect ChatGPT to the Casdoor MCP server](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-chatgpt/): Add the Casdoor MCP server to ChatGPT as a custom MCP server with OAuth 2.0 - the steps in ChatGPT Plugins, client ID metadata documents and dynamic client registration, the redirect URI, sign-in, and why ChatGPT asks for permission before tool calls.
-- [Set up Face ID sign-in](https://casdoor.ai/pt/docs/how-to-connect/face-id/): Let users register their face in their Casdoor account and sign in by scanning it on the sign-in page.
-- [Set up WebAuthn sign-in](https://casdoor.ai/pt/docs/how-to-connect/webauthn/): Let users sign in to Casdoor with passkeys, fingerprint or face recognition, Windows Hello, or a security key through WebAuthn.
+- [Fazer login de usuários em um aplicativo desktop .NET](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/dotnet-app/): Execute o exemplo do Casdoor para aplicativos desktop .NET, que autentica usuários via WebView2, e adicione o mesmo fluxo ao seu próprio aplicativo.
+- [Fazer login de usuários em um aplicativo .NET MAUI](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/maui-app/): Adicione o login do Casdoor a um aplicativo .NET MAUI no Android e Windows com a biblioteca Casdoor.MauiOidcClient.
+- [Faça login de usuários em um aplicativo desktop Qt](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/qt-app/): Execute o exemplo Casdoor Qt, que autentica usuários através do Qt WebEngine e casdoor-cpp-sdk, e adicione o mesmo fluxo ao seu próprio aplicativo C++.
+- [Fazer login de usuários em um aplicativo React Native](https://casdoor.ai/pt/docs/how-to-connect/mobile-sdks/react-native-app/): Execute o exemplo Casdoor React Native no iOS e Android, e adicione o login Casdoor ao seu próprio aplicativo com casdoor-react-native-sdk.
+- [Gerenciar o Casdoor pela linha de comando](https://casdoor.ai/pt/docs/how-to-connect/cli/): Instale a Casdoor CLI, conecte-a à sua instância do Casdoor e gerencie usuários e grupos pelo terminal.
+- [Plugins e middleware](https://casdoor.ai/pt/docs/how-to-connect/plugin/): Plugins oficiais do Casdoor e middleware para Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome e Terraform.
+- [Fazer login de usuários em uma extensão Chrome](https://casdoor.ai/pt/docs/how-to-connect/chrome-extension/): Adicione o login do Casdoor a uma extensão Chrome usando a API de identidade do Chrome e o fluxo de código de autorização OAuth 2.0.
+- [Autenticar usuários em uma aplicação Next.js](https://casdoor.ai/pt/docs/how-to-connect/nextjs/): Adicione o login do Casdoor a uma aplicação Next.js com casdoor-js-sdk e proteja as rotas com o middleware do Next.js.
+- [Autenticar usuários em uma aplicação Nuxt](https://casdoor.ai/pt/docs/how-to-connect/nuxt/): Adicione o login do Casdoor a uma aplicação Nuxt com casdoor-js-sdk e proteja as rotas com o middleware do Nuxt.
+- [OAuth 2.0](https://casdoor.ai/pt/docs/how-to-connect/oauth/): Referência para os endpoints OAuth 2.0 do Casdoor - todos os tipos de concessão suportados, fluxo híbrido e modos de resposta, PKCE, indicadores de recurso, credenciais federadas, DPoP, introspecção de tokens e o endpoint UserInfo.
+- [Entrar com o número de telefone do dispositivo (login com um clique)](https://casdoor.ai/pt/docs/how-to-connect/mobile-one-click/): Permita que uma aplicação nativa autentique usuários ou registre novos usuários usando o número de telefone do dispositivo por meio do login com um clique do PNVS da Alibaba Cloud, sem código SMS.
+- [Autenticar usuários como convidados](https://casdoor.ai/pt/docs/how-to-connect/guest-auth/): Crie usuários temporários sem nome de usuário ou senha e transforme-os em usuários regulares posteriormente.
+- [Configurar login Kerberos](https://casdoor.ai/pt/docs/how-to-connect/kerberos/): Configure Kerberos/SPNEGO (Integrated Windows Authentication), para que usuários em máquinas conectadas ao domínio façam login no Casdoor sem inserir credenciais.
+- [Conectar um cliente CAS](https://casdoor.ai/pt/docs/how-to-connect/cas/): Use o Casdoor como um servidor Central Authentication Service (CAS) para clientes CAS 1.0, 2.0 e 3.0.
+- [Casdoor como um provedor de identidade (IdP) SAML 2.0 de código aberto](https://casdoor.ai/pt/docs/how-to-connect/saml/overview/): Use o Casdoor como um provedor de identidade SAML 2.0 gratuito e de código aberto e conecte qualquer provedor de serviços SAML - a URL dos metadados, a URL de resposta e o ID da entidade, o binding da resposta, SSO iniciado pelo IdP, logout único, atributos SAML e assinaturas de assertion.
+- [Conectar AWS Client VPN com SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/aws/): Use o Casdoor como provedor de identidade SAML do AWS Client VPN, para que os usuários façam login na VPN com suas contas do Casdoor.
+- [Conectar Keycloak com SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/keycloak/): Adicione o Casdoor ao Keycloak como um provedor de identidade SAML 2.0, para que os usuários façam login no Keycloak com suas contas do Casdoor.
+- [Conectar o Google Workspace com SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/google-workspace/): Use o Casdoor como provedor de identidade SAML do Google Workspace, para que os usuários façam login no Google com suas contas do Casdoor.
+- [Conectar Appgate SDP com SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/appgate/): Use o Casdoor como provedor de identidade SAML do Appgate SDP, que recebe a resposta SAML por POST.
+- [Conectar Tencent Cloud com SAML](https://casdoor.ai/pt/docs/how-to-connect/saml/tencent-cloud/): Use o Casdoor como provedor de identidade SAML do Tencent Cloud Access Management (CAM), para que os usuários façam login no Tencent Cloud em um papel.
+- [Visão geral do servidor MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/overview/): O Casdoor expõe sua API de gerenciamento como um servidor Model Context Protocol (MCP) em /api/mcp, e pode registrar, navegar e buscar servidores MCP externos.
+- [Autenticação MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/authentication/): Como os clientes MCP descobrem os requisitos OAuth 2.0 do servidor MCP Casdoor e as formas de autenticar uma solicitação.
+- [Referência das ferramentas MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/tools/): As ferramentas do servidor MCP do Casdoor para gerenciar aplicações e usuários, como listá-las e chamá-las, e o formato dos resultados.
+- [Autorização e escopos do MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/authorization/): Os escopos OAuth 2.0 que controlam quais ferramentas do servidor MCP do Casdoor um token pode chamar, como solicitá-los e como definir escopos para seu próprio servidor MCP.
+- [Chame o servidor MCP do Python](https://casdoor.ai/pt/docs/how-to-connect/mcp/integration/): Um exemplo em Python que obtém um token de acesso com escopos, inicializa uma sessão com o servidor MCP do Casdoor e chama ferramentas.
+- [Tratamento de erros do MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/error-handling/): Os códigos de erro JSON-RPC do servidor MCP do Casdoor, com respostas de exemplo.
+- [Solução de problemas MCP](https://casdoor.ai/pt/docs/how-to-connect/mcp/troubleshooting/): Causas e correções para problemas comuns com o servidor MCP Casdoor e com servidores MCP que usam o Casdoor como seu provedor OAuth 2.0.
+- [Conectar o Claude Desktop ao servidor MCP do Casdoor](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-claude-desktop/): Conecte o Claude Desktop ao servidor MCP do Casdoor através do mcp-remote e OAuth 2.0, para que o Claude possa gerenciar aplicações e usuários no Casdoor.
+- [Conectar o Cursor ao servidor MCP do Casdoor](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-cursor/): Conecte o editor Cursor ao servidor MCP do Casdoor com OAuth 2.0, para que a IA do Cursor possa gerenciar aplicações e usuários no Casdoor.
+- [Conectar o ChatGPT ao servidor MCP do Casdoor](https://casdoor.ai/pt/docs/how-to-connect/mcp/connect-chatgpt/): Adicione o servidor MCP do Casdoor ao ChatGPT como um servidor MCP personalizado com OAuth 2.0 - as etapas em Plugins do ChatGPT, documentos de metadados de ID de cliente e registro dinâmico de clientes, a URI de redirecionamento, login e por que o ChatGPT solicita permissão antes das chamadas de ferramentas.
+- [Configurar login com Face ID](https://casdoor.ai/pt/docs/how-to-connect/face-id/): Permita que os usuários registrem seu rosto na conta do Casdoor e façam login escaneando-o na página de login.
+- [Configurar login WebAuthn](https://casdoor.ai/pt/docs/how-to-connect/webauthn/): Permita que os usuários façam login no Casdoor com passkeys, reconhecimento de digital ou facial, Windows Hello, ou uma chave de segurança através do WebAuthn.
 
-## Developer guide
+## Guia do desenvolvedor
 
-- [Frontend source code](https://casdoor.ai/pt/docs/developer-guide/frontend/): The layout of the Casdoor frontend source code in the web directory, and how to run and build it.
-- [Generate Swagger files](https://casdoor.ai/pt/docs/developer-guide/swagger/): Regenerate the Swagger (OpenAPI) files of the Casdoor API with the modified bee tool after you add or change an API.
+- [Código-fonte do frontend](https://casdoor.ai/pt/docs/developer-guide/frontend/): O layout do código-fonte do frontend do Casdoor no diretório web, e como executá-lo e compilá-lo.
+- [Gerar arquivos Swagger](https://casdoor.ai/pt/docs/developer-guide/swagger/): Regenere os arquivos Swagger (OpenAPI) da API do Casdoor com a ferramenta bee modificada após adicionar ou alterar uma API.
 
 ## Organizações
 
-- [Organizações](https://casdoor.ai/pt/docs/organization/overview/): An organization holds users and applications. This page describes the settings of an organization - password storage, avatars, usernames, soft deletion, and the navigation that members see.
-- [Dica: grupos](https://casdoor.ai/pt/docs/organization/organization-tree/): Groups collect the users of an organization and form a tree. This page describes the properties of a group and where you manage groups.
-- [Set password complexity rules](https://casdoor.ai/pt/docs/organization/passwordComplexity/): Require a minimum length, mixed character classes, special characters, or no repeated characters for the passwords of an organization.
+- [Organizações](https://casdoor.ai/pt/docs/organization/overview/): Uma organização possui usuários e aplicações. Esta página descreve as configurações de uma organização - armazenamento de senhas, avatares, nomes de usuário, exclusão suave e a navegação que os membros veem.
+- [Dica: grupos](https://casdoor.ai/pt/docs/organization/organization-tree/): Grupos reúnem os usuários de uma organização e formam uma árvore. Esta página descreve as propriedades de um grupo e onde você gerencia grupos.
+- [Definir regras de complexidade de senha](https://casdoor.ai/pt/docs/organization/passwordComplexity/): Exija um comprimento mínimo, classes de caracteres mistas, caracteres especiais ou nenhum caractere repetido para as senhas de uma organização.
 - [Encrypt passwords in transit](https://casdoor.ai/pt/docs/organization/passwordObfuscator/): Make the Casdoor frontend encrypt passwords with AES or DES before it sends them to the sign-in and set-password APIs.
-- [Customize the account page](https://casdoor.ai/pt/docs/organization/accountCustomization/): Choose which fields the account page of an organization shows, who can view and edit each field, and how the fields are grouped into tabs.
-- [Customize the theme](https://casdoor.ai/pt/docs/organization/customize-theme/): Set the primary color and the border radius of the Casdoor pages for an organization or for a single application.
-- [Require multi-factor authentication](https://casdoor.ai/pt/docs/organization/mfa-items/): Choose which multi-factor authentication methods an organization offers, and whether each one is optional, prompted, or required.
+- [Personalize a página da conta](https://casdoor.ai/pt/docs/organization/accountCustomization/): Escolha quais campos a página da conta de uma organização exibe, quem pode visualizar e editar cada campo e como os campos são agrupados em abas.
+- [Personalizar o tema](https://casdoor.ai/pt/docs/organization/customize-theme/): Defina a cor primária e o raio de borda das páginas do Casdoor para uma organização ou para uma única aplicação.
+- [Requerer autenticação multifator](https://casdoor.ai/pt/docs/organization/mfa-items/): Escolha quais métodos de autenticação multifator (MFA) uma organização oferece e se cada um é opcional, solicitado ou obrigatório.
 - [Registros](https://casdoor.ai/pt/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
 
 ## Aplicações
 
-- [Aplicações](https://casdoor.ai/pt/docs/application/overview/): An application represents one service that signs users in with Casdoor. This page explains what you configure on an application and how to update one through the API.
-- [Application settings reference](https://casdoor.ai/pt/docs/application/terminology/): Reference for every field of the application edit page in the Casdoor admin console, organized by tab.
+- [Aplicações](https://casdoor.ai/pt/docs/application/overview/): Uma aplicação representa um serviço que autentica usuários com o Casdoor. Esta página explica o que você configura em uma aplicação e como atualizá-la através da API.
+- [Referência de configurações da aplicação](https://casdoor.ai/pt/docs/application/terminology/): Referência para cada campo da página de edição da aplicação no console de administração do Casdoor, organizado por aba.
 - [Create and configure an application](https://casdoor.ai/pt/docs/application/config/): Create an application in Casdoor, connect it to an organization, and set the redirect URL so that your service can sign users in.
-- [Register clients dynamically](https://casdoor.ai/pt/docs/application/dynamic-client-registration/): Let software register itself as an OAuth 2.0 client of Casdoor with one HTTP request, as defined in RFC 7591, and control where this is allowed.
+- [Registrar clientes dinamicamente](https://casdoor.ai/pt/docs/application/dynamic-client-registration/): Permita que softwares se registrem como clientes OAuth 2.0 do Casdoor com uma única requisição HTTP, conforme definido na RFC 7591, e controle onde isso é permitido.
 - [Application categories](https://casdoor.ai/pt/docs/application/categories/): The category of an application - Default for applications that users sign in to, Agent for machine clients - and the types that each category offers.
-- [Define custom scopes](https://casdoor.ai/pt/docs/application/scopes/): Define your own OAuth 2.0 scopes on an Agent application, such as an MCP server, so that clients request only the permissions that they need.
-- [Add providers to an application](https://casdoor.ai/pt/docs/application/providers/): Add identity, email, SMS, and other providers to an application, and choose for each one in which situations Casdoor uses it.
-- [Choose the sign-in methods](https://casdoor.ai/pt/docs/application/signin-methods/): Choose which sign-in methods an application offers on its sign-in page, such as password, verification code, magic link, WebAuthn, and LDAP, and in which order.
-- [Allow one session per user](https://casdoor.ai/pt/docs/application/exclusive-signin/): Limit the number of active sessions of each user in an application or in a whole organization, so that a new sign-in ends the sessions on other devices.
-- [Customize the sign-up form](https://casdoor.ai/pt/docs/application/signup-items-table/): Choose which fields the sign-up page of an application shows, which are required, how they are validated, and how some of them behave.
-- [Customize the sign-in page](https://casdoor.ai/pt/docs/application/signin-items-table/): Choose which elements the sign-in page of an application shows and how the forgot-password link, the language selector, and the captcha behave.
-- [Customize the look of the sign-in page](https://casdoor.ai/pt/docs/application/ui-customization/): Change the background, the style, and the position of the sign-in form of an application, add a side panel, and move the design to another Casdoor instance.
-- [Let users choose their organization at sign-in](https://casdoor.ai/pt/docs/application/specify-login-organization/): Show an organization picker or an organization field on the sign-in page, so that users of several organizations share one sign-in page.
-- [Restrict sign-in by user tags](https://casdoor.ai/pt/docs/application/tags/): Allow only users with a matching tag to sign in to an application.
-- [Require an invitation code at sign-up](https://casdoor.ai/pt/docs/application/invitation-code/): Allow only invited users to sign up to an application by requiring a valid invitation code on the sign-up page.
-- [Share an application between organizations](https://casdoor.ai/pt/docs/application/shared-application/): Let the users of every organization sign in to one application, with a client ID per organization.
+- [Definir escopos personalizados](https://casdoor.ai/pt/docs/application/scopes/): Defina seus próprios escopos OAuth 2.0 em uma aplicação Agent, como um servidor MCP, para que os clientes solicitem apenas as permissões de que precisam.
+- [Adicionar provedores a uma aplicação](https://casdoor.ai/pt/docs/application/providers/): Adicione provedores de identidade, email, SMS e outros a uma aplicação, e escolha para cada um em quais situações o Casdoor os utiliza.
+- [Escolha os métodos de login](https://casdoor.ai/pt/docs/application/signin-methods/): Escolha quais métodos de login uma aplicação oferece em sua página de login, como senha, código de verificação, link mágico, WebAuthn e LDAP, e em qual ordem.
+- [Permitir uma sessão por usuário](https://casdoor.ai/pt/docs/application/exclusive-signin/): Limite o número de sessões ativas de cada usuário em uma aplicação ou em toda a organização, de modo que um novo login encerre as sessões em outros dispositivos.
+- [Personalizar o formulário de cadastro](https://casdoor.ai/pt/docs/application/signup-items-table/): Escolha quais campos a página de cadastro de uma aplicação exibe, quais são obrigatórios, como são validados e como alguns deles se comportam.
+- [Personalize a página de login](https://casdoor.ai/pt/docs/application/signin-items-table/): Escolha quais elementos a página de login de um aplicativo exibe e como o link de esquecimento de senha, o seletor de idioma e o captcha se comportam.
+- [Personalize a aparência da página de login](https://casdoor.ai/pt/docs/application/ui-customization/): Altere o fundo, o estilo e a posição do formulário de login de uma aplicação, adicione um painel lateral e mova o design para outra instância do Casdoor.
+- [Permitir que usuários escolham sua organização no login](https://casdoor.ai/pt/docs/application/specify-login-organization/): Mostrar um seletor de organização ou um campo de organização na página de login, para que usuários de várias organizações compartilhem uma única página de login.
+- [Restringir login por tags de usuário](https://casdoor.ai/pt/docs/application/tags/): Permitir apenas usuários com tag correspondente fazerem login em uma aplicação.
+- [Exigir um código de convite na inscrição](https://casdoor.ai/pt/docs/application/invitation-code/): Permita que apenas usuários convidados se inscrevam em uma aplicação exigindo um código de convite válido na página de inscrição.
+- [Compartilhar uma aplicação entre organizações](https://casdoor.ai/pt/docs/application/shared-application/): Permita que os usuários de todas as organizações façam login em uma única aplicação, com um ID de cliente por organização.
 
 ## Marketplace
 
-- [Marketplace](https://casdoor.ai/pt/docs/marketplace/overview/): Install app integrations, identity provider templates and sign-in themes from the Casdoor Marketplace in one click, and uninstall them cleanly.
+- [Marketplace](https://casdoor.ai/pt/docs/marketplace/overview/): Instale integrações de aplicativos, modelos de provedores de identidade e temas de login do Casdoor Marketplace em um clique e desinstale-os de forma limpa.
 
-## MCP authorization
+## Autorização MCP
 
-- [Use Casdoor as the authorization server of an MCP server](https://casdoor.ai/pt/docs/mcp-auth/overview/): Casdoor can be the OAuth 2.1 authorization server of your own MCP server, with dynamic client registration, PKCE, resource indicators, consent, and token validation through JWKS.
-- [Set up Casdoor for your MCP server](https://casdoor.ai/pt/docs/mcp-auth/setup/): Configure an application, scopes, and dynamic client registration in Casdoor, and make your MCP server publish its metadata, challenge clients, and validate tokens.
-- [Validate Casdoor tokens in your MCP server](https://casdoor.ai/pt/docs/mcp-auth/third-party-integration/): Complete MCP servers in Python, Node.js, and Go that publish Protected Resource Metadata, validate Casdoor tokens with JWKS, and enforce scopes.
-- [Public MCP server registry](https://casdoor.ai/pt/docs/mcp-auth/mcp-registry/): The public MCP server registry at mcp.casdoor.org lists MCP servers with a web interface and a JSON API. This page explains how to use it and how to add a server.
+- [Usar o Casdoor como servidor de autorização de um servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/overview/): O Casdoor pode ser o servidor de autorização OAuth 2.1 do seu próprio servidor MCP, com registro dinâmico de clientes, PKCE, indicadores de recursos, consentimento e validação de tokens através de JWKS.
+- [Configurar o Casdoor para seu servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/setup/): Configure uma aplicação, escopos e registro dinâmico de clientes no Casdoor, e faça seu servidor MCP publicar seus metadados, desafiar clientes e validar tokens.
+- [Validar tokens do Casdoor no seu servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/third-party-integration/): Servidores MCP completos em Python, Node.js e Go que publicam Protected Resource Metadata, validam tokens do Casdoor com JWKS e aplicam escopos.
+- [Registro público de servidores MCP](https://casdoor.ai/pt/docs/mcp-auth/mcp-registry/): O registro público de servidores MCP em mcp.casdoor.org lista servidores MCP com uma interface web e uma API JSON. Esta página explica como usá-lo e como adicionar um servidor.
 
 ## Permissões
 
-- [Permissões](https://casdoor.ai/pt/docs/permission/overview/): Casdoor permissions are built on Casbin. This page explains models, policies, and adapters, and how your application checks permissions through the Casdoor API.
-- [Configure a permission](https://casdoor.ai/pt/docs/permission/permission-configuration/): Reference for the fields of the permission edit page - the model, the adapter, the subjects, the resources and actions, and the effect.
-- [Casbin APIs](https://casdoor.ai/pt/docs/permission/exposed-casbin-apis/): Reference for the Casbin APIs of Casdoor - enforce, batch enforce, and the lists of objects, actions, and roles of a user - which your backend calls to check permissions.
-- [Adaptadores](https://casdoor.ai/pt/docs/permission/adapter/): Connect Casdoor to a database table that holds Casbin policies, and view and edit the policies in the admin console.
+- [Permissões](https://casdoor.ai/pt/docs/permission/overview/): As permissões do Casdoor são construídas sobre o Casbin. Esta página explica modelos, políticas e adaptadores, e como sua aplicação verifica permissões através da API do Casdoor.
+- [Configurar uma permissão](https://casdoor.ai/pt/docs/permission/permission-configuration/): Referência para os campos da página de edição de permissão - o modelo, o adaptador, os sujeitos, os recursos e ações, e o efeito.
+- [APIs do Casbin](https://casdoor.ai/pt/docs/permission/exposed-casbin-apis/): Referência para as APIs do Casbin do Casdoor - enforce, batch enforce e as listas de objetos, ações e roles de um usuário - que seu backend chama para verificar permissões.
+- [Adaptadores](https://casdoor.ai/pt/docs/permission/adapter/): Conecte o Casdoor a uma tabela de banco de dados que armazena políticas do Casbin, e visualize e edite as políticas no console de administração.
 
 ## Fornecedores
 
-- [Fornecedores](https://casdoor.ai/pt/docs/provider/overview/): Providers connect Casdoor to external services for sign-in, email, SMS, storage, payment, captcha, and more. This page lists the categories and explains who can use a provider.
-- [Provedores OAuth](https://casdoor.ai/pt/docs/provider/oauth/overview/): Let users sign in to Casdoor with an account at an external identity provider, such as Google or GitHub, and learn how Casdoor links and maps these accounts.
-- [Map OAuth claims to user fields](https://casdoor.ai/pt/docs/provider/oauth/user-mapping/): Fill in Casdoor user fields, such as the phone number or the job title, from the claims that an OAuth provider returns.
-- [Add Google as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/google/): Let users sign in to Casdoor with their Google account.
-- [Turn on Google One Tap](https://casdoor.ai/pt/docs/provider/oauth/googleonetap/): Let users sign in on the Casdoor sign-in page with Google One Tap by setting the rule of the Google provider to One Tap.
-- [Add GitHub as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/github/): Let users sign in to Casdoor with their GitHub account, through the web flow or the device flow.
-- [Add LinkedIn as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/linkedin/): Let users sign in to Casdoor with their LinkedIn account.
-- [Add Facebook as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/facebook/): Let users sign in to Casdoor with their Facebook account.
-- [Add Sign in with Apple](https://casdoor.ai/pt/docs/provider/oauth/apple/): Let users sign in to Casdoor with their Apple ID through Sign in with Apple.
-- [Add Alipay as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/Alipay/): Let users sign in to Casdoor with their Alipay account, with certificate-based signing.
-- [Add AD FS as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/adfs/): Let users sign in to Casdoor with their account in Active Directory Federation Services (AD FS).
-- [Add Azure AD as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/azureAD/): Let users sign in to Casdoor with their Microsoft account in Azure Active Directory (Microsoft Entra ID).
-- [Add Azure AD B2C as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/azureADb2c/): Let customers sign in to Casdoor with their account in Azure AD B2C.
-- [Add an OpenID Connect provider](https://casdoor.ai/pt/docs/provider/oauth/oidc/): Connect Casdoor to any OpenID Connect identity provider by its issuer URL, and learn how Casdoor checks the ID token and reads the user claims.
-- [Add a custom OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/CustomProvider/): Connect Casdoor to any OAuth 2.0 identity provider that has no built-in type, and the requests and responses that the provider must support.
-- [Add Okta as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/okta/): Let users sign in to Casdoor with their Okta account through OpenID Connect.
-- [Add Twitter as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/Twitter/): Let users sign in to Casdoor with their Twitter (X) account.
-- [Add Weibo as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/Weibo/): Let users sign in to Casdoor with their Weibo account.
-- [Add WeChat as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/Wechat/): Let users sign in to Casdoor with WeChat, by scanning a QR code on a PC or inside the WeChat browser on a phone.
-- [Add WeCom as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/weCom/): Let users sign in to Casdoor from the WeCom client, with an internal or a third-party WeCom application.
-- [Add Tencent QQ as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/Tencent/): Let users sign in to Casdoor with their QQ account through QQ Connect.
-- [Add Telegram as a sign-in provider](https://casdoor.ai/pt/docs/provider/oauth/telegram/): Let users sign in to Casdoor with their Telegram account through the Telegram Login Widget.
-- [Add DingTalk as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/DingTalk/): Let users sign in to Casdoor with their DingTalk account.
-- [Add Steam as a sign-in provider](https://casdoor.ai/pt/docs/provider/oauth/Steam/): Let users sign in to Casdoor with their Steam account, with a Steam Web API key.
-- [Add Gitee as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/gitee/): Let users sign in to Casdoor with their Gitee account.
-- [Add GitLab as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/gitlab/): Let users sign in to Casdoor with their account on GitLab.com or on a self-hosted GitLab.
-- [Add Baidu as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/baidu/): Let users sign in to Casdoor with their Baidu account.
-- [Add Infoflow as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/infoflow/): Let users sign in to Casdoor with their account in Baidu Infoflow.
+- [Fornecedores](https://casdoor.ai/pt/docs/provider/overview/): Os provedores conectam o Casdoor a serviços externos para login, e-mail, SMS, armazenamento, pagamento, captcha e muito mais. Esta página lista as categorias e explica quem pode usar um provedor.
+- [Provedores OAuth](https://casdoor.ai/pt/docs/provider/oauth/overview/): Permita que os usuários façam login no Casdoor com uma conta em um provedor de identidade externo, como Google ou GitHub, e aprenda como o Casdoor vincula e mapeia essas contas.
+- [Mapear claims OAuth para campos de usuário](https://casdoor.ai/pt/docs/provider/oauth/user-mapping/): Preencha campos de usuário do Casdoor, como número de telefone ou cargo, a partir das claims retornadas por um provedor OAuth.
+- [Adicione o Google como provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/google/): Permita que os usuários façam login no Casdoor com suas contas do Google.
+- [Ativar o Google One Tap](https://casdoor.ai/pt/docs/provider/oauth/googleonetap/): Permita que os usuários façam login na página de login do Casdoor com o Google One Tap configurando a regra do provedor Google para One Tap.
+- [Adicionar GitHub como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/github/): Permita que os usuários façam login no Casdoor com sua conta do GitHub, através do fluxo web ou do fluxo de dispositivo.
+- [Add LinkedIn as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/linkedin/): Permita que os usuários façam login no Casdoor com suas contas do LinkedIn.
+- [Adicionar Facebook como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/facebook/): Permita que os usuários façam login no Casdoor com suas contas do Facebook.
+- [Adicionar Sign in with Apple](https://casdoor.ai/pt/docs/provider/oauth/apple/): Permita que os usuários façam login no Casdoor com seu ID da Apple através do Sign in with Apple.
+- [Adicionar Alipay como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Alipay/): Permita que os usuários façam login no Casdoor com suas contas Alipay, usando assinatura baseada em certificados.
+- [Adicionar AD FS como provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/adfs/): Permita que os usuários façam login no Casdoor com suas contas do Active Directory Federation Services (AD FS).
+- [Adicionar o Azure AD como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/azureAD/): Permita que os usuários façam login no Casdoor com sua conta da Microsoft no Azure Active Directory (Microsoft Entra ID).
+- [Adicionar o Azure AD B2C como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/azureADb2c/): Permita que clientes façam login no Casdoor com sua conta no Azure AD B2C.
+- [Adicionar um provedor OpenID Connect](https://casdoor.ai/pt/docs/provider/oauth/oidc/): Conecte o Casdoor a qualquer provedor de identidade OpenID Connect pela sua URL de emissão (issuer), e aprenda como o Casdoor verifica o token de ID e lê as declarações (claims) do usuário.
+- [Adicionar um provedor OAuth personalizado](https://casdoor.ai/pt/docs/provider/oauth/CustomProvider/): Conecte o Casdoor a qualquer provedor de identidade OAuth 2.0 que não tenha um tipo integrado, e as solicitações e respostas que o provedor deve suportar.
+- [Adicionar Okta como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/okta/): Permita que usuários façam login no Casdoor com sua conta Okta através do OpenID Connect.
+- [Adicionar Twitter como provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Twitter/): Permita que os usuários façam login no Casdoor com sua conta do Twitter (X).
+- [Adicione o Weibo como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Weibo/): Permita que os usuários façam login no Casdoor com sua conta Weibo.
+- [Adicionar WeChat como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Wechat/): Permitir que os usuários façam login no Casdoor com WeChat, escaneando um código QR em um PC ou dentro do navegador WeChat em um celular.
+- [Adicionar WeCom como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/weCom/): Permitir que os usuários façam login no Casdoor a partir do cliente WeCom, com uma aplicação interna ou de terceiros do WeCom.
+- [Adicionar Tencent QQ como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Tencent/): Permita que os usuários façam login no Casdoor com suas contas QQ através do QQ Connect.
+- [Adicionar o Telegram como um provedor de login](https://casdoor.ai/pt/docs/provider/oauth/telegram/): Permitir que usuários façam login no Casdoor com sua conta Telegram através do Telegram Login Widget.
+- [Adicionar DingTalk como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/DingTalk/): Permita que os usuários façam login no Casdoor com suas contas do DingTalk.
+- [Adicionar o Steam como um provedor de login](https://casdoor.ai/pt/docs/provider/oauth/Steam/): Permitir que usuários façam login no Casdoor com sua conta Steam, usando uma chave da API Web do Steam.
+- [Adicione o Gitee como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/gitee/): Permita que os usuários façam login no Casdoor com sua conta do Gitee.
+- [Adicionar GitLab como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/gitlab/): Permita que os usuários façam login no Casdoor com sua conta no GitLab.com ou em um GitLab auto-hospedado.
+- [Adicionar o Baidu como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/baidu/): Permita que os usuários façam login no Casdoor com suas contas Baidu.
+- [Adicionar o Infoflow como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/infoflow/): Permita que os usuários façam login no Casdoor com suas contas no Baidu Infoflow.
 - [Add Lark as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/lark/): Let users sign in to Casdoor with their Lark (Feishu) account.
-- [Email providers](https://casdoor.ai/pt/docs/provider/email/overview/): Configure an email provider that sends verification codes, password reset links, and notifications, and write the email templates.
-- [Send email with SendGrid](https://casdoor.ai/pt/docs/provider/email/sendgrid/): Use the SendGrid API as the email provider of Casdoor.
-- [Send email with Resend](https://casdoor.ai/pt/docs/provider/email/resend/): Use the Resend API as the email provider of Casdoor.
-- [Send email through your own HTTP API](https://casdoor.ai/pt/docs/provider/email/customHttp/): Connect Casdoor to any email service or webhook that accepts an HTTP request, by describing the request in a Custom HTTP Email provider.
-- [Send email with Azure Communication Services](https://casdoor.ai/pt/docs/provider/email/azureACS/): Use Azure Communication Services (ACS) as the email provider of Casdoor.
-- [Send email with Brevo](https://casdoor.ai/pt/docs/provider/email/brevo/): Use the SMTP relay of Brevo (formerly Sendinblue) as the email provider of Casdoor.
-- [Test email with MailHog](https://casdoor.ai/pt/docs/provider/email/mailhog/): Catch the emails of Casdoor in MailHog, a local SMTP server for testing.
-- [Test email with Mailpit](https://casdoor.ai/pt/docs/provider/email/mailpit/): Catch the emails of Casdoor in Mailpit, a local SMTP server for testing.
-- [SMS providers](https://casdoor.ai/pt/docs/provider/sms/overview/): Configure an SMS provider that sends verification codes to phone numbers, and the SMS services that Casdoor supports.
-- [Send SMS with Twilio](https://casdoor.ai/pt/docs/provider/sms/twilio/): Use Twilio as the SMS provider of Casdoor.
-- [Send SMS with Amazon SNS](https://casdoor.ai/pt/docs/provider/sms/amazonSns/): Use Amazon Simple Notification Service (SNS) as the SMS provider of Casdoor.
-- [Send SMS with Azure Communication Services](https://casdoor.ai/pt/docs/provider/sms/acs/): Use Azure Communication Services (ACS) as the SMS provider of Casdoor.
-- [Send SMS with Alibaba Cloud](https://casdoor.ai/pt/docs/provider/sms/alibabaCloud/): Use the SMS service of Alibaba Cloud as the SMS provider of Casdoor.
-- [Send SMS with Alibaba Cloud PNVS](https://casdoor.ai/pt/docs/provider/sms/pnvs/): Use the Phone Number Verification Service (PNVS) of Alibaba Cloud as the SMS provider of Casdoor.
-- [Send SMS through your own HTTP API](https://casdoor.ai/pt/docs/provider/sms/customHttp/): Connect Casdoor to any SMS gateway that accepts an HTTP request, by describing the request in a Custom HTTP SMS provider.
-- [Notification providers](https://casdoor.ai/pt/docs/provider/notification/overview/): Send messages from Casdoor to chat services and HTTP endpoints, such as Slack, Telegram, and your own webhook.
-- [Send notifications to Telegram](https://casdoor.ai/pt/docs/provider/notification/telegram/): Send the notifications of Casdoor to a Telegram chat through a bot.
-- [Send notifications to an HTTP endpoint](https://casdoor.ai/pt/docs/provider/notification/customHttp/): Send the notifications of Casdoor to an HTTP endpoint of your own with a GET or POST request.
-- [Send notifications to Slack](https://casdoor.ai/pt/docs/provider/notification/slack/): Send the notifications of Casdoor to a Slack channel through a Slack app.
-- [Send notifications to Google Chat](https://casdoor.ai/pt/docs/provider/notification/googleChat/): Send the notifications of Casdoor to Google Chat with the credentials of a service account.
-- [Send notifications to Twitter](https://casdoor.ai/pt/docs/provider/notification/twitter/): Send the notifications of Casdoor to a Twitter (X) user.
-- [Send notifications to Discord](https://casdoor.ai/pt/docs/provider/notification/discord/): Send the notifications of Casdoor to a Discord channel through a bot.
-- [Send notifications to WeCom](https://casdoor.ai/pt/docs/provider/notification/wecom/): Send the notifications of Casdoor to a WeCom (WeChat Work) group through a group bot.
-- [Storage providers](https://casdoor.ai/pt/docs/provider/storage/overview/): Configure where Casdoor stores uploaded files, such as avatars, on the local file system or in cloud object storage.
-- [Store files on the local file system](https://casdoor.ai/pt/docs/provider/storage/localFileSystem/): Store uploaded files in the files directory of the Casdoor server.
-- [Store files in Amazon S3](https://casdoor.ai/pt/docs/provider/storage/amazon-s3/): Store uploaded files, such as avatars, in an Amazon S3 bucket.
-- [Store files in Azure Blob Storage](https://casdoor.ai/pt/docs/provider/storage/azure/): Store uploaded files, such as avatars, in a container of Azure Blob Storage.
-- [Store files in Google Cloud Storage](https://casdoor.ai/pt/docs/provider/storage/google-cloudstorage/): Store uploaded files, such as avatars, in a Google Cloud Storage bucket with a service account.
-- [Store files in MinIO](https://casdoor.ai/pt/docs/provider/storage/minio/): Store uploaded files, such as avatars, in MinIO or another S3-compatible object store.
-- [Store files in Alibaba Cloud OSS](https://casdoor.ai/pt/docs/provider/storage/aliyun-oss/): Store uploaded files in Alibaba Cloud OSS with an AccessKey or with RAM Roles for Service Accounts (RRSA).
-- [Store files in Tencent Cloud COS](https://casdoor.ai/pt/docs/provider/storage/tencentCloudCOS/): Store uploaded files, such as avatars, in a Tencent Cloud COS bucket.
-- [Store files on a Synology NAS](https://casdoor.ai/pt/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through its S3-compatible API.
-- [SAML providers](https://casdoor.ai/pt/docs/provider/saml/overview/): Let users sign in to Casdoor with an external SAML 2.0 identity provider, with Casdoor as the service provider.
-- [Add a SAML identity provider](https://casdoor.ai/pt/docs/provider/saml/custom/): Connect any SAML 2.0 identity provider to Casdoor with a Custom SAML provider, by registering Casdoor at the IdP and importing the metadata of the IdP.
-- [Add Google Workspace as a SAML provider](https://casdoor.ai/pt/docs/provider/saml/google-workspace/): Let users sign in to Casdoor with their Google Workspace account through SAML.
-- [Add Azure AD as a SAML provider](https://casdoor.ai/pt/docs/provider/saml/azure-ad/): Let users sign in to Casdoor with their Azure AD (Microsoft Entra ID) account through SAML.
-- [Add Keycloak as a SAML provider](https://casdoor.ai/pt/docs/provider/saml/keycloak/): Let users of a Keycloak realm sign in to Casdoor through SAML.
-- [Add Alibaba Cloud IDaaS as a SAML provider](https://casdoor.ai/pt/docs/provider/saml/aliyun/): Let users of Alibaba Cloud IDaaS (EIAM) sign in to Casdoor through SAML.
-- [Provedores de Pagamento](https://casdoor.ai/pt/docs/provider/payment/overview/): Add payment providers to products, so that users can pay for them with a payment service or with their account balance.
-- [Test purchases with the Dummy provider](https://casdoor.ai/pt/docs/provider/payment/dummy/): Simulate payments to test the purchase flow of Casdoor products without a payment service.
-- [Let users pay from their balance](https://casdoor.ai/pt/docs/provider/payment/Balance/): Let users pay for products from their account balance in Casdoor, and top up the balance with a recharge product.
-- [Take payments with PayPal](https://casdoor.ai/pt/docs/provider/payment/paypal/): Use PayPal as the payment provider of your Casdoor products.
-- [Take payments with Stripe](https://casdoor.ai/pt/docs/provider/payment/stripe/): Use Stripe as the payment provider of your Casdoor products.
-- [Take payments with Polar](https://casdoor.ai/pt/docs/provider/payment/Polar/): Use Polar as the payment provider of your Casdoor products.
-- [Take payments with Paddle](https://casdoor.ai/pt/docs/provider/payment/Paddle/): Use Paddle as the payment provider of your Casdoor products.
-- [Take payments with FastSpring](https://casdoor.ai/pt/docs/provider/payment/FastSpring/): Use FastSpring as the payment provider of your Casdoor products.
-- [Take payments with Lemon Squeezy](https://casdoor.ai/pt/docs/provider/payment/LemonSqueezy/): Use Lemon Squeezy as the payment provider of your Casdoor products.
-- [Take payments with Adyen](https://casdoor.ai/pt/docs/provider/payment/Adyen/): Use Adyen as the payment provider of your Casdoor products.
-- [Take payments with Alipay](https://casdoor.ai/pt/docs/provider/payment/Alipay/): Use Alipay as the payment provider of your Casdoor products, with certificate-based signing.
-- [Take payments with WeChat Pay](https://casdoor.ai/pt/docs/provider/payment/WeChatPay/): Use WeChat Pay as the payment provider of your Casdoor products, with Native payment and JSAPI payment inside WeChat.
-- [Take payments with AirWallex](https://casdoor.ai/pt/docs/provider/payment/AirWallex/): Use AirWallex as the payment provider of your Casdoor products.
-- [Captcha providers](https://casdoor.ai/pt/docs/provider/captcha/overview/): Require a captcha at sign-in, at sign-up, and before Casdoor sends verification codes, and choose when the captcha appears.
-- [Use the default captcha](https://casdoor.ai/pt/docs/provider/captcha/default/): Use the built-in image captcha of Casdoor, which needs no external service.
-- [Use Cloudflare Turnstile](https://casdoor.ai/pt/docs/provider/captcha/cloudflareTurnstile/): Protect sign-in and sign-up with Cloudflare Turnstile, a captcha alternative that respects privacy.
-- [Use Google reCAPTCHA](https://casdoor.ai/pt/docs/provider/captcha/recaptcha/): Protect sign-in and sign-up with Google reCAPTCHA.
-- [Use hCaptcha](https://casdoor.ai/pt/docs/provider/captcha/hcaptcha/): Protect sign-in and sign-up with hCaptcha.
-- [Use Alibaba Cloud Captcha](https://casdoor.ai/pt/docs/provider/captcha/aliyunCaptcha/): Protect sign-in and sign-up with Alibaba Cloud Captcha, shown inside the Casdoor captcha dialog or as the popup of Alibaba Cloud.
-- [Use Geetest](https://casdoor.ai/pt/docs/provider/captcha/geetest/): Protect sign-in and sign-up with Geetest CAPTCHA V4.
-- [Send audit records to Syslog](https://casdoor.ai/pt/docs/provider/audit/syslog/): Forward every audit record of Casdoor to a Syslog server over UDP, TCP, or TLS with an Audit provider.
-- [Face ID overview](https://casdoor.ai/pt/docs/provider/faceid/overview/): Use Face ID as a sign-in method.
-- [Alibaba Cloud FaceBody](https://casdoor.ai/pt/docs/provider/faceid/alibaba_cloud_facebody/): Use Alibaba Cloud FaceBody for face verification.
-- [ID verification provider overview](https://casdoor.ai/pt/docs/provider/idv/overview/): Verify user identity via third-party ID verification (KYC) providers.
-- [Jumio ID verification](https://casdoor.ai/pt/docs/provider/idv/jumio/): Use Jumio as an ID verification (KYC) provider in Casdoor.
-- [Alibaba Cloud](https://casdoor.ai/pt/docs/provider/idv/alibaba-cloud/): Verify users' national ID cards against government records with Alibaba Cloud ID verification as a Casdoor identity verification provider.
-- [Log providers](https://casdoor.ai/pt/docs/provider/log/overview/): Collect OS logs, SELinux audit events, OpenTelemetry data, and permission audit events into Casdoor Entry records.
-- [Scan provider overview](https://casdoor.ai/pt/docs/provider/scan/overview/): Scan networks and web targets to discover servers or security issues, e.g. for MCP or vulnerability scanning.
-- [MCP Scan](https://casdoor.ai/pt/docs/provider/scan/mcp/): Scan intranet address ranges to discover MCP servers.
-- [Security Scan](https://casdoor.ai/pt/docs/provider/scan/security/): Fingerprint web targets and report matching known vulnerabilities (CVEs).
+- [Provedores de e-mail](https://casdoor.ai/pt/docs/provider/email/overview/): Configure um provedor de e-mail que envia códigos de verificação, links de redefinição de senha e notificações, e escreva os templates de e-mail.
+- [Envie e-mails com SendGrid](https://casdoor.ai/pt/docs/provider/email/sendgrid/): Use a API do SendGrid como o provedor de e-mail do Casdoor.
+- [Envie e-mails com Resend](https://casdoor.ai/pt/docs/provider/email/resend/): Use a API do Resend como o provedor de e-mail do Casdoor.
+- [Envie e-mails através da sua própria API HTTP](https://casdoor.ai/pt/docs/provider/email/customHttp/): Conecte o Casdoor a qualquer serviço de e-mail ou webhook que aceite uma requisição HTTP, descrevendo a requisição em um provedor Custom HTTP Email.
+- [Envio de e-mail com Azure Communication Services](https://casdoor.ai/pt/docs/provider/email/azureACS/): Use o Azure Communication Services (ACS) como provedor de e-mail do Casdoor.
+- [Envio de e-mail com Brevo](https://casdoor.ai/pt/docs/provider/email/brevo/): Use o relay SMTP do Brevo (antigo Sendinblue) como provedor de e-mail do Casdoor.
+- [Testar e-mail com MailHog](https://casdoor.ai/pt/docs/provider/email/mailhog/): Capture os e-mails do Casdoor no MailHog, um servidor SMTP local para testes.
+- [Testar e-mail com Mailpit](https://casdoor.ai/pt/docs/provider/email/mailpit/): Capture os e-mails do Casdoor no Mailpit, um servidor SMTP local para testes.
+- [Provedores de SMS](https://casdoor.ai/pt/docs/provider/sms/overview/): Configure um provedor de SMS que envia códigos de verificação para números de telefone, e os serviços de SMS suportados pelo Casdoor.
+- [Enviar SMS com Twilio](https://casdoor.ai/pt/docs/provider/sms/twilio/): Use o Twilio como provedor de SMS do Casdoor.
+- [Send SMS with Twilio Verify](https://casdoor.ai/pt/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [Enviar SMS com Amazon SNS](https://casdoor.ai/pt/docs/provider/sms/amazonSns/): Use o Amazon Simple Notification Service (SNS) como o provedor SMS do Casdoor.
+- [Enviar SMS com Azure Communication Services](https://casdoor.ai/pt/docs/provider/sms/acs/): Use o Azure Communication Services (ACS) como provedor de SMS do Casdoor.
+- [Enviar SMS com Alibaba Cloud](https://casdoor.ai/pt/docs/provider/sms/alibabaCloud/): Use o serviço de SMS da Alibaba Cloud como provedor de SMS do Casdoor.
+- [Enviar SMS com Alibaba Cloud PNVS](https://casdoor.ai/pt/docs/provider/sms/pnvs/): Use o Phone Number Verification Service (PNVS) da Alibaba Cloud como provedor de SMS do Casdoor.
+- [Enviar SMS através da sua própria API HTTP](https://casdoor.ai/pt/docs/provider/sms/customHttp/): Conecte o Casdoor a qualquer gateway de SMS que aceite uma requisição HTTP, descrevendo a requisição em um provedor de SMS HTTP Customizado.
+- [Provedores de notificação](https://casdoor.ai/pt/docs/provider/notification/overview/): Envie mensagens do Casdoor para serviços de chat e endpoints HTTP, como Slack, Telegram e seu próprio webhook.
+- [Enviar notificações para o Telegram](https://casdoor.ai/pt/docs/provider/notification/telegram/): Envie as notificações do Casdoor para um chat do Telegram através de um bot.
+- [Enviar notificações para um endpoint HTTP](https://casdoor.ai/pt/docs/provider/notification/customHttp/): Envie as notificações do Casdoor para um endpoint HTTP seu com uma solicitação GET ou POST.
+- [Enviar notificações para o Slack](https://casdoor.ai/pt/docs/provider/notification/slack/): Envie as notificações do Casdoor para um canal do Slack através de um app do Slack.
+- [Enviar notificações para o Google Chat](https://casdoor.ai/pt/docs/provider/notification/googleChat/): Envie as notificações do Casdoor para o Google Chat usando as credenciais de uma conta de serviço.
+- [Enviar notificações para o Twitter](https://casdoor.ai/pt/docs/provider/notification/twitter/): Envie as notificações do Casdoor para um usuário do Twitter (X).
+- [Enviar notificações para o Discord](https://casdoor.ai/pt/docs/provider/notification/discord/): Envie as notificações do Casdoor para um canal do Discord através de um bot.
+- [Enviar notificações para WeCom](https://casdoor.ai/pt/docs/provider/notification/wecom/): Envie as notificações do Casdoor para um grupo do WeCom (WeChat Work) através de um bot de grupo.
+- [Provedores de armazenamento](https://casdoor.ai/pt/docs/provider/storage/overview/): Configure onde o Casdoor armazena arquivos enviados, como avatares, no sistema de arquivos local ou em armazenamento de objetos na nuvem.
+- [Armazenar arquivos no sistema de arquivos local](https://casdoor.ai/pt/docs/provider/storage/localFileSystem/): Armazene arquivos enviados no diretório files do servidor Casdoor.
+- [Armazenar arquivos no Amazon S3](https://casdoor.ai/pt/docs/provider/storage/amazon-s3/): Armazene arquivos enviados, como avatares, em um bucket Amazon S3.
+- [Armazenar arquivos no Azure Blob Storage](https://casdoor.ai/pt/docs/provider/storage/azure/): Armazene arquivos enviados, como avatares, em um contêiner do Azure Blob Storage.
+- [Armazenar arquivos no Google Cloud Storage](https://casdoor.ai/pt/docs/provider/storage/google-cloudstorage/): Armazene arquivos enviados, como avatares, em um bucket do Google Cloud Storage com uma conta de serviço.
+- [Armazenar arquivos no MinIO](https://casdoor.ai/pt/docs/provider/storage/minio/): Armazene arquivos enviados, como avatares, no MinIO ou em outro armazém de objetos compatível com S3.
+- [Armazenar arquivos no Alibaba Cloud OSS](https://casdoor.ai/pt/docs/provider/storage/aliyun-oss/): Armazene arquivos enviados no Alibaba Cloud OSS com uma AccessKey ou com RAM Roles for Service Accounts (RRSA).
+- [Armazenar arquivos no Tencent Cloud COS](https://casdoor.ai/pt/docs/provider/storage/tencentCloudCOS/): Armazene arquivos enviados, como avatares, em um bucket do Tencent Cloud COS.
+- [Armazenar arquivos em um NAS Synology](https://casdoor.ai/pt/docs/provider/storage/synology-nas/): Armazene arquivos enviados em um NAS Synology através de sua API compatível com S3.
+- [Provedores SAML](https://casdoor.ai/pt/docs/provider/saml/overview/): Permita que os usuários façam login no Casdoor usando um provedor de identidade externo SAML 2.0, com o Casdoor como provedor de serviços.
+- [Adicionar um provedor de identidade SAML](https://casdoor.ai/pt/docs/provider/saml/custom/): Conecte qualquer provedor de identidade SAML 2.0 ao Casdoor usando um provedor SAML customizado, registrando o Casdoor no IdP e importando os metadados do IdP.
+- [Adicionar Google Workspace como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/google-workspace/): Permita que os usuários façam login no Casdoor com suas contas do Google Workspace através de SAML.
+- [Adicionar Azure AD como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/azure-ad/): Permita que os usuários façam login no Casdoor com suas contas do Azure AD (Microsoft Entra ID) via SAML.
+- [Adicionar Keycloak como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/keycloak/): Permitir que usuários de um realm do Keycloak façam login no Casdoor através de SAML.
+- [Adicione Alibaba Cloud IDaaS como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/aliyun/): Permita que usuários do Alibaba Cloud IDaaS (EIAM) façam login no Casdoor através de SAML.
+- [Provedores de Pagamento](https://casdoor.ai/pt/docs/provider/payment/overview/): Adicione provedores de pagamento aos produtos, para que os usuários possam pagar por eles com um serviço de pagamento ou com o saldo da conta.
+- [Testar compras com o provedor Dummy](https://casdoor.ai/pt/docs/provider/payment/dummy/): Simule pagamentos para testar o fluxo de compra dos produtos Casdoor sem um serviço de pagamento.
+- [Permitir que os usuários paguem pelo saldo](https://casdoor.ai/pt/docs/provider/payment/Balance/): Permita que os usuários paguem por produtos usando o saldo da conta no Casdoor e recarreguem o saldo com um produto de recarga.
+- [Receba pagamentos com PayPal](https://casdoor.ai/pt/docs/provider/payment/paypal/): Use o PayPal como provedor de pagamento dos seus produtos Casdoor.
+- [Aceite pagamentos com Stripe](https://casdoor.ai/pt/docs/provider/payment/stripe/): Use o Stripe como provedor de pagamento dos seus produtos Casdoor.
+- [Aceite pagamentos com Polar](https://casdoor.ai/pt/docs/provider/payment/Polar/): Use o Polar como provedor de pagamento dos seus produtos Casdoor.
+- [Receba pagamentos com Paddle](https://casdoor.ai/pt/docs/provider/payment/Paddle/): Use o Paddle como provedor de pagamento dos seus produtos Casdoor.
+- [Receber pagamentos com FastSpring](https://casdoor.ai/pt/docs/provider/payment/FastSpring/): Use o FastSpring como provedor de pagamento dos seus produtos Casdoor.
+- [Aceite pagamentos com Lemon Squeezy](https://casdoor.ai/pt/docs/provider/payment/LemonSqueezy/): Use o Lemon Squeezy como provedor de pagamento dos seus produtos Casdoor.
+- [Aceite pagamentos com Adyen](https://casdoor.ai/pt/docs/provider/payment/Adyen/): Use o Adyen como o provedor de pagamento dos seus produtos Casdoor.
+- [Aceitar pagamentos com Alipay](https://casdoor.ai/pt/docs/provider/payment/Alipay/): Use o Alipay como provedor de pagamento dos seus produtos Casdoor, com assinatura baseada em certificados.
+- [Aceite pagamentos com WeChat Pay](https://casdoor.ai/pt/docs/provider/payment/WeChatPay/): Use o WeChat Pay como provedor de pagamento dos seus produtos Casdoor, com pagamento Nativo e pagamento JSAPI dentro do WeChat.
+- [Aceitar pagamentos com AirWallex](https://casdoor.ai/pt/docs/provider/payment/AirWallex/): Use o AirWallex como provedor de pagamento dos seus produtos Casdoor.
+- [Provedores de Captcha](https://casdoor.ai/pt/docs/provider/captcha/overview/): Exija um captcha no login, no cadastro e antes que o Casdoor envie códigos de verificação, e escolha quando o captcha aparece.
+- [Usar o captcha padrão](https://casdoor.ai/pt/docs/provider/captcha/default/): Use o captcha de imagem integrado do Casdoor, que não requer nenhum serviço externo.
+- [Usar Cloudflare Turnstile](https://casdoor.ai/pt/docs/provider/captcha/cloudflareTurnstile/): Proteja o login e o cadastro com Cloudflare Turnstile, uma alternativa de captcha que respeita a privacidade.
+- [Usar Google reCAPTCHA](https://casdoor.ai/pt/docs/provider/captcha/recaptcha/): Proteja o login e o cadastro com Google reCAPTCHA.
+- [Usar hCaptcha](https://casdoor.ai/pt/docs/provider/captcha/hcaptcha/): Proteja o login e o cadastro com hCaptcha.
+- [Usar Alibaba Cloud Captcha](https://casdoor.ai/pt/docs/provider/captcha/aliyunCaptcha/): Proteja o login e o cadastro com Alibaba Cloud Captcha, exibido dentro do diálogo de captcha do Casdoor ou como popup da Alibaba Cloud.
+- [Usar o Geetest](https://casdoor.ai/pt/docs/provider/captcha/geetest/): Proteja o login e o cadastro com o Geetest CAPTCHA V4.
+- [Enviar registros de auditoria para Syslog](https://casdoor.ai/pt/docs/provider/audit/syslog/): Encaminhe cada registro de auditoria do Casdoor para um servidor Syslog via UDP, TCP ou TLS usando um provedor Audit.
+- [Visão geral do Face ID](https://casdoor.ai/pt/docs/provider/faceid/overview/): Use Face ID como um método de login.
+- [Alibaba Cloud FaceBody](https://casdoor.ai/pt/docs/provider/faceid/alibaba_cloud_facebody/): Use Alibaba Cloud FaceBody para verificação facial.
+- [Visão geral dos provedores de verificação de identidade](https://casdoor.ai/pt/docs/provider/idv/overview/): Verifique a identidade do usuário via provedores de terceiros de verificação de identidade (KYC).
+- [Verificação de identidade Jumio](https://casdoor.ai/pt/docs/provider/idv/jumio/): Use a Jumio como um provedor de verificação de identidade (KYC) no Casdoor.
+- [Alibaba Cloud](https://casdoor.ai/pt/docs/provider/idv/alibaba-cloud/): Verifique os cartões de identidade nacionais dos usuários contra registros governamentais com a verificação de identidade da Alibaba Cloud como um provedor de verificação de identidade do Casdoor.
+- [Provedores de log](https://casdoor.ai/pt/docs/provider/log/overview/): Colete logs do SO, eventos de auditoria SELinux, dados OpenTelemetry e eventos de auditoria de permissão em registros Entry do Casdoor.
+- [Visão geral dos provedores de varredura](https://casdoor.ai/pt/docs/provider/scan/overview/): Varra redes e alvos web para descobrir servidores ou problemas de segurança, por exemplo, para varredura MCP ou de vulnerabilidades.
+- [MCP Scan](https://casdoor.ai/pt/docs/provider/scan/mcp/): Escaneie faixas de endereços da intranet para descobrir servidores MCP.
+- [Security Scan](https://casdoor.ai/pt/docs/provider/scan/security/): Identifica impressões digitais de alvos web e reporta vulnerabilidades conhecidas correspondentes (CVEs).
 
 ## Recursos
 
-- [Visão Geral](https://casdoor.ai/pt/docs/resources/overview/): Upload and manage files and images as resources using a storage provider.
+- [Visão Geral](https://casdoor.ai/pt/docs/resources/overview/): Faça upload e gerencie arquivos e imagens como recursos usando um provedor de armazenamento.
 
 ## Chaves
 
-- [Chaves](https://casdoor.ai/pt/docs/key/overview/): Manage API access keys (AccessKey/AccessSecret pairs) scoped to an organization, application, or user.
+- [Chaves](https://casdoor.ai/pt/docs/key/overview/): Gerencie chaves de acesso à API (pares AccessKey/AccessSecret) escopadas a uma organização, aplicação ou usuário.
 
-## SaaS management
+## Gestão SaaS
 
 - [Visão Geral](https://casdoor.ai/pt/docs/pricing/overview/): Use Casdoor for subscription and pricing: plans, payments, and subscriptions.
-- [Produto](https://casdoor.ai/pt/docs/products/product/): Define products (or services) to sell and attach payment providers.
-- [Product store](https://casdoor.ai/pt/docs/products/product-store/): Publish products to a storefront where users can browse and purchase
-- [Shopping cart](https://casdoor.ai/pt/docs/products/cart/): The Casdoor shopping cart collects several products so users can buy them together in one order and one payment.
-- [Pagamento](https://casdoor.ai/pt/docs/products/payment/): View payment records, states, and issue invoices.
-- [Ordem](https://casdoor.ai/pt/docs/products/order/): Casdoor orders record each product purchase and track it through its lifecycle, separately from the payments made for it.
+- [Produto](https://casdoor.ai/pt/docs/products/product/): Defina produtos (ou serviços) para vender e anexe provedores de pagamento.
+- [Loja de Produtos](https://casdoor.ai/pt/docs/products/product-store/): Publique produtos em uma vitrine onde os usuários podem navegar e comprar
+- [Carrinho de compras](https://casdoor.ai/pt/docs/products/cart/): O carrinho de compras do Casdoor reúne vários produtos para que os usuários possam comprá-los juntos em um único pedido e um único pagamento.
+- [Pagamento](https://casdoor.ai/pt/docs/products/payment/): Visualize registros de pagamento, estados e emita faturas.
+- [Ordem](https://casdoor.ai/pt/docs/products/order/): Os pedidos do Casdoor registram cada compra de produto e rastreiam seu ciclo de vida, separadamente dos pagamentos feitos por ele.
 - [Plano](https://casdoor.ai/pt/docs/pricing/plan/): Define a plan’s features and price; plans are tied to roles and products.
 - [Preços](https://casdoor.ai/pt/docs/pricing/): Group one or more plans so users can sign up at different price points.
-- [Assinatura](https://casdoor.ai/pt/docs/pricing/subscription/): Manage a user’s selected plan and application access.
-- [Transaction](https://casdoor.ai/pt/docs/pricing/transaction/): Track payments and balance changes for users and organizations.
+- [Assinatura](https://casdoor.ai/pt/docs/pricing/subscription/): Gerencie o plano selecionado pelo usuário e o acesso à aplicação.
+- [Transação](https://casdoor.ai/pt/docs/pricing/transaction/): Acompanhe pagamentos e alterações de saldo para usuários e organizações.
 - [Coupon](https://casdoor.ai/pt/docs/pricing/coupon/): Create discount coupons and apply them to orders at checkout.
 
 ## Autenticação multifator
 
-- [Multi-factor authentication (MFA / 2FA)](https://casdoor.ai/pt/docs/user/multi-factor-authentication/): Turn on multi-factor authentication (MFA) or two-factor authentication (2FA) in Casdoor with a TOTP authenticator app, SMS codes, email codes or RADIUS, plus recovery codes and per-organization MFA requirements.
-- [Use the Casdoor Authenticator app](https://casdoor.ai/pt/docs/how-to-connect/totp-authenticator-app/): Install Casdoor Authenticator, an open-source TOTP app for Android and iOS, connect it to Casdoor, and import accounts from other authenticator apps.
-- [Push notification](https://casdoor.ai/pt/docs/provider/mfa/push/): Send MFA verification codes through push notification services such as Duo and Pushover, using Casdoor notification providers.
-- [RADIUS MFA](https://casdoor.ai/pt/docs/provider/mfa/radius/): Use an external RADIUS server as an MFA provider.
+- [Autenticação multifator (MFA / 2FA)](https://casdoor.ai/pt/docs/user/multi-factor-authentication/): Ative a autenticação multifator (MFA) ou autenticação de dois fatores (2FA) no Casdoor com um aplicativo autenticador TOTP, códigos SMS, códigos por e-mail ou RADIUS, além de códigos de recuperação e requisitos de MFA por organização.
+- [Use o app Casdoor Authenticator](https://casdoor.ai/pt/docs/how-to-connect/totp-authenticator-app/): Instale o Casdoor Authenticator, um app TOTP open-source para Android e iOS, conecte-o ao Casdoor e importe contas de outros apps autenticadores.
+- [Notificações push](https://casdoor.ai/pt/docs/provider/mfa/push/): Envie códigos de verificação MFA através de serviços de notificação push, como Duo e Pushover, usando provedores de notificação do Casdoor.
+- [MFA RADIUS](https://casdoor.ai/pt/docs/provider/mfa/radius/): Use um servidor RADIUS externo como provedor de MFA.
 
 ## Usuários
 
-- [Visão Geral](https://casdoor.ai/pt/docs/user/overview/): User model, properties, roles, permissions, and bulk import in Casdoor.
-- [User impersonation](https://casdoor.ai/pt/docs/user/impersonation/): Sign in as another user for support and testing without knowing their password.
-- [User roles](https://casdoor.ai/pt/docs/user/roles/): Assign and manage roles for users; use roles with permission policies.
-- [User permissions](https://casdoor.ai/pt/docs/user/permissions/): Assign permissions to users and roles; use the Permissions API.
-- [Formulários](https://casdoor.ai/pt/docs/user/forms/): Customize list-page columns and layout for core entities.
+- [Visão Geral](https://casdoor.ai/pt/docs/user/overview/): Modelo de usuário, propriedades, papéis, permissões e importação em massa no Casdoor.
+- [Impersonação de usuário](https://casdoor.ai/pt/docs/user/impersonation/): Entre como outro usuário para suporte e testes sem saber sua senha.
+- [Funções de usuário](https://casdoor.ai/pt/docs/user/roles/): Atribua e gerencie funções para usuários; use funções com políticas de permissão.
+- [Permissões de usuário](https://casdoor.ai/pt/docs/user/permissions/): Atribua permissões a usuários e funções; use a API Permissions.
+- [Formulários](https://casdoor.ai/pt/docs/user/forms/): Personalize colunas e layout da página de lista para entidades principais.
 
 ## Convites
 
-- [Visão Geral](https://casdoor.ai/pt/docs/invitation/overview/): Restrict sign-up to users who have a valid invitation code.
+- [Visão Geral](https://casdoor.ai/pt/docs/invitation/overview/): Restringir o cadastro a usuários que possuem um código de convite válido.
 
-## IP allowlist
+## Lista de permissão de IP
 
-- [IP allowlist](https://casdoor.ai/pt/docs/ip-whitelist/): Restrict access to login, sign-up, and forgot-password pages by client IP.
+- [Lista de permissões de IP](https://casdoor.ai/pt/docs/ip-whitelist/): Restrinja o acesso às páginas de login, cadastro e recuperação de senha pelo IP do cliente.
 
 ## Websites
 
-- [Websites](https://casdoor.ai/pt/docs/site/overview/): Configure reverse-proxy sites with SSL, health checks, and traffic rules.
-- [Add login to an app without OIDC](https://casdoor.ai/pt/docs/site/protect-app/): Put Casdoor in front of an app that has no login or no OIDC support, and pass the signed-in user to it.
+- [Websites](https://casdoor.ai/pt/docs/site/overview/): Configure sites de proxy reverso com SSL, verificações de integridade e regras de tráfego.
+- [Adicionar login a um app sem OIDC](https://casdoor.ai/pt/docs/site/protect-app/): Coloque o Casdoor na frente de um app que não possui login ou suporte a OIDC, e passe o usuário autenticado para ele.
 
 ## Regras
 
-- [Regras](https://casdoor.ai/pt/docs/rule/overview/): Define traffic control rules (IP, User-Agent, rate limiting, WAF) for Sites.
+- [Regras](https://casdoor.ai/pt/docs/rule/overview/): Defina regras de controle de tráfego (IP, User-Agent, limitação de taxa, WAF) para Sites.
 
 ## Sincronizador
 
-- [Visão Geral](https://casdoor.ai/pt/docs/syncer/overview/): Sync users from external systems (databases, Azure AD, Keycloak, etc.) into Casdoor.
-- [Database syncer](https://casdoor.ai/pt/docs/syncer/Database/): Sync user data from an external database into Casdoor.
-- [Azure AD syncer](https://casdoor.ai/pt/docs/syncer/AzureAD/): Sync users from Azure Active Directory (Microsoft Entra ID) to Casdoor via Microsoft Graph.
-- [Active Directory syncer](https://casdoor.ai/pt/docs/syncer/ActiveDirectory/): Sync users from Microsoft Active Directory to Casdoor via LDAP/LDAPS.
-- [Google Workspace syncer](https://casdoor.ai/pt/docs/syncer/GoogleWorkspace/): Sync users from Google Workspace to Casdoor via the Admin SDK Directory API.
-- [Keycloak syncer](https://casdoor.ai/pt/docs/syncer/Keycloak/): Sync users from Keycloak to Casdoor with automatic schema mapping.
-- [Okta syncer](https://casdoor.ai/pt/docs/syncer/Okta/): Sync users from Okta to Casdoor via the Okta Users API.
-- [SCIM 2.0 syncer](https://casdoor.ai/pt/docs/syncer/SCIM/): Pull users into Casdoor from any SCIM 2.0-compliant identity provider.
-- [AWS IAM syncer](https://casdoor.ai/pt/docs/syncer/AWSIAM/): Sync users and groups from AWS IAM into Casdoor.
-- [WeCom syncer](https://casdoor.ai/pt/docs/syncer/WeCom/): Sync users from WeCom (企业微信) to Casdoor via the WeCom API.
-- [DingTalk syncer](https://casdoor.ai/pt/docs/syncer/DingTalk/): Sync users from DingTalk (钉钉) to Casdoor via the DingTalk API.
-- [Lark syncer](https://casdoor.ai/pt/docs/syncer/Lark/): Sync users from Lark (Feishu) to Casdoor via the Lark Open Platform API.
+- [Visão Geral](https://casdoor.ai/pt/docs/syncer/overview/): Sincronize usuários de sistemas externos (bancos de dados, Azure AD, Keycloak, etc.) para o Casdoor.
+- [Syncer de banco de dados](https://casdoor.ai/pt/docs/syncer/Database/): Sincronize dados de usuários de um banco de dados externo para o Casdoor.
+- [Sincronizador Azure AD](https://casdoor.ai/pt/docs/syncer/AzureAD/): Sincronize usuários do Azure Active Directory (Microsoft Entra ID) para o Casdoor via Microsoft Graph.
+- [Sincronizador Active Directory](https://casdoor.ai/pt/docs/syncer/ActiveDirectory/): Sincronize usuários do Microsoft Active Directory para o Casdoor via LDAP/LDAPS.
+- [Sincronizador Google Workspace](https://casdoor.ai/pt/docs/syncer/GoogleWorkspace/): Sincronize usuários do Google Workspace para o Casdoor via Admin SDK Directory API.
+- [Keycloak syncer](https://casdoor.ai/pt/docs/syncer/Keycloak/): Sincronize usuários do Keycloak para o Casdoor com mapeamento automático de esquema.
+- [Okta syncer](https://casdoor.ai/pt/docs/syncer/Okta/): Sincronize usuários do Okta para o Casdoor via a API de Usuários do Okta.
+- [Sincronizador SCIM 2.0](https://casdoor.ai/pt/docs/syncer/SCIM/): Puxe usuários para o Casdoor de qualquer provedor de identidade compatível com SCIM 2.0.
+- [Sincronizador AWS IAM](https://casdoor.ai/pt/docs/syncer/AWSIAM/): Sincronize usuários e grupos do AWS IAM para o Casdoor.
+- [Sincronizador WeCom](https://casdoor.ai/pt/docs/syncer/WeCom/): Sincronize usuários do WeCom (企业微信) para o Casdoor via API WeCom.
+- [Syncer DingTalk](https://casdoor.ai/pt/docs/syncer/DingTalk/): Sincronize usuários do DingTalk (钉钉) para o Casdoor via a API do DingTalk.
+- [Lark syncer](https://casdoor.ai/pt/docs/syncer/Lark/): Sincronize usuários do Lark (Feishu) para o Casdoor via API da Lark Open Platform.
 
-## Certificates
+## Certificados
 
-- [Visão Geral](https://casdoor.ai/pt/docs/cert/overview/): Use certificates in Casdoor for JWT signing, SAML, and payment provider security.
+- [Visão Geral](https://casdoor.ai/pt/docs/cert/overview/): Use certificados no Casdoor para assinatura JWT, SAML e segurança do provedor de pagamento.
 
 ## Tokens de acesso
 
-- [Visão Geral](https://casdoor.ai/pt/docs/token/overview/): How Casdoor uses OAuth tokens - access and ID tokens, JWT formats, group format, revocation, and the token lifecycle.
+- [Visão Geral](https://casdoor.ai/pt/docs/token/overview/): Como o Casdoor usa tokens OAuth - tokens de acesso e ID, formatos JWT, formato de grupo, revogação e o ciclo de vida dos tokens.
 
 ## Sessões
 
-- [Visão Geral](https://casdoor.ai/pt/docs/session/overview/): How Casdoor sessions track each user's login state across the applications of an organization, what a session records, and how sessions are managed.
-- [Session management](https://casdoor.ai/pt/docs/session/management/): View and terminate user sessions in the Casdoor admin panel.
+- [Visão Geral](https://casdoor.ai/pt/docs/session/overview/): Como as sessões do Casdoor rastreiam o estado de login de cada usuário através das aplicações de uma organização, o que uma sessão registra e como as sessões são gerenciadas.
+- [Gerenciamento de sessões](https://casdoor.ai/pt/docs/session/management/): Visualize e encerre sessões de usuários no painel administrativo do Casdoor.
 
 ## Pontos de webhook
 
-- [Pontos de webhook](https://casdoor.ai/pt/docs/webhooks/overview/): Send Casdoor events to your application via HTTP webhooks for real-time integration.
+- [Pontos de webhook](https://casdoor.ai/pt/docs/webhooks/overview/): Envie eventos do Casdoor para sua aplicação via webhooks HTTP para integração em tempo real.
 
 ## Diretório LDAP
 
-- [Visão geral](https://casdoor.ai/pt/docs/ldap/overview/): Sync users from an LDAP server into Casdoor and authenticate them against LDAP.
-- [LDAP configuration and sync](https://casdoor.ai/pt/docs/ldap/config/): Configure LDAP per organization and sync users into Casdoor.
-- [Servidor LDAP](https://casdoor.ai/pt/docs/ldap/ldapserver/): Use Casdoor as an LDAP server for bind and search.
+- [Visão geral](https://casdoor.ai/pt/docs/ldap/overview/): Sincronize usuários de um servidor LDAP para o Casdoor e autentique-os contra o LDAP.
+- [Configuração e sincronização LDAP](https://casdoor.ai/pt/docs/ldap/config/): Configure o LDAP por organização e sincronize usuários para o Casdoor.
+- [Servidor LDAP](https://casdoor.ai/pt/docs/ldap/ldapserver/): Use o Casdoor como um servidor LDAP para bind e search.
 
 ## RADIUS
 
-- [Visão Geral](https://casdoor.ai/pt/docs/radius/overview/): Run Casdoor as a RADIUS server for network access and accounting.
+- [Visão Geral](https://casdoor.ai/pt/docs/radius/overview/): Execute o Casdoor como servidor RADIUS para controle de acesso à rede e contabilização.
 
 ## SCIM
 
-- [Visão Geral](https://casdoor.ai/pt/docs/scim/overview/): Provision and manage users in Casdoor via the SCIM 2.0 API.
+- [Visão Geral](https://casdoor.ai/pt/docs/scim/overview/): Provisione e gerencie usuários no Casdoor via API SCIM 2.0.
 
 ## Integrações
 
-- [Nginx](https://casdoor.ai/pt/docs/integration/C++/Nginx/): Enable OpenID Connect single sign-on for applications proxied by NGINX Plus, using Casdoor as the identity provider.
-- [Nginx authentication and single sign-on with OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/C++/NginxCommunityVersion/): Add Casdoor single sign-on to applications behind open-source Nginx (not NGINX Plus) with OAuth2 Proxy and auth_request, and what to use instead of a CAS module.
-- [Envoy](https://casdoor.ai/pt/docs/integration/C++/Envoy/): Protect services behind the Envoy proxy with Casdoor single sign-on, using Envoy's OAuth2 filter and a Casdoor application.
+- [Nginx](https://casdoor.ai/pt/docs/integration/C++/Nginx/): Habilite o single sign-on OpenID Connect para aplicações proxiedadas pelo NGINX Plus, usando o Casdoor como provedor de identidade.
+- [Autenticação Nginx e single sign-on com OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/C++/NginxCommunityVersion/): Adicione single sign-on do Casdoor a aplicações atrás de um Nginx open-source (não NGINX Plus) usando OAuth2 Proxy e auth_request, e o que usar em vez de um módulo CAS.
+- [Envoy](https://casdoor.ai/pt/docs/integration/C++/Envoy/): Proteja serviços atrás do proxy Envoy com o single sign-on do Casdoor, usando o filtro OAuth2 do Envoy e uma aplicação do Casdoor.
 - [Unity](https://casdoor.ai/pt/docs/integration/CSharp/Unity/): Use o Casdoor-dotnet-sdk para desenvolvimento no Unity.
-- [Kubernetes](https://casdoor.ai/pt/docs/integration/go/kubernetes/): Authenticate users to the Kubernetes API server with OpenID Connect, using Casdoor as the OIDC identity provider for kubectl.
-- [OpenShift](https://casdoor.ai/pt/docs/integration/go/openshift/): Configure Casdoor as an OpenID Connect identity provider for OpenShift so users sign in to the console and CLI with their Casdoor accounts.
-- [BookStack](https://casdoor.ai/pt/docs/integration/go/bookstack/): Set up Casdoor as the OAuth sign-in provider for BookStack, the open-source wiki and documentation platform.
-- [Bytebase](https://casdoor.ai/pt/docs/integration/go/Bytebase/): Use Casdoor as the OAuth2/OIDC provider for Bytebase SSO.
-- [ELK](https://casdoor.ai/pt/docs/integration/go/elk/): Put Casdoor single sign-on in front of Kibana with elk-auth-casdoor or casdoor-forward-auth, without X-Pack's paid SSO features.
-- [Gitea](https://casdoor.ai/pt/docs/integration/go/gitea/): Use Casdoor as the OAuth/OIDC provider for Gitea sign-in.
-- [Grafana](https://casdoor.ai/pt/docs/integration/go/grafana/): Use Casdoor as the OAuth provider for Grafana sign-in.
+- [Kubernetes](https://casdoor.ai/pt/docs/integration/go/kubernetes/): Autentique usuários no servidor da API Kubernetes com OpenID Connect, usando o Casdoor como provedor de identidade OIDC para o kubectl.
+- [OpenShift](https://casdoor.ai/pt/docs/integration/go/openshift/): Configure o Casdoor como provedor de identidade OpenID Connect para o OpenShift, permitindo que os usuários façam login no console e na CLI com suas contas do Casdoor.
+- [BookStack](https://casdoor.ai/pt/docs/integration/go/bookstack/): Configure o Casdoor como provedor de login OAuth para o BookStack, a plataforma open-source de wiki e documentação.
+- [Bytebase](https://casdoor.ai/pt/docs/integration/go/Bytebase/): Use o Casdoor como provedor OAuth2/OIDC para o SSO do Bytebase.
+- [ELK](https://casdoor.ai/pt/docs/integration/go/elk/): Coloque o single sign-on do Casdoor na frente do Kibana com elk-auth-casdoor ou casdoor-forward-auth, sem os recursos pagos de SSO do X-Pack.
+- [Gitea](https://casdoor.ai/pt/docs/integration/go/gitea/): Use o Casdoor como provedor OAuth/OIDC para login no Gitea.
+- [Grafana](https://casdoor.ai/pt/docs/integration/go/grafana/): Use o Casdoor como provedor OAuth para login no Grafana.
 - [MinIO](https://casdoor.ai/pt/docs/integration/go/minio/): Configurando o Casdoor como um provedor de identidade para suportar o MinIO
-- [Traefik](https://casdoor.ai/pt/docs/integration/go/traefik/): Protect services behind Traefik with Casdoor SSO using casdoor-forward-auth and Traefik's forwardAuth middleware.
-- [Caddy](https://casdoor.ai/pt/docs/integration/go/caddy/): Protect services behind Caddy with Casdoor SSO using casdoor-forward-auth and Caddy's forward_auth directive.
-- [OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/go/oauth2-proxy/): Put OAuth2 Proxy in front of any web application with Casdoor as the OIDC provider, and let in only members of a Casdoor group or holders of a Casdoor role.
-- [Portainer](https://casdoor.ai/pt/docs/integration/go/portainer/): Configure Portainer OAuth sign-in with Casdoor as the identity provider, so users log in to Portainer with their Casdoor accounts.
-- [Argo CD](https://casdoor.ai/pt/docs/integration/go/argocd/): Sign in to the Argo CD UI and CLI with Casdoor over OpenID Connect, and grant Argo CD roles to Casdoor groups.
-- [NetBird](https://casdoor.ai/pt/docs/integration/go/netbird/): Sign in to a self-hosted NetBird server, in the dashboard and in the NetBird client, with Casdoor over OpenID Connect.
-- [OpenList](https://casdoor.ai/pt/docs/integration/go/openlist/): Sign in to OpenList, the file list program forked from AList, with Casdoor through its single sign-on settings, with Casdoor usernames as OpenList usernames.
-- [SafeLine WAF](https://casdoor.ai/pt/docs/integration/go/safeline/): Sign users in to the applications that SafeLine (雷池) protects, and administrators in to the SafeLine console, with Casdoor over OpenID Connect.
-- [Spring Boot](https://casdoor.ai/pt/docs/integration/java/spring-boot/): Add Casdoor sign-in to a Spring Boot application with casdoor-spring-boot-starter - configuration, login redirect, callback and user info.
-- [Spring Cloud](https://casdoor.ai/pt/docs/integration/java/spring-cloud/): Add Casdoor authentication to Spring Cloud microservices, at the gateway or in individual services with casdoor-spring-boot-starter.
-- [Spring Cloud Gateway](https://casdoor.ai/pt/docs/integration/java/spring-cloud-gateway/): Authenticate requests at a Spring Cloud Gateway with Casdoor, using casdoor-spring-boot-starter in the gateway service.
-- [Quarkus](https://casdoor.ai/pt/docs/integration/java/quarkus/): Sign in to Quarkus applications with Casdoor and authorize requests with Casdoor roles and permissions using the Quarkus Casdoor Auth extension.
-- [Spring Security OAuth](https://casdoor.ai/pt/docs/integration/java/spring-security/spring-security-oauth/): Use Casdoor as the OpenID Connect provider for a Spring Security application with spring-boot-starter-oauth2-client.
-- [Spring Security filter (OIDC)](https://casdoor.ai/pt/docs/integration/java/spring-security/spring-security-filter/): Integrate Casdoor with Spring Security using OIDC.
-- [Plugin Jenkins](https://casdoor.ai/pt/docs/integration/java/jenkins-plugin/): Install and configure the Casdoor plugin for Jenkins so users sign in to Jenkins with Casdoor single sign-on.
-- [Jenkins (OIDC)](https://casdoor.ai/pt/docs/integration/java/jenkins-oidc/): Use Casdoor as the OIDC IdP for Jenkins sign-in.
-- [Via built-in SSO](https://casdoor.ai/pt/docs/integration/java/jira2/): Connect Jira to Casdoor over OpenID Connect with Jira's built-in SSO, a free method that requires HTTPS.
-- [Using the miniOrange plugin](https://casdoor.ai/pt/docs/integration/java/jira/): Connect Jira to Casdoor over OpenID Connect with the miniOrange OAuth / OIDC SSO plugin.
-- [Connecting applications with OIDC protocol - Confluence](https://casdoor.ai/pt/docs/integration/java/Confluence/): Connect Atlassian Confluence to Casdoor with OpenID Connect so users sign in to Confluence through Casdoor single sign-on.
-- [RuoYi](https://casdoor.ai/pt/docs/integration/java/RuoYi/): Integrate Casdoor single sign-on into RuoYi-Cloud, the Spring Cloud admin framework, using the Casdoor Java SDK.
-- [Pulsar manager](https://casdoor.ai/pt/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.yml on the back end and turn on the Casdoor switch in the front end.
-- [Using Casdoor in ShenYu](https://casdoor.ai/pt/docs/integration/java/shenyu/): Protect APIs behind the Apache ShenYu gateway with Casdoor using ShenYu's Casdoor plugin.
-- [ShardingSphere](https://casdoor.ai/pt/docs/integration/java/ShardingSphere/): Enable Casdoor sign-in for the Apache ShardingSphere ElasticJob UI, which includes built-in Casdoor support.
-- [Apache IoTDB](https://casdoor.ai/pt/docs/integration/java/iotdb/): Enable Casdoor sign-in for the Apache IoTDB Web Workbench, which includes built-in Casdoor support.
-- [Apache DolphinScheduler](https://casdoor.ai/pt/docs/integration/java/dolphinscheduler/): Enable Casdoor single sign-on for Apache DolphinScheduler, which supports Casdoor as a built-in login method.
-- [FireZone](https://casdoor.ai/pt/docs/integration/java/firezone/): Configure Firezone to use Casdoor as its OpenID Connect identity provider for user sign-in.
-- [Cloud Foundry](https://casdoor.ai/pt/docs/integration/java/CloudFoundry/): Use Casdoor as the OIDC identity provider for applications on Cloud Foundry, with step-by-step Casdoor and Cloud Foundry configuration.
-- [Thingsboard](https://casdoor.ai/pt/docs/integration/java/Thingsboard/): Use Casdoor as the OAuth 2.0 / OIDC identity provider for the ThingsBoard IoT platform, with Casdoor and ThingsBoard settings.
-- [Halo](https://casdoor.ai/pt/docs/integration/java/halo/): Sign in to the Halo blogging platform with Casdoor over OpenID Connect, using the custom SSO provider of the OAuth2 plugin.
-- [Firebase](https://casdoor.ai/pt/docs/integration/javascript/firebase/): Use Casdoor as an OpenID Connect provider in Firebase Authentication, so users of a Firebase web app sign in with Casdoor.
-- [WeChat mini program](https://casdoor.ai/pt/docs/integration/javascript/wechat_miniprogram/): Integrate Casdoor sign-in in a WeChat Mini Program (no OAuth redirect).
-- [Immich](https://casdoor.ai/pt/docs/integration/javascript/immich/): Sign in to Immich, in the browser and in the mobile apps, with Casdoor over OAuth and OpenID Connect.
-- [Joplin Server](https://casdoor.ai/pt/docs/integration/javascript/joplin/): Sign in to Joplin Server, in the browser and in the Joplin apps, with Casdoor as the SAML 2.0 identity provider.
-- [APISIX](https://casdoor.ai/pt/docs/integration/lua/apisix/): Protect APIs behind Apache APISIX with Casdoor, using either the authz-casdoor plugin or the openid-connect plugin.
-- [Zabbix](https://casdoor.ai/pt/docs/integration/php/Zabbix/): Use Casdoor as the SAML IdP for Zabbix SSO.
-- [WordPress (CAS SSO)](https://casdoor.ai/pt/docs/integration/php/WordPress/): Use Casdoor as CAS IdP for WordPress with the wp-cassify plugin.
-- [Zentao](https://casdoor.ai/pt/docs/integration/php/zentao/): Add Casdoor single sign-on to the ZenTao project management tool with the zentao-oidc module.
-- [Usando Casdoor como um servidor OAuth2 no ShowDoc](https://casdoor.ai/pt/docs/integration/php/showdoc/): Use Casdoor as the OAuth 2.0 server for ShowDoc sign-in, the API and technical documentation platform.
-- [Flarum](https://casdoor.ai/pt/docs/integration/php/Flarum/): Add Casdoor OAuth 2.0 sign-in to a Flarum forum with the FoF Passport extension.
-- [Moodle](https://casdoor.ai/pt/docs/integration/php/Moodle/): Configure Moodle to use Casdoor as an OAuth identity provider for single sign-on.
-- [Nextcloud](https://casdoor.ai/pt/docs/integration/php/nextcloud/): Sign in to Nextcloud with Casdoor through the OpenID Connect user backend app, with Casdoor usernames as Nextcloud user IDs and Casdoor groups as Nextcloud groups.
-- [Kanboard](https://casdoor.ai/pt/docs/integration/php/kanboard/): Sign in to Kanboard with Casdoor over OAuth 2.0, using the OAuth2 plugin of Kanboard.
-- [Proxmox VE](https://casdoor.ai/pt/docs/integration/perl/proxmox/): Add Casdoor to Proxmox VE as an OpenID Connect realm, so administrators sign in to the web interface with their Casdoor account and get permissions from Casdoor groups.
-- [GitLab](https://casdoor.ai/pt/docs/integration/ruby/gitlab/): Configure self-managed GitLab to use Casdoor as its OpenID Connect provider for single sign-on.
-- [Vaultwarden](https://casdoor.ai/pt/docs/integration/rust/vaultwarden/): Sign in to Vaultwarden with Casdoor over OpenID Connect, using the SSO support built into Vaultwarden 1.35.0 and later.
-- [Hasura](https://casdoor.ai/pt/docs/integration/Haskell/Hasura/): Secure Hasura GraphQL Engine with JWTs issued by Casdoor - configure the Casdoor application, Hasura JWT secret and claims mapping.
-- [FastAPI](https://casdoor.ai/pt/docs/integration/python/FastAPI/): Add Casdoor sign-in and Casdoor permission checks to a FastAPI app with the community casbin-fastapi-decorator library.
-- [JumpServer](https://casdoor.ai/pt/docs/integration/python/JumpServer/): Connect the JumpServer bastion host to Casdoor over CAS so users sign in with Casdoor single sign-on.
-- [Open WebUI](https://casdoor.ai/pt/docs/integration/python/open-webui/): Sign in to Open WebUI with Casdoor over OpenID Connect, and sync Open WebUI groups from Casdoor groups.
-- [Sentry](https://casdoor.ai/pt/docs/integration/python/sentry/): Sign in to a Sentry organization with Casdoor as the SAML 2.0 identity provider, on self-hosted Sentry and on sentry.io.
+- [Traefik](https://casdoor.ai/pt/docs/integration/go/traefik/): Proteja serviços atrás do Traefik com SSO Casdoor usando casdoor-forward-auth e o middleware forwardAuth do Traefik.
+- [Caddy](https://casdoor.ai/pt/docs/integration/go/caddy/): Proteja serviços atrás do Caddy com o SSO do Casdoor usando casdoor-forward-auth e a diretiva forward_auth do Caddy.
+- [OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/go/oauth2-proxy/): Coloque o OAuth2 Proxy na frente de qualquer aplicação web com o Casdoor como provedor OIDC, e permita o acesso apenas a membros de um grupo do Casdoor ou portadores de uma função do Casdoor.
+- [Portainer](https://casdoor.ai/pt/docs/integration/go/portainer/): Configure o login OAuth do Portainer com o Casdoor como provedor de identidade, permitindo que os usuários façam login no Portainer com suas contas do Casdoor.
+- [Argo CD](https://casdoor.ai/pt/docs/integration/go/argocd/): Faça login na UI e CLI do Argo CD com o Casdoor via OpenID Connect e conceda funções do Argo CD a grupos do Casdoor.
+- [NetBird](https://casdoor.ai/pt/docs/integration/go/netbird/): Faça login em um servidor NetBird auto-hospedado, no dashboard e no cliente NetBird, com o Casdoor via OpenID Connect.
+- [OpenList](https://casdoor.ai/pt/docs/integration/go/openlist/): Faça login no OpenList, o programa de listagem de arquivos derivado do AList, com o Casdoor através das configurações de single sign-on, usando nomes de usuário do Casdoor como nomes de usuário do OpenList.
+- [SafeLine WAF](https://casdoor.ai/pt/docs/integration/go/safeline/): Faça login de usuários nas aplicações protegidas pelo SafeLine (雷池) e de administradores no console do SafeLine, usando o Casdoor via OpenID Connect.
+- [Spring Boot](https://casdoor.ai/pt/docs/integration/java/spring-boot/): Adicione o login do Casdoor a uma aplicação Spring Boot com casdoor-spring-boot-starter - configuração, redirecionamento de login, callback e informações do usuário.
+- [Spring Cloud](https://casdoor.ai/pt/docs/integration/java/spring-cloud/): Adicione autenticação do Casdoor a microsserviços Spring Cloud, no gateway ou em serviços individuais usando casdoor-spring-boot-starter.
+- [Spring Cloud Gateway](https://casdoor.ai/pt/docs/integration/java/spring-cloud-gateway/): Autentique solicitações em um Spring Cloud Gateway com o Casdoor, usando o casdoor-spring-boot-starter no serviço de gateway.
+- [Quarkus](https://casdoor.ai/pt/docs/integration/java/quarkus/): Faça login em aplicações Quarkus com o Casdoor e autorize solicitações usando papéis e permissões do Casdoor por meio da extensão Quarkus Casdoor Auth.
+- [Spring Security OAuth](https://casdoor.ai/pt/docs/integration/java/spring-security/spring-security-oauth/): Use o Casdoor como provedor OpenID Connect para uma aplicação Spring Security com spring-boot-starter-oauth2-client.
+- [Filtro Spring Security (OIDC)](https://casdoor.ai/pt/docs/integration/java/spring-security/spring-security-filter/): Integre o Casdoor ao Spring Security usando OIDC.
+- [Plugin Jenkins](https://casdoor.ai/pt/docs/integration/java/jenkins-plugin/): Instale e configure o plugin do Casdoor para o Jenkins para que os usuários façam login no Jenkins com o single sign-on do Casdoor.
+- [Jenkins (OIDC)](https://casdoor.ai/pt/docs/integration/java/jenkins-oidc/): Use o Casdoor como IdP OIDC para o login no Jenkins.
+- [Via built-in SSO](https://casdoor.ai/pt/docs/integration/java/jira2/): Conecte o Jira ao Casdoor via OpenID Connect com o SSO integrado do Jira, um método gratuito que requer HTTPS.
+- [Usando o plugin miniOrange](https://casdoor.ai/pt/docs/integration/java/jira/): Conecte o Jira ao Casdoor via OpenID Connect usando o plugin miniOrange OAuth / OIDC SSO.
+- [Conectando aplicações com o protocolo OIDC - Confluence](https://casdoor.ai/pt/docs/integration/java/Confluence/): Conecte o Atlassian Confluence ao Casdoor usando OpenID Connect para que os usuários façam login no Confluence através do single sign-on do Casdoor.
+- [RuoYi](https://casdoor.ai/pt/docs/integration/java/RuoYi/): Integre o single sign-on do Casdoor no RuoYi-Cloud, o framework de administração Spring Cloud, usando o Java SDK do Casdoor.
+- [Pulsar manager](https://casdoor.ai/pt/docs/integration/java/Pulsar-manager/): Ative o login do Casdoor para o Apache Pulsar Manager - configure o application.yml no back end e ative a chave do Casdoor no front end.
+- [Usando o Casdoor no ShenYu](https://casdoor.ai/pt/docs/integration/java/shenyu/): Proteja APIs atrás do gateway Apache ShenYu com o Casdoor usando o plugin Casdoor do ShenYu.
+- [ShardingSphere](https://casdoor.ai/pt/docs/integration/java/ShardingSphere/): Habilite o login via Casdoor na interface do Apache ShardingSphere ElasticJob, que inclui suporte integrado ao Casdoor.
+- [Apache IoTDB](https://casdoor.ai/pt/docs/integration/java/iotdb/): Ative o login via Casdoor para o Apache IoTDB Web Workbench, que inclui suporte integrado ao Casdoor.
+- [Apache DolphinScheduler](https://casdoor.ai/pt/docs/integration/java/dolphinscheduler/): Ative o single sign-on do Casdoor para o Apache DolphinScheduler, que suporta o Casdoor como um método de login integrado.
+- [FireZone](https://casdoor.ai/pt/docs/integration/java/firezone/): Configure o FireZone para usar o Casdoor como seu provedor de identidade OpenID Connect para o login de usuários.
+- [Cloud Foundry](https://casdoor.ai/pt/docs/integration/java/CloudFoundry/): Use o Casdoor como provedor de identidade OIDC para aplicações no Cloud Foundry, com configuração passo a passo do Casdoor e do Cloud Foundry.
+- [Thingsboard](https://casdoor.ai/pt/docs/integration/java/Thingsboard/): Use o Casdoor como provedor de identidade OAuth 2.0 / OIDC para a plataforma IoT ThingsBoard, com configurações do Casdoor e do ThingsBoard.
+- [Halo](https://casdoor.ai/pt/docs/integration/java/halo/): Faça login na plataforma de blogs Halo com o Casdoor via OpenID Connect, usando o provedor SSO personalizado do plugin OAuth2.
+- [Firebase](https://casdoor.ai/pt/docs/integration/javascript/firebase/): Use o Casdoor como um provedor OpenID Connect no Firebase Authentication, para que usuários de uma aplicação web Firebase façam login com o Casdoor.
+- [Mini programa WeChat](https://casdoor.ai/pt/docs/integration/javascript/wechat_miniprogram/): Integre o login do Casdoor em um Mini Programa WeChat (sem redirecionamento OAuth).
+- [Immich](https://casdoor.ai/pt/docs/integration/javascript/immich/): Faça login no Immich, no navegador e nos aplicativos móveis, com o Casdoor via OAuth e OpenID Connect.
+- [Joplin Server](https://casdoor.ai/pt/docs/integration/javascript/joplin/): Faça login no Joplin Server, no navegador e nos aplicativos Joplin, com o Casdoor como provedor de identidade SAML 2.0.
+- [APISIX](https://casdoor.ai/pt/docs/integration/lua/apisix/): Proteja APIs atrás do Apache APISIX com o Casdoor, usando o plugin authz-casdoor ou o plugin openid-connect.
+- [Zabbix](https://casdoor.ai/pt/docs/integration/php/Zabbix/): Use o Casdoor como IdP SAML para SSO do Zabbix.
+- [WordPress (CAS SSO)](https://casdoor.ai/pt/docs/integration/php/WordPress/): Use o Casdoor como IdP CAS para WordPress com o plugin wp-cassify.
+- [Zentao](https://casdoor.ai/pt/docs/integration/php/zentao/): Adicione o single sign-on do Casdoor à ferramenta de gerenciamento de projetos ZenTao com o módulo zentao-oidc.
+- [Usando Casdoor como um servidor OAuth2 no ShowDoc](https://casdoor.ai/pt/docs/integration/php/showdoc/): Use o Casdoor como servidor OAuth 2.0 para login do ShowDoc, a plataforma de documentação técnica e API.
+- [Flarum](https://casdoor.ai/pt/docs/integration/php/Flarum/): Adicione o login via OAuth 2.0 do Casdoor a um fórum Flarum com a extensão FoF Passport.
+- [Moodle](https://casdoor.ai/pt/docs/integration/php/Moodle/): Configure o Moodle para usar o Casdoor como provedor de identidade OAuth para single sign-on.
+- [Nextcloud](https://casdoor.ai/pt/docs/integration/php/nextcloud/): Faça login no Nextcloud com o Casdoor através do aplicativo OpenID Connect user backend, usando os nomes de usuário do Casdoor como IDs de usuário do Nextcloud e os grupos do Casdoor como grupos do Nextcloud.
+- [Kanboard](https://casdoor.ai/pt/docs/integration/php/kanboard/): Faça login no Kanboard com o Casdoor via OAuth 2.0, usando o plugin OAuth2 do Kanboard.
+- [Proxmox VE](https://casdoor.ai/pt/docs/integration/perl/proxmox/): Adicione o Casdoor ao Proxmox VE como um realm OpenID Connect, para que administradores façam login na interface web com sua conta do Casdoor e obtenham permissões dos grupos do Casdoor.
+- [GitLab](https://casdoor.ai/pt/docs/integration/ruby/gitlab/): Configure o GitLab auto-hospedado para usar o Casdoor como seu provedor OpenID Connect para single sign-on.
+- [Vaultwarden](https://casdoor.ai/pt/docs/integration/rust/vaultwarden/): Faça login no Vaultwarden com o Casdoor via OpenID Connect, usando o suporte SSO integrado ao Vaultwarden 1.35.0 e versões posteriores.
+- [Hasura](https://casdoor.ai/pt/docs/integration/Haskell/Hasura/): Proteja o Hasura GraphQL Engine com JWTs emitidos pelo Casdoor - configure a aplicação Casdoor, o segredo JWT do Hasura e o mapeamento de claims.
+- [FastAPI](https://casdoor.ai/pt/docs/integration/python/FastAPI/): Adicione o login via Casdoor e verificações de permissão do Casdoor a um aplicativo FastAPI com a biblioteca comunitária casbin-fastapi-decorator.
+- [JumpServer](https://casdoor.ai/pt/docs/integration/python/JumpServer/): Conecte o bastion host JumpServer ao Casdoor via CAS para que os usuários façam login com o single sign-on do Casdoor.
+- [Open WebUI](https://casdoor.ai/pt/docs/integration/python/open-webui/): Faça login no Open WebUI com o Casdoor via OpenID Connect e sincronize os grupos do Open WebUI a partir dos grupos do Casdoor.
+- [Sentry](https://casdoor.ai/pt/docs/integration/python/sentry/): Faça login em uma organização Sentry usando o Casdoor como provedor de identidade SAML 2.0, tanto no Sentry auto-hospedado quanto no sentry.io.
 
 ## Agentes
 
@@ -410,17 +411,17 @@
 
 ## Entradas
 
-- [Entradas](https://casdoor.ai/pt/docs/entry/overview/): Telemetry records collected from OpenClaw agents, OS log facilities, and Casdoor's own authorization events.
+- [Entradas](https://casdoor.ai/pt/docs/entry/overview/): Registros de telemetria coletados de agentes OpenClaw, instalações de log do SO e eventos de autorização próprios do Casdoor.
 
 ## Monitoramento
 
-- [Web UI monitoring](https://casdoor.ai/pt/docs/monitoring/Web-UI/): View Casdoor runtime metrics in the web UI.
-- [Prometheus](https://casdoor.ai/pt/docs/monitoring/Prometheus/): Scrape Casdoor metrics with Prometheus.
+- [Monitoramento via interface web](https://casdoor.ai/pt/docs/monitoring/Web-UI/): Visualize métricas de tempo de execução do Casdoor na interface web.
+- [Prometheus](https://casdoor.ai/pt/docs/monitoring/Prometheus/): Extraia métricas do Casdoor com Prometheus.
 
 ## More
 
-- [Internacionalização](https://casdoor.ai/pt/docs/internationalization/): Casdoor’s supported languages and how to contribute translations.
-- [Contributor guide](https://casdoor.ai/pt/docs/contributing/): How to contribute to Casdoor: code, documentation, and community.
+- [Internacionalização](https://casdoor.ai/pt/docs/internationalization/): Os idiomas suportados pelo Casdoor e como contribuir com traduções.
+- [Guia do contribuidor](https://casdoor.ai/pt/docs/contributing/): Como contribuir para o Casdoor: código, documentação e comunidade.
 
 ## Optional
 

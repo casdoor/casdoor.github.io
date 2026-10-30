@@ -2,11 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://casdoor.ai/ja/blog/</id>
     <title>Casdoor Blog</title>
-    <updated>2026-10-07T00:00:00.000Z</updated>
+    <updated>2026-10-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://casdoor.ai/ja/blog/"/>
     <subtitle>Casdoor Blog</subtitle>
     <icon>https://casdoor.ai/ja/img/casdoor.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Casdoor v4: A New Console, a Marketplace, and OAuth for MCP Servers]]></title>
+        <id>https://casdoor.ai/ja/blog/casdoor-v4/</id>
+        <link href="https://casdoor.ai/ja/blog/casdoor-v4/"/>
+        <updated>2026-10-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Casdoor v4.0 came out on September 1. Two months and 25 releases later we are at v4.25, so this is a good point to look back at what changed. In short: the admin console was rebuilt, self-hosting got a lot less fiddly, there is now a Marketplace for integrations and sign-in themes, and Casdoor can act as the authorization server for MCP servers and AI agents.]]></summary>
+        <content type="html"><![CDATA[<p>Casdoor v4.0 came out on September 1. Two months and 25 releases later we are at v4.25, so this is a good point to look back at what changed. In short: the admin console was rebuilt, self-hosting got a lot less fiddly, there is now a Marketplace for integrations and sign-in themes, and Casdoor can act as the authorization server for MCP servers and AI agents.</p>
+<p>If you haven't used it: Casdoor is an open-source identity and access management platform written in Go. It is a full identity provider, not a library or a login proxy. Users live in Casdoor, Casdoor issues the tokens, and your apps talk to it over OAuth 2.0, OpenID Connect, SAML 2.0, CAS, LDAP or SCIM. Authorization is handled by <a href="https://casbin.apache.org/" target="_blank" rel="noopener noreferrer" class="">Apache Casbin</a>, so ACL, RBAC and ABAC models all work. It is Apache-2.0 licensed and listed in the CNCF Landscape.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-rebuilt-console-and-sign-in-pages">A rebuilt console and sign-in pages<a href="https://casdoor.ai/ja/blog/casdoor-v4/#a-rebuilt-console-and-sign-in-pages" class="hash-link" aria-label="A rebuilt console and sign-in pagesへの直接リンク" title="A rebuilt console and sign-in pagesへの直接リンク" translate="no">​</a></h2>
+<p>v4.0 replaced the Ant Design admin console with a new one built on shadcn/ui, Tailwind and Vite (now on React 19). It has a command palette, bulk row selection, inline form validation, two-column forms and tables where you can hide columns. Switching languages no longer reloads the page.</p>
+<p>The sign-in, sign-up and password reset pages were redesigned too. Dark mode works properly, and the pages are usable on a phone.</p>
+<p>If you are upgrading from v3, read the upgrade guide linked from the README first. The main thing to check is the path of the frontend build if you serve static files through a CDN or reverse proxy.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easier-to-self-host">Easier to self-host<a href="https://casdoor.ai/ja/blog/casdoor-v4/#easier-to-self-host" class="hash-link" aria-label="Easier to self-hostへの直接リンク" title="Easier to self-hostへの直接リンク" translate="no">​</a></h2>
+<p>A lot of the v4 work came from issues and forum threads by people running Casdoor themselves:</p>
+<ul>
+<li class=""><strong>No default password.</strong> On first visit Casdoor asks you to set the <code>admin</code> password, or you can set it with <code>initAdminPassword</code>.</li>
+<li class=""><strong>Sub-path deployment.</strong> Set <code>basePath</code> to serve Casdoor at <code>https://example.com/auth/</code> instead of its own host.</li>
+<li class=""><strong>Forward auth.</strong> Casdoor has a forward auth endpoint for Traefik, Caddy and Nginx, so you can put apps that have no login of their own behind it, with public paths and per-site rules.</li>
+<li class=""><strong>Docker tags.</strong> Images are now also tagged <code>X</code>, <code>X.Y</code> and <code>X.Y.Z</code>, so you can follow a major or minor version.</li>
+<li class=""><strong>Helm.</strong> The chart moved into the main repository, is published to GHCR and <a href="https://artifacthub.io/packages/helm/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">Artifact Hub</a> with every release, and can hold organizations, applications and users as configuration. See <a class="" href="https://casdoor.ai/ja/blog/casdoor-on-kubernetes/">Running Casdoor on Kubernetes</a>.</li>
+<li class=""><strong>Windows service.</strong> The binary can run as a Windows service.</li>
+<li class=""><strong>Upgrades.</strong> The system info page shows the latest release and can upgrade an official binary in one click.</li>
+<li class=""><strong>Operations.</strong> Container health checks, Prometheus counters for sign-in success and failure, audit logs forwarded to Syslog, and Redis Cluster support.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="marketplace">マーケットプレイス<a href="https://casdoor.ai/ja/blog/casdoor-v4/#marketplace" class="hash-link" aria-label="マーケットプレイスへの直接リンク" title="マーケットプレイスへの直接リンク" translate="no">​</a></h2>
+<p>The new <a href="https://marketplace.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">Marketplace</a> lets an admin install integrations from inside Casdoor: application templates, identity providers and sign-in themes. Installing one fills in the configuration for you, and uninstalling restores what was there before.</p>
+<p>There are more than 20 sign-in themes so far. You can preview a theme on your own sign-in page before installing it. Organization admins can also customize the sign-in pages with their own fonts, images and HTML, within an allowlist that blocks forms and scripts. The read-only demo at <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> cycles through the themes if you want to see them.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oauth-for-mcp-servers-and-ai-agents">OAuth for MCP servers and AI agents<a href="https://casdoor.ai/ja/blog/casdoor-v4/#oauth-for-mcp-servers-and-ai-agents" class="hash-link" aria-label="OAuth for MCP servers and AI agentsへの直接リンク" title="OAuth for MCP servers and AI agentsへの直接リンク" translate="no">​</a></h2>
+<p>The MCP specification asks remote MCP servers to use OAuth, and MCP clients usually don't know in advance which authorization server they will meet. Casdoor now covers the pieces this needs:</p>
+<ul>
+<li class="">OAuth 2.1 authorization code flow with PKCE, and a consent page where users can grant only some of the requested scopes</li>
+<li class="">Dynamic Client Registration (RFC 7591) and client management (RFC 7592)</li>
+<li class="">Client ID Metadata Documents: an MCP client can use a URL as its <code>client_id</code> without registering first</li>
+<li class=""><code>private_key_jwt</code> client authentication for dynamically registered clients</li>
+<li class="">Resource Indicators (RFC 8707) and Protected Resource Metadata (RFC 9728)</li>
+<li class="">Token Exchange (RFC 8693), including ID-JAGs for enterprise-managed authorization, so an organization's IdP can decide which agents may reach which MCP servers</li>
+</ul>
+<p>Point your MCP server's protected resource metadata at Casdoor, and sign-in, consent, token issuing and validation are handled for you. Casdoor also runs its own MCP server, so an assistant such as Claude Code or Cursor can manage users, applications and permissions through it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-protocol-work">Other protocol work<a href="https://casdoor.ai/ja/blog/casdoor-v4/#other-protocol-work" class="hash-link" aria-label="Other protocol workへの直接リンク" title="Other protocol workへの直接リンク" translate="no">​</a></h2>
+<ul>
+<li class="">SAML Single Logout and IdP-initiated SSO</li>
+<li class="">OIDC <code>prompt=none</code>, better conformance for hybrid flow, <code>prompt</code> and <code>max_age</code>, and the RFC 9207 <code>iss</code> parameter</li>
+<li class="">Token revocation (RFC 7009), DPoP and the device authorization flow</li>
+<li class="">Magic link sign-in, password history checks, and passkeys shared across sibling subdomains</li>
+<li class="">Exclusive sign-in with a maximum number of sessions per user</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it">試してみる<a href="https://casdoor.ai/ja/blog/casdoor-v4/#try-it" class="hash-link" aria-label="試してみるへの直接リンク" title="試してみるへの直接リンク" translate="no">​</a></h2>
+<p>The quickest way to look around:</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">docker run -p 8000:8000 casbin/casdoor-all-in-one</span><br></span></code></pre></div></div>
+<p>Then open <a href="http://localhost:8000/" target="_blank" rel="noopener noreferrer" class="">http://localhost:8000</a>. The image includes SQLite and sample data, so use it for trying things out, not for production. The <a class="" href="https://casdoor.ai/ja/docs/basic/server-installation/">installation guide</a> covers real deployments.</p>
+<p>There are two online demos: <a href="https://demo.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">demo.casdoor.com</a> is writable and resets every five minutes, and <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> is read-only.</p>
+<p>If you would rather not run it yourself, <a href="https://www.casdoor.com/pricing" target="_blank" rel="noopener noreferrer" class="">Casdoor Cloud</a> gives you a dedicated, managed instance at a flat price with no per-user fees. New accounts get $10 in credit to try it.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">リンク<a href="https://casdoor.ai/ja/blog/casdoor-v4/#links" class="hash-link" aria-label="リンクへの直接リンク" title="リンクへの直接リンク" translate="no">​</a></h2>
+<ul>
+<li class="">GitHub: <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">https://github.com/casdoor/casdoor</a></li>
+<li class="">Release notes: <a href="https://github.com/casdoor/casdoor/releases" target="_blank" rel="noopener noreferrer" class="">https://github.com/casdoor/casdoor/releases</a></li>
+<li class="">ドキュメント: <a href="https://casdoor.ai/docs/overview" target="_blank" rel="noopener noreferrer" class="">https://casdoor.ai/docs/overview</a></li>
+<li class="">Discord: <a href="https://discord.gg/5rPsrAzK7S" target="_blank" rel="noopener noreferrer" class="">https://discord.gg/5rPsrAzK7S</a></li>
+</ul>
+<p>バグ報告や機能リクエストは GitHub で歓迎しています。Casdoor が役立つ場合は、スターを付けていただくと他の人が見つけやすくなります。</p>]]></content>
+        <author>
+            <name>Yang Luo</name>
+            <uri>https://github.com/hsluoyz</uri>
+        </author>
+        <category label="Casdoor" term="Casdoor"/>
+        <category label="Release" term="Release"/>
+        <category label="IAM" term="IAM"/>
+        <category label="SSO" term="SSO"/>
+        <category label="OAuth" term="OAuth"/>
+        <category label="MCP" term="MCP"/>
+        <category label="Self-hosting" term="Self-hosting"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Kubernetes での Casdoor 実行：公式 Helm Chart と設定コード化]]></title>
         <id>https://casdoor.ai/ja/blog/casdoor-on-kubernetes/</id>

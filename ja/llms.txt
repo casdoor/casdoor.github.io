@@ -136,7 +136,7 @@
 
 - [権限](https://casdoor.ai/ja/docs/permission/overview/): Casdoor の権限管理は Casbin に基づいています。このページでは、モデル、ポリシー、アダプターについて説明し、アプリケーションが Casdoor API を介して権限を確認する方法を示します。
 - [Configure a permission](https://casdoor.ai/ja/docs/permission/permission-configuration/): 権限編集ページのフィールド（モデル、アダプター、サブジェクト、リソースとアクション、効果）に関するリファレンス。
-- [Casbin APIs](https://casdoor.ai/ja/docs/permission/exposed-casbin-apis/): Reference for the Casbin APIs of Casdoor - enforce, batch enforce, and the lists of objects, actions, and roles of a user - which your backend calls to check permissions.
+- [Casbin API](https://casdoor.ai/ja/docs/permission/exposed-casbin-apis/): Casdoor の Casbin API のリファレンス - enforce、batch enforce、およびユーザーのオブジェクト、アクション、ロールのリスト - これらはバックエンドから権限チェックのために呼び出されます。
 - [アダプター](https://casdoor.ai/ja/docs/permission/adapter/): Casbinポリシーを含むデータベーステーブルにCasdoorを接続し、管理コンソールでポリシーを表示・編集します。
 
 ## プロバイダー
@@ -180,7 +180,7 @@
 - [Mailpit でメールをテストする](https://casdoor.ai/ja/docs/provider/email/mailpit/): ローカル SMTP サーバーである Mailpit で Casdoor のメールをキャッチします。
 - [SMSプロバイダー](https://casdoor.ai/ja/docs/provider/sms/overview/): 電話番号に認証コードを送信するSMSプロバイダーの設定と、CasdoorがサポートするSMSサービスについて説明します。
 - [Twilio で SMS を送信する](https://casdoor.ai/ja/docs/provider/sms/twilio/): Casdoor の SMS プロバイダーとして Twilio を使用する。
-- [Send SMS with Twilio Verify](https://casdoor.ai/ja/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [Twilio Verify で SMS を送信する](https://casdoor.ai/ja/docs/provider/sms/twilioVerify/): Twilio Verify を使用して、Casdoor の SMS 認証コードを送信・確認します。
 - [Amazon SNS を使用した SMS 送信](https://casdoor.ai/ja/docs/provider/sms/amazonSns/): Casdoor の SMS プロバイダーとして Amazon Simple Notification Service (SNS) を使用します。
 - [Azure Communication Services で SMS を送信する](https://casdoor.ai/ja/docs/provider/sms/acs/): Casdoor の SMS プロバイダーとして Azure Communication Services (ACS) を使用します。
 - [Alibaba Cloud で SMS を送信する](https://casdoor.ai/ja/docs/provider/sms/alibabaCloud/): Alibaba Cloud の SMS サービスを Casdoor の SMS プロバイダーとして使用します。

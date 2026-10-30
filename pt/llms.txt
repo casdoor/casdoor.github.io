@@ -48,11 +48,11 @@
 - [Conectar uma aplicação ao Casdoor](https://casdoor.ai/pt/docs/how-to-connect/overview/): Escolha como sua aplicação autentica usuários com o Casdoor - OAuth 2.0 e OpenID Connect, SAML ou CAS - e se deseja usar uma biblioteca OIDC, um SDK do Casdoor ou um plugin.
 - [Conectar um cliente OIDC padrão](https://casdoor.ai/pt/docs/how-to-connect/oidc-client/): Aponte qualquer biblioteca de cliente OpenID Connect para o endpoint de descoberta do Casdoor e aprenda o que o documento de descoberta e o endpoint UserInfo retornam.
 - [Faça login de usuários com um SDK do Casdoor](https://casdoor.ai/pt/docs/how-to-connect/sdk/): Encontre o SDK do Casdoor para sua plataforma e use um SDK de frontend e um SDK de backend juntos para fazer login de usuários, verificar o token de acesso e chamar a API do Casdoor.
-- [Set up single sign-on](https://casdoor.ai/pt/docs/session/single-sign-on/): Let users sign in once and open every application of their organization without signing in again.
+- [Configurar single sign-on](https://casdoor.ai/pt/docs/session/single-sign-on/): Permita que os usuários façam login uma vez e abram todas as aplicações da sua organização sem precisar fazer login novamente.
 - [Desconectar usuários de todas as aplicações](https://casdoor.ai/pt/docs/session/single-sign-out/): Desconecte um usuário de todas as aplicações da organização de uma só vez com o endpoint de logout SSO e notifique suas aplicações para que elas encerrem suas próprias sessões.
 - [Logout iniciado pelo RP (end-session endpoint OIDC)](https://casdoor.ai/pt/docs/session/rp-initiated-logout/): O que é o logout iniciado pelo RP do OpenID Connect e como usar o end-session endpoint do Casdoor - parâmetros, id_token_hint, post_logout_redirect_uri, o que o Casdoor revoga e como isso se relaciona com o back-channel logout.
 - [Entrar usuários em uma aplicação Vue](https://casdoor.ai/pt/docs/how-to-connect/vue-sdk/): Adicione login do Casdoor a uma aplicação Vue 2 ou Vue 3 com casdoor-vue-sdk.
-- [Sign users in to an Electron app](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/electron-app/): Run the Casdoor Electron example, which signs users in through the system browser and a custom protocol, and add the same flow to your own app.
+- [Entrar de usuários em um aplicativo Electron](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/electron-app/): Execute o exemplo Casdoor para Electron, que autentica usuários através do navegador do sistema e de um protocolo personalizado, e adicione o mesmo fluxo ao seu próprio aplicativo.
 - [Fazer login de usuários em um aplicativo desktop .NET](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/dotnet-app/): Execute o exemplo do Casdoor para aplicativos desktop .NET, que autentica usuários via WebView2, e adicione o mesmo fluxo ao seu próprio aplicativo.
 - [Fazer login de usuários em um aplicativo .NET MAUI](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/maui-app/): Adicione o login do Casdoor a um aplicativo .NET MAUI no Android e Windows com a biblioteca Casdoor.MauiOidcClient.
 - [Faça login de usuários em um aplicativo desktop Qt](https://casdoor.ai/pt/docs/how-to-connect/desktop-sdks/qt-app/): Execute o exemplo Casdoor Qt, que autentica usuários através do Qt WebEngine e casdoor-cpp-sdk, e adicione o mesmo fluxo ao seu próprio aplicativo C++.
@@ -96,19 +96,19 @@
 - [Organizações](https://casdoor.ai/pt/docs/organization/overview/): Uma organização possui usuários e aplicações. Esta página descreve as configurações de uma organização - armazenamento de senhas, avatares, nomes de usuário, exclusão suave e a navegação que os membros veem.
 - [Dica: grupos](https://casdoor.ai/pt/docs/organization/organization-tree/): Grupos reúnem os usuários de uma organização e formam uma árvore. Esta página descreve as propriedades de um grupo e onde você gerencia grupos.
 - [Definir regras de complexidade de senha](https://casdoor.ai/pt/docs/organization/passwordComplexity/): Exija um comprimento mínimo, classes de caracteres mistas, caracteres especiais ou nenhum caractere repetido para as senhas de uma organização.
-- [Encrypt passwords in transit](https://casdoor.ai/pt/docs/organization/passwordObfuscator/): Make the Casdoor frontend encrypt passwords with AES or DES before it sends them to the sign-in and set-password APIs.
+- [Criptografar senhas em trânsito](https://casdoor.ai/pt/docs/organization/passwordObfuscator/): Fazer o frontend do Casdoor criptografar senhas com AES ou DES antes de enviá-las às APIs de login e definição de senha.
 - [Personalize a página da conta](https://casdoor.ai/pt/docs/organization/accountCustomization/): Escolha quais campos a página da conta de uma organização exibe, quem pode visualizar e editar cada campo e como os campos são agrupados em abas.
 - [Personalizar o tema](https://casdoor.ai/pt/docs/organization/customize-theme/): Defina a cor primária e o raio de borda das páginas do Casdoor para uma organização ou para uma única aplicação.
 - [Requerer autenticação multifator](https://casdoor.ai/pt/docs/organization/mfa-items/): Escolha quais métodos de autenticação multifator (MFA) uma organização oferece e se cada um é opcional, solicitado ou obrigatório.
-- [Registros](https://casdoor.ai/pt/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
+- [Registros](https://casdoor.ai/pt/docs/organization/records/): O Casdoor grava um registro de cada solicitação de API em seu log de auditoria. Esta página descreve o que um registro contém, a qual organização e usuário ele é atribuído e por quanto tempo o Casdoor o mantém.
 
 ## Aplicações
 
 - [Aplicações](https://casdoor.ai/pt/docs/application/overview/): Uma aplicação representa um serviço que autentica usuários com o Casdoor. Esta página explica o que você configura em uma aplicação e como atualizá-la através da API.
 - [Referência de configurações da aplicação](https://casdoor.ai/pt/docs/application/terminology/): Referência para cada campo da página de edição da aplicação no console de administração do Casdoor, organizado por aba.
-- [Create and configure an application](https://casdoor.ai/pt/docs/application/config/): Create an application in Casdoor, connect it to an organization, and set the redirect URL so that your service can sign users in.
+- [Criar e configurar uma aplicação](https://casdoor.ai/pt/docs/application/config/): Crie uma aplicação no Casdoor, conecte-a a uma organização e defina a URL de redirecionamento para que seu serviço possa fazer login de usuários.
 - [Registrar clientes dinamicamente](https://casdoor.ai/pt/docs/application/dynamic-client-registration/): Permita que softwares se registrem como clientes OAuth 2.0 do Casdoor com uma única requisição HTTP, conforme definido na RFC 7591, e controle onde isso é permitido.
-- [Application categories](https://casdoor.ai/pt/docs/application/categories/): The category of an application - Default for applications that users sign in to, Agent for machine clients - and the types that each category offers.
+- [Categorias de Aplicação](https://casdoor.ai/pt/docs/application/categories/): A categoria de uma aplicação - Default para aplicações nas quais usuários fazem login, Agent para clientes máquina - e os tipos que cada categoria oferece.
 - [Definir escopos personalizados](https://casdoor.ai/pt/docs/application/scopes/): Defina seus próprios escopos OAuth 2.0 em uma aplicação Agent, como um servidor MCP, para que os clientes solicitem apenas as permissões de que precisam.
 - [Adicionar provedores a uma aplicação](https://casdoor.ai/pt/docs/application/providers/): Adicione provedores de identidade, email, SMS e outros a uma aplicação, e escolha para cada um em quais situações o Casdoor os utiliza.
 - [Escolha os métodos de login](https://casdoor.ai/pt/docs/application/signin-methods/): Escolha quais métodos de login uma aplicação oferece em sua página de login, como senha, código de verificação, link mágico, WebAuthn e LDAP, e em qual ordem.
@@ -147,7 +147,7 @@
 - [Adicione o Google como provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/google/): Permita que os usuários façam login no Casdoor com suas contas do Google.
 - [Ativar o Google One Tap](https://casdoor.ai/pt/docs/provider/oauth/googleonetap/): Permita que os usuários façam login na página de login do Casdoor com o Google One Tap configurando a regra do provedor Google para One Tap.
 - [Adicionar GitHub como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/github/): Permita que os usuários façam login no Casdoor com sua conta do GitHub, através do fluxo web ou do fluxo de dispositivo.
-- [Add LinkedIn as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/linkedin/): Permita que os usuários façam login no Casdoor com suas contas do LinkedIn.
+- [Adicione o LinkedIn como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/linkedin/): Permita que os usuários façam login no Casdoor com suas contas do LinkedIn.
 - [Adicionar Facebook como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/facebook/): Permita que os usuários façam login no Casdoor com suas contas do Facebook.
 - [Adicionar Sign in with Apple](https://casdoor.ai/pt/docs/provider/oauth/apple/): Permita que os usuários façam login no Casdoor com seu ID da Apple através do Sign in with Apple.
 - [Adicionar Alipay como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/Alipay/): Permita que os usuários façam login no Casdoor com suas contas Alipay, usando assinatura baseada em certificados.
@@ -169,7 +169,7 @@
 - [Adicionar GitLab como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/gitlab/): Permita que os usuários façam login no Casdoor com sua conta no GitLab.com ou em um GitLab auto-hospedado.
 - [Adicionar o Baidu como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/baidu/): Permita que os usuários façam login no Casdoor com suas contas Baidu.
 - [Adicionar o Infoflow como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/infoflow/): Permita que os usuários façam login no Casdoor com suas contas no Baidu Infoflow.
-- [Add Lark as an OAuth provider](https://casdoor.ai/pt/docs/provider/oauth/lark/): Let users sign in to Casdoor with their Lark (Feishu) account.
+- [Adicione o Lark como um provedor OAuth](https://casdoor.ai/pt/docs/provider/oauth/lark/): Permita que os usuários façam login no Casdoor com sua conta Lark (Feishu).
 - [Provedores de e-mail](https://casdoor.ai/pt/docs/provider/email/overview/): Configure um provedor de e-mail que envia códigos de verificação, links de redefinição de senha e notificações, e escreva os templates de e-mail.
 - [Envie e-mails com SendGrid](https://casdoor.ai/pt/docs/provider/email/sendgrid/): Use a API do SendGrid como o provedor de e-mail do Casdoor.
 - [Envie e-mails com Resend](https://casdoor.ai/pt/docs/provider/email/resend/): Use a API do Resend como o provedor de e-mail do Casdoor.
@@ -180,7 +180,7 @@
 - [Testar e-mail com Mailpit](https://casdoor.ai/pt/docs/provider/email/mailpit/): Capture os e-mails do Casdoor no Mailpit, um servidor SMTP local para testes.
 - [Provedores de SMS](https://casdoor.ai/pt/docs/provider/sms/overview/): Configure um provedor de SMS que envia códigos de verificação para números de telefone, e os serviços de SMS suportados pelo Casdoor.
 - [Enviar SMS com Twilio](https://casdoor.ai/pt/docs/provider/sms/twilio/): Use o Twilio como provedor de SMS do Casdoor.
-- [Send SMS with Twilio Verify](https://casdoor.ai/pt/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [Envie SMS com Twilio Verify](https://casdoor.ai/pt/docs/provider/sms/twilioVerify/): Use o Twilio Verify para enviar e verificar os códigos de verificação SMS do Casdoor.
 - [Enviar SMS com Amazon SNS](https://casdoor.ai/pt/docs/provider/sms/amazonSns/): Use o Amazon Simple Notification Service (SNS) como o provedor SMS do Casdoor.
 - [Enviar SMS com Azure Communication Services](https://casdoor.ai/pt/docs/provider/sms/acs/): Use o Azure Communication Services (ACS) como provedor de SMS do Casdoor.
 - [Enviar SMS com Alibaba Cloud](https://casdoor.ai/pt/docs/provider/sms/alibabaCloud/): Use o serviço de SMS da Alibaba Cloud como provedor de SMS do Casdoor.
@@ -250,17 +250,17 @@
 
 ## Gestão SaaS
 
-- [Visão Geral](https://casdoor.ai/pt/docs/pricing/overview/): Use Casdoor for subscription and pricing: plans, payments, and subscriptions.
+- [Visão Geral](https://casdoor.ai/pt/docs/pricing/overview/): Use o Casdoor para assinaturas e preços: planos, pagamentos e assinaturas.
 - [Produto](https://casdoor.ai/pt/docs/products/product/): Defina produtos (ou serviços) para vender e anexe provedores de pagamento.
 - [Loja de Produtos](https://casdoor.ai/pt/docs/products/product-store/): Publique produtos em uma vitrine onde os usuários podem navegar e comprar
 - [Carrinho de compras](https://casdoor.ai/pt/docs/products/cart/): O carrinho de compras do Casdoor reúne vários produtos para que os usuários possam comprá-los juntos em um único pedido e um único pagamento.
 - [Pagamento](https://casdoor.ai/pt/docs/products/payment/): Visualize registros de pagamento, estados e emita faturas.
 - [Ordem](https://casdoor.ai/pt/docs/products/order/): Os pedidos do Casdoor registram cada compra de produto e rastreiam seu ciclo de vida, separadamente dos pagamentos feitos por ele.
-- [Plano](https://casdoor.ai/pt/docs/pricing/plan/): Define a plan’s features and price; plans are tied to roles and products.
-- [Preços](https://casdoor.ai/pt/docs/pricing/): Group one or more plans so users can sign up at different price points.
+- [Plano](https://casdoor.ai/pt/docs/pricing/plan/): Defina os recursos e o preço de um plano; os planos estão vinculados a funções e produtos.
+- [Preços](https://casdoor.ai/pt/docs/pricing/): Agrupe um ou mais planos para que os usuários possam se inscrever em diferentes faixas de preço.
 - [Assinatura](https://casdoor.ai/pt/docs/pricing/subscription/): Gerencie o plano selecionado pelo usuário e o acesso à aplicação.
 - [Transação](https://casdoor.ai/pt/docs/pricing/transaction/): Acompanhe pagamentos e alterações de saldo para usuários e organizações.
-- [Coupon](https://casdoor.ai/pt/docs/pricing/coupon/): Create discount coupons and apply them to orders at checkout.
+- [Cupom](https://casdoor.ai/pt/docs/pricing/coupon/): Crie cupons de desconto e aplique-os aos pedidos no checkout.
 
 ## Autenticação multifator
 
@@ -407,7 +407,7 @@
 
 ## Agentes
 
-- [Agentes](https://casdoor.ai/pt/docs/agent/overview/): Register and manage AI agents in Casdoor.
+- [Agentes](https://casdoor.ai/pt/docs/agent/overview/): Registre e gerencie agentes de IA no Casdoor.
 
 ## Entradas
 

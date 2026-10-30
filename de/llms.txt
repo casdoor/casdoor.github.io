@@ -136,7 +136,7 @@
 
 - [Berechtigungen](https://casdoor.ai/de/docs/permission/overview/): Casdoor-Berechtigungen basieren auf Casbin. Diese Seite erklärt Modelle, Richtlinien und Adapter sowie wie Ihre Anwendung Berechtigungen über die Casdoor-API prüft.
 - [Berechtigung konfigurieren](https://casdoor.ai/de/docs/permission/permission-configuration/): Referenz zu den Feldern der Seite zur Bearbeitung von Berechtigungen – das Modell, der Adapter, die Subjekte, die Ressourcen und Aktionen sowie die Wirkung.
-- [Casbin APIs](https://casdoor.ai/de/docs/permission/exposed-casbin-apis/): Reference for the Casbin APIs of Casdoor - enforce, batch enforce, and the lists of objects, actions, and roles of a user - which your backend calls to check permissions.
+- [Casbin-APIs](https://casdoor.ai/de/docs/permission/exposed-casbin-apis/): Referenz für die Casbin-APIs von Casdoor – enforce, batch enforce sowie die Listen der Objekte, Aktionen und Rollen eines Benutzers –, die Ihr Backend aufruft, um Berechtigungen zu prüfen.
 - [Adapter](https://casdoor.ai/de/docs/permission/adapter/): Verbinden Sie Casdoor mit einer Datenbanktabelle, die Casbin-Richtlinien enthält, und anzeigen und bearbeiten Sie die Richtlinien in der Admin-Konsole.
 
 ## Anbieter
@@ -180,7 +180,7 @@
 - [E-Mail mit Mailpit testen](https://casdoor.ai/de/docs/provider/email/mailpit/): Fangen Sie die E-Mails von Casdoor in Mailpit ab, einem lokalen SMTP-Server für Tests.
 - [SMS-Provider](https://casdoor.ai/de/docs/provider/sms/overview/): Konfigurieren Sie einen SMS-Provider, der Bestätigungscodes an Telefonnummern sendet, und die von Casdoor unterstützten SMS-Dienste.
 - [SMS mit Twilio senden](https://casdoor.ai/de/docs/provider/sms/twilio/): Twilio als SMS-Provider von Casdoor verwenden.
-- [Send SMS with Twilio Verify](https://casdoor.ai/de/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [SMS mit Twilio Verify senden](https://casdoor.ai/de/docs/provider/sms/twilioVerify/): Verwenden Sie Twilio Verify, um SMS-Bestätigungscodes von Casdoor zu senden und zu prüfen.
 - [SMS mit Amazon SNS senden](https://casdoor.ai/de/docs/provider/sms/amazonSns/): Verwenden Sie Amazon Simple Notification Service (SNS) als SMS-Anbieter von Casdoor.
 - [SMS mit Azure Communication Services senden](https://casdoor.ai/de/docs/provider/sms/acs/): Verwenden Sie Azure Communication Services (ACS) als SMS-Provider von Casdoor.
 - [SMS mit Alibaba Cloud senden](https://casdoor.ai/de/docs/provider/sms/alibabaCloud/): Verwenden Sie den SMS-Dienst von Alibaba Cloud als SMS-Provider von Casdoor.

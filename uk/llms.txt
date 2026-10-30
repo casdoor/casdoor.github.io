@@ -82,7 +82,7 @@
 - [Виправлення неполадок MCP](https://casdoor.ai/uk/docs/how-to-connect/mcp/troubleshooting/): Причини та вирішення типових проблем із сервером Casdoor MCP і з серверами MCP, які використовують Casdoor як свого провайдера OAuth 2.0.
 - [Підключення Claude Desktop до сервера MCP Casdoor](https://casdoor.ai/uk/docs/how-to-connect/mcp/connect-claude-desktop/): Підключіть Claude Desktop до сервера MCP Casdoor через mcp-remote та OAuth 2.0, щоб Claude міг керувати застосунками та користувачами в Casdoor.
 - [Підключення Cursor до сервера MCP Casdoor](https://casdoor.ai/uk/docs/how-to-connect/mcp/connect-cursor/): Підключіть редактор Cursor до MCP-сервера Casdoor за допомогою OAuth 2.0, щоб ШІ Cursor міг керувати додатками та користувачами в Casdoor.
-- [Підключіть ChatGPT до сервера Casdoor MCP](https://casdoor.ai/uk/docs/how-to-connect/mcp/connect-chatgpt/): Add the Casdoor MCP server to ChatGPT as a custom MCP server with OAuth 2.0 - the steps in ChatGPT Plugins, client ID metadata documents and dynamic client registration, the redirect URI, sign-in, and why ChatGPT asks for permission before tool calls.
+- [Підключіть ChatGPT до сервера Casdoor MCP](https://casdoor.ai/uk/docs/how-to-connect/mcp/connect-chatgpt/): Додайте MCP-сервер Casdoor до ChatGPT як користувацький MCP-сервер з OAuth 2.0 — кроки в ChatGPT Plugins, документи метаданих ідентифікатора клієнта та динамічна реєстрація клієнтів, URI переспрямування, вхід у систему та чому ChatGPT запитує дозвіл перед викликом інструментів.
 - [Налаштування входу через Face ID](https://casdoor.ai/uk/docs/how-to-connect/face-id/): Дозвольте користувачам реєструвати своє обличчя в обліковому записі Casdoor і входити, скануючи його на сторінці входу.
 - [Налаштування входу через WebAuthn](https://casdoor.ai/uk/docs/how-to-connect/webauthn/): Дозвольте користувачам входити в Casdoor за допомогою ключів доступу (passkeys), розпізнавання відбитком пальця чи обличчя, Windows Hello або безпекового ключа через WebAuthn.
 
@@ -180,7 +180,7 @@
 - [Тестування електронної пошти за допомогою Mailpit](https://casdoor.ai/uk/docs/provider/email/mailpit/): Перехоплення листів Casdoor у Mailpit, локальному SMTP-сервері для тестування.
 - [SMS providers](https://casdoor.ai/uk/docs/provider/sms/overview/): Налаштуйте SMS-провайдера для надсилання кодів підтвердження на номери телефонів, а також перегляньте SMS-сервіси, які підтримує Casdoor.
 - [Надсилання SMS через Twilio](https://casdoor.ai/uk/docs/provider/sms/twilio/): Використовуйте Twilio як провайдера SMS для Casdoor.
-- [Send SMS with Twilio Verify](https://casdoor.ai/uk/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [Надсилання SMS за допомогою Twilio Verify](https://casdoor.ai/uk/docs/provider/sms/twilioVerify/): Використовуйте Twilio Verify для надсилання та перевірки SMS-кодів верифікації Casdoor.
 - [Надсилання SMS через Amazon SNS](https://casdoor.ai/uk/docs/provider/sms/amazonSns/): Використовуйте Amazon Simple Notification Service (SNS) як провайдера SMS для Casdoor.
 - [Надсилання SMS через Azure Communication Services](https://casdoor.ai/uk/docs/provider/sms/acs/): Використовуйте Azure Communication Services (ACS) як SMS-провайдера Casdoor.
 - [Надсилання SMS через Alibaba Cloud](https://casdoor.ai/uk/docs/provider/sms/alibabaCloud/): Використовуйте службу SMS Alibaba Cloud як SMS-провайдера Casdoor.

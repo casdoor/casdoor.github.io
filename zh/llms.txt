@@ -33,7 +33,7 @@
 - [使用 Docker 部署 Casdoor](https://casdoor.ai/zh/docs/deployment/docker/): 使用 Docker 或 Docker Compose 在生产环境中运行 Casdoor，并在前面配置带有 HTTPS 的 Traefik、Nginx 或 Caddy 反向代理。
 - [在 Nginx 后部署 Casdoor](https://casdoor.ai/zh/docs/deployment/nginx/): 将 Nginx 置于 Casdoor 后端之前，作为您域名的反向代理。
 - [在 Kubernetes 上部署 Casdoor](https://casdoor.ai/zh/docs/deployment/k8s/): 使用示例清单在 Kubernetes 集群上部署 Casdoor，通过 Ingress 暴露它，并使用 oauth2-proxy 保护其他应用。
-- [Run Casdoor with the Kubernetes Operator](https://casdoor.ai/zh/docs/deployment/kubernetes-operator/): Install the Casdoor Kubernetes operator, run Casdoor instances from a Casdoor resource, and declare organizations and applications as Kubernetes resources whose client credentials land in Secrets.
+- [使用 Kubernetes Operator 运行 Casdoor](https://casdoor.ai/zh/docs/deployment/kubernetes-operator/): 安装 Casdoor Kubernetes operator，从 Casdoor 资源运行 Casdoor 实例，并将组织和应用声明为 Kubernetes 资源，其客户端凭据存入 Secrets。
 - [使用文件初始化和管理数据](https://casdoor.ai/zh/docs/deployment/data-initialization/): 从 JSON 或 YAML 文件加载组织、应用、用户和其他对象到 Casdoor，与文件保持同步，并导出它们。
 - [使用 Terraform 管理 Casdoor](https://casdoor.ai/zh/docs/deployment/terraform/): 使用官方 Terraform provider 以代码方式管理 Casdoor 的组织、应用、用户、提供商、证书、角色、权限和组。
 - [在前端托管 CDN 上的文件](https://casdoor.ai/zh/docs/deployment/deploy-cdn/): 通过存储提供商将构建好的 Casdoor 前端上传到 CDN，以便浏览器从 CDN 加载 JavaScript 和 CSS。
@@ -48,7 +48,7 @@
 - [将应用连接到 Casdoor](https://casdoor.ai/zh/docs/how-to-connect/overview/): 选择您的应用如何通过 Casdoor 进行用户登录 - OAuth 2.0 和 OpenID Connect、SAML 或 CAS - 以及是否使用 OIDC 库、Casdoor SDK 或插件。
 - [连接标准 OIDC 客户端](https://casdoor.ai/zh/docs/how-to-connect/oidc-client/): 将任何 OpenID Connect 客户端库指向 Casdoor 发现端点，并了解发现文档和 UserInfo 端点返回的内容。
 - [使用 Casdoor SDK 登录用户](https://casdoor.ai/zh/docs/how-to-connect/sdk/): 查找适用于您平台的 Casdoor SDK，并结合前端 SDK 和后端 SDK 来登录用户、验证访问令牌以及调用 Casdoor API。
-- [Set up single sign-on](https://casdoor.ai/zh/docs/session/single-sign-on/): Let users sign in once and open every application of their organization without signing in again.
+- [设置单点登录](https://casdoor.ai/zh/docs/session/single-sign-on/): 让用户只需登录一次，即可打开其组织下的所有应用，而无需再次登录。
 - [让用户退出所有应用](https://casdoor.ai/zh/docs/session/single-sign-out/): 通过 SSO 登出端点一次性让用户退出组织下的所有应用，并通知您的应用以便它们结束各自的会话。
 - [RP 发起的登出（OIDC end-session 端点）](https://casdoor.ai/zh/docs/session/rp-initiated-logout/): OpenID Connect RP 发起的登出的含义及如何使用 Casdoor 的 end-session 端点——参数、id_token_hint、post_logout_redirect_uri、Casdoor 撤销的内容，以及它与后端通道登出的关系。
 - [使用 Vue 应用登录用户](https://casdoor.ai/zh/docs/how-to-connect/vue-sdk/): 使用 casdoor-vue-sdk 为 Vue 2 或 Vue 3 应用添加 Casdoor 登录功能。
@@ -180,7 +180,7 @@
 - [使用 Mailpit 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailpit/): 在 Mailpit（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。
 - [SMS 提供商](https://casdoor.ai/zh/docs/provider/sms/overview/): 配置用于向手机号码发送验证码的 SMS 提供商，以及 Casdoor 支持的 SMS 服务。
 - [使用 Twilio 发送短信](https://casdoor.ai/zh/docs/provider/sms/twilio/): 将 Twilio 用作 Casdoor 的短信提供商。
-- [Send SMS with Twilio Verify](https://casdoor.ai/zh/docs/provider/sms/twilioVerify/): Use Twilio Verify to send and check the SMS verification codes of Casdoor.
+- [使用 Twilio Verify 发送短信](https://casdoor.ai/zh/docs/provider/sms/twilioVerify/): 使用 Twilio Verify 发送和检查 Casdoor 的短信验证码。
 - [使用 Amazon SNS 发送 SMS](https://casdoor.ai/zh/docs/provider/sms/amazonSns/): 使用 Amazon Simple Notification Service (SNS) 作为 Casdoor 的 SMS 提供商。
 - [使用 Azure Communication Services 发送短信](https://casdoor.ai/zh/docs/provider/sms/acs/): 使用 Azure Communication Services (ACS) 作为 Casdoor 的 SMS 提供商。
 - [使用阿里云发送 SMS](https://casdoor.ai/zh/docs/provider/sms/alibabaCloud/): 使用阿里云的 SMS 服务作为 Casdoor 的 SMS 提供商。

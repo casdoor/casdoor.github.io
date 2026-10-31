@@ -368,7 +368,7 @@
 - [Quarkus](https://casdoor.ai/zh/docs/integration/java/quarkus/): 使用 Casdoor 登录 Quarkus 应用，并通过 Quarkus Casdoor Auth 扩展利用 Casdoor 的角色和权限对请求进行授权。
 - [Spring Security OAuth](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-oauth/): 使用 spring-boot-starter-oauth2-client，将 Casdoor 作为 Spring Security 应用的 OpenID Connect 提供商。
 - [Spring Security 过滤器（OIDC）](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-filter/): 用 OIDC 把 Casdoor 集成到 Spring Security。
-- [Jenkins plugin](https://casdoor.ai/zh/docs/integration/java/jenkins-plugin/): Install and configure the Casdoor plugin for Jenkins so users sign in to Jenkins with Casdoor single sign-on.
+- [Jenkins 插件](https://casdoor.ai/zh/docs/integration/java/jenkins-plugin/): 安装并配置 Jenkins 的 Casdoor 插件，用户就能通过 Casdoor 单点登录进入 Jenkins。
 - [Jenkins（OIDC）](https://casdoor.ai/zh/docs/integration/java/jenkins-oidc/): 把 Casdoor 用作 Jenkins 登录的 OIDC IdP。
 - [使用内置 SSO](https://casdoor.ai/zh/docs/integration/java/jira2/): 用 Jira 内置的 SSO 通过 OpenID Connect 接入 Casdoor，这种方式免费，但需要 HTTPS。
 - [使用 miniOrange 插件](https://casdoor.ai/zh/docs/integration/java/jira/): 用 miniOrange OAuth / OIDC SSO 插件，通过 OpenID Connect 把 Jira 接入 Casdoor。

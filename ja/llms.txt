@@ -130,7 +130,7 @@
 - [MCP サーバーの認可サーバーとして Casdoor を使用する](https://casdoor.ai/ja/docs/mcp-auth/overview/): Casdoor は、独自の MCP サーバーの OAuth 2.1 認可サーバーとして機能できます。動的クライアント登録、PKCE、リソースインジケーター、同意、および JWKS によるトークン検証をサポートしています。
 - [MCP サーバー向けに Casdoor をセットアップする](https://casdoor.ai/ja/docs/mcp-auth/setup/): Casdoor でアプリケーション、スコープ、および動的クライアント登録を設定し、MCP サーバーがメタデータの公開、クライアントへのチャレンジ、およびトークン検証を行うように構成します。
 - [MCP サーバーでの Casdoor トークンの検証](https://casdoor.ai/ja/docs/mcp-auth/third-party-integration/): Python、Node.js、Go で完全な MCP サーバーを実装し、Protected Resource Metadata を公開して、JWKS による Casdoor トークンの検証とスコープの強制を行います。
-- [パブリック MCP サーバーレジストリ](https://casdoor.ai/ja/docs/mcp-auth/mcp-registry/): mcp.casdoor.org のパブリック MCP サーバーレジストリは、Web インターフェースと JSON API を備えた MCP サーバーを一覧表示します。このページでは、その使い方とサーバーの追加方法について説明します。
+- [Public MCP server registry](https://casdoor.ai/ja/docs/mcp-auth/mcp-registry/): The public MCP server registry at mcp.casdoor.org lists MCP servers with a web interface and a JSON API. This page explains how to use it and how to add a server.
 
 ## 権限
 
@@ -344,7 +344,7 @@
 
 - [Nginx](https://casdoor.ai/ja/docs/integration/C++/Nginx/): Casdoor をアイデンティティプロバイダーとして使用し、NGINX Plus でプロキシされたアプリケーションに OpenID Connect シングルサインオンを有効にします。
 - [OAuth2 Proxy を使用した Nginx 認証とシングルサインオン](https://casdoor.ai/ja/docs/integration/C++/NginxCommunityVersion/): オープンソースの Nginx（NGINX Plus ではない）の背後にあるアプリケーションに、OAuth2 Proxy と auth_request を使用して Casdoor シングルサインオンを追加する方法と、CAS モジュールの代わりに使用するものについて説明します。
-- [Envoy](https://casdoor.ai/ja/docs/integration/C++/Envoy/): Envoy の OAuth2 フィルターと Casdoor アプリケーションを使用し、Envoy プロキシの背後にあるサービスを Casdoor シングルサインオンで保護します。
+- [Envoy](https://casdoor.ai/ja/docs/integration/C++/Envoy/): Protect services behind the Envoy proxy with Casdoor single sign-on, using Envoy's OAuth2 filter and a Casdoor application.
 - [Unity](https://casdoor.ai/ja/docs/integration/CSharp/Unity/): Unity 開発に Casdoor-dotnet-sdk を使用します。
 - [Kubernetes](https://casdoor.ai/ja/docs/integration/go/kubernetes/): OpenID Connect を使用して Kubernetes API サーバーへのユーザー認証を行います。OIDC ID プロバイダーとして Casdoor を kubectl で使用します。
 - [OpenShift](https://casdoor.ai/ja/docs/integration/go/openshift/): Casdoor を OpenID Connect アイデンティティプロバイダーとして設定し、ユーザーが Casdoor アカウントを使用してコンソールと CLI にサインインできるようにします。
@@ -383,7 +383,7 @@
 - [Cloud Foundry](https://casdoor.ai/ja/docs/integration/java/CloudFoundry/): Casdoor と Cloud Foundry の設定手順を含め、Cloud Foundry 上のアプリケーションの OIDC アイデンティティプロバイダーとして Casdoor を使用します。
 - [Thingsboard](https://casdoor.ai/ja/docs/integration/java/Thingsboard/): ThingsBoard IoT プラットフォームの OAuth 2.0 / OIDC アイデンティティプロバイダーとして Casdoor を使用します。Casdoor と ThingsBoard の設定を含みます。
 - [Halo](https://casdoor.ai/ja/docs/integration/java/halo/): OAuth2 プラグインのカスタム SSO プロバイダーを使用して、OpenID Connect 経由で Casdoor を用いて Halo ブログプラットフォームにサインインします。
-- [Firebase](https://casdoor.ai/ja/docs/integration/javascript/firebase/): Firebase Authentication で OpenID Connect プロバイダーとして Casdoor を使用し、Firebase Web アプリのユーザーが Casdoor でサインインできるようにします。
+- [Firebase](https://casdoor.ai/ja/docs/integration/javascript/firebase/): Use Casdoor as an OpenID Connect provider in Firebase Authentication, so users of a Firebase web app sign in with Casdoor.
 - [WeChatミニプログラム](https://casdoor.ai/ja/docs/integration/javascript/wechat_miniprogram/): WeChatミニプログラムにCasdoorサインインを統合します（OAuthリダイレクトなし）。
 - [Immich](https://casdoor.ai/ja/docs/integration/javascript/immich/): OAuth と OpenID Connect を介して Casdoor を使用し、ブラウザおよびモバイルアプリで Immich にサインインします。
 - [Joplin Server](https://casdoor.ai/ja/docs/integration/javascript/joplin/): Casdoor を SAML 2.0 アイデンティティプロバイダーとして使用し、ブラウザおよび Joplin アプリで Joplin Server にサインインします。
@@ -420,6 +420,7 @@
 
 ## More
 
+- [Casdoorの商用サポート](https://casdoor.ai/ja/docs/commercial-support/): セルフホスト型およびマネージド型のCasdoor向けの年間サポート契約：応答時間のSLA、調達プロセス向けセキュリティ文書、移行および高可用性に関する支援。
 - [国際化](https://casdoor.ai/ja/docs/internationalization/): Casdoorがサポートする言語と翻訳への貢献方法について。
 - [Contributor guide](https://casdoor.ai/ja/docs/contributing/): Casdoorへの貢献方法：コード、ドキュメント、コミュニティ。
 

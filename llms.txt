@@ -420,6 +420,7 @@
 
 ## More
 
+- [Commercial support for Casdoor](https://casdoor.ai/docs/commercial-support/): Annual support contracts for self-hosted and managed Casdoor: response-time SLA, security documentation for procurement, migration and high-availability help.
 - [Internationalization](https://casdoor.ai/docs/internationalization/): Casdoor’s supported languages and how to contribute translations.
 - [Contributor guide](https://casdoor.ai/docs/contributing/): How to contribute to Casdoor: code, documentation, and community.
 

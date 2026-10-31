@@ -130,7 +130,7 @@
 - [将 Casdoor 用作 MCP 服务器的授权服务器](https://casdoor.ai/zh/docs/mcp-auth/overview/): Casdoor 可以作为您自己的 MCP 服务器的 OAuth 2.1 授权服务器，支持动态客户端注册、PKCE、资源指示符、同意以及通过 JWKS 进行令牌验证。
 - [为您的 MCP 服务器设置 Casdoor](https://casdoor.ai/zh/docs/mcp-auth/setup/): 在 Casdoor 中配置应用、作用域和动态客户端注册，并使您的 MCP 服务器发布其元数据、质询客户端以及验证令牌。
 - [在您的 MCP 服务器中验证 Casdoor 令牌](https://casdoor.ai/zh/docs/mcp-auth/third-party-integration/): 提供 Python、Node.js 和 Go 语言的完整 MCP 服务器示例，这些示例发布受保护资源元数据，使用 JWKS 验证 Casdoor 令牌，并强制执行范围。
-- [公共 MCP 服务器注册表](https://casdoor.ai/zh/docs/mcp-auth/mcp-registry/): 位于 mcp.casdoor.org 的公共 MCP 服务器注册表列出了具有 Web 界面和 JSON API 的 MCP 服务器。本页介绍如何使用该注册表以及如何添加服务器。
+- [Public MCP server registry](https://casdoor.ai/zh/docs/mcp-auth/mcp-registry/): The public MCP server registry at mcp.casdoor.org lists MCP servers with a web interface and a JSON API. This page explains how to use it and how to add a server.
 
 ## 权限
 
@@ -344,7 +344,7 @@
 
 - [Nginx](https://casdoor.ai/zh/docs/integration/C++/Nginx/): 以 Casdoor 作为身份提供商，为 NGINX Plus 代理的应用启用 OpenID Connect 单点登录。
 - [使用 OAuth2 Proxy 实现 Nginx 认证与单点登录](https://casdoor.ai/zh/docs/integration/C++/NginxCommunityVersion/): 通过 OAuth2 Proxy 和 auth_request，为部署在开源版 Nginx（非 NGINX Plus）后的应用添加 Casdoor 单点登录，并说明 CAS 模块的替代方案。
-- [Envoy](https://casdoor.ai/zh/docs/integration/C++/Envoy/): 使用 Envoy 的 OAuth2 过滤器和一个 Casdoor 应用，为 Envoy 代理后面的服务加上 Casdoor 单点登录保护。
+- [Envoy](https://casdoor.ai/zh/docs/integration/C++/Envoy/): Protect services behind the Envoy proxy with Casdoor single sign-on, using Envoy's OAuth2 filter and a Casdoor application.
 - [Unity](https://casdoor.ai/zh/docs/integration/CSharp/Unity/): 使用Casdoor-dotnet-sdk进行Unity开发。
 - [Kubernetes](https://casdoor.ai/zh/docs/integration/go/kubernetes/): 以 Casdoor 作为 OIDC 身份提供商，用 OpenID Connect 为 kubectl 访问 Kubernetes API server 的用户做认证。
 - [OpenShift](https://casdoor.ai/zh/docs/integration/go/openshift/): 把 Casdoor 配置为 OpenShift 的 OpenID Connect 身份提供商，用户就能用 Casdoor 账号登录控制台和 CLI。
@@ -383,7 +383,7 @@
 - [Cloud Foundry](https://casdoor.ai/zh/docs/integration/java/CloudFoundry/): 把 Casdoor 用作 Cloud Foundry 上应用的 OIDC 身份提供商，附 Casdoor 和 Cloud Foundry 的分步配置。
 - [Thingsboard](https://casdoor.ai/zh/docs/integration/java/Thingsboard/): 把 Casdoor 用作物联网平台 ThingsBoard 的 OAuth 2.0 / OIDC 身份提供商，附 Casdoor 和 ThingsBoard 的设置。
 - [Halo](https://casdoor.ai/zh/docs/integration/java/halo/): 使用 OAuth2 插件中的自定义 SSO 提供商，通过 OpenID Connect 让 Casdoor 与 Halo 博客平台集成以实现登录。
-- [Firebase](https://casdoor.ai/zh/docs/integration/javascript/firebase/): 在 Firebase Authentication 中把 Casdoor 用作 OpenID Connect 提供商，Firebase 网页应用的用户就能用 Casdoor 登录。
+- [Firebase](https://casdoor.ai/zh/docs/integration/javascript/firebase/): Use Casdoor as an OpenID Connect provider in Firebase Authentication, so users of a Firebase web app sign in with Casdoor.
 - [微信小程序](https://casdoor.ai/zh/docs/integration/javascript/wechat_miniprogram/): 在微信小程序中集成 Casdoor 登录（无 OAuth 重定向）。
 - [Immich](https://casdoor.ai/zh/docs/integration/javascript/immich/): 通过 OAuth 和 OpenID Connect，在浏览器和移动应用中使用 Casdoor 登录 Immich。
 - [Joplin Server](https://casdoor.ai/zh/docs/integration/javascript/joplin/): 使用 Casdoor 作为 SAML 2.0 身份提供者，在浏览器和 Joplin 应用中登录 Joplin Server。
@@ -420,6 +420,7 @@
 
 ## More
 
+- [Casdoor 商业支持](https://casdoor.ai/zh/docs/commercial-support/): 为自托管和托管版 Casdoor 提供年度支持合同：响应时间 SLA、用于采购的安全文档、迁移及高可用性协助。
 - [国际化](https://casdoor.ai/zh/docs/internationalization/): Casdoor支持的语言及如何贡献翻译。
 - [贡献者指南](https://casdoor.ai/zh/docs/contributing/): 如何为 Casdoor 做出贡献：代码、文档和社区。
 

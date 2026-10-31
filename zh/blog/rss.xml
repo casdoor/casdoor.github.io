@@ -9,61 +9,61 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
         <item>
-            <title><![CDATA[Casdoor v4: A New Console, a Marketplace, and OAuth for MCP Servers]]></title>
+            <title><![CDATA[Casdoor v4：全新控制台、应用市场以及面向 MCP 服务器的 OAuth]]></title>
             <link>https://casdoor.ai/zh/blog/casdoor-v4/</link>
             <guid>https://casdoor.ai/zh/blog/casdoor-v4/</guid>
             <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Casdoor v4.0 came out on September 1. Two months and 25 releases later we are at v4.25, so this is a good point to look back at what changed. In short: the admin console was rebuilt, self-hosting got a lot less fiddly, there is now a Marketplace for integrations and sign-in themes, and Casdoor can act as the authorization server for MCP servers and AI agents.]]></description>
-            <content:encoded><![CDATA[<p>Casdoor v4.0 came out on September 1. Two months and 25 releases later we are at v4.25, so this is a good point to look back at what changed. In short: the admin console was rebuilt, self-hosting got a lot less fiddly, there is now a Marketplace for integrations and sign-in themes, and Casdoor can act as the authorization server for MCP servers and AI agents.</p>
-<p>If you haven't used it: Casdoor is an open-source identity and access management platform written in Go. It is a full identity provider, not a library or a login proxy. Users live in Casdoor, Casdoor issues the tokens, and your apps talk to it over OAuth 2.0, OpenID Connect, SAML 2.0, CAS, LDAP or SCIM. Authorization is handled by <a href="https://casbin.apache.org/" target="_blank" rel="noopener noreferrer" class="">Apache Casbin</a>, so ACL, RBAC and ABAC models all work. It is Apache-2.0 licensed and listed in the CNCF Landscape.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-rebuilt-console-and-sign-in-pages">A rebuilt console and sign-in pages<a href="https://casdoor.ai/zh/blog/casdoor-v4/#a-rebuilt-console-and-sign-in-pages" class="hash-link" aria-label="直接链接到 A rebuilt console and sign-in pages" title="直接链接到 A rebuilt console and sign-in pages" translate="no">​</a></h2>
-<p>v4.0 replaced the Ant Design admin console with a new one built on shadcn/ui, Tailwind and Vite (now on React 19). It has a command palette, bulk row selection, inline form validation, two-column forms and tables where you can hide columns. Switching languages no longer reloads the page.</p>
-<p>The sign-in, sign-up and password reset pages were redesigned too. Dark mode works properly, and the pages are usable on a phone.</p>
-<p>If you are upgrading from v3, read the upgrade guide linked from the README first. The main thing to check is the path of the frontend build if you serve static files through a CDN or reverse proxy.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easier-to-self-host">Easier to self-host<a href="https://casdoor.ai/zh/blog/casdoor-v4/#easier-to-self-host" class="hash-link" aria-label="直接链接到 Easier to self-host" title="直接链接到 Easier to self-host" translate="no">​</a></h2>
-<p>A lot of the v4 work came from issues and forum threads by people running Casdoor themselves:</p>
+            <description><![CDATA[Casdoor v4.0 于 9 月 1 日发布。两个月内发布了 25 个版本，目前我们已到达 v4.25，因此这是一个回顾变更内容的好时机。简而言之：管理控制台经过重构，自托管部署变得更加简单，现在有了用于集成和登录主题的应用市场（Marketplace），并且 Casdoor 可以作为 MCP 服务器和 AI 代理的授权服务器。]]></description>
+            <content:encoded><![CDATA[<p>Casdoor v4.0 于 9 月 1 日发布。两个月内发布了 25 个版本，目前我们已到达 v4.25，因此这是一个回顾变更内容的好时机。简而言之：管理控制台经过重构，自托管部署变得更加简单，现在有了用于集成和登录主题的应用市场（Marketplace），并且 Casdoor 可以作为 MCP 服务器和 AI 代理的授权服务器。</p>
+<p>如果您尚未使用过它：Casdoor 是一个用 Go 编写的开源身份与访问管理（IAM）平台。它是一个完整的身份提供商，而不是库或登录代理。用户信息存储在 Casdoor 中，由 Casdoor 签发令牌，您的应用通过 OAuth 2.0、OpenID Connect、SAML 2.0、CAS、LDAP 或 SCIM 与其通信。授权处理由 <a href="https://casbin.apache.org/" target="_blank" rel="noopener noreferrer" class="">Apache Casbin</a> 负责，因此 ACL、RBAC 和 ABAC 模型均可正常工作。它采用 Apache-2.0 许可证，并收录在 CNCF Landscape 中。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-rebuilt-console-and-sign-in-pages">重构后的控制台和登录页面<a href="https://casdoor.ai/zh/blog/casdoor-v4/#a-rebuilt-console-and-sign-in-pages" class="hash-link" aria-label="直接链接到 重构后的控制台和登录页面" title="直接链接到 重构后的控制台和登录页面" translate="no">​</a></h2>
+<p>v4.0 使用基于 shadcn/ui、Tailwind 和 Vite（现支持 React 19）的新控制台替换了原有的 Ant Design 管理控制台。新控制台包含命令面板、批量行选择、内联表单验证、双列表单以及可隐藏列的表格。切换语言不再需要重新加载页面。</p>
+<p>登录、注册和密码重置页面也进行了重新设计。深色模式运行正常，且页面在手机端也可正常使用。</p>
+<p>如果您正从 v3 升级，请先阅读 README 中链接的升级指南。主要需要检查的是，如果您通过 CDN 或反向代理提供静态文件，前端构建的路径是否发生变化。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="easier-to-self-host">更简单的自托管体验<a href="https://casdoor.ai/zh/blog/casdoor-v4/#easier-to-self-host" class="hash-link" aria-label="直接链接到 更简单的自托管体验" title="直接链接到 更简单的自托管体验" translate="no">​</a></h2>
+<p>v4 版本的许多工作都源于自行运行 Casdoor 的用户在问题和论坛帖子中提出的需求：</p>
 <ul>
-<li class=""><strong>No default password.</strong> On first visit Casdoor asks you to set the <code>admin</code> password, or you can set it with <code>initAdminPassword</code>.</li>
-<li class=""><strong>Sub-path deployment.</strong> Set <code>basePath</code> to serve Casdoor at <code>https://example.com/auth/</code> instead of its own host.</li>
-<li class=""><strong>Forward auth.</strong> Casdoor has a forward auth endpoint for Traefik, Caddy and Nginx, so you can put apps that have no login of their own behind it, with public paths and per-site rules.</li>
-<li class=""><strong>Docker tags.</strong> Images are now also tagged <code>X</code>, <code>X.Y</code> and <code>X.Y.Z</code>, so you can follow a major or minor version.</li>
-<li class=""><strong>Helm.</strong> The chart moved into the main repository, is published to GHCR and <a href="https://artifacthub.io/packages/helm/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">Artifact Hub</a> with every release, and can hold organizations, applications and users as configuration. See <a class="" href="https://casdoor.ai/zh/blog/casdoor-on-kubernetes/">Running Casdoor on Kubernetes</a>.</li>
-<li class=""><strong>Windows service.</strong> The binary can run as a Windows service.</li>
-<li class=""><strong>Upgrades.</strong> The system info page shows the latest release and can upgrade an official binary in one click.</li>
-<li class=""><strong>Operations.</strong> Container health checks, Prometheus counters for sign-in success and failure, audit logs forwarded to Syslog, and Redis Cluster support.</li>
+<li class=""><strong>无默认密码。</strong> 首次访问时，Casdoor 会要求您设置 <code>admin</code> 密码，或者您可以通过 <code>initAdminPassword</code> 进行设置。</li>
+<li class=""><strong>子路径部署。</strong> 设置 <code>basePath</code> 即可将 Casdoor 部署在 <code>https://example.com/auth/</code> 下，而不是独立的域名主机。</li>
+<li class=""><strong>Forward Auth。</strong> Casdoor 提供了适用于 Traefik、Caddy 和 Nginx 的 Forward Auth 端点，因此您可以将没有自带登录功能的应用置于其后，并配置公共路径和站点规则。</li>
+<li class=""><strong>Docker 标签。</strong> 镜像现在也带有 <code>X</code>、<code>X.Y</code> 和 <code>X.Y.Z</code> 标签，因此您可以跟随主版本或次版本更新。</li>
+<li class=""><strong>Helm。</strong> Chart 已移入主仓库，并在每次发布时推送到 GHCR 和 <a href="https://artifacthub.io/packages/helm/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">Artifact Hub</a>，支持将组织、应用和用户作为配置保存。请参阅 <a class="" href="https://casdoor.ai/zh/blog/casdoor-on-kubernetes/">在 Kubernetes 上运行 Casdoor</a>。</li>
+<li class=""><strong>Windows 服务。</strong> 二进制文件可以作为 Windows 服务运行。</li>
+<li class=""><strong>升级。</strong> 系统信息页面显示最新发行版，并可一键升级官方二进制文件。</li>
+<li class=""><strong>运维。</strong> 容器健康检查、用于记录登录成功和失败的 Prometheus 计数器、转发到 Syslog 的审计日志，以及对 Redis Cluster 的支持。</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="marketplace">集成市场<a href="https://casdoor.ai/zh/blog/casdoor-v4/#marketplace" class="hash-link" aria-label="直接链接到 集成市场" title="直接链接到 集成市场" translate="no">​</a></h2>
-<p>The new <a href="https://marketplace.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">Marketplace</a> lets an admin install integrations from inside Casdoor: application templates, identity providers and sign-in themes. Installing one fills in the configuration for you, and uninstalling restores what was there before.</p>
-<p>There are more than 20 sign-in themes so far. You can preview a theme on your own sign-in page before installing it. Organization admins can also customize the sign-in pages with their own fonts, images and HTML, within an allowlist that blocks forms and scripts. The read-only demo at <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> cycles through the themes if you want to see them.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oauth-for-mcp-servers-and-ai-agents">OAuth for MCP servers and AI agents<a href="https://casdoor.ai/zh/blog/casdoor-v4/#oauth-for-mcp-servers-and-ai-agents" class="hash-link" aria-label="直接链接到 OAuth for MCP servers and AI agents" title="直接链接到 OAuth for MCP servers and AI agents" translate="no">​</a></h2>
-<p>The MCP specification asks remote MCP servers to use OAuth, and MCP clients usually don't know in advance which authorization server they will meet. Casdoor now covers the pieces this needs:</p>
+<p>新的 <a href="https://marketplace.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">应用市场 (Marketplace)</a> 允许管理员直接在 Casdoor 内部安装集成项：应用模板、身份提供商和登录主题。安装过程会自动填充配置，卸载时会恢复之前的状态。</p>
+<p>目前已有超过 20 种登录主题。您可以在安装前在自己的登录页面上预览主题。组织管理员还可以使用自己的字体、图片和 HTML 自定义登录页面，但需在阻止表单和脚本的白名单范围内操作。如果您想查看这些主题，可以访问只读演示站 <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a>，它会循环展示各个主题。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="oauth-for-mcp-servers-and-ai-agents">面向 MCP 服务器和 AI 代理的 OAuth<a href="https://casdoor.ai/zh/blog/casdoor-v4/#oauth-for-mcp-servers-and-ai-agents" class="hash-link" aria-label="直接链接到 面向 MCP 服务器和 AI 代理的 OAuth" title="直接链接到 面向 MCP 服务器和 AI 代理的 OAuth" translate="no">​</a></h2>
+<p>MCP 规范要求远程 MCP 服务器使用 OAuth，而 MCP 客户端通常无法预先知道它将遇到哪个授权服务器。Casdoor 现已涵盖所需的关键部分：</p>
 <ul>
-<li class="">OAuth 2.1 authorization code flow with PKCE, and a consent page where users can grant only some of the requested scopes</li>
-<li class="">Dynamic Client Registration (RFC 7591) and client management (RFC 7592)</li>
-<li class="">Client ID Metadata Documents: an MCP client can use a URL as its <code>client_id</code> without registering first</li>
-<li class=""><code>private_key_jwt</code> client authentication for dynamically registered clients</li>
-<li class="">Resource Indicators (RFC 8707) and Protected Resource Metadata (RFC 9728)</li>
-<li class="">Token Exchange (RFC 8693), including ID-JAGs for enterprise-managed authorization, so an organization's IdP can decide which agents may reach which MCP servers</li>
+<li class="">带 PKCE 的 OAuth 2.1 授权码流程，以及允许用户仅授予部分请求范围的同意页面</li>
+<li class="">动态客户端注册 (RFC 7591) 和客户端管理 (RFC 7592)</li>
+<li class="">客户端 ID 元数据文档：MCP 客户端可以使用 URL 作为其 <code>client_id</code>，而无需事先注册</li>
+<li class="">针对动态注册客户端的 <code>private_key_jwt</code> 客户端认证</li>
+<li class="">资源指示器 (RFC 8707) 和保护资源元数据 (RFC 9728)</li>
+<li class="">令牌交换 (RFC 8693)，包括用于企业托管授权的 ID-JAGs，以便组织的 IdP 决定哪些代理可以访问哪些 MCP 服务器</li>
 </ul>
-<p>Point your MCP server's protected resource metadata at Casdoor, and sign-in, consent, token issuing and validation are handled for you. Casdoor also runs its own MCP server, so an assistant such as Claude Code or Cursor can manage users, applications and permissions through it.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-protocol-work">Other protocol work<a href="https://casdoor.ai/zh/blog/casdoor-v4/#other-protocol-work" class="hash-link" aria-label="直接链接到 Other protocol work" title="直��接链接到 Other protocol work" translate="no">​</a></h2>
+<p>将您的 MCP 服务器的保护资源元数据指向 Casdoor，登录、同意、令牌签发和验证都将由 Casdoor 为您处理。Casdoor 还运行自己的 MCP 服务器，因此 Claude Code 或 Cursor 等助手可以通过它来管理用户、应用和权限。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-protocol-work">其他协议相关工作<a href="https://casdoor.ai/zh/blog/casdoor-v4/#other-protocol-work" class="hash-link" aria-label="直接链接到 其他协议相关工作" title="直接链接到 其他协议相关工作" translate="no">​</a></h2>
 <ul>
-<li class="">SAML Single Logout and IdP-initiated SSO</li>
-<li class="">OIDC <code>prompt=none</code>, better conformance for hybrid flow, <code>prompt</code> and <code>max_age</code>, and the RFC 9207 <code>iss</code> parameter</li>
-<li class="">Token revocation (RFC 7009), DPoP and the device authorization flow</li>
-<li class="">Magic link sign-in, password history checks, and passkeys shared across sibling subdomains</li>
-<li class="">Exclusive sign-in with a maximum number of sessions per user</li>
+<li class="">SAML 单点登出和 IdP 发起的 SSO</li>
+<li class="">OIDC <code>prompt=none</code>，改进混合流、<code>prompt</code> 和 <code>max_age</code> 的一致性，以及 RFC 9207 <code>iss</code> 参数</li>
+<li class="">令牌撤销 (RFC 7009)、DPoP 和设备授权流程</li>
+<li class="">魔法链接登录、密码历史记录检查，以及在兄弟子域间共享的 Passkeys</li>
+<li class="">独占登录，限制每个用户的最大会话数</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it">试一试<a href="https://casdoor.ai/zh/blog/casdoor-v4/#try-it" class="hash-link" aria-label="直接链接到 试一试" title="直接链接到 试一试" translate="no">​</a></h2>
-<p>The quickest way to look around:</p>
+<p>快速上手体验的方式：</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">docker run -p 8000:8000 casbin/casdoor-all-in-one</span><br></span></code></pre></div></div>
-<p>Then open <a href="http://localhost:8000/" target="_blank" rel="noopener noreferrer" class="">http://localhost:8000</a>. The image includes SQLite and sample data, so use it for trying things out, not for production. The <a class="" href="https://casdoor.ai/zh/docs/basic/server-installation/">installation guide</a> covers real deployments.</p>
-<p>There are two online demos: <a href="https://demo.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">demo.casdoor.com</a> is writable and resets every five minutes, and <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> is read-only.</p>
-<p>If you would rather not run it yourself, <a href="https://www.casdoor.com/pricing" target="_blank" rel="noopener noreferrer" class="">Casdoor Cloud</a> gives you a dedicated, managed instance at a flat price with no per-user fees. New accounts get $10 in credit to try it.</p>
+<p>然后打开 <code>http://localhost:8000</code>。该镜像包含 SQLite 和示例数据，仅适用于试用，不适用于生产环境。<a class="" href="https://casdoor.ai/zh/docs/basic/server-installation/">安装指南</a>涵盖了实际部署场景。</p>
+<p>有两个在线演示：<a href="https://demo.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">demo.casdoor.com</a> 是可写的，每五分钟重置一次；<a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> 是只读的。</p>
+<p>如果您不想自己运行，<a href="https://www.casdoor.com/pricing" target="_blank" rel="noopener noreferrer" class="">Casdoor Cloud</a> 为您提供专属的托管实例，价格固定且无按用户收费。新账户可获得 $10 额度以进行试用。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">链接<a href="https://casdoor.ai/zh/blog/casdoor-v4/#links" class="hash-link" aria-label="直接链接到 链接" title="直接链接到 链接" translate="no">​</a></h2>
 <ul>
 <li class="">GitHub: <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">https://github.com/casdoor/casdoor</a></li>
-<li class="">Release notes: <a href="https://github.com/casdoor/casdoor/releases" target="_blank" rel="noopener noreferrer" class="">https://github.com/casdoor/casdoor/releases</a></li>
+<li class="">发行说明: <a href="https://github.com/casdoor/casdoor/releases" target="_blank" rel="noopener noreferrer" class="">https://github.com/casdoor/casdoor/releases</a></li>
 <li class="">文档：<a href="https://casdoor.ai/docs/overview" target="_blank" rel="noopener noreferrer" class="">https://casdoor.ai/docs/overview</a></li>
 <li class="">Discord：<a href="https://discord.gg/5rPsrAzK7S" target="_blank" rel="noopener noreferrer" class="">https://discord.gg/5rPsrAzK7S</a></li>
 </ul>
@@ -143,26 +143,26 @@
             <category>SSO</category>
         </item>
         <item>
-            <title><![CDATA[Casdoor 加入 CNCF 云原生生态系统]]></title>
+            <title><![CDATA[Casdoor Joins CNCF Cloud Native Landscape]]></title>
             <link>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/</link>
             <guid>https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/</guid>
             <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[2026 年 2 月 22 日，Casdoor 加入了 CNCF 云原生全景图，位于 Provisioning 下的 Security & Compliance（安全与合规）类别。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。]]></description>
-            <content:encoded><![CDATA[<p>2026 年 2 月 22 日，<strong>Casdoor</strong> 加入了 <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF 云原生全景图</a>，位于 Provisioning 下的 <strong>Security &amp; Compliance</strong>（安全与合规）类别。该平台汇集了广泛使用的云原生项目和产品；加入该平台有助于用户和企业发现并评估构建云原生系统的解决方案。</p>
+            <description><![CDATA[On February 22, 2026, Casdoor joined the CNCF Cloud Native Landscape, under the Security & Compliance category in Provisioning. The Landscape brings together widely used cloud-native projects and products; inclusion helps users and enterprises discover and evaluate solutions for building cloud-native systems.]]></description>
+            <content:encoded><![CDATA[<p>On February 22, 2026, <strong>Casdoor</strong> joined the <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Cloud Native Landscape</a>, under the <strong>Security &amp; Compliance</strong> category in Provisioning. The Landscape brings together widely used cloud-native projects and products; inclusion helps users and enterprises discover and evaluate solutions for building cloud-native systems.</p>
 <p><a href="https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io/?item=provisioning--security-compliance--casdoor</a></p>
 <img src="https://casdoor.ai/img/blog/cncf-landscape-casdoor.png" alt="Casdoor on CNCF Landscape - Security and Compliance section" style="max-width:100%;height:auto;border:1px solid #eee;border-radius:8px">
-<p><em>Casdoor 在 CNCF 云原生全景图（安全与合规）中</em></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-casdoor">关于Casdoor<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#about-casdoor" class="hash-link" aria-label="直接链接到 关于Casdoor" title="直接链接到 关于Casdoor" translate="no">​</a></h2>
+<p><em>Casdoor on the CNCF Cloud Native Landscape (Security &amp; Compliance)</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-casdoor">About Casdoor<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#about-casdoor" class="hash-link" aria-label="直接链接到 About Casdoor" title="直接链接到 About Casdoor" translate="no">​</a></h2>
 <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://cdn.casbin.org/img/casdoor-logo_1185x256.png" alt="Casdoor" style="height:80px;width:auto"></div>
-<p>Casdoor 是一个开源的、以用户界面为先的身份和访问管理（IAM）/单点登录（SSO）平台，配有网页用户界面。它支持OAuth 2.0、OIDC、SAML和CAS，以及多种社交登录方式（Google、GitHub、微信等），助您轻松几步即可构建用户管理和单点登录功能。 Casdoor由<a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a>用Golang和React开发。它采用前后端分离架构，支持高并发，并由社区积极维护。该项目在GitHub上已经获得超过13k stars。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-cncf-and-the-cloud-native-landscape">关于CNCF与云原生生态<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#about-cncf-and-the-cloud-native-landscape" class="hash-link" aria-label="直接链接到 关于CNCF与云原生生态" title="直接链接到 关于CNCF与云原生生态" translate="no">​</a></h2>
+<p>Casdoor is an open-source, UI-first Identity and Access Management (IAM) / Single Sign-On (SSO) platform with a web UI. It supports OAuth 2.0, OIDC, SAML, and CAS, as well as many social logins (Google, GitHub, WeChat, etc.), and helps you build user management and SSO in a few steps. Casdoor is developed by <a href="https://casbin.org/" target="_blank" rel="noopener noreferrer" class="">Casbin</a> in Golang and React. It uses a front-end/back-end separation architecture, supports high concurrency, and is actively maintained by the community. The project has received over 13k GitHub stars.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-cncf-and-the-cloud-native-landscape">About CNCF and the Cloud Native Landscape<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#about-cncf-and-the-cloud-native-landscape" class="hash-link" aria-label="直接链接到 About CNCF and the Cloud Native Landscape" title="直接链接到 About CNCF and the Cloud Native Landscape" translate="no">​</a></h2>
 <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem"><img src="https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg" alt="CNCF - Cloud Native Computing Foundation" style="height:80px;width:auto"><img src="https://landscape.cncf.io/images/logo_header.svg" alt="CNCF Cloud Native Landscape" style="height:80px;width:auto"></div>
-<p><strong>云原生计算基金会（CNCF）</strong> 是 Linux 基金会旗下推广云原生技术的项目。其愿景是让云原生无处不在。 CNCF 维护着 <strong>云原生全景图</strong>（<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>），对云原生生态中的项目和产品进行分类与跟踪，是开发者和企业的参考地图。</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looking-ahead">展望未来<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#looking-ahead" class="hash-link" aria-label="直接链接到 展望未来" title="直接链接到 展望未来" translate="no">​</a></h2>
-<p>加入CNCF全景图标志着Casdoor在成熟度和社区建设方面取得了进展。我们将持续改进Casdoor及其与云原生工作流的集成，并欢迎更多用户和贡献者加入社区。</p>
-<p>相关链接：</p>
+<p>The <strong>Cloud Native Computing Foundation (CNCF)</strong> is a Linux Foundation project that promotes cloud-native technologies. Its vision is to make cloud native ubiquitous. CNCF maintains the <strong>Cloud Native Landscape</strong> (<a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">https://landscape.cncf.io</a>), which classifies and tracks projects and products in the cloud-native ecosystem and serves as a reference map for developers and enterprises.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looking-ahead">Looking ahead<a href="https://casdoor.ai/zh/blog/casdoor-joins-cncf-landscape/#looking-ahead" class="hash-link" aria-label="直接链接到 Looking ahead" title="直接链接到 Looking ahead" translate="no">​</a></h2>
+<p>Joining the CNCF Landscape reflects progress in Casdoor’s maturity and community. We will keep improving Casdoor and its integration with cloud-native workflows, and we welcome more users and contributors to join the community.</p>
+<p>Related links:</p>
 <ul>
-<li class=""><a href="https://casdoor.org/" target="_blank" rel="noopener noreferrer" class="">Casdoor</a> · <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">GitHub</a> · <a href="https://casdoor.org/docs" target="_blank" rel="noopener noreferrer" class="">文档</a> · <a href="https://landscape.cncf.io/?selected=casdoor" target="_blank" rel="noopener noreferrer" class="">CNCF 云原生全景图 – Casdoor</a></li>
+<li class=""><a href="https://casdoor.org/" target="_blank" rel="noopener noreferrer" class="">Casdoor</a> · <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">GitHub</a> · <a href="https://casdoor.org/docs" target="_blank" rel="noopener noreferrer" class="">Documentation</a> · <a href="https://landscape.cncf.io/?selected=casdoor" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape – Casdoor</a></li>
 </ul>]]></content:encoded>
             <category>Casdoor</category>
             <category>CNCF</category>

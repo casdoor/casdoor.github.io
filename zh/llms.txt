@@ -366,10 +366,10 @@
 - [Spring Cloud](https://casdoor.ai/zh/docs/integration/java/spring-cloud/): 在网关处或在各个服务中用 casdoor-spring-boot-starter，为 Spring Cloud 微服务加上 Casdoor 认证。
 - [Spring Cloud Gateway](https://casdoor.ai/zh/docs/integration/java/spring-cloud-gateway/): 在 Spring Cloud Gateway 中使用 casdoor-spring-boot-starter，用 Casdoor 认证请求。
 - [Quarkus](https://casdoor.ai/zh/docs/integration/java/quarkus/): 使用 Casdoor 登录 Quarkus 应用，并通过 Quarkus Casdoor Auth 扩展利用 Casdoor 的角色和权限对请求进行授权。
-- [Spring Security OAuth](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-oauth/): Use Casdoor as the OpenID Connect provider for a Spring Security application with spring-boot-starter-oauth2-client.
+- [Spring Security OAuth](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-oauth/): 使用 spring-boot-starter-oauth2-client，将 Casdoor 作为 Spring Security 应用的 OpenID Connect 提供商。
 - [Spring Security 过滤器（OIDC）](https://casdoor.ai/zh/docs/integration/java/spring-security/spring-security-filter/): 用 OIDC 把 Casdoor 集成到 Spring Security。
 - [Jenkins plugin](https://casdoor.ai/zh/docs/integration/java/jenkins-plugin/): Install and configure the Casdoor plugin for Jenkins so users sign in to Jenkins with Casdoor single sign-on.
-- [Jenkins (OIDC)](https://casdoor.ai/zh/docs/integration/java/jenkins-oidc/): Use Casdoor as the OIDC IdP for Jenkins sign-in.
+- [Jenkins（OIDC）](https://casdoor.ai/zh/docs/integration/java/jenkins-oidc/): 把 Casdoor 用作 Jenkins 登录的 OIDC IdP。
 - [使用内置 SSO](https://casdoor.ai/zh/docs/integration/java/jira2/): 用 Jira 内置的 SSO 通过 OpenID Connect 接入 Casdoor，这种方式免费，但需要 HTTPS。
 - [使用 miniOrange 插件](https://casdoor.ai/zh/docs/integration/java/jira/): 用 miniOrange OAuth / OIDC SSO 插件，通过 OpenID Connect 把 Jira 接入 Casdoor。
 - [用 OIDC 协议连接应用：Confluence](https://casdoor.ai/zh/docs/integration/java/Confluence/): 用 OpenID Connect 把 Atlassian Confluence 接入 Casdoor，用户通过 Casdoor 单点登录进入 Confluence。
@@ -378,7 +378,7 @@
 - [在 ShenYu 中使用 Casdoor](https://casdoor.ai/zh/docs/integration/java/shenyu/): 使用 ShenYu 的 Casdoor 插件，通过 Casdoor 保护位于 Apache ShenYu 网关后的 API。
 - [ShardingSphere](https://casdoor.ai/zh/docs/integration/java/ShardingSphere/): 为已内置 Casdoor 支持的 Apache ShardingSphere ElasticJob UI 启用 Casdoor 登录。
 - [Apache IoTDB](https://casdoor.ai/zh/docs/integration/java/iotdb/): 为已内置 Casdoor 支持的 Apache IoTDB Web Workbench 启用 Casdoor 登录。
-- [Apache DolphinScheduler](https://casdoor.ai/zh/docs/integration/java/dolphinscheduler/): Enable Casdoor single sign-on for Apache DolphinScheduler, which supports Casdoor as a built-in login method.
+- [Apache DolphinScheduler](https://casdoor.ai/zh/docs/integration/java/dolphinscheduler/): 为 Apache DolphinScheduler 启用 Casdoor 单点登录，它已把 Casdoor 作为内置登录方式。
 - [FireZone](https://casdoor.ai/zh/docs/integration/java/firezone/): 把 Firezone 配置为以 Casdoor 作为 OpenID Connect 身份提供商登录。
 - [Cloud Foundry](https://casdoor.ai/zh/docs/integration/java/CloudFoundry/): 把 Casdoor 用作 Cloud Foundry 上应用的 OIDC 身份提供商，附 Casdoor 和 Cloud Foundry 的分步配置。
 - [Thingsboard](https://casdoor.ai/zh/docs/integration/java/Thingsboard/): 把 Casdoor 用作物联网平台 ThingsBoard 的 OAuth 2.0 / OIDC 身份提供商，附 Casdoor 和 ThingsBoard 的设置。

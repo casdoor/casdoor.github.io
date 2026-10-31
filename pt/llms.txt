@@ -130,7 +130,7 @@
 - [Usar o Casdoor como servidor de autorização de um servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/overview/): O Casdoor pode ser o servidor de autorização OAuth 2.1 do seu próprio servidor MCP, com registro dinâmico de clientes, PKCE, indicadores de recursos, consentimento e validação de tokens através de JWKS.
 - [Configurar o Casdoor para seu servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/setup/): Configure uma aplicação, escopos e registro dinâmico de clientes no Casdoor, e faça seu servidor MCP publicar seus metadados, desafiar clientes e validar tokens.
 - [Validar tokens do Casdoor no seu servidor MCP](https://casdoor.ai/pt/docs/mcp-auth/third-party-integration/): Servidores MCP completos em Python, Node.js e Go que publicam Protected Resource Metadata, validam tokens do Casdoor com JWKS e aplicam escopos.
-- [Public MCP server registry](https://casdoor.ai/pt/docs/mcp-auth/mcp-registry/): The public MCP server registry at mcp.casdoor.org lists MCP servers with a web interface and a JSON API. This page explains how to use it and how to add a server.
+- [Registro público de servidores MCP](https://casdoor.ai/pt/docs/mcp-auth/mcp-registry/): O registro público de servidores MCP em mcp.casdoor.org lista servidores MCP com uma interface web e uma API JSON. Esta página explica como usá-lo e como adicionar um servidor.
 
 ## Permissões
 
@@ -344,7 +344,7 @@
 
 - [Nginx](https://casdoor.ai/pt/docs/integration/C++/Nginx/): Habilite o single sign-on OpenID Connect para aplicações proxiedadas pelo NGINX Plus, usando o Casdoor como provedor de identidade.
 - [Autenticação Nginx e single sign-on com OAuth2 Proxy](https://casdoor.ai/pt/docs/integration/C++/NginxCommunityVersion/): Adicione single sign-on do Casdoor a aplicações atrás de um Nginx open-source (não NGINX Plus) usando OAuth2 Proxy e auth_request, e o que usar em vez de um módulo CAS.
-- [Envoy](https://casdoor.ai/pt/docs/integration/C++/Envoy/): Protect services behind the Envoy proxy with Casdoor single sign-on, using Envoy's OAuth2 filter and a Casdoor application.
+- [Envoy](https://casdoor.ai/pt/docs/integration/C++/Envoy/): Proteja serviços atrás do proxy Envoy com o single sign-on do Casdoor, usando o filtro OAuth2 do Envoy e uma aplicação do Casdoor.
 - [Unity](https://casdoor.ai/pt/docs/integration/CSharp/Unity/): Use o Casdoor-dotnet-sdk para desenvolvimento no Unity.
 - [Kubernetes](https://casdoor.ai/pt/docs/integration/go/kubernetes/): Autentique usuários no servidor da API Kubernetes com OpenID Connect, usando o Casdoor como provedor de identidade OIDC para o kubectl.
 - [OpenShift](https://casdoor.ai/pt/docs/integration/go/openshift/): Configure o Casdoor como provedor de identidade OpenID Connect para o OpenShift, permitindo que os usuários façam login no console e na CLI com suas contas do Casdoor.
@@ -383,7 +383,7 @@
 - [Cloud Foundry](https://casdoor.ai/pt/docs/integration/java/CloudFoundry/): Use o Casdoor como provedor de identidade OIDC para aplicações no Cloud Foundry, com configuração passo a passo do Casdoor e do Cloud Foundry.
 - [Thingsboard](https://casdoor.ai/pt/docs/integration/java/Thingsboard/): Use o Casdoor como provedor de identidade OAuth 2.0 / OIDC para a plataforma IoT ThingsBoard, com configurações do Casdoor e do ThingsBoard.
 - [Halo](https://casdoor.ai/pt/docs/integration/java/halo/): Faça login na plataforma de blogs Halo com o Casdoor via OpenID Connect, usando o provedor SSO personalizado do plugin OAuth2.
-- [Firebase](https://casdoor.ai/pt/docs/integration/javascript/firebase/): Use Casdoor as an OpenID Connect provider in Firebase Authentication, so users of a Firebase web app sign in with Casdoor.
+- [Firebase](https://casdoor.ai/pt/docs/integration/javascript/firebase/): Use o Casdoor como um provedor OpenID Connect no Firebase Authentication, para que usuários de uma aplicação web Firebase façam login com o Casdoor.
 - [Mini programa WeChat](https://casdoor.ai/pt/docs/integration/javascript/wechat_miniprogram/): Integre o login do Casdoor em um Mini Programa WeChat (sem redirecionamento OAuth).
 - [Immich](https://casdoor.ai/pt/docs/integration/javascript/immich/): Faça login no Immich, no navegador e nos aplicativos móveis, com o Casdoor via OAuth e OpenID Connect.
 - [Joplin Server](https://casdoor.ai/pt/docs/integration/javascript/joplin/): Faça login no Joplin Server, no navegador e nos aplicativos Joplin, com o Casdoor como provedor de identidade SAML 2.0.

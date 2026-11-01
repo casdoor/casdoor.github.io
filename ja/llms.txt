@@ -80,9 +80,11 @@
 - [Python から MCP サーバーを呼び出す](https://casdoor.ai/ja/docs/how-to-connect/mcp/integration/): スコープ付きアクセストークンを取得し、Casdoor MCP サーバーとのセッションを初期化し、ツールを呼び出す Python のサンプルです。
 - [MCP エラー処理](https://casdoor.ai/ja/docs/how-to-connect/mcp/error-handling/): Casdoor MCP サーバーの JSON-RPC エラーコードとレスポンス例。
 - [MCP トラブルシューティング](https://casdoor.ai/ja/docs/how-to-connect/mcp/troubleshooting/): Casdoor MCP サーバーや、OAuth 2.0 プロバイダーとして Casdoor を使用する MCP サーバーで発生する一般的な問題の原因と対策。
-- [Claude Desktop を Casdoor MCP サーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-claude-desktop/): mcp-remote と OAuth 2.0 を介して Claude Desktop を Casdoor MCP サーバーに接続し、Claude が Casdoor のアプリケーションやユーザーを管理できるようにします。
+- [Put MCP servers behind the Casdoor MCP gateway, end to end](https://casdoor.ai/ja/docs/how-to-connect/mcp/gateway/): A complete example of the Casdoor MCP gateway - one MCP server, published to ChatGPT, Claude, Cursor, and VS Code users of several organizations with single sign-on, per-user access, a tool allowlist, tokens bound to the server, and revocation.
+- [Connect Claude to the Casdoor MCP server](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop, claude.ai, and Claude Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - custom connectors, Claude's client ID metadata document, the callback URL, claude_desktop_config.json with mcp-remote, and claude mcp add.
 - [Cursor を Casdoor MCP サーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-cursor/): OAuth 2.0 を使用して Cursor エディターを Casdoor MCP サーバーに接続し、Cursor の AI が Casdoor のアプリケーションとユーザーを管理できるようにします。
 - [ChatGPTをCasdoor MCPサーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-chatgpt/): OAuth 2.0を使用して、Casdoor MCPサーバーをChatGPTのカスタムMCPサーバーとして追加します。手順には、ChatGPTプラグイン、クライアントIDメタデータドキュメント、動的クライアント登録、リダイレクトURI、サインイン、およびChatGPTがツール呼び出しの前に許可を求める理由が含まれます。
+- [Connect VS Code to the Casdoor MCP server](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-vscode/): Connect GitHub Copilot in VS Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - the mcp.json entry, the client ID metadata document of VS Code, the redirect URIs, and sign-out.
 - [Face ID サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/face-id/): ユーザーが Casdoor アカウントで顔を登録し、サインインページでスキャンしてサインインできるようにします。
 - [WebAuthn サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/webauthn/): パスキー、指紋や顔認識、Windows Hello、またはセキュリティキーを通じて WebAuthn で Casdoor にサインインできるようにします。
 
@@ -130,6 +132,7 @@
 - [MCP サーバーの認可サーバーとして Casdoor を使用する](https://casdoor.ai/ja/docs/mcp-auth/overview/): Casdoor は、独自の MCP サーバーの OAuth 2.1 認可サーバーとして機能できます。動的クライアント登録、PKCE、リソースインジケーター、同意、および JWKS によるトークン検証をサポートしています。
 - [MCP サーバー向けに Casdoor をセットアップする](https://casdoor.ai/ja/docs/mcp-auth/setup/): Casdoor でアプリケーション、スコープ、および動的クライアント登録を設定し、MCP サーバーがメタデータの公開、クライアントへのチャレンジ、およびトークン検証を行うように構成します。
 - [MCP サーバーでの Casdoor トークンの検証](https://casdoor.ai/ja/docs/mcp-auth/third-party-integration/): Python、Node.js、Go で完全な MCP サーバーを実装し、Protected Resource Metadata を公開して、JWKS による Casdoor トークンの検証とスコープの強制を行います。
+- [Enterprise-managed authorization with ID-JAG](https://casdoor.ai/ja/docs/mcp-auth/enterprise-managed-authorization/): Let MCP clients get tokens from Casdoor without a browser sign-in, from an ID-JAG that the enterprise identity provider issues (Okta Cross App Access and others), and let Casdoor issue ID-JAGs as the enterprise identity provider.
 - [パブリック MCP サーバーレジストリ](https://casdoor.ai/ja/docs/mcp-auth/mcp-registry/): mcp.casdoor.org のパブリック MCP サーバーレジストリは、Web インターフェースと JSON API を備えた MCP サーバーを一覧表示します。このページでは、その使い方とサーバーの追加方法について説明します。
 
 ## 権限
@@ -202,7 +205,7 @@
 - [MinIO にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/minio/): アバターなどのアップロードされたファイルを MinIO または他の S3 互換オブジェクトストアに保存します。
 - [Alibaba Cloud OSS へのファイル保存](https://casdoor.ai/ja/docs/provider/storage/aliyun-oss/): AccessKey または RAM Roles for Service Accounts (RRSA) を使用して、アップロードされたファイルを Alibaba Cloud OSS に保存します。
 - [Tencent Cloud COS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/tencentCloudCOS/): アバターなどのアップロードされたファイルを Tencent Cloud COS バケットに保存します。
-- [Synology NAS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
+- [Synology NAS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/synology-nas/): DSM の File Station API を介して、Synology NAS にアップロードされたファイルを保存します。
 - [SAML プロバイダー](https://casdoor.ai/ja/docs/provider/saml/overview/): 外部 SAML 2.0 ID プロバイダーを使用して Casdoor にサインインできるようにします。Casdoor はサービスプロバイダーとして機能します。
 - [SAML ID プロバイダーの追加](https://casdoor.ai/ja/docs/provider/saml/custom/): IdP で Casdoor を登録し、IdP のメタデータをインポートすることで、カスタム SAML プロバイダーを使用して任意の SAML 2.0 ID プロバイダーを Casdoor に接続します。
 - [Google Workspace を SAML プロバイダーとして追加](https://casdoor.ai/ja/docs/provider/saml/google-workspace/): ユーザーが Google Workspace アカウントで Casdoor に SAML 経由でサインインできるようにします。

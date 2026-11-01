@@ -80,11 +80,11 @@
 - [Python から MCP サーバーを呼び出す](https://casdoor.ai/ja/docs/how-to-connect/mcp/integration/): スコープ付きアクセストークンを取得し、Casdoor MCP サーバーとのセッションを初期化し、ツールを呼び出す Python のサンプルです。
 - [MCP エラー処理](https://casdoor.ai/ja/docs/how-to-connect/mcp/error-handling/): Casdoor MCP サーバーの JSON-RPC エラーコードとレスポンス例。
 - [MCP トラブルシューティング](https://casdoor.ai/ja/docs/how-to-connect/mcp/troubleshooting/): Casdoor MCP サーバーや、OAuth 2.0 プロバイダーとして Casdoor を使用する MCP サーバーで発生する一般的な問題の原因と対策。
-- [Put MCP servers behind the Casdoor MCP gateway, end to end](https://casdoor.ai/ja/docs/how-to-connect/mcp/gateway/): A complete example of the Casdoor MCP gateway - one MCP server, published to ChatGPT, Claude, Cursor, and VS Code users of several organizations with single sign-on, per-user access, a tool allowlist, tokens bound to the server, and revocation.
-- [Connect Claude to the Casdoor MCP server](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop, claude.ai, and Claude Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - custom connectors, Claude's client ID metadata document, the callback URL, claude_desktop_config.json with mcp-remote, and claude mcp add.
+- [MCP サーバーを Casdoor MCP ゲートウェイの背後に配置する（エンドツーエンド）](https://casdoor.ai/ja/docs/how-to-connect/mcp/gateway/): Casdoor MCP ゲートウェイの完全な例 - 1 つの MCP サーバーを ChatGPT、Claude、Cursor、および複数の組織の VS Code ユーザーに公開し、シングルサインオン、ユーザーごとのアクセス制御、ツール許可リスト、サーバーにバインドされたトークン、および取り消し機能を提供します。
+- [Connect Claude to the Casdoor MCP server](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-claude-desktop/): OAuth 2.0 - カスタム コネクタ、Claude のクライアント ID メタデータ ドキュメント、コールバック URL、mcp-remote を使用した claude_desktop_config.json、および claude mcp add を通じて、Claude Desktop、claude.ai、Claude Code を Casdoor MCP サーバーまたは Casdoor MCP ゲートウェイの後ろにある MCP サーバーに接続します。
 - [Cursor を Casdoor MCP サーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-cursor/): OAuth 2.0 を使用して Cursor エディターを Casdoor MCP サーバーに接続し、Cursor の AI が Casdoor のアプリケーションとユーザーを管理できるようにします。
 - [ChatGPTをCasdoor MCPサーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-chatgpt/): OAuth 2.0を使用して、Casdoor MCPサーバーをChatGPTのカスタムMCPサーバーとして追加します。手順には、ChatGPTプラグイン、クライアントIDメタデータドキュメント、動的クライアント登録、リダイレクトURI、サインイン、およびChatGPTがツール呼び出しの前に許可を求める理由が含まれます。
-- [Connect VS Code to the Casdoor MCP server](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-vscode/): Connect GitHub Copilot in VS Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - the mcp.json entry, the client ID metadata document of VS Code, the redirect URIs, and sign-out.
+- [VS CodeをCasdoor MCPサーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-vscode/): OAuth 2.0を使用して、GitHub Copilot in VS CodeをCasdoor MCPサーバーまたはCasdoor MCPゲートウェイの裏側にあるMCPサーバーに接続します。mcp.jsonのエントリ、VS CodeのクライアントIDメタデータドキュメント、リダイレクトURI、およびサインアウトについて説明します。
 - [Face ID サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/face-id/): ユーザーが Casdoor アカウントで顔を登録し、サインインページでスキャンしてサインインできるようにします。
 - [WebAuthn サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/webauthn/): パスキー、指紋や顔認識、Windows Hello、またはセキュリティキーを通じて WebAuthn で Casdoor にサインインできるようにします。
 
@@ -132,7 +132,7 @@
 - [MCP サーバーの認可サーバーとして Casdoor を使用する](https://casdoor.ai/ja/docs/mcp-auth/overview/): Casdoor は、独自の MCP サーバーの OAuth 2.1 認可サーバーとして機能できます。動的クライアント登録、PKCE、リソースインジケーター、同意、および JWKS によるトークン検証をサポートしています。
 - [MCP サーバー向けに Casdoor をセットアップする](https://casdoor.ai/ja/docs/mcp-auth/setup/): Casdoor でアプリケーション、スコープ、および動的クライアント登録を設定し、MCP サーバーがメタデータの公開、クライアントへのチャレンジ、およびトークン検証を行うように構成します。
 - [MCP サーバーでの Casdoor トークンの検証](https://casdoor.ai/ja/docs/mcp-auth/third-party-integration/): Python、Node.js、Go で完全な MCP サーバーを実装し、Protected Resource Metadata を公開して、JWKS による Casdoor トークンの検証とスコープの強制を行います。
-- [Enterprise-managed authorization with ID-JAG](https://casdoor.ai/ja/docs/mcp-auth/enterprise-managed-authorization/): Let MCP clients get tokens from Casdoor without a browser sign-in, from an ID-JAG that the enterprise identity provider issues (Okta Cross App Access and others), and let Casdoor issue ID-JAGs as the enterprise identity provider.
+- [ID-JAGによるエンタープライズ管理認可](https://casdoor.ai/ja/docs/mcp-auth/enterprise-managed-authorization/): MCPクライアントが、エンタープライズIDプロバイダー（Okta Cross App Accessなど）が発行するID-JAGからブラウザでのサインインなしでCasdoorからトークンを取得できるようにし、さらにCasdoorがエンタープライズIDプロバイダーとしてID-JAGを発行できるようにします。
 - [パブリック MCP サーバーレジストリ](https://casdoor.ai/ja/docs/mcp-auth/mcp-registry/): mcp.casdoor.org のパブリック MCP サーバーレジストリは、Web インターフェースと JSON API を備えた MCP サーバーを一覧表示します。このページでは、その使い方とサーバーの追加方法について説明します。
 
 ## 権限

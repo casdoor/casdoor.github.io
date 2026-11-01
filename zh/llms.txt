@@ -80,11 +80,11 @@
 - [从 Python 调用 MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/integration/): 一个 Python 示例，演示如何获取带有 scopes 的 access token，初始化与 Casdoor MCP 服务器的会话，并调用工具。
 - [MCP错误处理](https://casdoor.ai/zh/docs/how-to-connect/mcp/error-handling/): Casdoor MCP 服务器的 JSON-RPC 错误代码及示例响应。
 - [MCP 故障排除](https://casdoor.ai/zh/docs/how-to-connect/mcp/troubleshooting/): Casdoor MCP 服务器以及使用 Casdoor 作为 OAuth 2.0 提供商的 MCP 服务器的常见问题原因及解决方法。
-- [Put MCP servers behind the Casdoor MCP gateway, end to end](https://casdoor.ai/zh/docs/how-to-connect/mcp/gateway/): A complete example of the Casdoor MCP gateway - one MCP server, published to ChatGPT, Claude, Cursor, and VS Code users of several organizations with single sign-on, per-user access, a tool allowlist, tokens bound to the server, and revocation.
-- [Connect Claude to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-claude-desktop/): Connect Claude Desktop, claude.ai, and Claude Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - custom connectors, Claude's client ID metadata document, the callback URL, claude_desktop_config.json with mcp-remote, and claude mcp add.
+- [端到端地将 MCP 服务器置于 Casdoor MCP 网关之后](https://casdoor.ai/zh/docs/how-to-connect/mcp/gateway/): Casdoor MCP 网关的完整示例 - 一个 MCP 服务器，发布给多个组织的 ChatGPT、Claude、Cursor 和 VS Code 用户，支持单点登录、按用户访问控制、工具白名单、与服务器绑定的令牌以及撤销功能。
+- [Connect Claude to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-claude-desktop/): 通过 OAuth 2.0 - 自定义连接器、Claude 的客户端 ID 元数据文档、回调 URL、包含 mcp-remote 的 claude_desktop_config.json 以及 claude mcp add，将 Claude Desktop、claude.ai 和 Claude Code 连接到 Casdoor MCP 服务器或位于 Casdoor MCP 网关后的 MCP 服务器。
 - [Connect Cursor to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-cursor/): 通过 OAuth 2.0 将 Cursor 编辑器连接到 Casdoor MCP 服务器，以便 Cursor 的 AI 可以管理 Casdoor 中的应用和用户。
 - [将 ChatGPT 连接到 Casdoor MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-chatgpt/): 将 Casdoor MCP 服务器作为带有 OAuth 2.0 的自定义 MCP 服务器添加到 ChatGPT - ChatGPT Plugins 中的步骤、客户端 ID 元数据文档和动态客户端注册、重定向 URI、登录，以及为什么 ChatGPT 在工具调用前请求权限。
-- [Connect VS Code to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-vscode/): Connect GitHub Copilot in VS Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - the mcp.json entry, the client ID metadata document of VS Code, the redirect URIs, and sign-out.
+- [连接 VS Code 到 Casdoor MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-vscode/): Connect GitHub Copilot in VS Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - the mcp.json entry, the client ID metadata document of VS Code, the redirect URIs, and sign-out.
 - [设置 Face ID 登录](https://casdoor.ai/zh/docs/how-to-connect/face-id/): 允许用户在 Casdoor 账户中注册面部数据，并通过在登录页面扫描面部进行登录。
 - [设置 WebAuthn 登录](https://casdoor.ai/zh/docs/how-to-connect/webauthn/): 让用户通过 WebAuthn 使用通行密钥、指纹或面部识别、Windows Hello 或安全密钥登录 Casdoor。
 
@@ -132,7 +132,7 @@
 - [将 Casdoor 用作 MCP 服务器的授权服务器](https://casdoor.ai/zh/docs/mcp-auth/overview/): Casdoor 可以作为您自己的 MCP 服务器的 OAuth 2.1 授权服务器，支持动态客户端注册、PKCE、资源指示符、同意以及通过 JWKS 进行令牌验证。
 - [为您的 MCP 服务器设置 Casdoor](https://casdoor.ai/zh/docs/mcp-auth/setup/): 在 Casdoor 中配置应用、作用域和动态客户端注册，并使您的 MCP 服务器发布其元数据、质询客户端以及验证令牌。
 - [在您的 MCP 服务器中验证 Casdoor 令牌](https://casdoor.ai/zh/docs/mcp-auth/third-party-integration/): 提供 Python、Node.js 和 Go 语言的完整 MCP 服务器示例，这些示例发布受保护资源元数据，使用 JWKS 验证 Casdoor 令牌，并强制执行范围。
-- [Enterprise-managed authorization with ID-JAG](https://casdoor.ai/zh/docs/mcp-auth/enterprise-managed-authorization/): Let MCP clients get tokens from Casdoor without a browser sign-in, from an ID-JAG that the enterprise identity provider issues (Okta Cross App Access and others), and let Casdoor issue ID-JAGs as the enterprise identity provider.
+- [使用 ID-JAG 的企业托管授权](https://casdoor.ai/zh/docs/mcp-auth/enterprise-managed-authorization/): 让 MCP 客户端无需浏览器登录即可从 Casdoor 获取令牌，令牌源自企业身份提供商签发的 ID-JAG（如 Okta Cross App Access 等），并让 Casdoor 作为企业身份提供商签发 ID-JAG。
 - [公共 MCP 服务器注册表](https://casdoor.ai/zh/docs/mcp-auth/mcp-registry/): 位于 mcp.casdoor.org 的公共 MCP 服务器注册表列出了具有 Web 界面和 JSON API 的 MCP 服务器。本页介绍如何使用该注册表以及如何添加服务器。
 
 ## 权限

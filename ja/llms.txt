@@ -98,7 +98,7 @@
 - [パスワード複雑性ルールの設定](https://casdoor.ai/ja/docs/organization/passwordComplexity/): 組織のユーザーのパスワードに対して、最小長、文字種の混合、特殊文字の使用、または繰り返し文字の禁止などのルールを要求します。
 - [転送中のパスワード暗号化](https://casdoor.ai/ja/docs/organization/passwordObfuscator/): Casdoor フロントエンドが、サインイン API および set-password API に送信する前に、AES または DES を使用してパスワードを暗号化するようにします。
 - [アカウントページの customization](https://casdoor.ai/ja/docs/organization/accountCustomization/): 組織のアカウントページに表示するフィールド、各フィールドの閲覧および編集権限、およびフィールドをタブにグループ化する方法を選択します。
-- [テーマのカスタマイズ](https://casdoor.ai/ja/docs/organization/customize-theme/): 組織または個別のアプリケーションに対して、Casdoor ページのプライマリカラーと角丸半径を設定します。
+- [テーマのカスタマイズ](https://casdoor.ai/ja/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [多要素認証 (MFA) の必須化](https://casdoor.ai/ja/docs/organization/mfa-items/): 組織が提供する多要素認証 (MFA) メソッドを選択し、各メソッドをオプション、プロンプト、または必須として設定します。
 - [記録](https://casdoor.ai/ja/docs/organization/records/): CasdoorはすべてのAPIリクエストの記録を監査ログに書き込みます。このページでは、レコードに含まれる内容、帰属先の組織とユーザー、およびCasdoorがレコードを保持する期間について説明します。
 
@@ -202,7 +202,7 @@
 - [MinIO にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/minio/): アバターなどのアップロードされたファイルを MinIO または他の S3 互換オブジェクトストアに保存します。
 - [Alibaba Cloud OSS へのファイル保存](https://casdoor.ai/ja/docs/provider/storage/aliyun-oss/): AccessKey または RAM Roles for Service Accounts (RRSA) を使用して、アップロードされたファイルを Alibaba Cloud OSS に保存します。
 - [Tencent Cloud COS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/tencentCloudCOS/): アバターなどのアップロードされたファイルを Tencent Cloud COS バケットに保存します。
-- [Synology NAS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/synology-nas/): S3 互換 API を介して、アップロードされたファイルを Synology NAS に保存します。
+- [Synology NAS にファイルを保存する](https://casdoor.ai/ja/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [SAML プロバイダー](https://casdoor.ai/ja/docs/provider/saml/overview/): 外部 SAML 2.0 ID プロバイダーを使用して Casdoor にサインインできるようにします。Casdoor はサービスプロバイダーとして機能します。
 - [SAML ID プロバイダーの追加](https://casdoor.ai/ja/docs/provider/saml/custom/): IdP で Casdoor を登録し、IdP のメタデータをインポートすることで、カスタム SAML プロバイダーを使用して任意の SAML 2.0 ID プロバイダーを Casdoor に接続します。
 - [Google Workspace を SAML プロバイダーとして追加](https://casdoor.ai/ja/docs/provider/saml/google-workspace/): ユーザーが Google Workspace アカウントで Casdoor に SAML 経由でサインインできるようにします。
@@ -374,7 +374,7 @@
 - [miniOrange プラグインの使用](https://casdoor.ai/ja/docs/integration/java/jira/): miniOrange OAuth / OIDC SSO プラグインを使用して、OpenID Connect を通じて Jira を Casdoor に接続します。
 - [OIDC プロトコルによるアプリケーション接続 - Confluence](https://casdoor.ai/ja/docs/integration/java/Confluence/): OpenID Connect を使用して Atlassian Confluence を Casdoor に接続し、ユーザーが Casdoor シングルサインオン経由で Confluence にサインインできるようにします。
 - [RuoYi](https://casdoor.ai/ja/docs/integration/java/RuoYi/): Casdoor Java SDK を使用して、Spring Cloud 管理フレームワークである RuoYi-Cloud に Casdoor シングル サインオン (SSO) を統合します。
-- [Pulsar manager](https://casdoor.ai/ja/docs/integration/java/Pulsar-manager/): Apache Pulsar Manager で Casdoor サインインを有効にするには - バックエンドで application.yml を設定し、フロントエンドで Casdoor スイッチをオンにします。
+- [Pulsar manager](https://casdoor.ai/ja/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [ShenYu で Casdoor を使用する](https://casdoor.ai/ja/docs/integration/java/shenyu/): ShenYu の Casdoor プラグインを使用して、Apache ShenYu ゲートウェイの裏にある API を Casdoor で保護します。
 - [ShardingSphere](https://casdoor.ai/ja/docs/integration/java/ShardingSphere/): Apache ShardingSphere ElasticJob UI で Casdoor サインインを有効にします。Casdoor サポートが組み込まれています。
 - [Apache IoTDB](https://casdoor.ai/ja/docs/integration/java/iotdb/): 組み込みの Casdoor サポートを含む Apache IoTDB Web Workbench で Casdoor サインインを有効にします。

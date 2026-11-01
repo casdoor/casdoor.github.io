@@ -98,7 +98,7 @@
 - [Set password complexity rules](https://casdoor.ai/docs/organization/passwordComplexity/): Require a minimum length, mixed character classes, special characters, or no repeated characters for the passwords of an organization.
 - [Encrypt passwords in transit](https://casdoor.ai/docs/organization/passwordObfuscator/): Make the Casdoor frontend encrypt passwords with AES or DES before it sends them to the sign-in and set-password APIs.
 - [Customize the account page](https://casdoor.ai/docs/organization/accountCustomization/): Choose which fields the account page of an organization shows, who can view and edit each field, and how the fields are grouped into tabs.
-- [Customize the theme](https://casdoor.ai/docs/organization/customize-theme/): Set the primary color and the border radius of the Casdoor pages for an organization or for a single application.
+- [Customize the theme](https://casdoor.ai/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [Require multi-factor authentication](https://casdoor.ai/docs/organization/mfa-items/): Choose which multi-factor authentication methods an organization offers, and whether each one is optional, prompted, or required.
 - [Records](https://casdoor.ai/docs/organization/records/): Casdoor writes a record of every API request to its audit log. This page describes what a record contains, which organization and user it is attributed to, and how long Casdoor keeps it.
 
@@ -202,7 +202,7 @@
 - [Store files in MinIO](https://casdoor.ai/docs/provider/storage/minio/): Store uploaded files, such as avatars, in MinIO or another S3-compatible object store.
 - [Store files in Alibaba Cloud OSS](https://casdoor.ai/docs/provider/storage/aliyun-oss/): Store uploaded files in Alibaba Cloud OSS with an AccessKey or with RAM Roles for Service Accounts (RRSA).
 - [Store files in Tencent Cloud COS](https://casdoor.ai/docs/provider/storage/tencentCloudCOS/): Store uploaded files, such as avatars, in a Tencent Cloud COS bucket.
-- [Store files on a Synology NAS](https://casdoor.ai/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through its S3-compatible API.
+- [Store files on a Synology NAS](https://casdoor.ai/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [SAML providers](https://casdoor.ai/docs/provider/saml/overview/): Let users sign in to Casdoor with an external SAML 2.0 identity provider, with Casdoor as the service provider.
 - [Add a SAML identity provider](https://casdoor.ai/docs/provider/saml/custom/): Connect any SAML 2.0 identity provider to Casdoor with a Custom SAML provider, by registering Casdoor at the IdP and importing the metadata of the IdP.
 - [Add Google Workspace as a SAML provider](https://casdoor.ai/docs/provider/saml/google-workspace/): Let users sign in to Casdoor with their Google Workspace account through SAML.
@@ -374,7 +374,7 @@
 - [Using the miniOrange plugin](https://casdoor.ai/docs/integration/java/jira/): Connect Jira to Casdoor over OpenID Connect with the miniOrange OAuth / OIDC SSO plugin.
 - [Connecting applications with OIDC protocol - Confluence](https://casdoor.ai/docs/integration/java/Confluence/): Connect Atlassian Confluence to Casdoor with OpenID Connect so users sign in to Confluence through Casdoor single sign-on.
 - [RuoYi](https://casdoor.ai/docs/integration/java/RuoYi/): Integrate Casdoor single sign-on into RuoYi-Cloud, the Spring Cloud admin framework, using the Casdoor Java SDK.
-- [Pulsar manager](https://casdoor.ai/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.yml on the back end and turn on the Casdoor switch in the front end.
+- [Pulsar manager](https://casdoor.ai/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [Using Casdoor in ShenYu](https://casdoor.ai/docs/integration/java/shenyu/): Protect APIs behind the Apache ShenYu gateway with Casdoor using ShenYu's Casdoor plugin.
 - [ShardingSphere](https://casdoor.ai/docs/integration/java/ShardingSphere/): Enable Casdoor sign-in for the Apache ShardingSphere ElasticJob UI, which includes built-in Casdoor support.
 - [Apache IoTDB](https://casdoor.ai/docs/integration/java/iotdb/): Enable Casdoor sign-in for the Apache IoTDB Web Workbench, which includes built-in Casdoor support.

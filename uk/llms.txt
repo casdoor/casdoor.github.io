@@ -98,7 +98,7 @@
 - [Налаштування правил складності пароля](https://casdoor.ai/uk/docs/organization/passwordComplexity/): Вимагайте мінімальну довжину, поєднання класів символів, спеціальні символи або відсутність повторюваних символів для паролів організації.
 - [Шифрування паролів під час передачі](https://casdoor.ai/uk/docs/organization/passwordObfuscator/): Налаштуйте фронтенд Casdoor на шифрування паролів за допомогою AES або DES перед їх відправкою до API входу та встановлення пароля.
 - [Налаштування сторінки облікового запису](https://casdoor.ai/uk/docs/organization/accountCustomization/): Виберіть, які поля відображаються на сторінці облікового запису організації, хто може переглядати та редагувати кожне поле, а також як поля групуються у вкладки.
-- [Налаштування теми](https://casdoor.ai/uk/docs/organization/customize-theme/): Встановіть основний колір і радіус рамки для сторінок Casdoor організації або окремого додатку.
+- [Налаштування теми](https://casdoor.ai/uk/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [Вимога багатофакторної автентифікації](https://casdoor.ai/uk/docs/organization/mfa-items/): Виберіть, які методи багатофакторної автентифікації (MFA) пропонує організація, і чи кожен із них є необов'язковим, запропонованим або обов'язковим.
 - [Записи](https://casdoor.ai/uk/docs/organization/records/): Casdoor записує кожен запит до API у журнал аудиту. На цій сторінці описано, що містить запис, до якої організації та користувача він відноситься, і як довго Casdoor зберігає його.
 
@@ -202,7 +202,7 @@
 - [Зберігайте файли в MinIO](https://casdoor.ai/uk/docs/provider/storage/minio/): Зберігайте завантажені файли, такі як аватари, у MinIO або іншому сумісному з S3 об'єктному сховищі.
 - [Зберігання файлів в Alibaba Cloud OSS](https://casdoor.ai/uk/docs/provider/storage/aliyun-oss/): Зберігайте завантажені файли в Alibaba Cloud OSS з використанням AccessKey або RAM Roles for Service Accounts (RRSA).
 - [Зберігайте файли у Tencent Cloud COS](https://casdoor.ai/uk/docs/provider/storage/tencentCloudCOS/): Зберігайте завантажені файли, такі як аватари, у ковші (bucket) Tencent Cloud COS.
-- [Зберігайте файли на Synology NAS](https://casdoor.ai/uk/docs/provider/storage/synology-nas/): Зберігайте завантажені файли на Synology NAS через його сумісний із S3 API.
+- [Зберігайте файли на Synology NAS](https://casdoor.ai/uk/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [SAML providers](https://casdoor.ai/uk/docs/provider/saml/overview/): Дозвольте користувачам входити в Casdoor через зовнішнього постачальника ідентичності SAML 2.0, де Casdoor виступає постачальником послуг.
 - [Додавання SAML-провайдера ідентичності](https://casdoor.ai/uk/docs/provider/saml/custom/): Підключіть будь-якого SAML 2.0 провайдера ідентичності до Casdoor за допомогою Custom SAML провайдера, зареєструвавши Casdoor у IdP та імпортувавши метадані IdP.
 - [Додавання Google Workspace як провайдера SAML](https://casdoor.ai/uk/docs/provider/saml/google-workspace/): Дозвольте користувачам входити в Casdoor через свій обліковий запис Google Workspace за допомогою SAML.
@@ -374,7 +374,7 @@
 - [Використання плагіна miniOrange](https://casdoor.ai/uk/docs/integration/java/jira/): Підключіть Jira до Casdoor через OpenID Connect із використанням плагіна miniOrange OAuth / OIDC SSO.
 - [Підключення додатків за протоколом OIDC - Confluence](https://casdoor.ai/uk/docs/integration/java/Confluence/): Підключіть Atlassian Confluence до Casdoor за допомогою OpenID Connect, щоб користувачі входили в Confluence через єдиний вхід Casdoor.
 - [RuoYi](https://casdoor.ai/uk/docs/integration/java/RuoYi/): Інтегруйте єдиний вхід (SSO) Casdoor у RuoYi-Cloud, фреймворк адміністрування на базі Spring Cloud, використовуючи Java SDK для Casdoor.
-- [Pulsar manager](https://casdoor.ai/uk/docs/integration/java/Pulsar-manager/): Увімкніть вхід через Casdoor для Apache Pulsar Manager — налаштуйте application.yml на бекенді та увімкніть перемикач Casdoor на фронтенді.
+- [Pulsar manager](https://casdoor.ai/uk/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [Використання Casdoor у ShenYu](https://casdoor.ai/uk/docs/integration/java/shenyu/): Захистіть API за шлюзом Apache ShenYu за допомогою Casdoor, використовуючи плагін Casdoor для ShenYu.
 - [ShardingSphere](https://casdoor.ai/uk/docs/integration/java/ShardingSphere/): Увімкніть вхід через Casdoor для Apache ShardingSphere ElasticJob UI, яка має вбудовану підтримку Casdoor.
 - [Apache IoTDB](https://casdoor.ai/uk/docs/integration/java/iotdb/): Увімкніть вхід через Casdoor для Apache IoTDB Web Workbench, який має вбудовану підтримку Casdoor.

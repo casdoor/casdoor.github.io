@@ -98,7 +98,7 @@
 - [Regeln für die Komplexität des Passworts festlegen](https://casdoor.ai/de/docs/organization/passwordComplexity/): Verlangt eine Mindestlänge, gemischte Zeichenklassen, Sonderzeichen oder keine wiederholten Zeichen für die Passwörter einer Organisation.
 - [Passwörter während der Übertragung verschlüsseln](https://casdoor.ai/de/docs/organization/passwordObfuscator/): Konfigurieren Sie das Casdoor-Frontend so, dass es Passwörter mit AES oder DES verschlüsselt, bevor sie an die APIs für Anmeldung und Passwortsetzung gesendet werden.
 - [Anpassung der Kontoseite](https://casdoor.ai/de/docs/organization/accountCustomization/): Wählen Sie aus, welche Felder auf der Kontoseite einer Organisation angezeigt werden, wer jedes Feld anzeigen und bearbeiten kann und wie die Felder in Tabs gruppiert werden.
-- [Thema anpassen](https://casdoor.ai/de/docs/organization/customize-theme/): Legen Sie die Primärfarbe und den Rahmenradius der Casdoor-Seiten für eine Organisation oder eine einzelne Anwendung fest.
+- [Thema anpassen](https://casdoor.ai/de/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [Multi-Faktor-Authentifizierung erzwingen](https://casdoor.ai/de/docs/organization/mfa-items/): Wählen Sie aus, welche Methoden der Multi-Faktor-Authentifizierung (MFA) eine Organisation anbietet, und ob jede Methode optional, nachgefragt oder erforderlich ist.
 - [Datensätze](https://casdoor.ai/de/docs/organization/records/): Casdoor schreibt einen Datensatz für jede API-Anfrage in sein Audit-Log. Diese Seite beschreibt, was ein Datensatz enthält, welcher Organisation und welchem Benutzer er zugeordnet ist und wie lange Casdoor ihn aufbewahrt.
 
@@ -202,7 +202,7 @@
 - [Dateien in MinIO speichern](https://casdoor.ai/de/docs/provider/storage/minio/): Speichern Sie hochgeladene Dateien, wie z. B. Avatare, in MinIO oder einem anderen S3-kompatiblen Objektspeicher.
 - [Dateien in Alibaba Cloud OSS speichern](https://casdoor.ai/de/docs/provider/storage/aliyun-oss/): Hochgeladene Dateien in Alibaba Cloud OSS mit einem AccessKey oder mit RAM Roles for Service Accounts (RRSA) speichern.
 - [Dateien in Tencent Cloud COS speichern](https://casdoor.ai/de/docs/provider/storage/tencentCloudCOS/): Speichern Sie hochgeladene Dateien wie Avatare in einem Tencent Cloud COS-Bucket.
-- [Dateien auf einem Synology NAS speichern](https://casdoor.ai/de/docs/provider/storage/synology-nas/): Speichern Sie hochgeladene Dateien auf einem Synology NAS über dessen S3-kompatible API.
+- [Dateien auf einem Synology NAS speichern](https://casdoor.ai/de/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [SAML-Provider](https://casdoor.ai/de/docs/provider/saml/overview/): Benutzer können sich bei Casdoor über einen externen SAML 2.0-Identitätsanbieter anmelden, wobei Casdoor als Dienstleister fungiert.
 - [Einen SAML-Identitätsprovider hinzufügen](https://casdoor.ai/de/docs/provider/saml/custom/): Verbinden Sie jeden SAML 2.0-Identitätsprovider mit Casdoor über einen Custom SAML-Provider, indem Sie Casdoor beim IdP registrieren und die Metadaten des IdP importieren.
 - [Google Workspace als SAML-Provider hinzufügen](https://casdoor.ai/de/docs/provider/saml/google-workspace/): Benutzer können sich über SAML mit ihrem Google-Workspace-Konto bei Casdoor anmelden.
@@ -374,7 +374,7 @@
 - [Verwendung des miniOrange-Plugins](https://casdoor.ai/de/docs/integration/java/jira/): Verbinden Sie Jira über OpenID Connect mit Casdoor mit dem miniOrange OAuth / OIDC SSO-Plugin.
 - [Verbinden von Anwendungen mit dem OIDC-Protokoll - Confluence](https://casdoor.ai/de/docs/integration/java/Confluence/): Verbinden Sie Atlassian Confluence mit Casdoor über OpenID Connect, damit sich Benutzer über den Single Sign-On von Casdoor bei Confluence anmelden können.
 - [RuoYi](https://casdoor.ai/de/docs/integration/java/RuoYi/): Integrieren Sie Casdoor Single Sign-On in RuoYi-Cloud, das Spring Cloud Admin-Framework, unter Verwendung des Casdoor Java SDKs.
-- [Pulsar Manager](https://casdoor.ai/de/docs/integration/java/Pulsar-manager/): Aktivieren Sie die Casdoor-Anmeldung für Apache Pulsar Manager - konfigurieren Sie application.yml im Backend und aktivieren Sie den Casdoor-Schalter im Frontend.
+- [Pulsar Manager](https://casdoor.ai/de/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [Casdoor in ShenYu verwenden](https://casdoor.ai/de/docs/integration/java/shenyu/): Schützen Sie APIs hinter dem Apache ShenYu-Gateway mit Casdoor unter Verwendung des ShenYu Casdoor-Plugins.
 - [ShardingSphere](https://casdoor.ai/de/docs/integration/java/ShardingSphere/): Aktivieren Sie Casdoor-Anmeldung für die Apache ShardingSphere ElasticJob UI, die über eingebaute Casdoor-Unterstützung verfügt.
 - [Apache IoTDB](https://casdoor.ai/de/docs/integration/java/iotdb/): Aktivieren Sie Casdoor-Anmeldung für die Apache IoTDB Web Workbench, die integrierte Casdoor-Unterstützung enthält.

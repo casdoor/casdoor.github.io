@@ -98,7 +98,7 @@
 - [设置密码复杂度规则](https://casdoor.ai/zh/docs/organization/passwordComplexity/): 要求组织用户的密码满足最小长度、混合字符类别、特殊字符或无重复字符等条件。
 - [传输加密密码](https://casdoor.ai/zh/docs/organization/passwordObfuscator/): 让 Casdoor 前端在向登录和设置密码 API 发送数据之前，使用 AES 或 DES 对密码进行加密。
 - [自定义账户页面](https://casdoor.ai/zh/docs/organization/accountCustomization/): 选择组织的账户页面显示哪些字段，谁可以查看和编辑每个字段，以及字段如何分组到选项卡中。
-- [自定义主题](https://casdoor.ai/zh/docs/organization/customize-theme/): 为组织或单个应用程序设置 Casdoor 页面的主色和边框半径。
+- [自定义主题](https://casdoor.ai/zh/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [要求多因素认证](https://casdoor.ai/zh/docs/organization/mfa-items/): 选择组织提供的多因素认证方法，以及每种方法是可选、提示还是强制的。
 - [日志](https://casdoor.ai/zh/docs/organization/records/): Casdoor 会将每个 API 请求的记录写入其审计日志。本页介绍记录包含的内容、归属的组织和用户，以及 Casdoor 保留记录的时长。
 
@@ -202,7 +202,7 @@
 - [将文件存储在 MinIO 中](https://casdoor.ai/zh/docs/provider/storage/minio/): 将上传的文件（如头像）存储在 MinIO 或其他兼容 S3 的对象存储中。
 - [将文件存储在阿里云 OSS](https://casdoor.ai/zh/docs/provider/storage/aliyun-oss/): 使用 AccessKey 或服务账户 RAM 角色 (RRSA) 将上传的文件存储在阿里云 OSS 中。
 - [在腾讯云 COS 中存储文件](https://casdoor.ai/zh/docs/provider/storage/tencentCloudCOS/): 将上传的文件（如头像）存储在腾讯云 COS 存储桶中。
-- [在 Synology NAS 上存储文件](https://casdoor.ai/zh/docs/provider/storage/synology-nas/): 通过兼容 S3 的 API 将上传的文件存储在 Synology NAS 上。
+- [在 Synology NAS 上存储文件](https://casdoor.ai/zh/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [SAML 提供商](https://casdoor.ai/zh/docs/provider/saml/overview/): 允许用户使用外部 SAML 2.0 身份提供程序登录 Casdoor，其中 Casdoor 作为服务提供程序。
 - [添加 SAML 身份提供商](https://casdoor.ai/zh/docs/provider/saml/custom/): 通过在 IdP 中注册 Casdoor 并导入 IdP 的元数据，使用自定义 SAML 提供商将任何 SAML 2.0 身份提供商连接到 Casdoor。
 - [将 Google Workspace 添加为 SAML 提供商](https://casdoor.ai/zh/docs/provider/saml/google-workspace/): 允许用户通过 SAML 使用其 Google Workspace 账户登录到 Casdoor。
@@ -374,7 +374,7 @@
 - [使用 miniOrange 插件](https://casdoor.ai/zh/docs/integration/java/jira/): 用 miniOrange OAuth / OIDC SSO 插件，通过 OpenID Connect 把 Jira 接入 Casdoor。
 - [用 OIDC 协议连接应用：Confluence](https://casdoor.ai/zh/docs/integration/java/Confluence/): 用 OpenID Connect 把 Atlassian Confluence 接入 Casdoor，用户通过 Casdoor 单点登录进入 Confluence。
 - [RuoYi](https://casdoor.ai/zh/docs/integration/java/RuoYi/): 使用 Casdoor Java SDK 将 Casdoor 单点登录集成到 RuoYi-Cloud（Spring Cloud 管理框架）中。
-- [Pulsar manager](https://casdoor.ai/zh/docs/integration/java/Pulsar-manager/): 为 Apache Pulsar Manager 启用 Casdoor 登录：在后端配置 application.yml，并在前端打开 Casdoor 开关。
+- [Pulsar manager](https://casdoor.ai/zh/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [在 ShenYu 中使用 Casdoor](https://casdoor.ai/zh/docs/integration/java/shenyu/): 使用 ShenYu 的 Casdoor 插件，通过 Casdoor 保护位于 Apache ShenYu 网关后的 API。
 - [ShardingSphere](https://casdoor.ai/zh/docs/integration/java/ShardingSphere/): 为已内置 Casdoor 支持的 Apache ShardingSphere ElasticJob UI 启用 Casdoor 登录。
 - [Apache IoTDB](https://casdoor.ai/zh/docs/integration/java/iotdb/): 为已内置 Casdoor 支持的 Apache IoTDB Web Workbench 启用 Casdoor 登录。

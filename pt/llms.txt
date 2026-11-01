@@ -98,7 +98,7 @@
 - [Definir regras de complexidade de senha](https://casdoor.ai/pt/docs/organization/passwordComplexity/): Exija um comprimento mínimo, classes de caracteres mistas, caracteres especiais ou nenhum caractere repetido para as senhas de uma organização.
 - [Criptografar senhas em trânsito](https://casdoor.ai/pt/docs/organization/passwordObfuscator/): Fazer o frontend do Casdoor criptografar senhas com AES ou DES antes de enviá-las às APIs de login e definição de senha.
 - [Personalize a página da conta](https://casdoor.ai/pt/docs/organization/accountCustomization/): Escolha quais campos a página da conta de uma organização exibe, quem pode visualizar e editar cada campo e como os campos são agrupados em abas.
-- [Personalizar o tema](https://casdoor.ai/pt/docs/organization/customize-theme/): Defina a cor primária e o raio de borda das páginas do Casdoor para uma organização ou para uma única aplicação.
+- [Personalizar o tema](https://casdoor.ai/pt/docs/organization/customize-theme/): Set the style, the primary color, the border radius, and the compact mode of the Casdoor pages for an organization or for a single application.
 - [Requerer autenticação multifator](https://casdoor.ai/pt/docs/organization/mfa-items/): Escolha quais métodos de autenticação multifator (MFA) uma organização oferece e se cada um é opcional, solicitado ou obrigatório.
 - [Registros](https://casdoor.ai/pt/docs/organization/records/): O Casdoor grava um registro de cada solicitação de API em seu log de auditoria. Esta página descreve o que um registro contém, a qual organização e usuário ele é atribuído e por quanto tempo o Casdoor o mantém.
 
@@ -202,7 +202,7 @@
 - [Armazenar arquivos no MinIO](https://casdoor.ai/pt/docs/provider/storage/minio/): Armazene arquivos enviados, como avatares, no MinIO ou em outro armazém de objetos compatível com S3.
 - [Armazenar arquivos no Alibaba Cloud OSS](https://casdoor.ai/pt/docs/provider/storage/aliyun-oss/): Armazene arquivos enviados no Alibaba Cloud OSS com uma AccessKey ou com RAM Roles for Service Accounts (RRSA).
 - [Armazenar arquivos no Tencent Cloud COS](https://casdoor.ai/pt/docs/provider/storage/tencentCloudCOS/): Armazene arquivos enviados, como avatares, em um bucket do Tencent Cloud COS.
-- [Armazenar arquivos em um NAS Synology](https://casdoor.ai/pt/docs/provider/storage/synology-nas/): Armazene arquivos enviados em um NAS Synology através de sua API compatível com S3.
+- [Armazenar arquivos em um NAS Synology](https://casdoor.ai/pt/docs/provider/storage/synology-nas/): Store uploaded files on a Synology NAS through the File Station API of DSM.
 - [Provedores SAML](https://casdoor.ai/pt/docs/provider/saml/overview/): Permita que os usuários façam login no Casdoor usando um provedor de identidade externo SAML 2.0, com o Casdoor como provedor de serviços.
 - [Adicionar um provedor de identidade SAML](https://casdoor.ai/pt/docs/provider/saml/custom/): Conecte qualquer provedor de identidade SAML 2.0 ao Casdoor usando um provedor SAML customizado, registrando o Casdoor no IdP e importando os metadados do IdP.
 - [Adicionar Google Workspace como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/google-workspace/): Permita que os usuários façam login no Casdoor com suas contas do Google Workspace através de SAML.
@@ -374,7 +374,7 @@
 - [Usando o plugin miniOrange](https://casdoor.ai/pt/docs/integration/java/jira/): Conecte o Jira ao Casdoor via OpenID Connect usando o plugin miniOrange OAuth / OIDC SSO.
 - [Conectando aplicações com o protocolo OIDC - Confluence](https://casdoor.ai/pt/docs/integration/java/Confluence/): Conecte o Atlassian Confluence ao Casdoor usando OpenID Connect para que os usuários façam login no Confluence através do single sign-on do Casdoor.
 - [RuoYi](https://casdoor.ai/pt/docs/integration/java/RuoYi/): Integre o single sign-on do Casdoor no RuoYi-Cloud, o framework de administração Spring Cloud, usando o Java SDK do Casdoor.
-- [Pulsar manager](https://casdoor.ai/pt/docs/integration/java/Pulsar-manager/): Ative o login do Casdoor para o Apache Pulsar Manager - configure o application.yml no back end e ative a chave do Casdoor no front end.
+- [Pulsar manager](https://casdoor.ai/pt/docs/integration/java/Pulsar-manager/): Enable Casdoor sign-in for Apache Pulsar Manager - configure application.properties on the back end and the Casdoor settings in the front end.
 - [Usando o Casdoor no ShenYu](https://casdoor.ai/pt/docs/integration/java/shenyu/): Proteja APIs atrás do gateway Apache ShenYu com o Casdoor usando o plugin Casdoor do ShenYu.
 - [ShardingSphere](https://casdoor.ai/pt/docs/integration/java/ShardingSphere/): Habilite o login via Casdoor na interface do Apache ShardingSphere ElasticJob, que inclui suporte integrado ao Casdoor.
 - [Apache IoTDB](https://casdoor.ai/pt/docs/integration/java/iotdb/): Ative o login via Casdoor para o Apache IoTDB Web Workbench, que inclui suporte integrado ao Casdoor.

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcasdoor_website=self.webpackChunkcasdoor_website||[]).push([["80060"],{64060(e){e.exports=JSON.parse('{"metadata":{"permalink":"/uk/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":20,"nextPage":"/uk/blog/page/2","blogDescription":"\u0411\u043B\u043E\u0433","blogTitle":"\u0411\u043B\u043E\u0433"}}')}}]);

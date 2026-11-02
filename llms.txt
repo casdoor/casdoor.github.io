@@ -57,7 +57,7 @@
 - [Sign users in to a .NET MAUI app](https://casdoor.ai/docs/how-to-connect/desktop-sdks/maui-app/): Add Casdoor sign-in to a .NET MAUI app on Android and Windows with the Casdoor.MauiOidcClient library.
 - [Sign users in to a Qt desktop app](https://casdoor.ai/docs/how-to-connect/desktop-sdks/qt-app/): Run the Casdoor Qt example, which signs users in through Qt WebEngine and casdoor-cpp-sdk, and add the same flow to your own C++ app.
 - [Sign users in to a React Native app](https://casdoor.ai/docs/how-to-connect/mobile-sdks/react-native-app/): Run the Casdoor React Native example on iOS and Android, and add Casdoor sign-in to your own app with casdoor-react-native-sdk.
-- [Manage Casdoor from the command line](https://casdoor.ai/docs/how-to-connect/cli/): Install the Casdoor CLI, connect it to your Casdoor instance, and manage users and groups from the terminal.
+- [Manage Casdoor from the command line](https://casdoor.ai/docs/how-to-connect/cli/): Install the Casdoor CLI on macOS, Linux or Windows, log in to Casdoor, and manage users, groups and every other Casdoor object from the terminal.
 - [Plugins and middleware](https://casdoor.ai/docs/how-to-connect/plugin/): Official Casdoor plugins and middleware for Spring Boot, Quarkus, WordPress, Odoo, Django, Kibana, Chrome, and Terraform.
 - [Sign users in to a Chrome extension](https://casdoor.ai/docs/how-to-connect/chrome-extension/): Add Casdoor sign-in to a Chrome extension with the Chrome identity API and the OAuth 2.0 authorization code flow.
 - [Sign users in to a Next.js application](https://casdoor.ai/docs/how-to-connect/nextjs/): Add Casdoor sign-in to a Next.js application with casdoor-js-sdk, and protect routes with Next.js middleware.

@@ -57,7 +57,7 @@
 - [.NET MAUI アプリへのユーザーサインインの設定](https://casdoor.ai/ja/docs/how-to-connect/desktop-sdks/maui-app/): Casdoor.MauiOidcClient ライブラリを使用して、Android と Windows の .NET MAUI アプリに Casdoor サインインを追加します。
 - [Qt デスクトップアプリでユーザーにサインインする](https://casdoor.ai/ja/docs/how-to-connect/desktop-sdks/qt-app/): casdoor-cpp-sdk と Qt WebEngine を使用してユーザーにサインインする Casdoor の Qt サンプルを実行し、同じフローを独自の C++ アプリに追加します。
 - [React Native アプリでユーザーをサインインさせる](https://casdoor.ai/ja/docs/how-to-connect/mobile-sdks/react-native-app/): iOS と Android で Casdoor React Native サンプルを実行し、casdoor-react-native-sdk を使用して独自のアプリに Casdoor サインインを追加します。
-- [コマンドラインから Casdoor を管理する](https://casdoor.ai/ja/docs/how-to-connect/cli/): Casdoor CLI をインストールし、Casdoor インスタンスに接続して、ターミナルからユーザーとグループを管理します。
+- [コマンドラインから Casdoor を管理する](https://casdoor.ai/ja/docs/how-to-connect/cli/): Install the Casdoor CLI on macOS, Linux or Windows, log in to Casdoor, and manage users, groups and every other Casdoor object from the terminal.
 - [プラグインとミドルウェア](https://casdoor.ai/ja/docs/how-to-connect/plugin/): Spring Boot、Quarkus、WordPress、Odoo、Django、Kibana、Chrome、Terraform 向けの公式 Casdoor プラグインとミドルウェア。
 - [Chrome拡張機能にユーザーをサインインさせる](https://casdoor.ai/ja/docs/how-to-connect/chrome-extension/): Chrome Identity APIとOAuth 2.0認可コードフローを使用して、Chrome拡張機能にCasdoorサインインを追加します。
 - [Next.js アプリケーションへのユーザーサインイン](https://casdoor.ai/ja/docs/how-to-connect/nextjs/): casdoor-js-sdk を使用して Next.js アプリケーションに Casdoor サインインを追加し、Next.js ミドルウェアでルートを保護します。

@@ -57,7 +57,7 @@
 - [将用户登录到 .NET MAUI 应用](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/maui-app/): 使用 Casdoor.MauiOidcClient 库为 Android 和 Windows 上的 .NET MAUI 应用添加 Casdoor 登录功能。
 - [将用户登录到 Qt 桌面应用](https://casdoor.ai/zh/docs/how-to-connect/desktop-sdks/qt-app/): 运行 Casdoor Qt 示例，该示例通过 Qt WebEngine 和 casdoor-cpp-sdk 让用户登录，并将相同的流程添加到您自己的 C++ 应用中。
 - [在 React Native 应用中登录用户](https://casdoor.ai/zh/docs/how-to-connect/mobile-sdks/react-native-app/): 在 iOS 和 Android 上运行 Casdoor React Native 示例，并使用 casdoor-react-native-sdk 在你自己的应用中添加 Casdoor 登录功能。
-- [通过命令行管理 Casdoor](https://casdoor.ai/zh/docs/how-to-connect/cli/): Install the Casdoor CLI on macOS, Linux or Windows, log in to Casdoor, and manage users, groups and every other Casdoor object from the terminal.
+- [通过命令行管理 Casdoor](https://casdoor.ai/zh/docs/how-to-connect/cli/): 在 macOS、Linux 或 Windows 上安装 Casdoor CLI，登录 Casdoor，并从终端管理用户、组及其他所有 Casdoor 对象。
 - [插件和中间件](https://casdoor.ai/zh/docs/how-to-connect/plugin/): 适用于 Spring Boot、Quarkus、WordPress、Odoo、Django、Kibana、Chrome 和 Terraform 的官方 Casdoor 插件和中间件。
 - [在 Chrome 扩展中登录用户](https://casdoor.ai/zh/docs/how-to-connect/chrome-extension/): 使用 Chrome Identity API 和 OAuth 2.0 授权码流程，为 Chrome 扩展添加 Casdoor 登录功能。
 - [将用户登录添加到 Next.js 应用](https://casdoor.ai/zh/docs/how-to-connect/nextjs/): 使用 casdoor-js-sdk 为 Next.js 应用添加 Casdoor 登录功能，并使用 Next.js 中间件保护路由。

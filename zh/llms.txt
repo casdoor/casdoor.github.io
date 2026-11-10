@@ -178,6 +178,7 @@
 - [使用 Resend 发送邮件](https://casdoor.ai/zh/docs/provider/email/resend/): 使用 Resend API 作为 Casdoor 的电子邮件提供商。
 - [通过您自己的 HTTP API 发送邮件](https://casdoor.ai/zh/docs/provider/email/customHttp/): 通过描述请求的 Custom HTTP Email 提供商，将 Casdoor 连接到任何接受 HTTP 请求的电子邮件服务或 webhook。
 - [使用 Azure Communication Services 发送邮件](https://casdoor.ai/zh/docs/provider/email/azureACS/): 将 Azure Communication Services (ACS) 用作 Casdoor 的邮件提供商。
+- [Send email with Microsoft 365](https://casdoor.ai/zh/docs/provider/email/microsoft365/): Send the emails of Casdoor from a Microsoft 365 (Exchange Online) mailbox, signing in to SMTP with OAuth instead of a password.
 - [使用 Brevo 发送邮件](https://casdoor.ai/zh/docs/provider/email/brevo/): 将 Brevo（原 Sendinblue）的 SMTP 中继用作 Casdoor 的邮件提供商。
 - [使用 MailHog 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailhog/): 在 MailHog（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。
 - [使用 Mailpit 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailpit/): 在 Mailpit（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。

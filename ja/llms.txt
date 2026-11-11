@@ -178,7 +178,7 @@
 - [Resend でメールを送信する](https://casdoor.ai/ja/docs/provider/email/resend/): Resend API を Casdoor のメールプロバイダーとして使用します。
 - [独自の HTTP API を通じてメールを送信する](https://casdoor.ai/ja/docs/provider/email/customHttp/): HTTP リクエストを受け付ける任意のメールサービスや Webhook に Casdoor を接続します。リクエストの内容は Custom HTTP Email プロバイダーで記述します。
 - [Azure Communication Services でメールを送信する](https://casdoor.ai/ja/docs/provider/email/azureACS/): Casdoor のメールプロバイダーとして Azure Communication Services (ACS) を使用します。
-- [Send email with Microsoft 365](https://casdoor.ai/ja/docs/provider/email/microsoft365/): Send the emails of Casdoor from a Microsoft 365 (Exchange Online) mailbox, signing in to SMTP with OAuth instead of a password.
+- [Microsoft 365 でメールを送信](https://casdoor.ai/ja/docs/provider/email/microsoft365/): Casdoor のメールを Microsoft 365 (Exchange Online) のメールボックスから送信します。SMTP へのサインインには、パスワードの代わりに OAuth を使用します。
 - [Brevo を使用してメールを送信する](https://casdoor.ai/ja/docs/provider/email/brevo/): Casdoor のメールプロバイダーとして Brevo (旧 Sendinblue) の SMTP リレーを使用します。
 - [MailHogでのテストメール](https://casdoor.ai/ja/docs/provider/email/mailhog/): テスト用のローカルSMTPサーバーであるMailHogでCasdoorのメールをキャッチします。
 - [Mailpit でメールをテストする](https://casdoor.ai/ja/docs/provider/email/mailpit/): ローカル SMTP サーバーである Mailpit で Casdoor のメールをキャッチします。

@@ -178,7 +178,7 @@
 - [Envie e-mails com Resend](https://casdoor.ai/pt/docs/provider/email/resend/): Use a API do Resend como o provedor de e-mail do Casdoor.
 - [Envie e-mails através da sua própria API HTTP](https://casdoor.ai/pt/docs/provider/email/customHttp/): Conecte o Casdoor a qualquer serviço de e-mail ou webhook que aceite uma requisição HTTP, descrevendo a requisição em um provedor Custom HTTP Email.
 - [Envio de e-mail com Azure Communication Services](https://casdoor.ai/pt/docs/provider/email/azureACS/): Use o Azure Communication Services (ACS) como provedor de e-mail do Casdoor.
-- [Send email with Microsoft 365](https://casdoor.ai/pt/docs/provider/email/microsoft365/): Send the emails of Casdoor from a Microsoft 365 (Exchange Online) mailbox, signing in to SMTP with OAuth instead of a password.
+- [Enviar e-mail com Microsoft 365](https://casdoor.ai/pt/docs/provider/email/microsoft365/): Envie os e-mails do Casdoor de uma caixa de correio do Microsoft 365 (Exchange Online), autenticando-se no SMTP via OAuth em vez de senha.
 - [Envio de e-mail com Brevo](https://casdoor.ai/pt/docs/provider/email/brevo/): Use o relay SMTP do Brevo (antigo Sendinblue) como provedor de e-mail do Casdoor.
 - [Testar e-mail com MailHog](https://casdoor.ai/pt/docs/provider/email/mailhog/): Capture os e-mails do Casdoor no MailHog, um servidor SMTP local para testes.
 - [Testar e-mail com Mailpit](https://casdoor.ai/pt/docs/provider/email/mailpit/): Capture os e-mails do Casdoor no Mailpit, um servidor SMTP local para testes.

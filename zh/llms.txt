@@ -85,7 +85,7 @@
 - [Connect Cursor to the Casdoor MCP server](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-cursor/): 通过 OAuth 2.0 将 Cursor 编辑器连接到 Casdoor MCP 服务器，以便 Cursor 的 AI 可以管理 Casdoor 中的应用和用户。
 - [将 ChatGPT 连接到 Casdoor MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-chatgpt/): 将 Casdoor MCP 服务器作为带有 OAuth 2.0 的自定义 MCP 服务器添加到 ChatGPT - ChatGPT Plugins 中的步骤、客户端 ID 元数据文档和动态客户端注册、重定向 URI、登录，以及为什么 ChatGPT 在工具调用前请求权限。
 - [连接 VS Code 到 Casdoor MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-vscode/): Connect GitHub Copilot in VS Code to the Casdoor MCP server, or to an MCP server behind the Casdoor MCP gateway, with OAuth 2.0 - the mcp.json entry, the client ID metadata document of VS Code, the redirect URIs, and sign-out.
-- [Connect DeepSeek Harness to Casdoor](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-deepseek-harness/): Sign DeepSeek Harness (dsh) in to Casdoor as an AI agent and give it the MCP servers of your organization through the Casdoor MCP gateway, with tool permissions and call records - set up from the web pages of Casdoor and DeepSeek Harness, without editing configuration files.
+- [将 DeepSeek Harness 连接到 Casdoor](https://casdoor.ai/zh/docs/how-to-connect/mcp/connect-deepseek-harness/): 以 AI 代理身份将 DeepSeek Harness (dsh) 登录到 Casdoor，并通过 Casdoor MCP 网关向其提供组织的 MCP 服务器，包括工具权限和调用记录 - 通过 Casdoor 和 DeepSeek Harness 的网页进行设置，无需编辑配置文件。
 - [设置 Face ID 登录](https://casdoor.ai/zh/docs/how-to-connect/face-id/): 允许用户在 Casdoor 账户中注册面部数据，并通过在登录页面扫描面部进行登录。
 - [设置 WebAuthn 登录](https://casdoor.ai/zh/docs/how-to-connect/webauthn/): 让用户通过 WebAuthn 使用通行密钥、指纹或面部识别、Windows Hello 或安全密钥登录 Casdoor。
 

@@ -85,7 +85,7 @@
 - [Cursor を Casdoor MCP サーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-cursor/): OAuth 2.0 を使用して Cursor エディターを Casdoor MCP サーバーに接続し、Cursor の AI が Casdoor のアプリケーションとユーザーを管理できるようにします。
 - [ChatGPTをCasdoor MCPサーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-chatgpt/): OAuth 2.0を使用して、Casdoor MCPサーバーをChatGPTのカスタムMCPサーバーとして追加します。手順には、ChatGPTプラグイン、クライアントIDメタデータドキュメント、動的クライアント登録、リダイレクトURI、サインイン、およびChatGPTがツール呼び出しの前に許可を求める理由が含まれます。
 - [VS CodeをCasdoor MCPサーバーに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-vscode/): OAuth 2.0を使用して、GitHub Copilot in VS CodeをCasdoor MCPサーバーまたはCasdoor MCPゲートウェイの裏側にあるMCPサーバーに接続します。mcp.jsonのエントリ、VS CodeのクライアントIDメタデータドキュメント、リダイレクトURI、およびサインアウトについて説明します。
-- [Connect DeepSeek Harness to Casdoor](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-deepseek-harness/): Sign DeepSeek Harness (dsh) in to Casdoor as an AI agent and give it the MCP servers of your organization through the Casdoor MCP gateway, with tool permissions and call records - set up from the web pages of Casdoor and DeepSeek Harness, without editing configuration files.
+- [DeepSeek HarnessをCasdoorに接続する](https://casdoor.ai/ja/docs/how-to-connect/mcp/connect-deepseek-harness/): AIエージェントとしてDeepSeek Harness (dsh) をCasdoorにサインインし、組織のMCPサーバーをCasdoor MCPゲートウェイ経由でツール権限とコール記録付きで使用可能にします。設定ファイルの編集は不要で、CasdoorとDeepSeek HarnessのWebページからセットアップできます。
 - [Face ID サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/face-id/): ユーザーが Casdoor アカウントで顔を登録し、サインインページでスキャンしてサインインできるようにします。
 - [WebAuthn サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/webauthn/): パスキー、指紋や顔認識、Windows Hello、またはセキュリティキーを通じて WebAuthn で Casdoor にサインインできるようにします。
 

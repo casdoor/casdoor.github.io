@@ -270,6 +270,7 @@
 ## Multi-factor authentication
 
 - [Multi-factor authentication (MFA / 2FA)](https://casdoor.ai/docs/user/multi-factor-authentication/): Turn on multi-factor authentication (MFA) or two-factor authentication (2FA) in Casdoor with a TOTP authenticator app, SMS codes, email codes or RADIUS, plus recovery codes and per-organization MFA requirements.
+- [Step-up MFA](https://casdoor.ai/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
 - [Use the Casdoor Authenticator app](https://casdoor.ai/docs/how-to-connect/totp-authenticator-app/): Install Casdoor Authenticator, an open-source TOTP app for Android and iOS, connect it to Casdoor, and import accounts from other authenticator apps.
 - [Push notification](https://casdoor.ai/docs/provider/mfa/push/): Send MFA verification codes through push notification services such as Duo and Pushover, using Casdoor notification providers.
 - [RADIUS MFA](https://casdoor.ai/docs/provider/mfa/radius/): Use an external RADIUS server as an MFA provider.

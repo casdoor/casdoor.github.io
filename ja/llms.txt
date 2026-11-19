@@ -270,6 +270,7 @@
 ## 多要素認証
 
 - [多要素認証 (MFA / 2FA)](https://casdoor.ai/ja/docs/user/multi-factor-authentication/): Casdoor で TOTP 認証アプリ、SMS コード、メールコード、または RADIUS を使って多要素認証 (MFA) または二要素認証 (2FA) を有効にし、回復コードや組織ごとの MFA 要件を設定します。
+- [Step-up MFA](https://casdoor.ai/ja/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
 - [Casdoor Authenticator アプリの使用](https://casdoor.ai/ja/docs/how-to-connect/totp-authenticator-app/): Android および iOS 向けのオープンソース TOTP アプリである Casdoor Authenticator をインストールし、Casdoor に接続して、他の認証アプリからアカウントをインポートする方法について説明します。
 - [プッシュ通知](https://casdoor.ai/ja/docs/provider/mfa/push/): Casdoor の通知プロバイダーを使用して、Duo や Pushover などのプッシュ通知サービスを通じて MFA 認証コードを送信します。
 - [RADIUS MFA](https://casdoor.ai/ja/docs/provider/mfa/radius/): 外部 RADIUS サーバーを MFA プロバイダーとして使用します。

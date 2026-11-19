@@ -270,6 +270,7 @@
 ## 多因素认证
 
 - [多因素认证 (MFA / 2FA)](https://casdoor.ai/zh/docs/user/multi-factor-authentication/): 在 Casdoor 中通过 TOTP 验证器应用、短信验证码、电子邮件验证码或 RADIUS 开启多因素认证 (MFA) 或双因素认证 (2FA)，此外还包括恢复代码和按组织设置的 MFA 要求。
+- [Step-up MFA](https://casdoor.ai/zh/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
 - [使用 Casdoor Authenticator 应用](https://casdoor.ai/zh/docs/how-to-connect/totp-authenticator-app/): 安装 Casdoor Authenticator，这是一款适用于 Android 和 iOS 的开源 TOTP 应用，将其连接到 Casdoor，并从其他身份验证器应用导入账户。
 - [推送通知](https://casdoor.ai/zh/docs/provider/mfa/push/): 使用 Casdoor 通知提供商，通过 Duo、Pushover 等推送服务发送 MFA 验证码。
 - [RADIUS MFA](https://casdoor.ai/zh/docs/provider/mfa/radius/): 把外部 RADIUS 服务器用作 MFA 提供商。

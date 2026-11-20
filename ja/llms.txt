@@ -76,6 +76,7 @@
 - [MCP サーバー概要](https://casdoor.ai/ja/docs/how-to-connect/mcp/overview/): Casdoor exposes its management API as a Model Context Protocol (MCP) server at /api/mcp, and it can register, browse, and scan for external MCP servers.
 - [MCP 認証](https://casdoor.ai/ja/docs/how-to-connect/mcp/authentication/): MCP クライアントが Casdoor MCP サーバーの OAuth 2.0 要件を検出する方法と、リクエストを認証するための手段。
 - [MCPツールリファレンス](https://casdoor.ai/ja/docs/how-to-connect/mcp/tools/): アプリケーションとユーザーを管理するためのCasdoor MCPサーバーのツール、それらのリスト方法と呼び出し方法、および結果のフォーマットについて説明します。
+- [Let AI agents manage Casdoor](https://casdoor.ai/ja/docs/how-to-connect/mcp/manage-with-agents/): Let an AI agent such as Claude Code or Cursor create applications, connect GitHub and Google sign-in, find why users can't sign in and change providers, roles and permissions through the Casdoor MCP server, with dry runs, change records, approval and rollback.
 - [MCPの認可とスコープ](https://casdoor.ai/ja/docs/how-to-connect/mcp/authorization/): Casdoor MCPサーバーのどのツールをトークンが呼び出せるかを制御する OAuth 2.0 スコープ、スコープのリクエスト方法、および独自のMCPサーバーでスコープを定義する方法について説明します。
 - [Python から MCP サーバーを呼び出す](https://casdoor.ai/ja/docs/how-to-connect/mcp/integration/): スコープ付きアクセストークンを取得し、Casdoor MCP サーバーとのセッションを初期化し、ツールを呼び出す Python のサンプルです。
 - [MCP エラー処理](https://casdoor.ai/ja/docs/how-to-connect/mcp/error-handling/): Casdoor MCP サーバーの JSON-RPC エラーコードとレスポンス例。

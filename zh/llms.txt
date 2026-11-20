@@ -76,6 +76,7 @@
 - [MCP服务器概览](https://casdoor.ai/zh/docs/how-to-connect/mcp/overview/): Casdoor 将其管理 API 作为 Model Context Protocol (MCP) 服务器暴露在 /api/mcp，并且可以注册、浏览和扫描外部 MCP 服务器。
 - [MCP 认证](https://casdoor.ai/zh/docs/how-to-connect/mcp/authentication/): MCP 客户端如何发现 Casdoor MCP 服务器的 OAuth 2.0 要求，以及请求的认证方式。
 - [MCP工具参考](https://casdoor.ai/zh/docs/how-to-connect/mcp/tools/): 用于管理应用和用户的 Casdoor MCP 服务器工具，如何列出和调用它们，以及结果的格式。
+- [Let AI agents manage Casdoor](https://casdoor.ai/zh/docs/how-to-connect/mcp/manage-with-agents/): Let an AI agent such as Claude Code or Cursor create applications, connect GitHub and Google sign-in, find why users can't sign in and change providers, roles and permissions through the Casdoor MCP server, with dry runs, change records, approval and rollback.
 - [MCP授权和范围](https://casdoor.ai/zh/docs/how-to-connect/mcp/authorization/): 控制令牌可以调用 Casdoor MCP 服务器哪些工具的 OAuth 2.0 范围、如何请求这些范围，以及如何为您自己的 MCP 服务器定义范围。
 - [从 Python 调用 MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/integration/): 一个 Python 示例，演示如何获取带有 scopes 的 access token，初始化与 Casdoor MCP 服务器的会话，并调用工具。
 - [MCP错误处理](https://casdoor.ai/zh/docs/how-to-connect/mcp/error-handling/): Casdoor MCP 服务器的 JSON-RPC 错误代码及示例响应。
@@ -270,7 +271,7 @@
 ## 多因素认证
 
 - [多因素认证 (MFA / 2FA)](https://casdoor.ai/zh/docs/user/multi-factor-authentication/): 在 Casdoor 中通过 TOTP 验证器应用、短信验证码、电子邮件验证码或 RADIUS 开启多因素认证 (MFA) 或双因素认证 (2FA)，此外还包括恢复代码和按组织设置的 MFA 要求。
-- [二次验证](https://casdoor.ai/zh/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
+- [二次验证](https://casdoor.ai/zh/docs/user/step-up-mfa/): 在付款、审批或其他敏感操作之前，要求已登录用户提供其在 Casdoor 中已启用的 MFA 因子的新代码，而无需重新登录，并获取一次性证明令牌。
 - [使用 Casdoor Authenticator 应用](https://casdoor.ai/zh/docs/how-to-connect/totp-authenticator-app/): 安装 Casdoor Authenticator，这是一款适用于 Android 和 iOS 的开源 TOTP 应用，将其连接到 Casdoor，并从其他身份验证器应用导入账户。
 - [推送通知](https://casdoor.ai/zh/docs/provider/mfa/push/): 使用 Casdoor 通知提供商，通过 Duo、Pushover 等推送服务发送 MFA 验证码。
 - [RADIUS MFA](https://casdoor.ai/zh/docs/provider/mfa/radius/): 把外部 RADIUS 服务器用作 MFA 提供商。

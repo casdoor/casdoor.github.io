@@ -270,7 +270,7 @@
 ## Mehrfaktorauthentifizierung
 
 - [Multi-Faktor-Authentifizierung (MFA / 2FA)](https://casdoor.ai/de/docs/user/multi-factor-authentication/): Aktivieren Sie Multi-Faktor-Authentifizierung (MFA) oder Zwei-Faktor-Authentifizierung (2FA) in Casdoor mit einer TOTP-Authenticator-App, SMS-Codes, E-Mail-Codes oder RADIUS, sowie Wiederherstellungscodes und organisationsbezogenen MFA-Anforderungen.
-- [Step-up MFA](https://casdoor.ai/de/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
+- [Step-up-MFA](https://casdoor.ai/de/docs/user/step-up-mfa/): Fordern Sie einen angemeldeten Benutzer vor einer Zahlung, einer Genehmigung oder einer anderen sensiblen Aktion auf, einen frischen Code des MFA-Faktors einzugeben, den er in Casdoor bereits aktiviert hat – ohne erneute Anmeldung – und erhalten Sie einen einmalig gültigen Nachweis-Token.
 - [Die Casdoor Authenticator-App verwenden](https://casdoor.ai/de/docs/how-to-connect/totp-authenticator-app/): Installieren Sie die Casdoor Authenticator, eine Open-Source-TOTP-App für Android und iOS, verbinden Sie sie mit Casdoor und importieren Sie Konten von anderen Authenticator-Apps.
 - [Push-Benachrichtigung](https://casdoor.ai/de/docs/provider/mfa/push/): Senden Sie MFA-Verifizierungscodes über Push-Benachrichtigungsdienste wie Duo und Pushover unter Verwendung von Casdoor-Benachrichtigungsanbietern.
 - [RADIUS-MFA](https://casdoor.ai/de/docs/provider/mfa/radius/): Verwenden Sie einen externen RADIUS-Server als MFA-Anbieter.

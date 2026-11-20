@@ -270,7 +270,7 @@
 ## Багатофакторна автентифікація
 
 - [Багатофакторна автентифікація (MFA / 2FA)](https://casdoor.ai/uk/docs/user/multi-factor-authentication/): Увімкніть багатофакторну автентифікацію (MFA) або двофакторну автентифікацію (2FA) у Casdoor за допомогою додатка TOTP, кодів SMS, кодів електронної пошти або RADIUS, а також кодів відновлення та вимог MFA для кожної організації.
-- [Step-up MFA](https://casdoor.ai/uk/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
+- [Step-up MFA](https://casdoor.ai/uk/docs/user/step-up-mfa/): Запитайте у користувача, який уже увійшов у систему, свіжий код фактора MFA, який він уже налаштував у Casdoor, перед платежем, затвердженням чи іншою чутливою дією, без повторного входу, і отримайте одноразовий доказовий токен.
 - [Використання додатка Casdoor Authenticator](https://casdoor.ai/uk/docs/how-to-connect/totp-authenticator-app/): Встановіть Casdoor Authenticator — додаток із відкритим кодом для TOTP на Android і iOS, підключіть його до Casdoor та імпортуйте акаунти з інших додатків автентифікації.
 - [Push-сповіщення](https://casdoor.ai/uk/docs/provider/mfa/push/): Надсилайте коди верифікації MFA через сервіси push-сповіщень, такі як Duo та Pushover, використовуючи провайдери сповіщень Casdoor.
 - [RADIUS MFA](https://casdoor.ai/uk/docs/provider/mfa/radius/): Використання зовнішнього сервера RADIUS як постачальника MFA.

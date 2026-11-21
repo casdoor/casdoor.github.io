@@ -76,7 +76,7 @@
 - [MCP サーバー概要](https://casdoor.ai/ja/docs/how-to-connect/mcp/overview/): Casdoor exposes its management API as a Model Context Protocol (MCP) server at /api/mcp, and it can register, browse, and scan for external MCP servers.
 - [MCP 認証](https://casdoor.ai/ja/docs/how-to-connect/mcp/authentication/): MCP クライアントが Casdoor MCP サーバーの OAuth 2.0 要件を検出する方法と、リクエストを認証するための手段。
 - [MCPツールリファレンス](https://casdoor.ai/ja/docs/how-to-connect/mcp/tools/): アプリケーションとユーザーを管理するためのCasdoor MCPサーバーのツール、それらのリスト方法と呼び出し方法、および結果のフォーマットについて説明します。
-- [Let AI agents manage Casdoor](https://casdoor.ai/ja/docs/how-to-connect/mcp/manage-with-agents/): Let an AI agent such as Claude Code or Cursor create applications, connect GitHub and Google sign-in, find why users can't sign in and change providers, roles and permissions through the Casdoor MCP server, with dry runs, change records, approval and rollback.
+- [AI エージェントによる Casdoor の管理](https://casdoor.ai/ja/docs/how-to-connect/mcp/manage-with-agents/): Claude Code や Cursor などの AI エージェントを使用して、アプリケーションの作成、GitHub および Google サインインの接続、ユーザーがサインインできない原因の調査、Casdoor MCP サーバー経由でのプロバイダー、ロール、権限の変更が可能になります。ドライラン、変更記録、承認、ロールバックに対応しています。
 - [MCPの認可とスコープ](https://casdoor.ai/ja/docs/how-to-connect/mcp/authorization/): Casdoor MCPサーバーのどのツールをトークンが呼び出せるかを制御する OAuth 2.0 スコープ、スコープのリクエスト方法、および独自のMCPサーバーでスコープを定義する方法について説明します。
 - [Python から MCP サーバーを呼び出す](https://casdoor.ai/ja/docs/how-to-connect/mcp/integration/): スコープ付きアクセストークンを取得し、Casdoor MCP サーバーとのセッションを初期化し、ツールを呼び出す Python のサンプルです。
 - [MCP エラー処理](https://casdoor.ai/ja/docs/how-to-connect/mcp/error-handling/): Casdoor MCP サーバーの JSON-RPC エラーコードとレスポンス例。
@@ -181,6 +181,8 @@
 - [独自の HTTP API を通じてメールを送信する](https://casdoor.ai/ja/docs/provider/email/customHttp/): HTTP リクエストを受け付ける任意のメールサービスや Webhook に Casdoor を接続します。リクエストの内容は Custom HTTP Email プロバイダーで記述します。
 - [Azure Communication Services でメールを送信する](https://casdoor.ai/ja/docs/provider/email/azureACS/): Casdoor のメールプロバイダーとして Azure Communication Services (ACS) を使用します。
 - [Microsoft 365 でメールを送信](https://casdoor.ai/ja/docs/provider/email/microsoft365/): Casdoor のメールを Microsoft 365 (Exchange Online) のメールボックスから送信します。SMTP へのサインインには、パスワードの代わりに OAuth を使用します。
+- [Send email with Microsoft Graph](https://casdoor.ai/ja/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
+- [Send email with Gmail](https://casdoor.ai/ja/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
 - [Brevo を使用してメールを送信する](https://casdoor.ai/ja/docs/provider/email/brevo/): Casdoor のメールプロバイダーとして Brevo (旧 Sendinblue) の SMTP リレーを使用します。
 - [MailHogでのテストメール](https://casdoor.ai/ja/docs/provider/email/mailhog/): テスト用のローカルSMTPサーバーであるMailHogでCasdoorのメールをキャッチします。
 - [Mailpit でメールをテストする](https://casdoor.ai/ja/docs/provider/email/mailpit/): ローカル SMTP サーバーである Mailpit で Casdoor のメールをキャッチします。

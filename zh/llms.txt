@@ -76,7 +76,7 @@
 - [MCP服务器概览](https://casdoor.ai/zh/docs/how-to-connect/mcp/overview/): Casdoor 将其管理 API 作为 Model Context Protocol (MCP) 服务器暴露在 /api/mcp，并且可以注册、浏览和扫描外部 MCP 服务器。
 - [MCP 认证](https://casdoor.ai/zh/docs/how-to-connect/mcp/authentication/): MCP 客户端如何发现 Casdoor MCP 服务器的 OAuth 2.0 要求，以及请求的认证方式。
 - [MCP工具参考](https://casdoor.ai/zh/docs/how-to-connect/mcp/tools/): 用于管理应用和用户的 Casdoor MCP 服务器工具，如何列出和调用它们，以及结果的格式。
-- [Let AI agents manage Casdoor](https://casdoor.ai/zh/docs/how-to-connect/mcp/manage-with-agents/): Let an AI agent such as Claude Code or Cursor create applications, connect GitHub and Google sign-in, find why users can't sign in and change providers, roles and permissions through the Casdoor MCP server, with dry runs, change records, approval and rollback.
+- [让 AI 代理管理 Casdoor](https://casdoor.ai/zh/docs/how-to-connect/mcp/manage-with-agents/): 通过 Casdoor MCP 服务器，让 Claude Code 或 Cursor 等 AI 代理创建应用、连接 GitHub 和 Google 登录、排查用户无法登录的原因，并更改提供商、角色和权限，支持试运行、变更记录、审批和回滚。
 - [MCP授权和范围](https://casdoor.ai/zh/docs/how-to-connect/mcp/authorization/): 控制令牌可以调用 Casdoor MCP 服务器哪些工具的 OAuth 2.0 范围、如何请求这些范围，以及如何为您自己的 MCP 服务器定义范围。
 - [从 Python 调用 MCP 服务器](https://casdoor.ai/zh/docs/how-to-connect/mcp/integration/): 一个 Python 示例，演示如何获取带有 scopes 的 access token，初始化与 Casdoor MCP 服务器的会话，并调用工具。
 - [MCP错误处理](https://casdoor.ai/zh/docs/how-to-connect/mcp/error-handling/): Casdoor MCP 服务器的 JSON-RPC 错误代码及示例响应。
@@ -181,6 +181,8 @@
 - [通过您自己的 HTTP API 发送邮件](https://casdoor.ai/zh/docs/provider/email/customHttp/): 通过描述请求的 Custom HTTP Email 提供商，将 Casdoor 连接到任何接受 HTTP 请求的电子邮件服务或 webhook。
 - [使用 Azure Communication Services 发送邮件](https://casdoor.ai/zh/docs/provider/email/azureACS/): 将 Azure Communication Services (ACS) 用作 Casdoor 的邮件提供商。
 - [使用 Microsoft 365 发送邮件](https://casdoor.ai/zh/docs/provider/email/microsoft365/): 通过 Microsoft 365 (Exchange Online) 邮箱发送 Casdoor 的电子邮件，并使用 OAuth 而非密码登录 SMTP。
+- [Send email with Microsoft Graph](https://casdoor.ai/zh/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
+- [Send email with Gmail](https://casdoor.ai/zh/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
 - [使用 Brevo 发送邮件](https://casdoor.ai/zh/docs/provider/email/brevo/): 将 Brevo（原 Sendinblue）的 SMTP 中继用作 Casdoor 的邮件提供商。
 - [使用 MailHog 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailhog/): 在 MailHog（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。
 - [使用 Mailpit 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailpit/): 在 Mailpit（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。

@@ -181,8 +181,8 @@
 - [独自の HTTP API を通じてメールを送信する](https://casdoor.ai/ja/docs/provider/email/customHttp/): HTTP リクエストを受け付ける任意のメールサービスや Webhook に Casdoor を接続します。リクエストの内容は Custom HTTP Email プロバイダーで記述します。
 - [Azure Communication Services でメールを送信する](https://casdoor.ai/ja/docs/provider/email/azureACS/): Casdoor のメールプロバイダーとして Azure Communication Services (ACS) を使用します。
 - [Microsoft 365 でメールを送信](https://casdoor.ai/ja/docs/provider/email/microsoft365/): Casdoor のメールを Microsoft 365 (Exchange Online) のメールボックスから送信します。SMTP へのサインインには、パスワードの代わりに OAuth を使用します。
-- [Send email with Microsoft Graph](https://casdoor.ai/ja/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
-- [Send email with Gmail](https://casdoor.ai/ja/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
+- [Microsoft Graph でメールを送信する](https://casdoor.ai/ja/docs/provider/email/microsoft-graph/): SMTP AUTH が無効になっているテナント向けに、Microsoft Graph の sendMail API を介して Microsoft 365 のメールボックスから Casdoor のメールを送信します。
+- [Gmail でメールを送信する](https://casdoor.ai/ja/docs/provider/email/gmail/): アプリパスワードではなく OAuth 2.0 を使用して SMTP にサインインし、Gmail または Google Workspace から Casdoor のメールを送信します。
 - [Brevo を使用してメールを送信する](https://casdoor.ai/ja/docs/provider/email/brevo/): Casdoor のメールプロバイダーとして Brevo (旧 Sendinblue) の SMTP リレーを使用します。
 - [MailHogでのテストメール](https://casdoor.ai/ja/docs/provider/email/mailhog/): テスト用のローカルSMTPサーバーであるMailHogでCasdoorのメールをキャッチします。
 - [Mailpit でメールをテストする](https://casdoor.ai/ja/docs/provider/email/mailpit/): ローカル SMTP サーバーである Mailpit で Casdoor のメールをキャッチします。

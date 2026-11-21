@@ -181,8 +181,8 @@
 - [E-Mails über Ihre eigene HTTP-API senden](https://casdoor.ai/de/docs/provider/email/customHttp/): Verbinden Sie Casdoor mit jedem E-Mail-Dienst oder Webhook, der eine HTTP-Anfrage akzeptiert, indem Sie die Anfrage in einem Custom HTTP Email Provider beschreiben.
 - [E-Mails mit Azure Communication Services senden](https://casdoor.ai/de/docs/provider/email/azureACS/): Verwenden Sie Azure Communication Services (ACS) als E-Mail-Anbieter für Casdoor.
 - [E-Mails mit Microsoft 365 senden](https://casdoor.ai/de/docs/provider/email/microsoft365/): Senden Sie die E-Mails von Casdoor über ein Microsoft 365 (Exchange Online)-Postfach und melden Sie sich bei SMTP über OAuth anstelle eines Passworts an.
-- [Send email with Microsoft Graph](https://casdoor.ai/de/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
-- [Send email with Gmail](https://casdoor.ai/de/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
+- [E-Mails mit Microsoft Graph senden](https://casdoor.ai/de/docs/provider/email/microsoft-graph/): Senden Sie die E-Mails von Casdoor über ein Microsoft 365-Postfach durch die sendMail-API von Microsoft Graph, für Mandanten, bei denen SMTP AUTH deaktiviert ist.
+- [E-Mails mit Gmail senden](https://casdoor.ai/de/docs/provider/email/gmail/): Senden Sie die E-Mails von Casdoor über Gmail oder Google Workspace und melden Sie sich bei SMTP mit OAuth 2.0 anstelle eines App-Passworts an.
 - [E-Mails mit Brevo senden](https://casdoor.ai/de/docs/provider/email/brevo/): Verwenden Sie das SMTP-Relay von Brevo (ehemals Sendinblue) als E-Mail-Anbieter für Casdoor.
 - [Test-E-Mail mit MailHog](https://casdoor.ai/de/docs/provider/email/mailhog/): Fangen Sie die E-Mails von Casdoor in MailHog ab, einem lokalen SMTP-Server für Tests.
 - [E-Mail mit Mailpit testen](https://casdoor.ai/de/docs/provider/email/mailpit/): Fangen Sie die E-Mails von Casdoor in Mailpit ab, einem lokalen SMTP-Server für Tests.

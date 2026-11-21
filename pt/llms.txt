@@ -181,8 +181,8 @@
 - [Envie e-mails através da sua própria API HTTP](https://casdoor.ai/pt/docs/provider/email/customHttp/): Conecte o Casdoor a qualquer serviço de e-mail ou webhook que aceite uma requisição HTTP, descrevendo a requisição em um provedor Custom HTTP Email.
 - [Envio de e-mail com Azure Communication Services](https://casdoor.ai/pt/docs/provider/email/azureACS/): Use o Azure Communication Services (ACS) como provedor de e-mail do Casdoor.
 - [Enviar e-mail com Microsoft 365](https://casdoor.ai/pt/docs/provider/email/microsoft365/): Envie os e-mails do Casdoor de uma caixa de correio do Microsoft 365 (Exchange Online), autenticando-se no SMTP via OAuth em vez de senha.
-- [Send email with Microsoft Graph](https://casdoor.ai/pt/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
-- [Send email with Gmail](https://casdoor.ai/pt/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
+- [Send email with Microsoft Graph](https://casdoor.ai/pt/docs/provider/email/microsoft-graph/): Envie os e-mails do Casdoor a partir de uma caixa de correio do Microsoft 365 através da API sendMail do Microsoft Graph, para tenants onde o SMTP AUTH está desativado.
+- [Send email with Gmail](https://casdoor.ai/pt/docs/provider/email/gmail/): Envie os e-mails do Casdoor pelo Gmail ou Google Workspace, autenticando no SMTP com OAuth 2.0 em vez de usar uma senha de aplicativo.
 - [Envio de e-mail com Brevo](https://casdoor.ai/pt/docs/provider/email/brevo/): Use o relay SMTP do Brevo (antigo Sendinblue) como provedor de e-mail do Casdoor.
 - [Testar e-mail com MailHog](https://casdoor.ai/pt/docs/provider/email/mailhog/): Capture os e-mails do Casdoor no MailHog, um servidor SMTP local para testes.
 - [Testar e-mail com Mailpit](https://casdoor.ai/pt/docs/provider/email/mailpit/): Capture os e-mails do Casdoor no Mailpit, um servidor SMTP local para testes.

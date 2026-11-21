@@ -181,8 +181,8 @@
 - [通过您自己的 HTTP API 发送邮件](https://casdoor.ai/zh/docs/provider/email/customHttp/): 通过描述请求的 Custom HTTP Email 提供商，将 Casdoor 连接到任何接受 HTTP 请求的电子邮件服务或 webhook。
 - [使用 Azure Communication Services 发送邮件](https://casdoor.ai/zh/docs/provider/email/azureACS/): 将 Azure Communication Services (ACS) 用作 Casdoor 的邮件提供商。
 - [使用 Microsoft 365 发送邮件](https://casdoor.ai/zh/docs/provider/email/microsoft365/): 通过 Microsoft 365 (Exchange Online) 邮箱发送 Casdoor 的电子邮件，并使用 OAuth 而非密码登录 SMTP。
-- [Send email with Microsoft Graph](https://casdoor.ai/zh/docs/provider/email/microsoft-graph/): Send the emails of Casdoor from a Microsoft 365 mailbox through the sendMail API of Microsoft Graph, for tenants where SMTP AUTH is turned off.
-- [Send email with Gmail](https://casdoor.ai/zh/docs/provider/email/gmail/): Send the emails of Casdoor from Gmail or Google Workspace, signing in to SMTP with OAuth 2.0 instead of an app password.
+- [使用 Microsoft Graph 发送邮件](https://casdoor.ai/zh/docs/provider/email/microsoft-graph/): 通过 Microsoft Graph 的 sendMail API 从 Microsoft 365 邮箱发送 Casdoor 的邮件，适用于已关闭 SMTP AUTH 的租户。
+- [使用 Gmail 发送邮件](https://casdoor.ai/zh/docs/provider/email/gmail/): 通过 Gmail 或 Google Workspace 发送 Casdoor 的邮件，使用 OAuth 2.0 登录 SMTP，而不是应用专用密码。
 - [使用 Brevo 发送邮件](https://casdoor.ai/zh/docs/provider/email/brevo/): 将 Brevo（原 Sendinblue）的 SMTP 中继用作 Casdoor 的邮件提供商。
 - [使用 MailHog 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailhog/): 在 MailHog（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。
 - [使用 Mailpit 测试电子邮件](https://casdoor.ai/zh/docs/provider/email/mailpit/): 在 Mailpit（用于测试的本地 SMTP 服务器）中捕获 Casdoor 发送的电子邮件。

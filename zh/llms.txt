@@ -128,6 +128,7 @@
 ## 集成市场
 
 - [集成市场](https://casdoor.ai/zh/docs/marketplace/overview/): 一键从 Casdoor Marketplace（应用市场）安装应用集成、身份提供商模板和登录主题，并干净地卸载它们。
+- [可用集成](https://casdoor.ai/zh/docs/marketplace/catalog/): Casdoor Marketplace 中按类型分类的所有集成：用于自托管应用的单点登录、身份提供商模板、操作和登录主题，其中部分需要商业版或企业版许可证。
 
 ## MCP 授权
 

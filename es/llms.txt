@@ -128,6 +128,7 @@
 ## Marketplace
 
 - [Marketplace](https://casdoor.ai/es/docs/marketplace/overview/): Instale integraciones de aplicaciones, plantillas de proveedores de identidad y temas de inicio de sesión desde Casdoor Marketplace con un solo clic, y desinstálelos limpiamente.
+- [Integraciones disponibles](https://casdoor.ai/es/docs/marketplace/catalog/): Cada integración en el Casdoor Marketplace por tipo: inicio de sesión único (SSO) para aplicaciones autoalojadas, plantillas de proveedores de identidad, acciones y temas de inicio de sesión, junto con las que requieren una licencia Commercial o Enterprise.
 
 ## Autorización MCP
 

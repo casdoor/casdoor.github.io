@@ -128,6 +128,7 @@
 ## Маркетплейс
 
 - [Маркетплейс](https://casdoor.ai/uk/docs/marketplace/overview/): Встановлюйте інтеграції додатків, шаблони постачальників ідентичності та теми входу з маркетплейсу Casdoor одним кліком, а також видаляйте їх без залишку.
+- [Available integrations](https://casdoor.ai/uk/docs/marketplace/catalog/): Every integration in the Casdoor Marketplace by type: single sign-on for self-hosted apps, identity provider templates, actions and sign-in themes, with the ones that need a Commercial or Enterprise license.
 
 ## Авторизація MCP
 

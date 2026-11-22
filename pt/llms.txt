@@ -128,6 +128,7 @@
 ## Marketplace
 
 - [Marketplace](https://casdoor.ai/pt/docs/marketplace/overview/): Instale integrações de aplicativos, modelos de provedores de identidade e temas de login do Casdoor Marketplace em um clique e desinstale-os de forma limpa.
+- [Available integrations](https://casdoor.ai/pt/docs/marketplace/catalog/): Every integration in the Casdoor Marketplace by type: single sign-on for self-hosted apps, identity provider templates, actions and sign-in themes, with the ones that need a Commercial or Enterprise license.
 
 ## Autorização MCP
 

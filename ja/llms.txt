@@ -62,7 +62,7 @@
 - [Chrome拡張機能にユーザーをサインインさせる](https://casdoor.ai/ja/docs/how-to-connect/chrome-extension/): Chrome Identity APIとOAuth 2.0認可コードフローを使用して、Chrome拡張機能にCasdoorサインインを追加します。
 - [Next.js アプリケーションへのユーザーサインイン](https://casdoor.ai/ja/docs/how-to-connect/nextjs/): casdoor-js-sdk を使用して Next.js アプリケーションに Casdoor サインインを追加し、Next.js ミドルウェアでルートを保護します。
 - [Nuxt アプリケーションへのユーザーサインイン](https://casdoor.ai/ja/docs/how-to-connect/nuxt/): casdoor-js-sdk を使用して Nuxt アプリケーションに Casdoor サインインを追加し、Nuxt ミドルウェアでルートを保護します。
-- [OAuth 2.0](https://casdoor.ai/ja/docs/how-to-connect/oauth/): Casdoor の OAuth 2.0 エンドポイントのリファレンス - サポートされているすべてのグラントタイプ、ハイブリッドフローとレスポンスタイプ、PKCE、リソースインジケーター、連合認証資格情報、DPoP、トークンイントロスペクション、および UserInfo エンドポイントについて説明します。
+- [OAuth 2.0](https://casdoor.ai/ja/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, PAR, CIBA, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
 - [デバイスの電話番号によるサインイン（ワンクリックログイン）](https://casdoor.ai/ja/docs/how-to-connect/mobile-one-click/): Alibaba Cloud PNVS のワンクリックログインを使用して、SMSコードなしでデバイスの電話番号によるネイティブアプリへのユーザーのサインインまたはサインアップを可能にします。
 - [ゲストとしてユーザーをサインインさせる](https://casdoor.ai/ja/docs/how-to-connect/guest-auth/): ユーザー名やパスワードのない一時的なユーザーを作成し、後で通常のユーザーに変換します。
 - [Kerberos サインインの設定](https://casdoor.ai/ja/docs/how-to-connect/kerberos/): ドメインに参加したマシンのユーザーが資格情報を入力せずに Casdoor にサインインできるように、Kerberos/SPNEGO (統合 Windows 認証) を設定します。

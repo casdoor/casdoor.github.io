@@ -62,7 +62,7 @@
 - [在 Chrome 扩展中登录用户](https://casdoor.ai/zh/docs/how-to-connect/chrome-extension/): 使用 Chrome Identity API 和 OAuth 2.0 授权码流程，为 Chrome 扩展添加 Casdoor 登录功能。
 - [将用户登录添加到 Next.js 应用](https://casdoor.ai/zh/docs/how-to-connect/nextjs/): 使用 casdoor-js-sdk 为 Next.js 应用添加 Casdoor 登录功能，并使用 Next.js 中间件保护路由。
 - [在 Nuxt 应用中实现用户登录](https://casdoor.ai/zh/docs/how-to-connect/nuxt/): 使用 casdoor-js-sdk 为 Nuxt 应用添加 Casdoor 登录功能，并使用 Nuxt 中间件保护路由。
-- [OAuth 2.0](https://casdoor.ai/zh/docs/how-to-connect/oauth/): Casdoor OAuth 2.0 端点参考 - 包括所有支持的授权类型、混合流程和响应模式、PKCE、资源指示器、联邦凭据、DPoP、令牌内省以及 UserInfo 端点。
+- [OAuth 2.0](https://casdoor.ai/zh/docs/how-to-connect/oauth/): Reference for the OAuth 2.0 endpoints of Casdoor - every supported grant type, the hybrid flow and response modes, PKCE, PAR, CIBA, resource indicators, federated credentials, DPoP, token introspection, and the UserInfo endpoint.
 - [使用设备手机号登录（一键登录）](https://casdoor.ai/zh/docs/how-to-connect/mobile-one-click/): 让原生应用通过阿里云 PNVS 的一键登录功能，使用设备手机号让用户登录或注册，无需短信验证码。
 - [以访客身份登录用户](https://casdoor.ai/zh/docs/how-to-connect/guest-auth/): 创建没有用户名或密码的临时用户，并在之后将其转换为普通用户。
 - [设置 Kerberos 登录](https://casdoor.ai/zh/docs/how-to-connect/kerberos/): 配置 Kerberos/SPNEGO（集成 Windows 身份验证），使域加入计算机上的用户无需输入凭据即可登录到 Casdoor。

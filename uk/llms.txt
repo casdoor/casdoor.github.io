@@ -128,7 +128,7 @@
 ## Маркетплейс
 
 - [Маркетплейс](https://casdoor.ai/uk/docs/marketplace/overview/): Встановлюйте інтеграції додатків, шаблони постачальників ідентичності та теми входу з маркетплейсу Casdoor одним кліком, а також видаляйте їх без залишку.
-- [Available integrations](https://casdoor.ai/uk/docs/marketplace/catalog/): Every integration in the Casdoor Marketplace by type: single sign-on for self-hosted apps, identity provider templates, actions and sign-in themes, with the ones that need a Commercial or Enterprise license.
+- [Доступні інтеграції](https://casdoor.ai/uk/docs/marketplace/catalog/): Усі інтеграції в Casdoor Marketplace за типами: єдиний вхід (SSO) для self-hosted додатків, шаблони провайдерів ідентичності, дії та теми входу, а також ті, що потребують ліцензії Commercial або Enterprise.
 
 ## Авторизація MCP
 
@@ -275,9 +275,15 @@
 
 - [Багатофакторна автентифікація (MFA / 2FA)](https://casdoor.ai/uk/docs/user/multi-factor-authentication/): Увімкніть багатофакторну автентифікацію (MFA) або двофакторну автентифікацію (2FA) у Casdoor за допомогою додатка TOTP, кодів SMS, кодів електронної пошти або RADIUS, а також кодів відновлення та вимог MFA для кожної організації.
 - [Step-up MFA](https://casdoor.ai/uk/docs/user/step-up-mfa/): Запитайте у користувача, який уже увійшов у систему, свіжий код фактора MFA, який він уже налаштував у Casdoor, перед платежем, затвердженням чи іншою чутливою дією, без повторного входу, і отримайте одноразовий доказовий токен.
+- [Адаптивний аналіз ризиків](https://casdoor.ai/uk/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
 - [Використання додатка Casdoor Authenticator](https://casdoor.ai/uk/docs/how-to-connect/totp-authenticator-app/): Встановіть Casdoor Authenticator — додаток із відкритим кодом для TOTP на Android і iOS, підключіть його до Casdoor та імпортуйте акаунти з інших додатків автентифікації.
 - [Push-сповіщення](https://casdoor.ai/uk/docs/provider/mfa/push/): Надсилайте коди верифікації MFA через сервіси push-сповіщень, такі як Duo та Pushover, використовуючи провайдери сповіщень Casdoor.
 - [RADIUS MFA](https://casdoor.ai/uk/docs/provider/mfa/radius/): Використання зовнішнього сервера RADIUS як постачальника MFA.
+
+## Довіра до пристроїв
+
+- [Довіра до пристроїв](https://casdoor.ai/uk/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
+- [Install the Casdoor device agent](https://casdoor.ai/uk/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
 
 ## Користувачі
 
@@ -331,6 +337,10 @@
 
 - [Огляд](https://casdoor.ai/uk/docs/session/overview/): Як сесії Casdoor відстежують стан входу кожного користувача між застосунками організації, що записує сесія та як ними керують.
 - [Управління сесіями](https://casdoor.ai/uk/docs/session/management/): Переглядайте та завершуйте сесії користувачів в адміністративній панелі Casdoor.
+
+## Потоки
+
+- [Потоки](https://casdoor.ai/uk/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
 
 ## Вебхуки
 

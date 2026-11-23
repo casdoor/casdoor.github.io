@@ -128,7 +128,7 @@
 ## Marktplatz
 
 - [Marktplatz](https://casdoor.ai/de/docs/marketplace/overview/): Installieren Sie App-Integrationen, Identity-Provider-Vorlagen und Anmelde-Themes aus dem Casdoor Marketplace mit einem Klick und deinstallieren Sie sie sauber.
-- [Available integrations](https://casdoor.ai/de/docs/marketplace/catalog/): Every integration in the Casdoor Marketplace by type: single sign-on for self-hosted apps, identity provider templates, actions and sign-in themes, with the ones that need a Commercial or Enterprise license.
+- [Verfügbare Integrationen](https://casdoor.ai/de/docs/marketplace/catalog/): Alle Integrationen im Casdoor Marketplace nach Typ: Single Sign-On für selbst gehostete Apps, Identitätsanbieter-Vorlagen, Aktionen und Anmelde-Themes, einschließlich derer, die eine Commercial- oder Enterprise-Lizenz erfordern.
 
 ## MCP-Autorisierung
 
@@ -275,9 +275,15 @@
 
 - [Multi-Faktor-Authentifizierung (MFA / 2FA)](https://casdoor.ai/de/docs/user/multi-factor-authentication/): Aktivieren Sie Multi-Faktor-Authentifizierung (MFA) oder Zwei-Faktor-Authentifizierung (2FA) in Casdoor mit einer TOTP-Authenticator-App, SMS-Codes, E-Mail-Codes oder RADIUS, sowie Wiederherstellungscodes und organisationsbezogenen MFA-Anforderungen.
 - [Step-up-MFA](https://casdoor.ai/de/docs/user/step-up-mfa/): Fordern Sie einen angemeldeten Benutzer vor einer Zahlung, einer Genehmigung oder einer anderen sensiblen Aktion auf, einen frischen Code des MFA-Faktors einzugeben, den er in Casdoor bereits aktiviert hat – ohne erneute Anmeldung – und erhalten Sie einen einmalig gültigen Nachweis-Token.
+- [Adaptive Risiken](https://casdoor.ai/de/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
 - [Die Casdoor Authenticator-App verwenden](https://casdoor.ai/de/docs/how-to-connect/totp-authenticator-app/): Installieren Sie die Casdoor Authenticator, eine Open-Source-TOTP-App für Android und iOS, verbinden Sie sie mit Casdoor und importieren Sie Konten von anderen Authenticator-Apps.
 - [Push-Benachrichtigung](https://casdoor.ai/de/docs/provider/mfa/push/): Senden Sie MFA-Verifizierungscodes über Push-Benachrichtigungsdienste wie Duo und Pushover unter Verwendung von Casdoor-Benachrichtigungsanbietern.
 - [RADIUS-MFA](https://casdoor.ai/de/docs/provider/mfa/radius/): Verwenden Sie einen externen RADIUS-Server als MFA-Anbieter.
+
+## Gerätevertrauen
+
+- [Gerätevertrauen](https://casdoor.ai/de/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
+- [Install the Casdoor device agent](https://casdoor.ai/de/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
 
 ## Benutzer
 
@@ -331,6 +337,10 @@
 
 - [Übersicht](https://casdoor.ai/de/docs/session/overview/): Wie Casdoor-Sitzungen den Login-Status jedes Benutzers über die Anwendungen einer Organisation hinweg nachverfolgen, was eine Sitzung speichert und wie Sitzungen verwaltet werden.
 - [Sitzungsverwaltung](https://casdoor.ai/de/docs/session/management/): Anzeigen und Beenden von Benutzersitzungen im Casdoor-Admin-Panel.
+
+## Abläufe
+
+- [Abläufe](https://casdoor.ai/de/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
 
 ## Webhook-Endpunkte
 

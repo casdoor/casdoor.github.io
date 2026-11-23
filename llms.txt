@@ -275,9 +275,15 @@
 
 - [Multi-factor authentication (MFA / 2FA)](https://casdoor.ai/docs/user/multi-factor-authentication/): Turn on multi-factor authentication (MFA) or two-factor authentication (2FA) in Casdoor with a TOTP authenticator app, SMS codes, email codes or RADIUS, plus recovery codes and per-organization MFA requirements.
 - [Step-up MFA](https://casdoor.ai/docs/user/step-up-mfa/): Ask a signed-in user for a fresh code of the MFA factor they already enabled in Casdoor before a payment, an approval or another sensitive action, without a new sign-in, and get a single-use proof token.
+- [Adaptive risk](https://casdoor.ai/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
 - [Use the Casdoor Authenticator app](https://casdoor.ai/docs/how-to-connect/totp-authenticator-app/): Install Casdoor Authenticator, an open-source TOTP app for Android and iOS, connect it to Casdoor, and import accounts from other authenticator apps.
 - [Push notification](https://casdoor.ai/docs/provider/mfa/push/): Send MFA verification codes through push notification services such as Duo and Pushover, using Casdoor notification providers.
 - [RADIUS MFA](https://casdoor.ai/docs/provider/mfa/radius/): Use an external RADIUS server as an MFA provider.
+
+## Device trust
+
+- [Device trust](https://casdoor.ai/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
+- [Install the Casdoor device agent](https://casdoor.ai/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
 
 ## Users
 
@@ -331,6 +337,10 @@
 
 - [Overview](https://casdoor.ai/docs/session/overview/): How Casdoor sessions track each user's login state across the applications of an organization, what a session records, and how sessions are managed.
 - [Session management](https://casdoor.ai/docs/session/management/): View and terminate user sessions in the Casdoor admin panel.
+
+## Flows
+
+- [Flows](https://casdoor.ai/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
 
 ## Webhooks
 

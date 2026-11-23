@@ -275,9 +275,15 @@
 
 - [多因素认证 (MFA / 2FA)](https://casdoor.ai/zh/docs/user/multi-factor-authentication/): 在 Casdoor 中通过 TOTP 验证器应用、短信验证码、电子邮件验证码或 RADIUS 开启多因素认证 (MFA) 或双因素认证 (2FA)，此外还包括恢复代码和按组织设置的 MFA 要求。
 - [二次验证](https://casdoor.ai/zh/docs/user/step-up-mfa/): 在付款、审批或其他敏感操作之前，要求已登录用户提供其在 Casdoor 中已启用的 MFA 因子的新代码，而无需重新登录，并获取一次性证明令牌。
+- [自适应风险](https://casdoor.ai/zh/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
 - [使用 Casdoor Authenticator 应用](https://casdoor.ai/zh/docs/how-to-connect/totp-authenticator-app/): 安装 Casdoor Authenticator，这是一款适用于 Android 和 iOS 的开源 TOTP 应用，将其连接到 Casdoor，并从其他身份验证器应用导入账户。
 - [推送通知](https://casdoor.ai/zh/docs/provider/mfa/push/): 使用 Casdoor 通知提供商，通过 Duo、Pushover 等推送服务发送 MFA 验证码。
 - [RADIUS MFA](https://casdoor.ai/zh/docs/provider/mfa/radius/): 把外部 RADIUS 服务器用作 MFA 提供商。
+
+## 设备信任
+
+- [设备信任](https://casdoor.ai/zh/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
+- [Install the Casdoor device agent](https://casdoor.ai/zh/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
 
 ## 用户
 
@@ -331,6 +337,10 @@
 
 - [概述](https://casdoor.ai/zh/docs/session/overview/): Casdoor 会话如何跟踪用户在组织各个应用中的登录状态、会话记录了什么，以及如何管理会话。
 - [会话管理](https://casdoor.ai/zh/docs/session/management/): 在Casdoor管理面板中查看并终止用户会话。
+
+## 流程
+
+- [流程](https://casdoor.ai/zh/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
 
 ## Webhook列表
 

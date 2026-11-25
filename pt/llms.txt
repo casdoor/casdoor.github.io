@@ -327,9 +327,9 @@
 
 ## Migração
 
-- [Migrações](https://casdoor.ai/pt/docs/migration/overview/): Move the users, groups, roles, applications and signing keys of another identity system, such as Auth0 or Keycloak, into a Casdoor organization. Preview what would be added, apply it, apply again later for what is new, and undo it.
-- [Migrate from Auth0](https://casdoor.ai/pt/docs/migration/auth0/): Move an Auth0 tenant to Casdoor through the Auth0 Management API. Users keep their Auth0 user IDs, social links and, with the password hash export, their passwords; applications keep their client IDs and secrets.
-- [Migrate from Keycloak](https://casdoor.ai/pt/docs/migration/keycloak/): Move a Keycloak realm to Casdoor from its realm export. Users keep their IDs, passwords and authenticator apps, clients keep their client IDs and secrets, and the realm's signing key keeps its key ID, so tokens verify as before.
+- [Migrações](https://casdoor.ai/pt/docs/migration/overview/): Mova os usuários, grupos, papéis, aplicações e chaves de assinatura de outro sistema de identidade, como Auth0 ou Keycloak, para uma organização do Casdoor. Visualize previamente o que seria adicionado, aplique, reaplique posteriormente para trazer as novidades e desfaça quando necessário.
+- [Migrar do Auth0](https://casdoor.ai/pt/docs/migration/auth0/): Mova um tenant do Auth0 para o Casdoor por meio da Auth0 Management API. Os usuários mantêm seus IDs de usuário do Auth0, links sociais e, com a exportação de hash de senha, suas senhas; as aplicações mantêm seus Client IDs e Secrets.
+- [Migrar do Keycloak](https://casdoor.ai/pt/docs/migration/keycloak/): Mova um realm do Keycloak para o Casdoor a partir de sua exportação de realm. Os usuários mantêm seus IDs, senhas e aplicativos autenticadores, os clientes mantêm seus IDs de cliente e segredos, e a chave de assinatura do realm mantém seu ID de chave, então os tokens são verificados como antes.
 
 ## Certificados
 

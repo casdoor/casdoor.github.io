@@ -325,6 +325,12 @@
 - [Syncer de DingTalk](https://casdoor.ai/es/docs/syncer/DingTalk/): Sincroniza usuarios desde DingTalk (钉钉) a Casdoor mediante la API de DingTalk.
 - [Sincronizador de Lark](https://casdoor.ai/es/docs/syncer/Lark/): Sincronice usuarios desde Lark (Feishu) a Casdoor mediante la API de la Plataforma Abierta de Lark.
 
+## Migración
+
+- [Migraciones](https://casdoor.ai/es/docs/migration/overview/): Move the users, groups, roles, applications and signing keys of another identity system, such as Auth0 or Keycloak, into a Casdoor organization. Preview what would be added, apply it, apply again later for what is new, and undo it.
+- [Migrar desde Auth0](https://casdoor.ai/es/docs/migration/auth0/): Mueve un tenant de Auth0 a Casdoor a través de la Auth0 Management API. Los usuarios mantienen sus IDs de usuario de Auth0, enlaces sociales y, con la exportación de hashes de contraseña, sus contraseñas; las aplicaciones mantienen sus client IDs y secrets.
+- [Migrate from Keycloak](https://casdoor.ai/es/docs/migration/keycloak/): Move a Keycloak realm to Casdoor from its realm export. Users keep their IDs, passwords and authenticator apps, clients keep their client IDs and secrets, and the realm's signing key keeps its key ID, so tokens verify as before.
+
 ## Certificados
 
 - [Descripción general](https://casdoor.ai/es/docs/cert/overview/): Usar certificados en Casdoor para firma JWT, SAML y seguridad del proveedor de pagos.

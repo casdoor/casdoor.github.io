@@ -330,7 +330,7 @@
 - [迁移](https://casdoor.ai/zh/docs/migration/overview/): 将另一个身份系统（如 Auth0 或 Keycloak）的用户、组、角色、应用程序和签名密钥迁移到 Casdoor 组织中。预览将要添加的内容，应用它，稍后再次应用以获取新增内容，并可以撤销。
 - [从 Auth0 迁移](https://casdoor.ai/zh/docs/migration/auth0/): 通过 Auth0 Management API 将 Auth0 租户迁移到 Casdoor。用户保留其 Auth0 用户 ID、社交链接，并且在使用密码哈希导出的情况下保留其密码；应用程序保留其客户端 ID 和密钥。
 - [从 Keycloak 迁移](https://casdoor.ai/zh/docs/migration/keycloak/): 通过 Realm 导出文件将 Keycloak Realm 移动到 Casdoor。用户保留其 ID、密码和验证器应用，客户端保留其客户端 ID 和密钥，Realm 的签名密钥保留其密钥 ID，因此令牌验证方式不变。
-- [Migrate from Okta](https://casdoor.ai/zh/docs/migration/okta/): Move an Okta org to Casdoor through the Okta API. Users keep their Okta user IDs and profiles and, because Casdoor checks each password with Okta on the first sign-in, their passwords; groups keep their members, and OpenID Connect applications keep their client IDs and secrets.
+- [从 Okta 迁移](https://casdoor.ai/zh/docs/migration/okta/): 通过 Okta API 将 Okta 组织迁移到 Casdoor。用户保留其 Okta 用户 ID 和个人资料，并且由于 Casdoor 在首次登录时会向 Okta 验证密码，因此也保留了他们的密码；群组保留其成员，OpenID Connect 应用保留其客户端 ID 和密钥。
 
 ## 证书
 

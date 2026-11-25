@@ -698,7 +698,7 @@
 <ul>
 <li class="">nginx : <a href="https://nginx.org/en/docs/http/ngx_http_auth_request_module.html" target="_blank" rel="noopener noreferrer" class="">ngx_http_auth_request_module</a></li>
 <li class="">OAuth2 Proxy : <a href="https://oauth2-proxy.github.io/oauth2-proxy/configuration/integrations/nginx" target="_blank" rel="noopener noreferrer" class="">intégration nginx</a></li>
-<li class="">Apereo : <a href="https://apereo.github.io/cas/7.1.x/protocol/CAS-Protocol-Specification.html" target="_blank" rel="noopener noreferrer" class="">Spécification du protocole CAS</a>, <a href="https://github.com/apereo/mod_auth_cas" target="_blank" rel="noopener noreferrer" class="">mod_auth_cas</a></li>
+<li class="">Apereo: <a href="https://apereo.github.io/cas/7.3.x/protocol/CAS-Protocol-Specification.html" target="_blank" rel="noopener noreferrer" class="">CAS Protocol Specification</a>, <a href="https://github.com/apereo/mod_auth_cas" target="_blank" rel="noopener noreferrer" class="">mod_auth_cas</a></li>
 <li class="">Casdoor : <a href="https://github.com/casdoor/casdoor-forward-auth" target="_blank" rel="noopener noreferrer" class="">casdoor-forward-auth</a>, <a href="https://github.com/casdoor/casdoor-nginx-module" target="_blank" rel="noopener noreferrer" class="">casdoor-nginx-module</a></li>
 <li class="">Docs Casdoor : <a class="" href="https://casdoor.ai/fr/docs/site/overview/">Sites</a>, <a class="" href="https://casdoor.ai/fr/docs/how-to-connect/cas/">Connecter un client CAS</a>, <a class="" href="https://casdoor.ai/fr/docs/user/multi-factor-authentication/">MFA</a></li>
 </ul>]]></content:encoded>
@@ -1220,7 +1220,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it">Essayer<a href="https://casdoor.ai/fr/blog/casdoor-v4/#try-it" class="hash-link" aria-label="Lien direct vers Essayer" title="Lien direct vers Essayer" translate="no">​</a></h2>
 <p>Le moyen le plus rapide d'explorer :</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">docker run -p 8000:8000 casbin/casdoor-all-in-one</span><br></span></code></pre></div></div>
-<p>Ouvrez ensuite <a href="http://localhost:8000/" target="_blank" rel="noopener noreferrer" class="">http://localhost:8000</a>. L'image inclut SQLite et des données d'exemple, utilisez-la donc pour essayer, pas pour la production. Le <a class="" href="https://casdoor.ai/fr/docs/basic/server-installation/">guide d'installation</a> couvre les déploiements réels.</p>
+<p>Then open <code>http://localhost:8000</code>. The image includes SQLite and sample data, so use it for trying things out, not for production. The <a class="" href="https://casdoor.ai/fr/docs/basic/server-installation/">installation guide</a> covers real deployments.</p>
 <p>Il existe deux démos en ligne : <a href="https://demo.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">demo.casdoor.com</a> est modifiable et se réinitialise toutes les cinq minutes, et <a href="https://door.casdoor.com/" target="_blank" rel="noopener noreferrer" class="">door.casdoor.com</a> est en lecture seule.</p>
 <p>Si vous préférez ne pas l'héberger vous-même, <a href="https://www.casdoor.com/pricing" target="_blank" rel="noopener noreferrer" class="">Casdoor Cloud</a> vous offre une instance dédiée et managée à prix forfaitaire sans frais par utilisateur. Les nouveaux comptes reçoivent 10 $ de crédit pour l'essayer.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">Liens<a href="https://casdoor.ai/fr/blog/casdoor-v4/#links" class="hash-link" aria-label="Lien direct vers Liens" title="Lien direct vers Liens" translate="no">​</a></h2>
@@ -1325,7 +1325,7 @@
 <p>Rejoindre le CNCF Landscape reflète les progrès de la maturité de Casdoor et de sa communauté. Nous continuerons à améliorer Casdoor et son intégration avec les workflows cloud-natifs, et nous accueillons avec plaisir davantage d'utilisateurs et de contributeurs pour rejoindre la communauté.</p>
 <p>Liens connexes :</p>
 <ul>
-<li class=""><a href="https://casdoor.org/" target="_blank" rel="noopener noreferrer" class="">Casdoor</a> · <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">GitHub</a> · <a href="https://casdoor.org/docs" target="_blank" rel="noopener noreferrer" class="">Documentation</a> · <a href="https://landscape.cncf.io/?selected=casdoor" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape – Casdoor</a></li>
+<li class=""><a href="https://casdoor.ai/" target="_blank" rel="noopener noreferrer" class="">Casdoor</a> · <a href="https://github.com/casdoor/casdoor" target="_blank" rel="noopener noreferrer" class="">GitHub</a> · <a href="https://casdoor.ai/docs/overview" target="_blank" rel="noopener noreferrer" class="">Documentation</a> · <a href="https://landscape.cncf.io/?selected=casdoor" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape – Casdoor</a></li>
 </ul>]]></content:encoded>
             <category>Casdoor</category>
             <category>CNCF</category>

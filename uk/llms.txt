@@ -330,7 +330,7 @@
 - [Міграції](https://casdoor.ai/uk/docs/migration/overview/): Перемістіть користувачів, групи, ролі, додатки та ключі підпису з іншої системи ідентичності, такої як Auth0 або Keycloak, в організацію Casdoor. Перегляньте, що буде додано, застосуйте зміни, повторно застосуйте пізніше для нових елементів або скасуйте міграцію.
 - [Міграція з Auth0](https://casdoor.ai/uk/docs/migration/auth0/): Перенесіть tenant Auth0 до Casdoor через Auth0 Management API. Користувачі зберігають свої ID користувачів Auth0, соціальні прив'язки та, за наявності експорту хешів паролів, свої паролі; додатки зберігають свої Client ID і секрети.
 - [Міграція з Keycloak](https://casdoor.ai/uk/docs/migration/keycloak/): Перенесіть область (realm) Keycloak до Casdoor з її експорту realm. Користувачі зберігають свої ID, паролі та додатки-автентифікатори, клієнти зберігають свої client IDs та secrets, а ключ підпису realm зберігає свій key ID, тому токени перевіряються так само, як і раніше.
-- [Migrate from Okta](https://casdoor.ai/uk/docs/migration/okta/): Move an Okta org to Casdoor through the Okta API. Users keep their Okta user IDs and profiles and, because Casdoor checks each password with Okta on the first sign-in, their passwords; groups keep their members, and OpenID Connect applications keep their client IDs and secrets.
+- [Міграція з Okta](https://casdoor.ai/uk/docs/migration/okta/): Перенесіть організацію Okta в Casdoor через API Okta. Користувачі зберігають свої ідентифікатори користувачів та профілі Okta, а також паролі (оскільки Casdoor перевіряє кожен пароль через Okta при першому вході); групи зберігають своїх учасників, а додатки OpenID Connect — свої ідентифікатори клієнтів та секрети.
 
 ## Сертифікати
 

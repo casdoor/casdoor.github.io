@@ -282,8 +282,8 @@
 
 ## Довіра до пристроїв
 
-- [Довіра до пристроїв](https://casdoor.ai/uk/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
-- [Install the Casdoor device agent](https://casdoor.ai/uk/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
+- [Довіра до пристроїв](https://casdoor.ai/uk/docs/device-trust/overview/): Дозволяйте вхід лише з довірених комп’ютерів ваших користувачів, перевіряйте шифрування диска, брандмауер і блокування екрана, а також дозволяйте вхід без пароля з довіреного комп’ютера за допомогою агента пристрою Casdoor.
+- [Встановіть агент пристрою Casdoor](https://casdoor.ai/uk/docs/device-trust/device-agent/): Встановіть агент пристрою Casdoor на Windows, macOS або Linux, зареєструйте комп’ютер в організації, налаштуйте запуск агента при вході та перевірте стан безпеки, який він повідомляє.
 
 ## Користувачі
 
@@ -340,7 +340,7 @@
 
 ## Потоки
 
-- [Потоки](https://casdoor.ai/uk/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
+- [Потоки](https://casdoor.ai/uk/docs/flows/overview/): Автоматизуйте реєстрацію, вхід та видачу токенів без коду. Потік перевіряє умови, а потім відмовляє, запитує MFA, додає твердження до токенів, змінює користувача, групи та ролі, надсилає електронний лист або викликає ваш власний сервіс.
 
 ## Вебхуки
 

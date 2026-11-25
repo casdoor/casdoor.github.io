@@ -275,15 +275,15 @@
 
 - [多因素认证 (MFA / 2FA)](https://casdoor.ai/zh/docs/user/multi-factor-authentication/): 在 Casdoor 中通过 TOTP 验证器应用、短信验证码、电子邮件验证码或 RADIUS 开启多因素认证 (MFA) 或双因素认证 (2FA)，此外还包括恢复代码和按组织设置的 MFA 要求。
 - [二次验证](https://casdoor.ai/zh/docs/user/step-up-mfa/): 在付款、审批或其他敏感操作之前，要求已登录用户提供其在 Casdoor 中已启用的 MFA 因子的新代码，而无需重新登录，并获取一次性证明令牌。
-- [自适应风险](https://casdoor.ai/zh/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
+- [自适应风险](https://casdoor.ai/zh/docs/user/adaptive-risk/): 根据新设备、新国家、不可能的旅行、密码错误或脚本等信号对每次登录进行评分，并在分数较高时要求多因素认证 (MFA) 或阻止登录。
 - [使用 Casdoor Authenticator 应用](https://casdoor.ai/zh/docs/how-to-connect/totp-authenticator-app/): 安装 Casdoor Authenticator，这是一款适用于 Android 和 iOS 的开源 TOTP 应用，将其连接到 Casdoor，并从其他身份验证器应用导入账户。
 - [推送通知](https://casdoor.ai/zh/docs/provider/mfa/push/): 使用 Casdoor 通知提供商，通过 Duo、Pushover 等推送服务发送 MFA 验证码。
 - [RADIUS MFA](https://casdoor.ai/zh/docs/provider/mfa/radius/): 把外部 RADIUS 服务器用作 MFA 提供商。
 
 ## 设备信任
 
-- [设备信任](https://casdoor.ai/zh/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
-- [Install the Casdoor device agent](https://casdoor.ai/zh/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
+- [设备信任](https://casdoor.ai/zh/docs/device-trust/overview/): 仅允许受信任的用户计算机登录，检查其磁盘加密、防火墙和屏幕锁定状态，并使用 Casdoor 设备代理让受信任计算机实现无密码登录。
+- [安装 Casdoor 设备代理](https://casdoor.ai/zh/docs/device-trust/device-agent/): 在 Windows、macOS 或 Linux 上安装 Casdoor 设备代理，将计算机注册到组织，设置登录时启动代理，并检查其报告的安全态势。
 
 ## 用户
 
@@ -340,7 +340,7 @@
 
 ## 流程
 
-- [流程](https://casdoor.ai/zh/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
+- [流程](https://casdoor.ai/zh/docs/flows/overview/): 无需编写代码即可自动化注册、登录和令牌签发流程。流（Flow）会检查条件，然后执行拒绝操作、请求 MFA、添加令牌声明、更改用户信息、修改群组与角色、发送邮件或调用您自己的服务。
 
 ## Webhook列表
 

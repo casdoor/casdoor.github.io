@@ -275,15 +275,15 @@
 
 - [Autenticação multifator (MFA / 2FA)](https://casdoor.ai/pt/docs/user/multi-factor-authentication/): Ative a autenticação multifator (MFA) ou autenticação de dois fatores (2FA) no Casdoor com um aplicativo autenticador TOTP, códigos SMS, códigos por e-mail ou RADIUS, além de códigos de recuperação e requisitos de MFA por organização.
 - [Step-up MFA](https://casdoor.ai/pt/docs/user/step-up-mfa/): Solicite a um usuário conectado um novo código do fator MFA que ele já habilitou no Casdoor antes de um pagamento, uma aprovação ou outra ação sensível, sem um novo login, e obtenha um token de prova de uso único.
-- [Risco adaptativo](https://casdoor.ai/pt/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
+- [Risco adaptativo](https://casdoor.ai/pt/docs/user/adaptive-risk/): Pontue cada login com base em sinais, como um novo dispositivo, um novo país, viagem impossível, senhas incorretas ou um script, e solicite MFA ou bloqueie o login quando a pontuação for alta.
 - [Use o app Casdoor Authenticator](https://casdoor.ai/pt/docs/how-to-connect/totp-authenticator-app/): Instale o Casdoor Authenticator, um app TOTP open-source para Android e iOS, conecte-o ao Casdoor e importe contas de outros apps autenticadores.
 - [Notificações push](https://casdoor.ai/pt/docs/provider/mfa/push/): Envie códigos de verificação MFA através de serviços de notificação push, como Duo e Pushover, usando provedores de notificação do Casdoor.
 - [MFA RADIUS](https://casdoor.ai/pt/docs/provider/mfa/radius/): Use um servidor RADIUS externo como provedor de MFA.
 
 ## Confiança de dispositivos
 
-- [Confiança de dispositivos](https://casdoor.ai/pt/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
-- [Install the Casdoor device agent](https://casdoor.ai/pt/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
+- [Confiança de dispositivos](https://casdoor.ai/pt/docs/device-trust/overview/): Permita que apenas os computadores confiáveis dos seus usuários façam login, verifique a criptografia de disco, firewall e bloqueio de tela deles, e permita que um computador confiável faça login sem senha, com o agente de dispositivo Casdoor.
+- [Instalar o agente de dispositivo Casdoor](https://casdoor.ai/pt/docs/device-trust/device-agent/): Instale o agente de dispositivo Casdoor no Windows, macOS ou Linux, registre o computador em uma organização, inicie o agente na entrada e verifique a postura que ele relata.
 
 ## Usuários
 
@@ -340,7 +340,7 @@
 
 ## Fluxos
 
-- [Fluxos](https://casdoor.ai/pt/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
+- [Fluxos](https://casdoor.ai/pt/docs/flows/overview/): Automatize o cadastro, o login e a emissão de tokens sem código. Um fluxo verifica condições e depois recusa, solicita MFA, adiciona claims ao token, altera o usuário, altera grupos e papéis, envia um e-mail ou chama seu próprio serviço.
 
 ## Pontos de webhook
 

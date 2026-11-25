@@ -275,15 +275,15 @@
 
 - [多要素認証 (MFA / 2FA)](https://casdoor.ai/ja/docs/user/multi-factor-authentication/): Casdoor で TOTP 認証アプリ、SMS コード、メールコード、または RADIUS を使って多要素認証 (MFA) または二要素認証 (2FA) を有効にし、回復コードや組織ごとの MFA 要件を設定します。
 - [Step-up MFA](https://casdoor.ai/ja/docs/user/step-up-mfa/): 支払い、承認、その他の機密性の高い操作の前に、再度サインインすることなく、ユーザーが Casdoor で既に有効化している MFA ファクターの新しいコードを要求し、使い捨ての証明トークンを取得します。
-- [Adaptive risk](https://casdoor.ai/ja/docs/user/adaptive-risk/): Score every sign-in from its signals, such as a new device, a new country, impossible travel, failed passwords or a script, and ask for MFA or block the sign-in when the score is high.
+- [Adaptive risk](https://casdoor.ai/ja/docs/user/adaptive-risk/): 新しいデバイス、新しい国、不可能な移動、パスワード失敗またはスクリプトなどのシグナルから各サインインをスコアリングし、スコアが高い場合は MFA を要求するかサインインをブロックします。
 - [Casdoor Authenticator アプリの使用](https://casdoor.ai/ja/docs/how-to-connect/totp-authenticator-app/): Android および iOS 向けのオープンソース TOTP アプリである Casdoor Authenticator をインストールし、Casdoor に接続して、他の認証アプリからアカウントをインポートする方法について説明します。
 - [プッシュ通知](https://casdoor.ai/ja/docs/provider/mfa/push/): Casdoor の通知プロバイダーを使用して、Duo や Pushover などのプッシュ通知サービスを通じて MFA 認証コードを送信します。
 - [RADIUS MFA](https://casdoor.ai/ja/docs/provider/mfa/radius/): 外部 RADIUS サーバーを MFA プロバイダーとして使用します。
 
 ## デバイストラスト
 
-- [デバイストラスト](https://casdoor.ai/ja/docs/device-trust/overview/): Let only the trusted computers of your users sign in, check their disk encryption, firewall and screen lock, and let a trusted computer sign in without a password, with the Casdoor device agent.
-- [Install the Casdoor device agent](https://casdoor.ai/ja/docs/device-trust/device-agent/): Install the Casdoor device agent on Windows, macOS or Linux, enroll the computer with an organization, start the agent at sign-in, and check the posture that it reports.
+- [デバイストラスト](https://casdoor.ai/ja/docs/device-trust/overview/): Casdoor デバイスエージェントを使用することで、信頼できるユーザーのコンピュータのみがサインインできるようにし、ディスク暗号化、ファイアウォール、スクリーンロックの状態を確認し、信頼できるコンピュータはパスワードなしでサインインできるようにします。
+- [Casdoor デバイスエージェントのインストール](https://casdoor.ai/ja/docs/device-trust/device-agent/): Windows、macOS、または Linux に Casdoor デバイスエージェントをインストールし、コンピュータを組織に登録し、サインイン時にエージェントを開始し、レポートされるセキュリティ状態を確認します。
 
 ## ユーザー
 
@@ -340,7 +340,7 @@
 
 ## フロー
 
-- [フロー](https://casdoor.ai/ja/docs/flows/overview/): Automate the sign-up, the sign-in and the token issuance without code. A flow checks conditions and then refuses, asks for MFA, adds token claims, changes the user, changes groups and roles, sends an email or calls your own service.
+- [フロー](https://casdoor.ai/ja/docs/flows/overview/): コードを書かずに、サインアップ、サインイン、トークン発行を自動化します。フローは条件を確認し、拒否、MFA の要求、トークンクレームの追加、ユーザーの変更、グループとロールの変更、メール送信、独自サービスへの呼び出しなどを実行します。
 
 ## Webhook
 

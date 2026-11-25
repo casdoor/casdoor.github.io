@@ -330,6 +330,7 @@
 - [マイグレーション](https://casdoor.ai/ja/docs/migration/overview/): Auth0 や Keycloak などの他の ID システムのユーザー、グループ、ロール、アプリケーション、および署名鍵を Casdoor 組織へ移行します。追加される内容をプレビューし、適用し、後で新しい分だけ再適用したり、元に戻したりできます。
 - [Auth0からの移行](https://casdoor.ai/ja/docs/migration/auth0/): Auth0 Management APIを使用してAuth0テナントをCasdoorへ移行します。ユーザーはAuth0ユーザーID、ソーシャルリンク、および（パスワードハッシュエクスポートがあれば）パスワードをそのまま維持し、アプリケーションはクライアントIDとシークレットを維持します。
 - [Keycloak からの移行](https://casdoor.ai/ja/docs/migration/keycloak/): Keycloak レアルームのエクスポートファイルから、レアルームデータを Casdoor へ移行します。ユーザーは ID、パスワード、認証アプリを維持し、クライアントはクライアント ID とシークレットを維持し、レアルームの署名鍵はキー ID を維持するため、トークンの検証は以前と同じように機能します。
+- [Migrate from Okta](https://casdoor.ai/ja/docs/migration/okta/): Move an Okta org to Casdoor through the Okta API. Users keep their Okta user IDs and profiles and, because Casdoor checks each password with Okta on the first sign-in, their passwords; groups keep their members, and OpenID Connect applications keep their client IDs and secrets.
 
 ## 証明書
 

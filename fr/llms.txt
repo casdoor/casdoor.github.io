@@ -330,6 +330,7 @@
 - [Migrations](https://casdoor.ai/fr/docs/migration/overview/): Déplacez les utilisateurs, groupes, rôles, applications et clés de signature d'un autre système d'identité, tel qu'Auth0 ou Keycloak, dans une organisation Casdoor. Prévisualisez ce qui serait ajouté, appliquez-le, réappliquez-le plus tard pour les nouveaux éléments, et annulez-le si nécessaire.
 - [Migrer depuis Auth0](https://casdoor.ai/fr/docs/migration/auth0/): Déplacez un tenant Auth0 vers Casdoor via l'API de gestion Auth0. Les utilisateurs conservent leurs IDs utilisateur Auth0, leurs liens sociaux et, grâce à l'exportation du hash des mots de passe, leurs mots de passe ; les applications conservent leurs IDs client et secrets.
 - [Migration depuis Keycloak](https://casdoor.ai/fr/docs/migration/keycloak/): Déplacez un realm Keycloak vers Casdoor à partir de son exportation de realm. Les utilisateurs conservent leurs ID, mots de passe et applications d'authentification, les clients conservent leurs identifiants et secrets clients, et la clé de signature du realm conserve son ID de clé, de sorte que les jetons sont vérifiés comme auparavant.
+- [Migrate from Okta](https://casdoor.ai/fr/docs/migration/okta/): Move an Okta org to Casdoor through the Okta API. Users keep their Okta user IDs and profiles and, because Casdoor checks each password with Okta on the first sign-in, their passwords; groups keep their members, and OpenID Connect applications keep their client IDs and secrets.
 
 ## Certificats
 

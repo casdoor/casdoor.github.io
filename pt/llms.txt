@@ -218,6 +218,7 @@
 - [Adicionar Azure AD como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/azure-ad/): Permita que os usuários façam login no Casdoor com suas contas do Azure AD (Microsoft Entra ID) via SAML.
 - [Adicionar Keycloak como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/keycloak/): Permitir que usuários de um realm do Keycloak façam login no Casdoor através de SAML.
 - [Adicione Alibaba Cloud IDaaS como um provedor SAML](https://casdoor.ai/pt/docs/provider/saml/aliyun/): Permita que usuários do Alibaba Cloud IDaaS (EIAM) façam login no Casdoor através de SAML.
+- [Faça login com MetaMask e outras carteiras Ethereum](https://casdoor.ai/pt/docs/provider/web3/wallet/): Permita que as pessoas façam login no Casdoor com MetaMask, Coinbase Wallet, Rabby, OKX Wallet ou qualquer outra carteira Ethereum via Sign-In with Ethereum (EIP-4361), usando o plugin Web3 Wallet Sign-In do Marketplace.
 - [Provedores de Pagamento](https://casdoor.ai/pt/docs/provider/payment/overview/): Adicione provedores de pagamento aos produtos, para que os usuários possam pagar por eles com um serviço de pagamento ou com o saldo da conta.
 - [Testar compras com o provedor Dummy](https://casdoor.ai/pt/docs/provider/payment/dummy/): Simule pagamentos para testar o fluxo de compra dos produtos Casdoor sem um serviço de pagamento.
 - [Permitir que os usuários paguem pelo saldo](https://casdoor.ai/pt/docs/provider/payment/Balance/): Permita que os usuários paguem por produtos usando o saldo da conta no Casdoor e recarreguem o saldo com um produto de recarga.

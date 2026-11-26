@@ -218,6 +218,7 @@
 - [添加 Azure AD 作为 SAML 提供商](https://casdoor.ai/zh/docs/provider/saml/azure-ad/): 允许用户通过 SAML 使用其 Azure AD (Microsoft Entra ID) 账户登录 Casdoor。
 - [添加 Keycloak 作为 SAML 提供商](https://casdoor.ai/zh/docs/provider/saml/keycloak/): 让 Keycloak realm 的用户通过 SAML 登录到 Casdoor。
 - [添加阿里云 IDaaS 作为 SAML 提供商](https://casdoor.ai/zh/docs/provider/saml/aliyun/): 允许阿里云 IDaaS (EIAM) 用户通过 SAML 登录到 Casdoor。
+- [使用 MetaMask 和其他以太坊钱包登录](https://casdoor.ai/zh/docs/provider/web3/wallet/): 通过 Sign-In with Ethereum (EIP-4361) 和 Marketplace 中的 Web3 Wallet Sign-In 插件，让用户可以使用 MetaMask、Coinbase Wallet、Rabby、OKX Wallet 或任何其他以太坊钱包登录 Casdoor。
 - [支付提供商](https://casdoor.ai/zh/docs/provider/payment/overview/): 将支付提供商添加到产品中，以便用户可以通过支付服务或其账户余额进行付款。
 - [使用 Dummy 提供商测试购买](https://casdoor.ai/zh/docs/provider/payment/dummy/): 模拟支付以测试 Casdoor 商品的购买流程，无需实际支付服务。
 - [让用户从余额中付款](https://casdoor.ai/zh/docs/provider/payment/Balance/): 允许用户使用 Casdoor 中的账户余额购买产品，并通过充值产品为余额充值。

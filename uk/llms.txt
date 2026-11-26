@@ -218,6 +218,7 @@
 - [Додавання Azure AD як провайдера SAML](https://casdoor.ai/uk/docs/provider/saml/azure-ad/): Дозвольте користувачам входити до Casdoor через свій обліковий запис Azure AD (Microsoft Entra ID) за допомогою SAML.
 - [Додавання Keycloak як SAML-провайдера](https://casdoor.ai/uk/docs/provider/saml/keycloak/): Дозвольте користувачам realm Keycloak входити в Casdoor через SAML.
 - [Додавання Alibaba Cloud IDaaS як провайдера SAML](https://casdoor.ai/uk/docs/provider/saml/aliyun/): Дозвольте користувачам Alibaba Cloud IDaaS (EIAM) входити в Casdoor через SAML.
+- [Вхід через MetaMask та інші Ethereum-гаманці](https://casdoor.ai/uk/docs/provider/web3/wallet/): Дозвольте користувачам входити в Casdoor за допомогою MetaMask, Coinbase Wallet, Rabby, OKX Wallet або будь-якого іншого Ethereum-гаманця через Sign-In with Ethereum (EIP-4361) за допомогою плагіна Web3 Wallet Sign-In з Marketplace.
 - [Постачальники платежів](https://casdoor.ai/uk/docs/provider/payment/overview/): Додавайте платіжних провайдерів до продуктів, щоб користувачі могли оплачувати їх за допомогою платіжного сервісу або через баланс свого акаунта.
 - [Тестові покупки з провайдером Dummy](https://casdoor.ai/uk/docs/provider/payment/dummy/): Симулюйте платежі, щоб протестувати процес купівлі продуктів Casdoor без платіжного сервісу.
 - [Дозвольте користувачам платити з балансу](https://casdoor.ai/uk/docs/provider/payment/Balance/): Дозвольте користувачам оплачувати products із балансу свого акаунта в Casdoor та поповнювати баланс через recharge product.

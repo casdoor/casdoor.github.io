@@ -218,6 +218,7 @@
 - [Azure AD を SAML プロバイダーとして追加](https://casdoor.ai/ja/docs/provider/saml/azure-ad/): SAML を介して Azure AD (Microsoft Entra ID) アカウントで Casdoor にサインインできるようにします。
 - [Keycloak を SAML プロバイダーとして追加する](https://casdoor.ai/ja/docs/provider/saml/keycloak/): Keycloak リアムのユーザーが SAML を介して Casdoor にサインインできるようにします。
 - [Alibaba Cloud IDaaSをSAMLプロバイダーとして追加](https://casdoor.ai/ja/docs/provider/saml/aliyun/): Alibaba Cloud IDaaS (EIAM)のユーザーがSAMLを通じてCasdoorにサインインできるようにします。
+- [MetaMaskやその他のEthereumウォレットでサインイン](https://casdoor.ai/ja/docs/provider/web3/wallet/): MarketplaceのWeb3 Wallet Sign-Inプラグインを使用し、Sign-In with Ethereum (EIP-4361)を通じて、MetaMask、Coinbase Wallet、Rabby、OKX WalletなどのEthereumウォレットでCasdoorにサインインできるようにします。
 - [支払いプロバイダー](https://casdoor.ai/ja/docs/provider/payment/overview/): 製品に支払いプロバイダーを追加することで、ユーザーは決済サービスまたはアカウント残高を使用して支払いを行うことができます。
 - [Dummy プロバイダーでのテスト購入](https://casdoor.ai/ja/docs/provider/payment/dummy/): 決済サービスなしで Casdoor 製品の購入フローをテストするために、支払いをシミュレートします。
 - [ユーザーが自分の残高から支払いを行うようにする](https://casdoor.ai/ja/docs/provider/payment/Balance/): Casdoor のアカウント残高から製品への支払いを行い、チャージ製品を使って残高に追加できるようにします。
